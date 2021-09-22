@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "module": "esnext",
     "target": "ES2018",
     "lib": [
       "es6",
@@ -10,7 +12,7 @@
     "sourceMap": true,
     "allowJs": true,
     "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "moduleResolution": "node",
     "strict": true,
     "resolveJsonModule": true,
@@ -25,8 +27,13 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "allowSyntheticDefaultImports": true,
-    "isolatedModules": false,
-    "typeRoots": [ "./src/types", "./node_modules/@types"]
+    "isolatedModules": true,
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ],
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true
   },
   "exclude": [
     "node_modules",
@@ -34,7 +41,10 @@
     "scripts",
     "acceptance-tests",
     "webpack",
-    "jest"
+    "jest",
+    "src/setupTests.ts"
   ],
-  "include": ["src/**/*"]
+  "include": [
+    "src"
+  ]
 }
