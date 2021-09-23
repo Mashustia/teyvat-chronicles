@@ -155,8 +155,6 @@
   margin-left: auto;
 }
 
-
-
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: var(--bs-white)
 }
@@ -165,4 +163,5 @@
   text-align: center;
   height: 100vh;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  color: var(--bs-gray-300)
 }
