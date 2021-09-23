@@ -1,5 +1,5 @@
 import {Component, ReactElement} from 'react'
-import {Container} from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import Characters from '../Characters';
 
 export class Layout extends Component {
@@ -7,9 +7,13 @@ export class Layout extends Component {
     return (
       <Container>
         <header>
-          <h1 className='h1 pt-2'>
-            Welcome to Teyvat chronicles, choose the character you want to check
-          </h1>
+          <Row>
+            <Col>
+              <h1 className='h1 pt-2'>
+                Welcome to Teyvat chronicles, choose the character you want to check
+              </h1>
+            </Col>
+          </Row>
         </header>
 
         <Characters/>

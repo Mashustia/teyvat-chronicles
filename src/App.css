@@ -51,12 +51,6 @@
   --transition-time-sidebar-out: 350ms;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 .visually-hidden {
   position: absolute;
 
