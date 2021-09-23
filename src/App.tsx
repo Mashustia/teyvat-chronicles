@@ -1,12 +1,11 @@
-import React from 'react';
+import { FC } from 'react';
 import './App.css';
+import Layout from "./views/navigation/components/Layout";
 
-const App: React.FC = () => {
+const App: FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello world</h1>
-      </header>
+      <Layout/>
     </div>
   );
 };

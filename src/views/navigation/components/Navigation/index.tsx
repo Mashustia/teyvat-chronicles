@@ -1,7 +1,5 @@
 import {Component, ReactElement} from 'react'
 
-// const styles = require('./OrganizationList.module.css')
-
 export class Navigation extends Component {
   public render(): ReactElement {
     return (
