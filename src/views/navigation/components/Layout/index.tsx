@@ -6,7 +6,7 @@ export class Layout extends Component {
     return (
       <Container>
         <header>
-          <h1>
+          <h1 className='h1'>
             Welcome to Teyvat chronicles, choose the character you want to check
           </h1>
         </header>
