@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import {FC} from 'react';
 import './App.css';
 import Layout from "./views/navigation/components/Layout";
 
