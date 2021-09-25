@@ -9,11 +9,12 @@ const Header: FC = (props) => {
     <header className='mb-3'>
       <Container>
         <Row>
-          <Col>
+          <Col xs={12}>
             <h1 className='h1'>
               {t('header:welcome')}
             </h1>
           </Col>
+          <Col xs={12} className='fs-5'>{t('header:choose_character')}</Col>
         </Row>
       </Container>
     </header>
