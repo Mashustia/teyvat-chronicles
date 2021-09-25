@@ -7,10 +7,10 @@ const Header: FC<WithTranslation> = (props) => {
   console.log(i18n, i18n.language)
 
   return (
-    <header>
+    <header className='mb-2'>
       <Row>
         <Col>
-          <h1 className='h1 pt-2'>
+          <h1 className='h1'>
             {t('header:welcome')}
           </h1>
         </Col>

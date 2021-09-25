@@ -1,8 +1,8 @@
 import {FC} from 'react'
 import {Container} from 'react-bootstrap';
-import Characters from '../Characters';
 
 import Header from '../Header/Header';
+import Characters from '../Characters/components/Characters';
 
 const Layout: FC = () => {
   return (
