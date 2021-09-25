@@ -5,15 +5,16 @@ import {withRouter} from 'react-router-dom';
 import './character.css'
 import {ICharacterProps as IProps} from './types';
 import {createUrl} from '../../../../utils/utils';
-
+import {useTranslation} from 'react-i18next';
 const Character: FC<IProps> = ({ name, history, match }) => {
+  const { t } = useTranslation();
   const imagePath = `/images/characters/${name}.png`
   const handleCharacterClick = () => history.push(createUrl(match, name))
 
   return (
     <Col xs={12} sm={6} md={2} className='pointer' onClick={handleCharacterClick}>
       <img src={imagePath} alt={name} className='character-img' />
-      <h4>{name}</h4>
+      <h4>{t(`character:names.${name}`)}</h4>
     </Col>
   )
 }
