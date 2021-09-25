@@ -1,10 +1,9 @@
 import {FC} from 'react'
 import {Col, Row} from 'react-bootstrap';
-import {withTranslation, WithTranslation} from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 
-const Header: FC<WithTranslation> = (props) => {
-  const { t, i18n } = props;
-  console.log(i18n, i18n.language)
+const Header: FC = (props) => {
+  const { t } = useTranslation();
 
   return (
     <header className='mb-2'>
@@ -19,4 +18,4 @@ const Header: FC<WithTranslation> = (props) => {
   )
 }
 
-export default withTranslation('header')(Header)
+export default Header
