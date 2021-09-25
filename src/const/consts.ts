@@ -6,3 +6,12 @@ export const Languages = {
 export const NS = [
   'header'
 ]
+
+export enum Vision {
+  ANEMO = 'anemo',
+  PYRO = 'pyro',
+  ELECTRO = 'electro',
+  CRYO = 'cryo',
+  HYDRO = 'hydro',
+  GEO = 'geo',
+}
