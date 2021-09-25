@@ -21,13 +21,13 @@ const Character: FC<IProps> = ({ match: {params}}): ReactElement => {
   return (
     <Container>
       <Row className='justify-content-center'>
-        <Col sm={12} md={12} lg={7}>
+        <Col sm={12} md={12} lg={9} xl={8} xxl={7}>
           <Row className='justify-content-center gx-3'>
-            <Col xs={12} md={2}>
+            <Col xs={12} md={3} lg={3}>
               <img src={imagePath} alt={name} className='character-img'/>
               <h1 className='fs-3'>{t(`character:names.${name}`)}</h1>
             </Col>
-            <Col xs={12} md={10}>
+            <Col xs={12} md={9} lg={9}>
               <h4 className='mb-3'>{t('character:ascension_materials')}</h4>
               {ascensionMaterials.map((value, index) => {
                 if (!value[0]) return null
