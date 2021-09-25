@@ -2,7 +2,7 @@ import { FC } from 'react'
 import {Col} from 'react-bootstrap';
 import {withRouter} from 'react-router-dom';
 
-import './character.css'
+import './Character.css'
 import {ICharacterProps as IProps} from './types';
 import {createUrl} from '../../../../utils/utils';
 import {useTranslation} from 'react-i18next';
