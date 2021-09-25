@@ -23,10 +23,12 @@ const Chongyun = {
   vision: 'cryo'
 }
 
-export default [
+const characters = [
   Amber,
   Barbara,
   Beidou,
   Bennett,
   Chongyun
 ]
+
+export default characters
