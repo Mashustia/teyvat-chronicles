@@ -6,7 +6,7 @@ import Characters from '../Characters/components/Characters';
 
 const Layout: FC = () => {
   return (
-    <Container>
+    <Container fluid>
       <Header/>
 
       <Characters/>
