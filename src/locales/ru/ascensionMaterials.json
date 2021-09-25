@@ -1,0 +1,40 @@
+{
+  "gems": {
+    "geo": {
+      "prithiva_topaz_gemstone": "Драгоценный топаз Притхива",
+      "prithiva_topaz_chunk": "Кусок топаза Притхива",
+      "prithiva_topaz_fragment": "Фрагмент топаза Притхива",
+      "prithiva_topaz_sliver": "Осколок топаза Притхива"
+    },
+    "anemo": {
+      "vayuda_topaz_gemstone": "Драгоценная бирюза Вайюда",
+      "vayuda_topaz_chunk": "Кусок бирюзы Вайюда",
+      "vayuda_topaz_fragment": "Фрагмент бирюзы Вайюда",
+      "vayuda_topaz_sliver": "Осколок бирюзы Вайюда"
+    },
+    "cryo": {
+      "shivada_topaz_gemstone": "Драгоценный нефрит Шивада",
+      "shivada_topaz_chunk": "Кусок нефрита Шивада",
+      "shivada_topaz_fragment": "Фрагмент нефрита Шивада",
+      "shivada_topaz_sliver": "Осколок нефрита Шивада"
+    },
+    "electro": {
+      "vajrada_topaz_gemstone": "Драгоценный аметист Ваджрада",
+      "vajrada_topaz_chunk": "Кусок аметиста Ваджрада",
+      "vajrada_topaz_fragment": "Фрагмент аметиста Ваджрада",
+      "vajrada_topaz_sliver": "Осколок аметиста Ваджрада"
+    },
+    "hydro": {
+      "varunada_topaz_gemstone": "Драгоценный аметист Ваджрада",
+      "varunada_topaz_chunk": "Кусок аметиста Ваджрада",
+      "varunada_topaz_fragment": "Фрагмент аметиста Ваджрада",
+      "varunada_topaz_sliver": "Осколок аметиста Ваджрада"
+    },
+    "pyro": {
+      "agnidus_topaz_gemstone": "Драгоценный агат Агнидус",
+      "agnidus_topaz_chunk": "Кусок агата Агнидус",
+      "agnidus_topaz_fragment": "Фрагмент агата Агнидус",
+      "agnidus_topaz_sliver": "Осколок агата Агнидус"
+    }
+  }
+}
