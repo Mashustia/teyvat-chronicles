@@ -6,15 +6,14 @@ import {IMaterial} from '../../../../charactersData/types';
 
 const TableItem: FC<IProps> = ({data: [lvl, materials]}) => {
   console.log(lvl, materials)
-
-  const rows = () => materials?.map(({material, count}: IMaterial) =>
-    <Col xs={3}><p>{material}</p><p>{count}</p></Col>)
+  const rows = () => materials?.map(({material, count}: IMaterial, index: number) =>
+    <Col key={index} xs={3}><p>{material}</p><p>{count}</p></Col>)
 
   return (
     <Row>
       <Col xs={2}>{lvl}</Col>
       <Col xs={10}>
-        <Row>{rows}</Row>
+        <Row>{rows()}</Row>
       </Col>
     </Row>
   )
