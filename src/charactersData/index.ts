@@ -1,29 +1,36 @@
+import {ICharacter} from './types';
+
 const Amber = {
   name: 'Amber',
-  vision: 'pyro'
+  vision: 'pyro',
+  ascension_materials: {}
 }
 
 const Barbara = {
   name: 'Barbara',
-  vision: 'hydro'
+  vision: 'hydro',
+  ascension_materials: {}
 }
 
 const Beidou = {
   name: 'Beidou',
-  vision: 'electro'
+  vision: 'electro',
+  ascension_materials: {}
 }
 
 const Bennett = {
   name: 'Bennett',
-  vision: 'pyro'
+  vision: 'pyro',
+  ascension_materials: {}
 }
 
 const Chongyun = {
   name: 'Chongyun',
-  vision: 'cryo'
+  vision: 'cryo',
+  ascension_materials: {}
 }
 
-const characters = [
+const CHARACTERS: ICharacter[] = [
   Amber,
   Barbara,
   Beidou,
@@ -31,4 +38,4 @@ const characters = [
   Chongyun
 ]
 
-export default characters
+export default CHARACTERS
