@@ -1,11 +1,20 @@
 import {FC} from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+
 import './App.css';
-import Layout from "./views/navigation/components/Layout";
+import {Section} from './const/consts';
+import Layout from './views/Layout';
 
 const App: FC = () => {
   return (
-    <div className="App">
-      <Layout/>
+    <div className='App'>
+      <BrowserRouter>
+        <Switch>
+          <Route exact={true} path={Section.CHARACTER} component={Layout} />
+
+          <Route component={Layout} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 };

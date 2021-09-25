@@ -1,10 +1,9 @@
 import { FC } from 'react'
 import {Row} from 'react-bootstrap';
+
 import Character from '../Character';
-
-import CHARACTERS from '../../../../charactersData'
-import {ICharacter} from '../../../../charactersData/types';
-
+import {ICharacter} from '../../charactersData/types';
+import CHARACTERS from '../../charactersData';
 
 const Characters: FC = () => {
   const items = () => CHARACTERS.map((character: ICharacter) =>
