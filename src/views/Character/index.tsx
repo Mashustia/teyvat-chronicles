@@ -20,18 +20,22 @@ const Character: FC<IProps> = ({ match: {params}}): ReactElement => {
 
   return (
     <Container>
-      <Row>
-        <Col xs={12} md={2}>
-          <img src={imagePath} alt={name} className='character-img' />
-          <h1>{t(`character:names.${name}`)}</h1>
-        </Col>
-        <Col xs={12} md={10}>
-          <h4>{t('character:ascension_materials')}</h4>
-          {ascensionMaterials.map((value, index) => {
-            if (!value[0]) return null
+      <Row className='justify-content-center'>
+        <Col sm={12} md={12} lg={7}>
+          <Row className='justify-content-center gx-3'>
+            <Col xs={12} md={2}>
+              <img src={imagePath} alt={name} className='character-img'/>
+              <h1 className='fs-3'>{t(`character:names.${name}`)}</h1>
+            </Col>
+            <Col xs={12} md={10}>
+              <h4 className='mb-3'>{t('character:ascension_materials')}</h4>
+              {ascensionMaterials.map((value, index) => {
+                if (!value[0]) return null
 
-            return <TableItem data={value} key={index}/>
-          })}
+                return <TableItem data={value} key={index}/>
+              })}
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Container>

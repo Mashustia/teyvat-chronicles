@@ -20,10 +20,10 @@ const TableItem: FC<IProps> = ({data: [lvl, materials]}) => {
   })
 
   return (
-    <Row className='align-items-center'>
-      <Col xs={2} className='fw-bold'>{lvl}</Col>
-      <Col xs={10}>
-        <Row className='align-items-center'>{rows()}</Row>
+    <Row className='align-items-center gx-1 gy-2 table-border mb-3'>
+      <Col xs={1} className='fw-bold'>{lvl}</Col>
+      <Col xs={11}>
+        <Row className='align-items-center gx-1'>{rows()}</Row>
       </Col>
     </Row>
   )
