@@ -30,12 +30,19 @@ const Chongyun = {
   ascension_materials: {}
 }
 
+const Xiao = {
+  name: 'Xiao',
+  vision: 'anemo',
+  ascension_materials: {}
+}
+
 const CHARACTERS: ICharacter[] = [
   Amber,
   Barbara,
   Beidou,
   Bennett,
-  Chongyun
+  Chongyun,
+  Xiao
 ]
 
 export default CHARACTERS
