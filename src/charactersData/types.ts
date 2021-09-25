@@ -4,4 +4,5 @@ export interface ICharacter {
   name: string
   vision: Vision
   ascension_materials: {}
+  rarity: number
 }
