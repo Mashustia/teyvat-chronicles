@@ -10,7 +10,7 @@ const Characters: FC = () => {
     <Character key={character.name} {...character}/>)
 
   return (
-    <Row className='justify-content-center'>
+    <Row className='justify-content-center gy-2 gx-1'>
       {items()}
     </Row>
   )
