@@ -1,6 +1,6 @@
 import {ICharacter} from './types';
 import {Vision} from '../const/consts';
-import {Gem, Materials, MORA, Rocks} from './materialNames';
+import {Materials, MORA, Rocks} from './materialNames';
 
 const Bennett = {
   name: 'Bennett',
@@ -56,18 +56,15 @@ const Beidou = {
   vision: Vision.ELECTRO,
   ascension_materials: {
     20: [
-      { material: Gem.ELECTRO.vajrada_topaz_sliver, count: 1 },
       { material: Materials.silver_raven_insignia, count: 3 },
       { material: Rocks.noctilucous_jade, count: 3 },
       { material: MORA, count: 20000 },
     ],
-    40: {
-
-    },
-    50: {},
-    60: {},
-    70: {},
-    80: {},
+    40: [],
+    50: [],
+    60: [],
+    70: [],
+    80: []
   },
   rarity: 4
 }
