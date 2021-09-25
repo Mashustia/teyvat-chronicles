@@ -12,7 +12,7 @@ const Character: FC<IProps> = ({ name, history, match }) => {
   const handleCharacterClick = () => history.push(createUrl(match, name))
 
   return (
-    <Col xs={12} sm={6} md={2} className='pointer' onClick={handleCharacterClick}>
+    <Col xs={6} sm={3} md={3} lg={2} xl={2} xxl={1} className='pointer' onClick={handleCharacterClick}>
       <img src={imagePath} alt={name} className='character-img' />
       <h4>{t(`character:names.${name}`)}</h4>
     </Col>
