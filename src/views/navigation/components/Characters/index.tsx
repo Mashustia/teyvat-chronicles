@@ -2,15 +2,16 @@ import { FC } from 'react'
 import {Row} from 'react-bootstrap';
 import Character from '../Character';
 
-import characters from '../../../../charactersData'
-import {ICharacterType} from '../../../../charactersData/types';
+import CHARACTERS from '../../../../charactersData'
+import {ICharacter} from '../../../../charactersData/types';
 
 
 const Characters: FC = () => {
-  const items = () => characters.map((character: ICharacterType) => <Character key={character.name}/>)
+  const items = () => CHARACTERS.map((character: ICharacter) =>
+    <Character key={character.name} {...character}/>)
 
   return (
-    <Row>
+    <Row className='justify-content-center'>
       {items()}
     </Row>
   )
