@@ -8,7 +8,7 @@ import Character from './views/Character';
 
 const App: FC = () => {
   return (
-    <div className='App py-2'>
+    <div className='App py-3'>
       <BrowserRouter>
         <Switch>
           <Route exact path={RouteName.DEFAULT} component={Layout} />
