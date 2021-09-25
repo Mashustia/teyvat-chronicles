@@ -19,7 +19,7 @@ const Character: FC<IProps> = ({ match: {params}}): ReactElement => {
   const ascensionMaterials = Object.entries(activeCharacter.ascension_materials)
 
   return (
-    <Container fluid>
+    <Container>
       <Row>
         <Col xs={12} md={2}>
           <img src={imagePath} alt={name} className='character-img' />
