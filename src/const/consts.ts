@@ -15,3 +15,15 @@ export enum Vision {
   HYDRO = 'hydro',
   GEO = 'geo',
 }
+
+export const ServicePaths = {
+  NAME: '/:name'
+}
+
+export enum RouteName {
+  DEFAULT = '/teyvat-chronicles'
+}
+
+export const Section = {
+  CHARACTER: `${RouteName.DEFAULT}${ServicePaths.NAME}`
+}
