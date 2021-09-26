@@ -13,7 +13,7 @@ const Character: FC<IProps> = ({ name, history, match }) => {
 
   return (
     <Col xs={6} sm={3} md={3} lg={2} xl={2} xxl={1} className='pointer' onClick={handleCharacterClick}>
-      <img src={imagePath} alt={name} className='character-img' />
+      <div><img src={imagePath} alt={name} className='character-img img-border'/></div>
       <h4>{t(`character:names.${name}`)}</h4>
     </Col>
   )
