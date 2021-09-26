@@ -1,21 +1,44 @@
-import { FC } from 'react'
-import {Col} from 'react-bootstrap';
+import {FC, ReactElement} from 'react'
 import {withRouter} from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
+import {Col, Row, Container} from 'react-bootstrap';
 
-import './character.css'
 import {ICharacterProps as IProps} from './types';
-import {createUrl} from '../../utils/utils';
+import {ICharacter} from '../../charactersData/types';
+import CHARACTERS from '../../charactersData';
+import TableItem from './components/TableItem';
 
-const Character: FC<IProps> = ({ name, history, match }) => {
+const Character: FC<IProps> = ({ match: {params}}): ReactElement => {
+  const { t } = useTranslation();
+  const { name } = params
   const imagePath = `/images/characters/${name}.png`
-  const handleCharacterClick = () => history.push(createUrl(match, name))
+  const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === params.name)
+
+  if (!activeCharacter) return <></>
+
+  const ascensionMaterials = Object.entries(activeCharacter.ascension_materials)
 
   return (
-    <Col xs={12} sm={6} md={2} className='pointer' onClick={handleCharacterClick}>
-      <img src={imagePath} alt={name} className='character-img' />
-      <h4>{name}</h4>
+    <Container>
+      <Row className='justify-content-center'>
+        <Col sm={12} md={12} lg={9} xl={8} xxl={7}>
+          <Row className='justify-content-center gx-3'>
+            <Col xs={12} md={3} lg={3}>
+              <img src={imagePath} alt={name} className='character-img'/>
+              <h1 className='fs-3'>{t(`character:names.${name}`)}</h1>
+            </Col>
+            <Col xs={12} md={9} lg={9}>
+              <h4 className='mb-3'>{t('character:ascension_materials')}</h4>
+              {ascensionMaterials.map((value, index) => {
+                if (!value[0]) return null
 
-    </Col>
+                return <TableItem data={value} key={index}/>
+              })}
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 

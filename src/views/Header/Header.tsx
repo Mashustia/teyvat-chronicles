@@ -1,22 +1,24 @@
 import {FC} from 'react'
-import {Col, Row} from 'react-bootstrap';
-import {withTranslation, WithTranslation} from 'react-i18next';
+import {Col, Container, Row} from 'react-bootstrap';
+import {useTranslation} from 'react-i18next';
 
-const Header: FC<WithTranslation> = (props) => {
-  const { t, i18n } = props;
-  console.log(i18n, i18n.language)
+const Header: FC = (props) => {
+  const { t } = useTranslation();
 
   return (
-    <header>
-      <Row>
-        <Col>
-          <h1 className='h1 pt-2'>
-            {t('header:welcome')}
-          </h1>
-        </Col>
-      </Row>
+    <header className='mb-3'>
+      <Container>
+        <Row>
+          <Col xs={12}>
+            <h1 className='h1'>
+              {t('header:welcome')}
+            </h1>
+          </Col>
+          <Col xs={12} className='fs-5'>{t('header:choose_character')}</Col>
+        </Row>
+      </Container>
     </header>
   )
 }
 
-export default withTranslation('header')(Header)
+export default Header
