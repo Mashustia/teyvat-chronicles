@@ -64,6 +64,9 @@ export enum Materials {
   OLD_HANDGUARD = 'old_handguard',
   KAGEUCHI_HANDGUARD = 'kageuchi_handguard',
   FAMED_HANDGUARD = 'famed_handguard',
+  SPECTRAL_HUSK = 'spectral_husk',
+  SPECTRAL_HEART = 'spectral_heart',
+  SPECTRAL_NUCLEUS = 'spectral_nucleus',
 }
 
 export enum BossMaterials {
@@ -76,6 +79,7 @@ export enum BossMaterials {
   HURRICANE_SEED = 'hurricane_seed',
   STORM_BEADS = 'storm_beads',
   MARIONETTE_CORE = 'marionette_core',
+  CRYSTALLINE_BLOOM = 'crystalline_bloom',
 }
 
 export enum Flower {
