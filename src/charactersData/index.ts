@@ -5,6 +5,7 @@ import Beidou from './characters/Beidou';
 import Mona from './characters/Mona';
 import Xiao from './characters/Xiao';
 import Noelle from './characters/Noelle';
+import Chongyun from './characters/Chongyun';
 
 const Jean = {
   name: 'Jean',
@@ -46,13 +47,6 @@ const Zhongli = {
   vision: Vision.GEO,
   ascension_materials: {},
   rarity: 5
-}
-
-const Chongyun = {
-  name: 'Chongyun',
-  vision: Vision.CRYO,
-  ascension_materials: {},
-  rarity: 4
 }
 
 const Amber = {

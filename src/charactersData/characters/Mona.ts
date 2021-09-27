@@ -45,7 +45,7 @@ const Mona = {
       { material: Flower.PHILANEMO_MUSHROOM, count: 60 },
       { material: Materials.ENERGY_NECTAR, count: 24 },
       { material: MORA, count: 120000 },
-    ],
+    ]
   },
   rarity: 5
 }
