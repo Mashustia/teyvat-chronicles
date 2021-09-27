@@ -11,6 +11,7 @@ import Diluc from './characters/Diluc';
 import Klee from './characters/Klee';
 import Ningguang from './characters/Ningguang';
 import Zhongli from './characters/Zhongli';
+import Lisa from './characters/Lisa';
 
 const Jean = {
   name: 'Jean',
@@ -66,13 +67,6 @@ const Keqing = {
   vision: Vision.ELECTRO,
   ascension_materials: {},
   rarity: 5
-}
-
-const Lisa = {
-  name: 'Lisa',
-  vision: Vision.ELECTRO,
-  ascension_materials: {},
-  rarity: 4
 }
 
 const CHARACTERS: ICharacter[] = [
