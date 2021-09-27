@@ -3,7 +3,7 @@
     "Bennett": "Беннет",
     "Jean": "Джинн",
     "Klee": "Кли",
-    "Raiden": "Сёгун Райден",
+    "Raiden": "Райдэн",
     "Xiangling": "Сян Лин",
     "Xingqiu": "Син Цю",
     "Zhongli": "Чжун Ли",
@@ -29,7 +29,8 @@
     "Kazuha": "Кадзуха",
     "Sayu": "Саю",
     "Aloy": "Элой",
-    "Eula": "Эола"
+    "Eula": "Эола",
+    "Ayaka": "Аяка"
   },
   "ascension_materials": "Материалы возвышения"
 }
