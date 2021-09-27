@@ -8,17 +8,11 @@ import Noelle from './characters/Noelle';
 import Chongyun from './characters/Chongyun';
 import Amber from './characters/Amber';
 import Diluc from './characters/Diluc';
+import Klee from './characters/Klee';
 
 const Jean = {
   name: 'Jean',
   vision: Vision.ANEMO,
-  ascension_materials: {},
-  rarity: 5
-}
-
-const Klee = {
-  name: 'Klee',
-  vision: Vision.PYRO,
   ascension_materials: {},
   rarity: 5
 }

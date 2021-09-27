@@ -63,6 +63,9 @@ export enum Materials {
   RECRUITS_INSIGNIA = 'recruits_insignia',
   SERGEANTS_INSIGNIA = 'sergeants_insignia',
   LIEUTENANTS_INSIGNIA = 'lieutenants_insignia',
+  DIVINING_SCROLL = 'divining_scroll',
+  SEALED_SCROLL = 'sealed_scroll',
+  FORBIDDEN_CURSE_SCROLL = 'forbidden_curse_scroll',
 }
 
 export enum BossMaterials {
