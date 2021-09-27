@@ -27,7 +27,7 @@ const Character: FC<IProps> = ({ match: {params}, history}): ReactElement => {
             <CloseButton variant="white" className='ms-auto' onClick={handleGoBack}/>
           </Stack>
         </Col>
-        <Col sm={12} md={12} lg={9} xl={8} xxl={7}>
+        <Col sm={12} md={12} lg={11} xl={9} xxl={8}>
           <Row className='justify-content-center gx-3'>
             <Col xs={12} md={3} lg={3}>
               <img src={imagePath} alt={name} className='character-img'/>
