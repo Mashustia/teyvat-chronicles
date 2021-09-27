@@ -80,6 +80,7 @@ export enum Flower {
   SMALL_LAMP_GRASS = 'small_lamp_grass',
   GLAZE_LILY = 'glaze_lily',
   CALLA_LILY = 'calla_lily',
+  SILK_FLOWER = 'silk_flower',
 }
 
 export enum Rocks {

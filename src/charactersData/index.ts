@@ -16,6 +16,7 @@ import Keqing from './characters/Keqing';
 import Fischl from './characters/Fischl';
 import Diona from './characters/Diona';
 import Barbara from './characters/Barbara';
+import Xingqiu from './characters/Xingqiu';
 
 const Jean = {
   name: 'Jean',
@@ -34,13 +35,6 @@ const Raiden = {
 const Xiangling = {
   name: 'Xiangling',
   vision: Vision.PYRO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Xingqiu = {
-  name: 'Xingqiu',
-  vision: Vision.HYDRO,
   ascension_materials: {},
   rarity: 4
 }
