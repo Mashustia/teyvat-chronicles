@@ -1,5 +1,5 @@
 import {Vision} from '../../const/consts';
-import {BossMaterials, Flower, Gem, Materials, MORA} from '../materialNames';
+import {BossMaterials, Rocks, Gem, Materials, MORA} from '../materialNames';
 
 const Yanfei = {
   name: 'Yanfei',
@@ -7,43 +7,43 @@ const Yanfei = {
   ascension_materials: {
     20: [
       { material: Gem.PYRO.AGNIDUS_TOPAZ_SLIVER, count: 1 },
-      { material: Flower.PHILANEMO_MUSHROOM, count: 3 },
-      { material: Materials.DIVINING_SCROLL, count: 3 },
+      { material: Rocks.NOCTILUCOUS_JADE, count: 3 },
+      { material: Materials.TREASURE_HOARDER_INSIGNIA, count: 3 },
       { material: MORA, count: 20000 },
     ],
     40: [
       { material: Gem.PYRO.AGNIDUS_TOPAZ_FRAGMENT, count: 3 },
-      { material: BossMaterials.EVERFLAME_SEED, count: 2 },
-      { material: Flower.PHILANEMO_MUSHROOM, count: 10 },
-      { material: Materials.DIVINING_SCROLL, count: 15 },
+      { material: BossMaterials.JUVENILE_JADE, count: 2 },
+      { material: Rocks.NOCTILUCOUS_JADE, count: 10 },
+      { material: Materials.TREASURE_HOARDER_INSIGNIA, count: 15 },
       { material: MORA, count: 40000 },
     ],
     50: [
       { material: Gem.PYRO.AGNIDUS_TOPAZ_FRAGMENT, count: 6 },
-      { material: BossMaterials.EVERFLAME_SEED, count: 4 },
-      { material: Flower.PHILANEMO_MUSHROOM, count: 20 },
-      { material: Materials.SEALED_SCROLL, count: 12 },
+      { material: BossMaterials.JUVENILE_JADE, count: 4 },
+      { material: Rocks.NOCTILUCOUS_JADE, count: 20 },
+      { material: Materials.SILVER_RAVEN_INSIGNIA, count: 12 },
       { material: MORA, count: 60000 },
     ],
     60: [
       { material: Gem.PYRO.AGNIDUS_TOPAZ_CHUNK, count: 3 },
-      { material: BossMaterials.EVERFLAME_SEED, count: 8 },
-      { material: Flower.PHILANEMO_MUSHROOM, count: 30 },
-      { material: Materials.SEALED_SCROLL, count: 18 },
+      { material: BossMaterials.JUVENILE_JADE, count: 8 },
+      { material: Rocks.NOCTILUCOUS_JADE, count: 30 },
+      { material: Materials.SILVER_RAVEN_INSIGNIA, count: 18 },
       { material: MORA, count: 80000 },
     ],
     70: [
       { material: Gem.PYRO.AGNIDUS_TOPAZ_CHUNK, count: 6 },
-      { material: BossMaterials.EVERFLAME_SEED, count: 12 },
-      { material: Flower.PHILANEMO_MUSHROOM, count: 45 },
-      { material: Materials.FORBIDDEN_CURSE_SCROLL, count: 12 },
+      { material: BossMaterials.JUVENILE_JADE, count: 12 },
+      { material: Rocks.NOCTILUCOUS_JADE, count: 45 },
+      { material: Materials.GOLDEN_RAVEN_INSIGNIA, count: 12 },
       { material: MORA, count: 100000 },
     ],
     80: [
       { material: Gem.PYRO.AGNIDUS_TOPAZ_GEMSTONE, count: 6 },
-      { material: BossMaterials.EVERFLAME_SEED, count: 20 },
-      { material: Flower.PHILANEMO_MUSHROOM, count: 60 },
-      { material: Materials.FORBIDDEN_CURSE_SCROLL, count: 24 },
+      { material: BossMaterials.JUVENILE_JADE, count: 20 },
+      { material: Rocks.NOCTILUCOUS_JADE, count: 60 },
+      { material: Materials.GOLDEN_RAVEN_INSIGNIA, count: 24 },
       { material: MORA, count: 120000 },
     ]
   },
