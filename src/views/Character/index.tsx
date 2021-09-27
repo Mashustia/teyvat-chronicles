@@ -7,6 +7,7 @@ import {ICharacterProps as IProps} from './types';
 import {ICharacter} from '../../charactersData/types';
 import CHARACTERS from '../../charactersData';
 import TableItem from './components/TableItem';
+import {RouteName} from '../../const/consts';
 
 const Character: FC<IProps> = ({ match: {params}, history}): ReactElement => {
   const { t } = useTranslation();
@@ -17,7 +18,7 @@ const Character: FC<IProps> = ({ match: {params}, history}): ReactElement => {
   if (!activeCharacter) return <></>
 
   const ascensionMaterials = Object.entries(activeCharacter.ascension_materials)
-  const handleGoBack = () => history.goBack()
+  const handleGoBack = () => history.push(RouteName.DEFAULT)
 
   return (
     <Container>
