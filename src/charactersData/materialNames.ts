@@ -80,6 +80,7 @@ export enum BossMaterials {
   STORM_BEADS = 'storm_beads',
   MARIONETTE_CORE = 'marionette_core',
   CRYSTALLINE_BLOOM = 'crystalline_bloom',
+  PERPETUAL_HEART = 'perpetual_heart',
 }
 
 export enum Flower {
@@ -98,6 +99,7 @@ export enum Flower {
   CECILIA = 'cecilia',
   VIOLETGRASS = 'violetgrass',
   SEA_GANODERMA = 'sea_ganoderma',
+  SAKURA_BLOOM = 'sakura_bloom',
 }
 
 export enum Rocks {
