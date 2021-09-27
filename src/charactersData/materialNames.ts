@@ -82,6 +82,7 @@ export enum BossMaterials {
   CRYSTALLINE_BLOOM = 'crystalline_bloom',
   PERPETUAL_HEART = 'perpetual_heart',
   DEW_OF_REPUDIATION = 'dew_of_repudiation',
+  SMOLDERING_PEARL = 'smoldering_pearl',
 }
 
 export enum Flower {
@@ -101,6 +102,7 @@ export enum Flower {
   VIOLETGRASS = 'violetgrass',
   SEA_GANODERMA = 'sea_ganoderma',
   SAKURA_BLOOM = 'sakura_bloom',
+  NAKU_WEED = 'naku_weed',
 }
 
 export enum Rocks {
