@@ -13,6 +13,7 @@ import Ningguang from './characters/Ningguang';
 import Zhongli from './characters/Zhongli';
 import Lisa from './characters/Lisa';
 import Keqing from './characters/Keqing';
+import Fischl from './characters/Fischl';
 
 const Jean = {
   name: 'Jean',
@@ -52,13 +53,6 @@ const Barbara = {
 const Diona = {
   name: 'Diona',
   vision: Vision.CRYO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Fischl = {
-  name: 'Fischl',
-  vision: Vision.ELECTRO,
   ascension_materials: {},
   rarity: 4
 }
