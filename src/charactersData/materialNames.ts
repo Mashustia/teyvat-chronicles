@@ -91,6 +91,7 @@ export enum Flower {
   AMAKUMO_FRUIT = 'amakumo_fruit',
   WOLFHOOK = 'wolfhook',
   CECILIA = 'cecilia',
+  VIOLETGRASS = 'violetgrass',
 }
 
 export enum Rocks {
