@@ -108,5 +108,6 @@ export enum Rocks {
   COR_LAPIS = 'cor_lapis',
   CRYSTAL_MARROW = 'crystal_marrow',
   SANGO_PEARL = 'sango_pearl',
+  STARCONCH = 'starconch',
 }
 
