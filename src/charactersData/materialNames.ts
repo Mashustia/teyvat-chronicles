@@ -89,6 +89,7 @@ export enum Flower {
   JUEYUN_CHILI = 'jueyun_chili',
   DANDELION_SEED = 'dandelion_seed',
   AMAKUMO_FRUIT = 'amakumo_fruit',
+  WOLFHOOK = 'wolfhook',
 }
 
 export enum Rocks {

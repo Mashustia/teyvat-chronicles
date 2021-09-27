@@ -20,6 +20,7 @@ import Xingqiu from './characters/Xingqiu';
 import Xiangling from './characters/Xiangling';
 import Jean from './characters/Jean';
 import Raiden from './characters/Raiden';
+import Razor from './characters/Razor';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -41,7 +42,8 @@ const CHARACTERS: ICharacter[] = [
   Xiangling,
   Xingqiu,
   Zhongli,
-  Xiao
+  Xiao,
+  Razor
 ]
 
 export default CHARACTERS
