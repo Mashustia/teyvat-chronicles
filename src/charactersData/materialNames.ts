@@ -44,7 +44,9 @@ export const Rocks = {
 }
 
 export const Materials = {
-  silver_raven_insignia: "silver_raven_insignia"
+  treasure_hoarder_insignia: "treasure_hoarder_insignia",
+  silver_raven_insignia: "silver_raven_insignia",
+  golden_raven_insignia: "golden_raven_insignia",
 }
 
 export const BossMaterials = {
