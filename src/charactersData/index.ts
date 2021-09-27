@@ -4,6 +4,7 @@ import Bennett from './characters/Bennett';
 import Beidou from './characters/Beidou';
 import Mona from './characters/Mona';
 import Xiao from './characters/Xiao';
+import Noelle from './characters/Noelle';
 
 const Jean = {
   name: 'Jean',
@@ -105,13 +106,6 @@ const Lisa = {
 
 const Ningguang = {
   name: 'Ningguang',
-  vision: Vision.GEO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Noelle = {
-  name: 'Noelle',
   vision: Vision.GEO,
   ascension_materials: {},
   rarity: 4

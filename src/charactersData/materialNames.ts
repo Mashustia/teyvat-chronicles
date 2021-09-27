@@ -52,19 +52,24 @@ export enum Materials {
   ENERGY_NECTAR = 'energy_nectar',
   SLIME_CONDENSATE = 'slime_condensate',
   SLIME_SECRETIONS = 'slime_secretions',
-  SLIME_CONCENTRATE = 'slime_concentrate'
+  SLIME_CONCENTRATE = 'slime_concentrate',
+  DAMAGED_MASK = 'damaged_mask',
+  STAINED_MASK = 'stained_mask',
+  OMINOUS_MASK = 'ominous_mask',
 }
 
 export enum BossMaterials {
   LIGHTNING_PRISM = 'lightning_prism',
   EVERFLAME_SEED = 'everflame_seed',
   CLEANSING_HEART = 'cleansing_heart',
-  JUVENILE_JADE = 'juvenile_jade'
+  JUVENILE_JADE = 'juvenile_jade',
+  BASALT_PILLAR = 'basalt_pillar',
 }
 
 export enum Flower {
   WINDWHEEL_ASTER = 'windwheel_aster',
   PHILANEMO_MUSHROOM = 'philanemo_mushroom',
-  QINGXIN = 'qingxin'
+  QINGXIN = 'qingxin',
+  VALBERRY = 'valberry',
 }
 
