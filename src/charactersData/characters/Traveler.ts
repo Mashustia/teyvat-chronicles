@@ -1,9 +1,9 @@
 import {Vision} from '../../const/consts';
 import {BossMaterials, Flower, TravelerAscensionMaterial, Materials, MORA} from '../materialNames';
 
-const TravelerAnemo = {
-  name: 'Traveler_anemo',
-  vision: Vision.ANEMO,
+const Traveler = {
+  name: 'Traveler',
+  vision: Vision.NONE,
   ascension_materials: {
     20: [
       { material: TravelerAscensionMaterial.BRILLIANT_DIAMOND_SLIVER, count: 1 },
@@ -50,4 +50,4 @@ const TravelerAnemo = {
   rarity: 5
 }
 
-export default TravelerAnemo
+export default Traveler
