@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import {FC, useEffect} from 'react'
 import {Col, Row} from 'react-bootstrap';
 
 import {ITableItemProps as IProps} from './types';
@@ -7,7 +7,10 @@ import {IMaterial} from '../../../../charactersData/types';
 import './TableItem.css'
 
 const TableItem: FC<IProps> = ({data: [lvl, materials]}) => {
-  console.log(lvl, materials)
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
     const imagePath = `/images/ascensionMaterials/${material}.png`
 

@@ -1,189 +1,47 @@
 import {ICharacter} from './types';
-import {Vision} from '../const/consts';
-import {BossMaterials, Gem, Materials, MORA, Rocks} from './materialNames';
 
-const Bennett = {
-  name: 'Bennett',
-  vision: Vision.PYRO,
-  ascension_materials: {},
-  rarity: 4
-}
+import Bennett from './characters/Bennett';
+import Beidou from './characters/Beidou';
+import Mona from './characters/Mona';
+import Xiao from './characters/Xiao';
+import Noelle from './characters/Noelle';
+import Chongyun from './characters/Chongyun';
+import Amber from './characters/Amber';
+import Diluc from './characters/Diluc';
+import Klee from './characters/Klee';
+import Ningguang from './characters/Ningguang';
+import Zhongli from './characters/Zhongli';
+import Lisa from './characters/Lisa';
+import Keqing from './characters/Keqing';
+import Fischl from './characters/Fischl';
+import Diona from './characters/Diona';
+import Barbara from './characters/Barbara';
+import Xingqiu from './characters/Xingqiu';
+import Xiangling from './characters/Xiangling';
+import Jean from './characters/Jean';
+import Raiden from './characters/Raiden';
+import Razor from './characters/Razor';
+import Rosaria from './characters/Rosaria';
+import Albedo from './characters/Albedo';
+import Aloy from './characters/Aloy';
+import Eula from './characters/Eula';
+import Ganyu from './characters/Ganyu';
+import HuTao from './characters/HuTao';
+import Kazuha from './characters/Kazuha';
+import Kaeya from './characters/Kaeya';
+import Ayaka from './characters/Ayaka';
+import Sara from './characters/Sara';
+import Qiqi from './characters/Qiqi';
+import Kokomi from './characters/Kokomi';
+import Sayu from './characters/Sayu';
+import Sucrose from './characters/Sucrose';
+import Tartaglia from './characters/Tartaglia';
+import Venti from './characters/Venti';
+import Xinyan from './characters/Xinyan';
+import Yanfei from './characters/Yanfei';
+import Yoimiya from './characters/Yoimiya';
 
-const Jean = {
-  name: 'Jean',
-  vision: Vision.ANEMO,
-  ascension_materials: {},
-  rarity: 5
-}
-
-const Klee = {
-  name: 'Klee',
-  vision: Vision.PYRO,
-  ascension_materials: {},
-  rarity: 5
-}
-
-const Raiden = {
-  name: 'Raiden',
-  vision: Vision.ELECTRO,
-  ascension_materials: {},
-  rarity: 5
-}
-
-const Xiangling = {
-  name: 'Xiangling',
-  vision: Vision.PYRO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Xingqiu = {
-  name: 'Xingqiu',
-  vision: Vision.HYDRO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Zhongli = {
-  name: 'Zhongli',
-  vision: Vision.GEO,
-  ascension_materials: {},
-  rarity: 5
-}
-
-const Beidou = {
-  name: 'Beidou',
-  vision: Vision.ELECTRO,
-  ascension_materials: {
-    20: [
-      { material: Gem.ELECTRO.vajrada_topaz_sliver, count: 1 },
-      { material: Materials.treasure_hoarder_insignia, count: 3 },
-      { material: Rocks.noctilucous_jade, count: 3 },
-      { material: MORA, count: 20000 },
-    ],
-    40: [
-      { material: Gem.ELECTRO.vajrada_topaz_fragment, count: 3 },
-      { material: BossMaterials.lightning_prism, count: 2 },
-      { material: Materials.treasure_hoarder_insignia, count: 10 },
-      { material: Rocks.noctilucous_jade, count: 10 },
-      { material: MORA, count: 40000 },
-    ],
-    50: [
-      { material: Gem.ELECTRO.vajrada_topaz_fragment, count: 6 },
-      { material: BossMaterials.lightning_prism, count: 4 },
-      { material: Materials.silver_raven_insignia, count: 12 },
-      { material: Rocks.noctilucous_jade, count: 20 },
-      { material: MORA, count: 20000 },
-    ],
-    60: [
-      { material: Gem.ELECTRO.vajrada_topaz_chunk, count: 3 },
-      { material: BossMaterials.lightning_prism, count: 8 },
-      { material: Materials.silver_raven_insignia, count: 18 },
-      { material: Rocks.noctilucous_jade, count: 30 },
-      { material: MORA, count: 20000 },
-    ],
-    70: [
-      { material: Gem.ELECTRO.vajrada_topaz_chunk, count: 6 },
-      { material: BossMaterials.lightning_prism, count: 12 },
-      { material: Materials.golden_raven_insignia, count: 12 },
-      { material: Rocks.noctilucous_jade, count: 45 },
-      { material: MORA, count: 20000 },
-    ],
-    80: [
-      { material: Gem.ELECTRO.vajrada_topaz_gemstone, count: 6 },
-      { material: BossMaterials.lightning_prism, count: 20 },
-      { material: Materials.golden_raven_insignia, count: 24 },
-      { material: Rocks.noctilucous_jade, count: 60 },
-      { material: MORA, count: 120000 },
-    ],
-  },
-  rarity: 4
-}
-
-const Chongyun = {
-  name: 'Chongyun',
-  vision: Vision.CRYO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Xiao = {
-  name: 'Xiao',
-  vision: Vision.ANEMO,
-  ascension_materials: {},
-  rarity: 5
-}
-
-const Amber = {
-  name: 'Amber',
-  vision: Vision.PYRO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Barbara = {
-  name: 'Barbara',
-  vision: Vision.HYDRO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Diluc = {
-  name: 'Diluc',
-  vision: Vision.PYRO,
-  ascension_materials: {},
-  rarity: 5
-}
-
-const Diona = {
-  name: 'Diona',
-  vision: Vision.CRYO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Fischl = {
-  name: 'Fischl',
-  vision: Vision.ELECTRO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Keqing = {
-  name: 'Keqing',
-  vision: Vision.ELECTRO,
-  ascension_materials: {},
-  rarity: 5
-}
-
-const Lisa = {
-  name: 'Lisa',
-  vision: Vision.ELECTRO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Mona = {
-  name: 'Mona',
-  vision: Vision.HYDRO,
-  ascension_materials: {},
-  rarity: 5
-}
-
-const Ningguang = {
-  name: 'Ningguang',
-  vision: Vision.GEO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Noelle = {
-  name: 'Noelle',
-  vision: Vision.GEO,
-  ascension_materials: {},
-  rarity: 4
-}
-
+// TODO: не забыть добавить путешественника
 const CHARACTERS: ICharacter[] = [
   Amber,
   Barbara,
@@ -204,7 +62,27 @@ const CHARACTERS: ICharacter[] = [
   Xiangling,
   Xingqiu,
   Zhongli,
-  Xiao
+  Xiao,
+  Razor,
+  Rosaria,
+  Albedo,
+  Aloy,
+  Eula,
+  Ganyu,
+  HuTao,
+  Kazuha,
+  Kaeya,
+  Ayaka,
+  Sara,
+  Qiqi,
+  Kokomi,
+  Sayu,
+  Sucrose,
+  Tartaglia,
+  Venti,
+  Xinyan,
+  Yanfei,
+  Yoimiya
 ]
 
 export default CHARACTERS
