@@ -99,5 +99,6 @@ export enum Flower {
 export enum Rocks {
   NOCTILUCOUS_JADE = 'noctilucous_jade',
   COR_LAPIS = 'cor_lapis',
+  CRYSTAL_MARROW = 'crystal_marrow',
 }
 
