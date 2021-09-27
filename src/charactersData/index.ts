@@ -22,7 +22,26 @@ import Jean from './characters/Jean';
 import Raiden from './characters/Raiden';
 import Razor from './characters/Razor';
 import Rosaria from './characters/Rosaria';
+import Albedo from './characters/Albedo';
+import Aloy from './characters/Aloy';
+import Eula from './characters/Eula';
+import Ganyu from './characters/Ganyu';
+import HuTao from './characters/HuTao';
+import Kazuha from './characters/Kazuha';
+import Kaeya from './characters/Kaeya';
+import Ayaka from './characters/Ayaka';
+import Sara from './characters/Sara';
+import Qiqi from './characters/Qiqi';
+import Kokomi from './characters/Kokomi';
+import Sayu from './characters/Sayu';
+import Sucrose from './characters/Sucrose';
+import Tartaglia from './characters/Tartaglia';
+import Venti from './characters/Venti';
+import Xinyan from './characters/Xinyan';
+import Yanfei from './characters/Yanfei';
+import Yoimiya from './characters/Yoimiya';
 
+// TODO: не забыть добавить путешественника
 const CHARACTERS: ICharacter[] = [
   Amber,
   Barbara,
@@ -45,7 +64,25 @@ const CHARACTERS: ICharacter[] = [
   Zhongli,
   Xiao,
   Razor,
-  Rosaria
+  Rosaria,
+  Albedo,
+  Aloy,
+  Eula,
+  Ganyu,
+  HuTao,
+  Kazuha,
+  Kaeya,
+  Ayaka,
+  Sara,
+  Qiqi,
+  Kokomi,
+  Sayu,
+  Sucrose,
+  Tartaglia,
+  Venti,
+  Xinyan,
+  Yanfei,
+  Yoimiya
 ]
 
 export default CHARACTERS
