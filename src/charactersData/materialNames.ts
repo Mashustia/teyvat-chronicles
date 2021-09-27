@@ -81,6 +81,7 @@ export enum Flower {
   GLAZE_LILY = 'glaze_lily',
   CALLA_LILY = 'calla_lily',
   SILK_FLOWER = 'silk_flower',
+  JUEYUN_CHILI = 'jueyun_chili',
 }
 
 export enum Rocks {

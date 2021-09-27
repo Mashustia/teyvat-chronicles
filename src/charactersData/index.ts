@@ -17,6 +17,7 @@ import Fischl from './characters/Fischl';
 import Diona from './characters/Diona';
 import Barbara from './characters/Barbara';
 import Xingqiu from './characters/Xingqiu';
+import Xiangling from './characters/Xiangling';
 
 const Jean = {
   name: 'Jean',
@@ -30,13 +31,6 @@ const Raiden = {
   vision: Vision.ELECTRO,
   ascension_materials: {},
   rarity: 5
-}
-
-const Xiangling = {
-  name: 'Xiangling',
-  vision: Vision.PYRO,
-  ascension_materials: {},
-  rarity: 4
 }
 
 const CHARACTERS: ICharacter[] = [
