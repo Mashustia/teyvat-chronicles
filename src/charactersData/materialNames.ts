@@ -75,6 +75,7 @@ export enum BossMaterials {
   HOARFROST_CORE = 'hoarfrost_core',
   HURRICANE_SEED = 'hurricane_seed',
   STORM_BEADS = 'storm_beads',
+  MARIONETTE_CORE = 'marionette_core',
 }
 
 export enum Flower {
@@ -92,6 +93,7 @@ export enum Flower {
   WOLFHOOK = 'wolfhook',
   CECILIA = 'cecilia',
   VIOLETGRASS = 'violetgrass',
+  SEA_GANODERMA = 'sea_ganoderma',
 }
 
 export enum Rocks {
