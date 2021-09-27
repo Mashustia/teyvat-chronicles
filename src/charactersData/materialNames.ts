@@ -70,6 +70,7 @@ export enum BossMaterials {
   JUVENILE_JADE = 'juvenile_jade',
   BASALT_PILLAR = 'basalt_pillar',
   HOARFROST_CORE = 'hoarfrost_core',
+  HURRICANE_SEED = 'hurricane_seed',
 }
 
 export enum Flower {
@@ -82,6 +83,7 @@ export enum Flower {
   CALLA_LILY = 'calla_lily',
   SILK_FLOWER = 'silk_flower',
   JUEYUN_CHILI = 'jueyun_chili',
+  DANDELION_SEED = 'dandelion_seed',
 }
 
 export enum Rocks {

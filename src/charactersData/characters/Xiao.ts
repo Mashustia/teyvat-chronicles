@@ -45,7 +45,7 @@ const Xiao = {
       { material: Flower.QINGXIN, count: 60 },
       { material: Materials.SLIME_CONCENTRATE, count: 24 },
       { material: MORA, count: 120000 },
-    ],
+    ]
   },
   rarity: 5
 }

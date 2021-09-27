@@ -18,13 +18,7 @@ import Diona from './characters/Diona';
 import Barbara from './characters/Barbara';
 import Xingqiu from './characters/Xingqiu';
 import Xiangling from './characters/Xiangling';
-
-const Jean = {
-  name: 'Jean',
-  vision: Vision.ANEMO,
-  ascension_materials: {},
-  rarity: 5
-}
+import Jean from './characters/Jean';
 
 const Raiden = {
   name: 'Raiden',
