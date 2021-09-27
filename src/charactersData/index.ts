@@ -1,5 +1,5 @@
 import {ICharacter} from './types';
-import {Vision} from '../const/consts';
+
 import Bennett from './characters/Bennett';
 import Beidou from './characters/Beidou';
 import Mona from './characters/Mona';
@@ -19,13 +19,7 @@ import Barbara from './characters/Barbara';
 import Xingqiu from './characters/Xingqiu';
 import Xiangling from './characters/Xiangling';
 import Jean from './characters/Jean';
-
-const Raiden = {
-  name: 'Raiden',
-  vision: Vision.ELECTRO,
-  ascension_materials: {},
-  rarity: 5
-}
+import Raiden from './characters/Raiden';
 
 const CHARACTERS: ICharacter[] = [
   Amber,

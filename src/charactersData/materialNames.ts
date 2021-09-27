@@ -61,6 +61,9 @@ export enum Materials {
   DIVINING_SCROLL = 'divining_scroll',
   SEALED_SCROLL = 'sealed_scroll',
   FORBIDDEN_CURSE_SCROLL = 'forbidden_curse_scroll',
+  OLD_HANDGUARD = 'old_handguard',
+  KAGEUCHI_HANDGUARD = 'kageuchi_handguard',
+  FAMED_HANDGUARD = 'famed_handguard',
 }
 
 export enum BossMaterials {
@@ -71,6 +74,7 @@ export enum BossMaterials {
   BASALT_PILLAR = 'basalt_pillar',
   HOARFROST_CORE = 'hoarfrost_core',
   HURRICANE_SEED = 'hurricane_seed',
+  STORM_BEADS = 'storm_beads',
 }
 
 export enum Flower {
@@ -84,6 +88,7 @@ export enum Flower {
   SILK_FLOWER = 'silk_flower',
   JUEYUN_CHILI = 'jueyun_chili',
   DANDELION_SEED = 'dandelion_seed',
+  AMAKUMO_FRUIT = 'amakumo_fruit',
 }
 
 export enum Rocks {
