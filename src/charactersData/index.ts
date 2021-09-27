@@ -1,8 +1,8 @@
 import {ICharacter} from './types';
 import {Vision} from '../const/consts';
-import {BossMaterials, Gem, Materials, MORA, Rocks} from './materialNames';
 import Bennett from './characters/Bennett';
 import Beidou from './characters/Beidou';
+import Mona from './characters/Mona';
 
 const Jean = {
   name: 'Jean',
@@ -107,13 +107,6 @@ const Lisa = {
   vision: Vision.ELECTRO,
   ascension_materials: {},
   rarity: 4
-}
-
-const Mona = {
-  name: 'Mona',
-  vision: Vision.HYDRO,
-  ascension_materials: {},
-  rarity: 5
 }
 
 const Ningguang = {
