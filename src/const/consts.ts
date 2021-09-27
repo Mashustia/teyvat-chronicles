@@ -14,6 +14,7 @@ export enum Vision {
   CRYO = 'cryo',
   HYDRO = 'hydro',
   GEO = 'geo',
+  NONE = 'none'
 }
 
 export enum RouteName {

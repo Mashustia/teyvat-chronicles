@@ -3,7 +3,7 @@
     "Bennett": "Беннет",
     "Jean": "Джинн",
     "Klee": "Кли",
-    "Raiden": "Сёгун Райден",
+    "Raiden": "Райдэн",
     "Xiangling": "Сян Лин",
     "Xingqiu": "Син Цю",
     "Zhongli": "Чжун Ли",
@@ -25,7 +25,22 @@
     "Kaeya": "Кэйа",
     "Venti": "Венти",
     "Sucrose": "Сахароза",
-    "Xinyan": "Синь Янь"
+    "Xinyan": "Синь Янь",
+    "Kazuha": "Кадзуха",
+    "Sayu": "Саю",
+    "Aloy": "Элой",
+    "Eula": "Эола",
+    "Ayaka": "Аяка",
+    "Qiqi": "Ци Ци",
+    "Albedo": "Альбедо",
+    "Kokomi": "Кокоми",
+    "Tartaglia": "Тарталья",
+    "HuTao": "Ху Тао",
+    "Yoimiya": "Ёимия",
+    "Sara": "Сара",
+    "Yanfei": "Янь Фэй",
+    "Ganyu": "Гань Юй",
+    "Traveler": "Люмин/Итэр"
   },
   "ascension_materials": "Материалы возвышения"
 }

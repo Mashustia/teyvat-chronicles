@@ -64,6 +64,9 @@ export enum Materials {
   OLD_HANDGUARD = 'old_handguard',
   KAGEUCHI_HANDGUARD = 'kageuchi_handguard',
   FAMED_HANDGUARD = 'famed_handguard',
+  SPECTRAL_HUSK = 'spectral_husk',
+  SPECTRAL_HEART = 'spectral_heart',
+  SPECTRAL_NUCLEUS = 'spectral_nucleus',
 }
 
 export enum BossMaterials {
@@ -75,6 +78,11 @@ export enum BossMaterials {
   HOARFROST_CORE = 'hoarfrost_core',
   HURRICANE_SEED = 'hurricane_seed',
   STORM_BEADS = 'storm_beads',
+  MARIONETTE_CORE = 'marionette_core',
+  CRYSTALLINE_BLOOM = 'crystalline_bloom',
+  PERPETUAL_HEART = 'perpetual_heart',
+  DEW_OF_REPUDIATION = 'dew_of_repudiation',
+  SMOLDERING_PEARL = 'smoldering_pearl',
 }
 
 export enum Flower {
@@ -92,10 +100,24 @@ export enum Flower {
   WOLFHOOK = 'wolfhook',
   CECILIA = 'cecilia',
   VIOLETGRASS = 'violetgrass',
+  SEA_GANODERMA = 'sea_ganoderma',
+  SAKURA_BLOOM = 'sakura_bloom',
+  NAKU_WEED = 'naku_weed',
+  DENDROBIUM = 'dendrobium',
 }
 
 export enum Rocks {
   NOCTILUCOUS_JADE = 'noctilucous_jade',
   COR_LAPIS = 'cor_lapis',
+  CRYSTAL_MARROW = 'crystal_marrow',
+  SANGO_PEARL = 'sango_pearl',
+  STARCONCH = 'starconch',
+}
+
+export enum TravelerAscensionMaterial {
+  BRILLIANT_DIAMOND_SLIVER = 'brilliant_diamond_sliver',
+  BRILLIANT_DIAMOND_FRAGMENT = 'brilliant_diamond_fragment',
+  BRILLIANT_DIAMOND_CHUNK = 'brilliant_diamond_chunk',
+  BRILLIANT_DIAMOND_GEMSTONE = 'brilliant_diamond_gemstone'
 }
 
