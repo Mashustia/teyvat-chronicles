@@ -3,6 +3,7 @@ import {Vision} from '../const/consts';
 import Bennett from './characters/Bennett';
 import Beidou from './characters/Beidou';
 import Mona from './characters/Mona';
+import Xiao from './characters/Xiao';
 
 const Jean = {
   name: 'Jean',
@@ -51,13 +52,6 @@ const Chongyun = {
   vision: Vision.CRYO,
   ascension_materials: {},
   rarity: 4
-}
-
-const Xiao = {
-  name: 'Xiao',
-  vision: Vision.ANEMO,
-  ascension_materials: {},
-  rarity: 5
 }
 
 const Amber = {

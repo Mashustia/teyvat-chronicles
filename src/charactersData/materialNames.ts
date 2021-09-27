@@ -49,17 +49,22 @@ export enum Materials {
   GOLDEN_RAVEN_INSIGNIA = 'golden_raven_insignia',
   WHOPPERFLOWER_NECTAR = 'whopperflower_nectar',
   SHIMMERING_NECTAR = 'shimmering_nectar',
-  ENERGY_NECTAR = 'energy_nectar'
+  ENERGY_NECTAR = 'energy_nectar',
+  SLIME_CONDENSATE = 'slime_condensate',
+  SLIME_SECRETIONS = 'slime_secretions',
+  SLIME_CONCENTRATE = 'slime_concentrate'
 }
 
 export enum BossMaterials {
   LIGHTNING_PRISM = 'lightning_prism',
   EVERFLAME_SEED = 'everflame_seed',
-  CLEANSING_HEART = 'cleansing_heart'
+  CLEANSING_HEART = 'cleansing_heart',
+  JUVENILE_JADE = 'juvenile_jade'
 }
 
 export enum Flower {
   WINDWHEEL_ASTER = 'windwheel_aster',
-  PHILANEMO_MUSHROOM = 'philanemo_mushroom'
+  PHILANEMO_MUSHROOM = 'philanemo_mushroom',
+  QINGXIN = 'qingxin'
 }
 
