@@ -57,6 +57,9 @@ export enum Materials {
   DAMAGED_MASK = 'damaged_mask',
   STAINED_MASK = 'stained_mask',
   OMINOUS_MASK = 'ominous_mask',
+  FIRM_ARROWHEAD = 'firm_arrowhead',
+  SHARP_ARROWHEAD = 'sharp_arrowhead',
+  WEATHERED_ARROWHEAD = 'weathered_arrowhead',
 }
 
 export enum BossMaterials {
@@ -73,5 +76,6 @@ export enum Flower {
   PHILANEMO_MUSHROOM = 'philanemo_mushroom',
   QINGXIN = 'qingxin',
   VALBERRY = 'valberry',
+  SMALL_LAMP_GRASS = 'small_lamp_grass',
 }
 
