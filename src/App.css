@@ -153,10 +153,6 @@
   cursor: pointer;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  color: var(--bs-white)
-}
-
 body {
   background: linear-gradient(358deg, #00115b, #1a4d6b, #1a4d6b, #00115b);
   background-size: 800% 800%;
@@ -187,6 +183,6 @@ body {
 .App {
   text-align: center;
   height: 100vh;
-  color: var(--bs-gray-300)
+  color: var(--bs-gray-200)
 }
 
