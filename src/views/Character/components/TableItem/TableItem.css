@@ -3,6 +3,12 @@
   max-width: 100px;
   width: 100%;
   border-radius: 5px;
+  flex-shrink: 0;
+  border: calc(1px + 0.1vw) solid transparent;
+  background-origin: border-box;
+  background-size: cover;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom left, #fff, #8a8a8a)
 }
 
 .table-border {
