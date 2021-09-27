@@ -7,6 +7,7 @@ import Xiao from './characters/Xiao';
 import Noelle from './characters/Noelle';
 import Chongyun from './characters/Chongyun';
 import Amber from './characters/Amber';
+import Diluc from './characters/Diluc';
 
 const Jean = {
   name: 'Jean',
@@ -55,13 +56,6 @@ const Barbara = {
   vision: Vision.HYDRO,
   ascension_materials: {},
   rarity: 4
-}
-
-const Diluc = {
-  name: 'Diluc',
-  vision: Vision.PYRO,
-  ascension_materials: {},
-  rarity: 5
 }
 
 const Diona = {

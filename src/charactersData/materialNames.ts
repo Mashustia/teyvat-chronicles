@@ -60,6 +60,9 @@ export enum Materials {
   FIRM_ARROWHEAD = 'firm_arrowhead',
   SHARP_ARROWHEAD = 'sharp_arrowhead',
   WEATHERED_ARROWHEAD = 'weathered_arrowhead',
+  RECRUITS_INSIGNIA = 'recruits_insignia',
+  SERGEANTS_INSIGNIA = 'sergeants_insignia',
+  LIEUTENANTS_INSIGNIA = 'lieutenants_insignia',
 }
 
 export enum BossMaterials {
