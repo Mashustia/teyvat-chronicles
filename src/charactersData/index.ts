@@ -10,6 +10,7 @@ import Amber from './characters/Amber';
 import Diluc from './characters/Diluc';
 import Klee from './characters/Klee';
 import Ningguang from './characters/Ningguang';
+import Zhongli from './characters/Zhongli';
 
 const Jean = {
   name: 'Jean',
@@ -37,13 +38,6 @@ const Xingqiu = {
   vision: Vision.HYDRO,
   ascension_materials: {},
   rarity: 4
-}
-
-const Zhongli = {
-  name: 'Zhongli',
-  vision: Vision.GEO,
-  ascension_materials: {},
-  rarity: 5
 }
 
 const Barbara = {

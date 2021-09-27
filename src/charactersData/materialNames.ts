@@ -39,11 +39,6 @@ export const Gem = {
 
 export const MORA = 'mora'
 
-export enum Rocks {
-  NOCTILUCOUS_JADE = 'noctilucous_jade',
-  COR_LAPIS = 'cor_lapis',
-}
-
 export enum Materials {
   TREASURE_HOARDER_INSIGNIA = 'treasure_hoarder_insignia',
   SILVER_RAVEN_INSIGNIA = 'silver_raven_insignia',
@@ -84,5 +79,10 @@ export enum Flower {
   VALBERRY = 'valberry',
   SMALL_LAMP_GRASS = 'small_lamp_grass',
   GLAZE_LILY = 'glaze_lily',
+}
+
+export enum Rocks {
+  NOCTILUCOUS_JADE = 'noctilucous_jade',
+  COR_LAPIS = 'cor_lapis',
 }
 
