@@ -81,6 +81,7 @@ export enum BossMaterials {
   MARIONETTE_CORE = 'marionette_core',
   CRYSTALLINE_BLOOM = 'crystalline_bloom',
   PERPETUAL_HEART = 'perpetual_heart',
+  DEW_OF_REPUDIATION = 'dew_of_repudiation',
 }
 
 export enum Flower {
@@ -106,5 +107,6 @@ export enum Rocks {
   NOCTILUCOUS_JADE = 'noctilucous_jade',
   COR_LAPIS = 'cor_lapis',
   CRYSTAL_MARROW = 'crystal_marrow',
+  SANGO_PEARL = 'sango_pearl',
 }
 
