@@ -83,5 +83,6 @@ export enum Flower {
   QINGXIN = 'qingxin',
   VALBERRY = 'valberry',
   SMALL_LAMP_GRASS = 'small_lamp_grass',
+  GLAZE_LILY = 'glaze_lily',
 }
 

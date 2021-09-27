@@ -9,6 +9,7 @@ import Chongyun from './characters/Chongyun';
 import Amber from './characters/Amber';
 import Diluc from './characters/Diluc';
 import Klee from './characters/Klee';
+import Ningguang from './characters/Ningguang';
 
 const Jean = {
   name: 'Jean',
@@ -76,13 +77,6 @@ const Keqing = {
 const Lisa = {
   name: 'Lisa',
   vision: Vision.ELECTRO,
-  ascension_materials: {},
-  rarity: 4
-}
-
-const Ningguang = {
-  name: 'Ningguang',
-  vision: Vision.GEO,
   ascension_materials: {},
   rarity: 4
 }
