@@ -39,7 +39,10 @@
     "Yoimiya": "Ёимия",
     "Sara": "Сара",
     "Yanfei": "Янь Фэй",
-    "Ganyu": "Гань Юй"
+    "Ganyu": "Гань Юй",
+    "Traveler_electro": "Электро П-к",
+    "Traveler_geo": "Гео П-к",
+    "Traveler_anemo": "Анемо П-к"
   },
   "ascension_materials": "Материалы возвышения"
 }

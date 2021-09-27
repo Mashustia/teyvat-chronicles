@@ -114,3 +114,10 @@ export enum Rocks {
   STARCONCH = 'starconch',
 }
 
+export enum TravelerAscensionMaterial {
+  BRILLIANT_DIAMOND_SLIVER = 'brilliant_diamond_sliver',
+  BRILLIANT_DIAMOND_FRAGMENT = 'brilliant_diamond_fragment',
+  BRILLIANT_DIAMOND_CHUNK = 'brilliant_diamond_chunk',
+  BRILLIANT_DIAMOND_GEMSTONE = 'brilliant_diamond_gemstone'
+}
+

@@ -40,6 +40,7 @@ import Venti from './characters/Venti';
 import Xinyan from './characters/Xinyan';
 import Yanfei from './characters/Yanfei';
 import Yoimiya from './characters/Yoimiya';
+import TravelerAnemo from './characters/TravelerAnemo';
 
 // TODO: не забыть добавить путешественника
 const CHARACTERS: ICharacter[] = [
@@ -82,7 +83,8 @@ const CHARACTERS: ICharacter[] = [
   Venti,
   Xinyan,
   Yanfei,
-  Yoimiya
+  Yoimiya,
+  TravelerAnemo
 ]
 
 export default CHARACTERS
