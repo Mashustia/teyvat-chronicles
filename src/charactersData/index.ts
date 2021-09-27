@@ -12,6 +12,7 @@ import Klee from './characters/Klee';
 import Ningguang from './characters/Ningguang';
 import Zhongli from './characters/Zhongli';
 import Lisa from './characters/Lisa';
+import Keqing from './characters/Keqing';
 
 const Jean = {
   name: 'Jean',
@@ -60,13 +61,6 @@ const Fischl = {
   vision: Vision.ELECTRO,
   ascension_materials: {},
   rarity: 4
-}
-
-const Keqing = {
-  name: 'Keqing',
-  vision: Vision.ELECTRO,
-  ascension_materials: {},
-  rarity: 5
 }
 
 const CHARACTERS: ICharacter[] = [
