@@ -4,3 +4,13 @@
   width: 100%;
   border-radius: 30px;
 }
+
+.img-border {
+  flex-shrink: 0;
+  border: calc(2px + 0.1vw) solid transparent;
+  background-origin: border-box;
+  background-size: cover;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to bottom left, #fff, #8a8a8a)
+}

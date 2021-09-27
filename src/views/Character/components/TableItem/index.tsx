@@ -12,16 +12,16 @@ const TableItem: FC<IProps> = ({data: [lvl, materials]}) => {
     const imagePath = `/images/ascensionMaterials/${material}.png`
 
     return (
-      <Col key={index} xs={3}>
+      <Col key={index}>
         <img src={imagePath} alt={material} className='ascension-material-img'/>
-        <p className='mb-0 fw-bold'>{count}</p>
+        <p className='mb-0 fs-6'>{count}</p>
       </Col>
     )
   })
 
   return (
-    <Row className='align-items-center gx-1 gy-2 table-border mb-3'>
-      <Col xs={1} className='fw-bold'>{lvl}</Col>
+    <Row className='align-items-center gx-3 gy-2 table-border mb-3'>
+      <Col xs={1} className='fs-5'>{lvl}</Col>
       <Col xs={11}>
         <Row className='align-items-center gx-1'>{rows()}</Row>
       </Col>

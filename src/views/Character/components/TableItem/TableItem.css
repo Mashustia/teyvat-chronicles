@@ -7,5 +7,5 @@
 
 .table-border {
   border: 1px dashed var(--bs-gray-700);
-  border-radius: 20px;
+  border-radius: 10px;
 }

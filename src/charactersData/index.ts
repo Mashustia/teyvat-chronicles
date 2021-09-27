@@ -1,6 +1,6 @@
 import {ICharacter} from './types';
 import {Vision} from '../const/consts';
-import {Gem, Materials, MORA, Rocks} from './materialNames';
+import {BossMaterials, Gem, Materials, MORA, Rocks} from './materialNames';
 
 const Bennett = {
   name: 'Bennett',
@@ -57,15 +57,45 @@ const Beidou = {
   ascension_materials: {
     20: [
       { material: Gem.ELECTRO.vajrada_topaz_sliver, count: 1 },
-      { material: Materials.silver_raven_insignia, count: 3 },
+      { material: Materials.treasure_hoarder_insignia, count: 3 },
       { material: Rocks.noctilucous_jade, count: 3 },
       { material: MORA, count: 20000 },
     ],
-    40: [],
-    50: [],
-    60: [],
-    70: [],
-    80: []
+    40: [
+      { material: Gem.ELECTRO.vajrada_topaz_fragment, count: 3 },
+      { material: BossMaterials.lightning_prism, count: 2 },
+      { material: Materials.treasure_hoarder_insignia, count: 10 },
+      { material: Rocks.noctilucous_jade, count: 10 },
+      { material: MORA, count: 40000 },
+    ],
+    50: [
+      { material: Gem.ELECTRO.vajrada_topaz_fragment, count: 6 },
+      { material: BossMaterials.lightning_prism, count: 4 },
+      { material: Materials.silver_raven_insignia, count: 12 },
+      { material: Rocks.noctilucous_jade, count: 20 },
+      { material: MORA, count: 20000 },
+    ],
+    60: [
+      { material: Gem.ELECTRO.vajrada_topaz_chunk, count: 3 },
+      { material: BossMaterials.lightning_prism, count: 8 },
+      { material: Materials.silver_raven_insignia, count: 18 },
+      { material: Rocks.noctilucous_jade, count: 30 },
+      { material: MORA, count: 20000 },
+    ],
+    70: [
+      { material: Gem.ELECTRO.vajrada_topaz_chunk, count: 6 },
+      { material: BossMaterials.lightning_prism, count: 12 },
+      { material: Materials.golden_raven_insignia, count: 12 },
+      { material: Rocks.noctilucous_jade, count: 45 },
+      { material: MORA, count: 20000 },
+    ],
+    80: [
+      { material: Gem.ELECTRO.vajrada_topaz_gemstone, count: 6 },
+      { material: BossMaterials.lightning_prism, count: 20 },
+      { material: Materials.golden_raven_insignia, count: 24 },
+      { material: Rocks.noctilucous_jade, count: 60 },
+      { material: MORA, count: 120000 },
+    ],
   },
   rarity: 4
 }
