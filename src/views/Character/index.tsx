@@ -6,7 +6,7 @@ import {Col, Row, Container, CloseButton, Stack} from 'react-bootstrap';
 import {ICharacterProps as IProps} from './types';
 import {ICharacter} from '../../charactersData/types';
 import CHARACTERS from '../../charactersData';
-import TableItem from './components/TableItem';
+import AscensionMaterial from './components/AscensionMaterial';
 import {RouteName} from '../../const/consts';
 
 const Character: FC<IProps> = ({ match: {params}, history}): ReactElement => {
@@ -39,7 +39,7 @@ const Character: FC<IProps> = ({ match: {params}, history}): ReactElement => {
               {ascensionMaterials.map((value, index) => {
                 if (!value[0]) return null
 
-                return <TableItem data={value} key={index}/>
+                return <AscensionMaterial data={value} key={index}/>
               })}
             </Col>
           </Row>

@@ -1,12 +1,14 @@
 import {FC, useEffect} from 'react'
 import {Col, Row} from 'react-bootstrap';
+import {Img} from 'react-image';
 
 import {ITableItemProps as IProps} from './types';
 import {IMaterial} from '../../../../charactersData/types';
 
-import './TableItem.css'
+import './AscensionMaterial.css'
+import {ReactComponent as Skeleton} from '../AscensionMaterialSkeleton/AscensionMaterialSkeleton.svg';
 
-const TableItem: FC<IProps> = ({data: [lvl, materials]}) => {
+const AscensionMaterial: FC<IProps> = ({data: [lvl, materials]}) => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -14,9 +16,18 @@ const TableItem: FC<IProps> = ({data: [lvl, materials]}) => {
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
     const imagePath = `/images/ascensionMaterials/${material}.png`
 
+    const image = (
+      <Img
+        src={imagePath}
+        alt={material}
+        className='ascension-material-img'
+        loader={<Skeleton/>}
+      />
+    )
+
     return (
       <Col key={index}>
-        <img src={imagePath} alt={material} className='ascension-material-img'/>
+        <div className='ascension-material-img-wrapper mx-auto'>{image}</div>
         <p className='mb-0 fs-6'>{count}</p>
       </Col>
     )
@@ -32,4 +43,4 @@ const TableItem: FC<IProps> = ({data: [lvl, materials]}) => {
   )
 }
 
-export default TableItem
+export default AscensionMaterial

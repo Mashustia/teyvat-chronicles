@@ -1,5 +1,10 @@
+.ascension-material-img-wrapper > svg {
+  max-width: 100px;
+  width: 100%;
+  border-radius: 5px;
+}
+
 .ascension-material-img {
-  object-fit: cover;
   max-width: 100px;
   width: 100%;
   border-radius: 5px;
