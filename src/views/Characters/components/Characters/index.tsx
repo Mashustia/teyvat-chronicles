@@ -20,7 +20,7 @@ const Characters: FC = () => {
 
   const items = () => groupedCharacterKeys.map((key: string) => (
     <>
-      <Row className='justify-content-center gy-2 gx-3 mb-5'>
+      <Row className='justify-content-center gx-3 mt-3 mb-5'>
         {charactersByVision[key].map((character: ICharacter) =>
           <Character key={character.name} {...character}/>)}
       </Row>
