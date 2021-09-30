@@ -3,7 +3,7 @@ import {Col, Container, Row} from 'react-bootstrap';
 import {useTranslation} from 'react-i18next';
 
 const Header: FC = (props) => {
-  const { t } = useTranslation();
+  const {t} = useTranslation();
 
   return (
     <header className='mb-3'>

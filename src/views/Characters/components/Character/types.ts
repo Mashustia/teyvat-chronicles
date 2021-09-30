@@ -1,4 +1,4 @@
-import { RouteComponentProps } from 'react-router-dom';
+import {RouteComponentProps} from 'react-router-dom';
 
 import {IRouteParams} from '../../../../types/commonTypes';
 import {ICharacter} from '../../../../charactersData/types';

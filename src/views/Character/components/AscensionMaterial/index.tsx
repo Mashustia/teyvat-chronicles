@@ -1,4 +1,4 @@
-import {FC, useEffect} from 'react'
+import {FC} from 'react'
 import {Col, Row} from 'react-bootstrap';
 import {Img} from 'react-image';
 
@@ -9,10 +9,6 @@ import './AscensionMaterial.css'
 import {ReactComponent as Skeleton} from '../AscensionMaterialSkeleton/AscensionMaterialSkeleton.svg';
 
 const AscensionMaterial: FC<IProps> = ({data: [lvl, materials]}) => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
     const imagePath = `/images/ascensionMaterials/${material}.png`
 

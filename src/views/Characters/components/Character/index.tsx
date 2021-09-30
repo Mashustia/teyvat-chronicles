@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import {FC} from 'react'
 import {Col} from 'react-bootstrap';
 import {withRouter} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
@@ -9,8 +9,8 @@ import {ICharacterProps as IProps} from './types';
 import {createUrl} from '../../../../utils/utils';
 import {ReactComponent as CharacterImageSkeleton} from '../CharacterImageSkeleton/CharacterImageSkeleton.svg'
 
-const Character: FC<IProps> = ({ name, history, match }) => {
-  const { t } = useTranslation();
+const Character: FC<IProps> = ({name, history, match}) => {
+  const {t} = useTranslation();
   const imagePath = `/images/characters/${name}.png`
   const handleCharacterClick = () => history.push(createUrl(match, name))
 
