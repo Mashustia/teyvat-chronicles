@@ -1,6 +1,6 @@
 import {FC} from 'react'
 import {Row} from 'react-bootstrap';
-import {sortBy} from 'lodash'
+import {groupBy, sortBy} from 'lodash'
 
 import Character from '../Character';
 import CHARACTERS from '../../../../charactersData';
@@ -14,14 +14,20 @@ enum groupField {
 const sortedCharacters = sortBy(CHARACTERS, [groupField.VISION, groupField.NAME])
 
 const Characters: FC = () => {
-  const items = () => sortedCharacters.map((character: ICharacter) =>
-    <Character key={character.name} {...character}/>)
+  const charactersByVision = groupBy(sortedCharacters, groupField.VISION)
 
-  return (
-    <Row className='justify-content-center gy-2 gx-3'>
-      {items()}
-    </Row>
-  )
+  const groupedCharacterKeys = Object.keys(charactersByVision)
+
+  const items = () => groupedCharacterKeys.map((key: string) => (
+    <>
+      <Row className='justify-content-center gy-2 gx-3 mb-5'>
+        {charactersByVision[key].map((character: ICharacter) =>
+          <Character key={character.name} {...character}/>)}
+      </Row>
+    </>
+  ))
+
+  return <>{items()}</>
 }
 
 export default Characters
