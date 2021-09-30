@@ -1,4 +1,4 @@
-import {FC, ReactElement} from 'react'
+import {FC, ReactElement, useEffect} from 'react'
 import {withRouter} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Col, Row, Container, CloseButton, Stack} from 'react-bootstrap';
@@ -6,12 +6,15 @@ import {Col, Row, Container, CloseButton, Stack} from 'react-bootstrap';
 import {ICharacterProps as IProps} from './types';
 import {ICharacter} from '../../charactersData/types';
 import CHARACTERS from '../../charactersData';
-import TableItem from './components/TableItem';
+import AscensionMaterial from './components/AscensionMaterial';
 import {RouteName} from '../../const/consts';
 
-const Character: FC<IProps> = ({ match: {params}, history}): ReactElement => {
-  const { t } = useTranslation();
-  const { name } = params
+const Character: FC<IProps> = ({match: {params}, history}): ReactElement => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  const {t} = useTranslation();
+  const {name} = params
   const imagePath = `/images/characters/${name}.png`
   const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === params.name)
 
@@ -24,8 +27,8 @@ const Character: FC<IProps> = ({ match: {params}, history}): ReactElement => {
     <Container>
       <Row className='justify-content-center'>
         <Col sm={12} md={12} lg={9} xl={8} xxl={7} className='align-content-end'>
-          <Stack direction="horizontal" gap={3}>
-            <CloseButton variant="white" className='ms-auto' onClick={handleGoBack}/>
+          <Stack direction='horizontal' gap={3}>
+            <CloseButton variant='white' className='ms-auto' onClick={handleGoBack}/>
           </Stack>
         </Col>
         <Col sm={12} md={12} lg={11} xl={9} xxl={8}>
@@ -39,7 +42,7 @@ const Character: FC<IProps> = ({ match: {params}, history}): ReactElement => {
               {ascensionMaterials.map((value, index) => {
                 if (!value[0]) return null
 
-                return <TableItem data={value} key={index}/>
+                return <AscensionMaterial data={value} key={index}/>
               })}
             </Col>
           </Row>

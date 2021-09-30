@@ -1,6 +1,6 @@
-import { FC } from 'react'
+import {FC} from 'react'
 import {Row} from 'react-bootstrap';
-import { sortBy } from 'lodash'
+import {sortBy} from 'lodash'
 
 import Character from '../Character';
 import CHARACTERS from '../../../../charactersData';
