@@ -22,14 +22,14 @@ const Venti = {
       { material: Gem.ANEMO.VAYUDA_TOPAZ_FRAGMENT, count: 6 },
       { material: BossMaterials.HURRICANE_SEED, count: 4 },
       { material: Flower.CECILIA, count: 20 },
-      { material: Materials.STAINED_MASK, count: 12 },
+      { material: Materials.SLIME_SECRETIONS, count: 12 },
       { material: MORA, count: 60000 },
     ],
     60: [
       { material: Gem.ANEMO.VAYUDA_TOPAZ_CHUNK, count: 3 },
       { material: BossMaterials.HURRICANE_SEED, count: 8 },
       { material: Flower.CECILIA, count: 30 },
-      { material: Materials.STAINED_MASK, count: 18 },
+      { material: Materials.SLIME_SECRETIONS, count: 18 },
       { material: MORA, count: 80000 },
     ],
     70: [
