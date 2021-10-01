@@ -121,3 +121,15 @@ export enum TravelerAscensionMaterial {
   BRILLIANT_DIAMOND_GEMSTONE = 'brilliant_diamond_gemstone'
 }
 
+export enum Books {
+  TEACHINGS_OF_BALLAD = 'teachings_of_ballad',
+  GUIDE_TO_BALLAD = 'guide_to_ballad',
+  PHILOSOPHIES_OF_BALLAD = 'philosophies_of_ballad'
+}
+
+export const CROWN_OF_INSIGHT = 'crown_of_insight'
+
+export enum BossSkillMaterial {
+  TUSK_OF_MONOCEROS_CAELI = 'tusk_of_monoceros_caeli'
+}
+
