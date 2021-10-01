@@ -5,10 +5,10 @@ import {Col, Row} from 'react-bootstrap';
 
 import {ICharacter} from '../../../../charactersData/types';
 import CHARACTERS from '../../../../charactersData';
-import AscensionMaterial from '../AscensionMaterial';
+import Material from '../Material';
 import {IRouteParams} from '../../../../types/commonTypes';
 
-const AscensionMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
+const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation();
   const {name} = params
   const imagePath = `/images/characters/${name}.png`
@@ -34,7 +34,7 @@ const AscensionMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {para
             {ascensionMaterials.map((value, index) => {
               if (!value[0]) return null
 
-              return <AscensionMaterial data={value} key={index}/>
+              return <Material data={value} key={index}/>
             })}
           </Col>
 
@@ -44,7 +44,7 @@ const AscensionMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {para
               {talentMaterials.map((value, index) => {
                 if (!value[0]) return null
 
-                return <AscensionMaterial data={value} key={index}/>
+                return <Material data={value} key={index}/>
               })}
             </Col>
           )}
@@ -54,4 +54,4 @@ const AscensionMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {para
   )
 }
 
-export default withRouter(AscensionMaterials)
+export default withRouter(Materials)
