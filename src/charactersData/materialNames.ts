@@ -151,5 +151,6 @@ export enum BossSkillMaterial {
   BLOODJADE_BRANCH = 'bloodjade_branch',
   RING_OF_BOREAS = 'ring_of_boreas',
   DVALINS_PLUME = 'dvalins_plume',
+  SHARD_OF_A_FOUL_LEGACY = 'shard_of_a_foul_legacy',
 }
 
