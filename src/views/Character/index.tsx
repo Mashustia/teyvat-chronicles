@@ -2,7 +2,7 @@ import {FC, ReactElement, useEffect} from 'react'
 import {Container} from 'react-bootstrap';
 
 import Header from './components/Header';
-import AscensionMaterials from './components/AscensionMaterials';
+import Materials from './components/Materials';
 
 const Character: FC = (): ReactElement => {
   useEffect(() => {
@@ -12,7 +12,7 @@ const Character: FC = (): ReactElement => {
   return (
     <Container>
       <Header/>
-      <AscensionMaterials/>
+      <Materials/>
     </Container>
   )
 }
