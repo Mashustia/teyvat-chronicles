@@ -18,6 +18,7 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
         alt={material}
         className='ascension-material-img'
         loader={<Skeleton/>}
+        unloader={<Skeleton/>}
       />
     )
 
