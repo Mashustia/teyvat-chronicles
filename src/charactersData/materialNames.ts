@@ -137,6 +137,9 @@ export enum Books {
   TEACHINGS_OF_RESISTANCE = 'teachings_of_resistance',
   GUIDE_TO_RESISTANCE = 'guide_to_resistance',
   PHILOSOPHIES_OF_RESISTANCE = 'philosophies_of_resistance',
+  TEACHINGS_OF_DILIGENCE = 'teachings_of_diligence',
+  GUIDE_TO_DILIGENCE = 'guide_to_diligence',
+  PHILOSOPHIES_OF_DILIGENCE = 'philosophies_of_diligence',
 }
 
 export const CROWN_OF_INSIGHT = 'crown_of_insight'
