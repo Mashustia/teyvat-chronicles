@@ -140,6 +140,9 @@ export enum Books {
   TEACHINGS_OF_DILIGENCE = 'teachings_of_diligence',
   GUIDE_TO_DILIGENCE = 'guide_to_diligence',
   PHILOSOPHIES_OF_DILIGENCE = 'philosophies_of_diligence',
+  TEACHINGS_OF_PROSPERITY = 'teachings_of_prosperity',
+  GUIDE_TO_PROSPERITY = 'guide_to_prosperity',
+  PHILOSOPHIES_OF_PROSPERITY = 'philosophies_of_prosperity',
 }
 
 export const CROWN_OF_INSIGHT = 'crown_of_insight'
