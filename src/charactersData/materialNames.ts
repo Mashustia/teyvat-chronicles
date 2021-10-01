@@ -153,5 +153,6 @@ export enum BossSkillMaterial {
   DVALINS_PLUME = 'dvalins_plume',
   SHARD_OF_A_FOUL_LEGACY = 'shard_of_a_foul_legacy',
   DRAGON_LORDS_CROWN = 'dragon_lords_crown',
+  SPIRIT_LOCKET_OF_BOREAS = 'spirit_locket_of_boreas',
 }
 
