@@ -140,5 +140,6 @@ export enum BossSkillMaterial {
   MOLTEN_MOMENT = 'molten_moment',
   DVALINS_SIGH = 'dvalins_sigh',
   BLOODJADE_BRANCH = 'bloodjade_branch',
+  RING_OF_BOREAS = 'ring_of_boreas',
 }
 
