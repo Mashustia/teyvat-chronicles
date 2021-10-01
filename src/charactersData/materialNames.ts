@@ -134,6 +134,7 @@ export const CROWN_OF_INSIGHT = 'crown_of_insight'
 
 export enum BossSkillMaterial {
   TUSK_OF_MONOCEROS_CAELI = 'tusk_of_monoceros_caeli',
-  MOLTEN_MOMENT = 'molten_moment'
+  MOLTEN_MOMENT = 'molten_moment',
+  DVALINS_SIGH = 'dvalins_sigh'
 }
 
