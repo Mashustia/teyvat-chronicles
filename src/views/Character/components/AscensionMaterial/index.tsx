@@ -8,9 +8,9 @@ import {IMaterial} from '../../../../charactersData/types';
 import './AscensionMaterial.css'
 import {ReactComponent as Skeleton} from '../AscensionMaterialSkeleton/AscensionMaterialSkeleton.svg';
 
-const AscensionMaterial: FC<IProps> = ({data: [lvl, materials]}) => {
+const AscensionMaterial: FC<IProps> = ({data: [lvl, materials], imageFolderName}) => {
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
-    const imagePath = `/images/ascensionMaterials/${material}.png`
+    const imagePath = `/images/${imageFolderName}/${material}.png`
 
     const image = (
       <Img
