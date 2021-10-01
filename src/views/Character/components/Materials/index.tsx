@@ -7,11 +7,11 @@ import {ICharacter} from '../../../../charactersData/types';
 import CHARACTERS from '../../../../charactersData';
 import Material from '../Material';
 import {IRouteParams} from '../../../../types/commonTypes';
+import CharacterImage from '../../../Characters/components/CharacterImage';
 
 const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation();
   const {name} = params
-  const imagePath = `/images/characters/${name}.png`
   const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === params.name)
 
   if (!activeCharacter) return <></>
@@ -25,7 +25,8 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
       <Col sm={12} md={12} lg={8} xl={7} xxl={6}>
         <Row className='justify-content-center gx-3'>
           <Col xs={12}>
-            <img src={imagePath} alt={name} className='character-img'/>
+            {/*<div className='character-img-wrapper mx-auto'>{image}</div>*/}
+            <CharacterImage name={name}/>
             <h1 className='fs-3'>{t(`character:names.${name}`)}</h1>
           </Col>
 
