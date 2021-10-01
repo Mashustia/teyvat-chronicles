@@ -1,7 +1,17 @@
 import {Vision} from '../../const/consts';
-import {BossMaterials, Flower, Gem, Materials, MORA} from '../materialNames';
+import {
+  Books,
+  BossMaterials,
+  BossSkillMaterial,
+  CROWN_OF_INSIGHT,
+  Flower,
+  Gem,
+  Materials,
+  MORA
+} from '../materialNames';
+import {ICharacter} from '../types';
 
-const Albedo = {
+const Albedo: ICharacter = {
   name: 'Albedo',
   vision: Vision.GEO,
   ascension_materials: {
@@ -47,7 +57,59 @@ const Albedo = {
       { material: MORA, count: 120000 },
     ]
   },
-  rarity: 5
+  rarity: 5,
+  talent_materials: {
+    2: [
+      { material: Books.TEACHINGS_OF_BALLAD, count: 3 },
+      { material: Materials.DIVINING_SCROLL, count: 6 },
+      { material: MORA, count: 12500 }
+    ],
+    3: [
+      { material: Books.GUIDE_TO_BALLAD, count: 2 },
+      { material: Materials.SEALED_SCROLL, count: 3 },
+      { material: MORA, count: 17500 }
+    ],
+    4: [
+      { material: Books.GUIDE_TO_BALLAD, count: 4 },
+      { material: Materials.SEALED_SCROLL, count: 4 },
+      { material: MORA, count: 25500 }
+    ],
+    5: [
+      { material: Books.GUIDE_TO_BALLAD, count: 6 },
+      { material: Materials.SEALED_SCROLL, count: 6 },
+      { material: MORA, count: 30000 }
+    ],
+    6: [
+      { material: Books.GUIDE_TO_BALLAD, count: 9 },
+      { material: Materials.SEALED_SCROLL, count: 9 },
+      { material: MORA, count: 37500 }
+    ],
+    7: [
+      { material: Books.PHILOSOPHIES_OF_BALLAD, count: 4 },
+      { material: Materials.FORBIDDEN_CURSE_SCROLL, count: 4 },
+      { material: BossSkillMaterial.TUSK_OF_MONOCEROS_CAELI, count: 1 },
+      { material: MORA, count: 120000 }
+    ],
+    8: [
+      { material: Books.PHILOSOPHIES_OF_BALLAD, count: 6 },
+      { material: Materials.FORBIDDEN_CURSE_SCROLL, count: 6 },
+      { material: BossSkillMaterial.TUSK_OF_MONOCEROS_CAELI, count: 1 },
+      { material: MORA, count: 260000 }
+    ],
+    9: [
+      { material: Books.PHILOSOPHIES_OF_BALLAD, count: 9 },
+      { material: Materials.FORBIDDEN_CURSE_SCROLL, count: 12 },
+      { material: BossSkillMaterial.TUSK_OF_MONOCEROS_CAELI, count: 2 },
+      { material: MORA, count: 450000 }
+    ],
+    10: [
+      { material: Books.PHILOSOPHIES_OF_BALLAD, count: 12 },
+      { material: Materials.FORBIDDEN_CURSE_SCROLL, count: 16 },
+      { material: BossSkillMaterial.TUSK_OF_MONOCEROS_CAELI, count: 2 },
+      { material: CROWN_OF_INSIGHT, count: 1 },
+      { material: MORA, count: 700000 }
+    ],
+  }
 }
 
 export default Albedo
