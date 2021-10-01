@@ -143,6 +143,9 @@ export enum Books {
   TEACHINGS_OF_PROSPERITY = 'teachings_of_prosperity',
   GUIDE_TO_PROSPERITY = 'guide_to_prosperity',
   PHILOSOPHIES_OF_PROSPERITY = 'philosophies_of_prosperity',
+  TEACHINGS_OF_TRANSIENCE = 'teachings_of_transience',
+  GUIDE_TO_TRANSIENCE = 'guide_to_transience',
+  PHILOSOPHIES_OF_TRANSIENCE = 'philosophies_of_transience',
 }
 
 export const CROWN_OF_INSIGHT = 'crown_of_insight'
@@ -159,5 +162,6 @@ export enum BossSkillMaterial {
   SPIRIT_LOCKET_OF_BOREAS = 'spirit_locket_of_boreas',
   SHADOW_OF_THE_WARRIOR = 'shadow_of_the_warrior',
   GILDED_SCALE = 'gilded_scale',
+  HELLFIRE_BUTTERFLY = 'hellfire_butterfly',
 }
 
