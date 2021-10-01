@@ -7,6 +7,7 @@ import {ICharacter} from '../../../../charactersData/types';
 import CHARACTERS from '../../../../charactersData';
 import AscensionMaterial from '../AscensionMaterial';
 import {IRouteParams} from '../../../../types/commonTypes';
+import {ImageFolderFame} from '../AscensionMaterial/types';
 
 const AscensionMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation();
@@ -17,6 +18,8 @@ const AscensionMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {para
   if (!activeCharacter) return <></>
 
   const ascensionMaterials = Object.entries(activeCharacter.ascension_materials)
+  const talentMaterials = activeCharacter?.talent_materials ?
+    Object.entries(activeCharacter.talent_materials) : []
 
   return (
     <Row className='justify-content-center'>
@@ -26,14 +29,26 @@ const AscensionMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {para
             <img src={imagePath} alt={name} className='character-img'/>
             <h1 className='fs-3'>{t(`character:names.${name}`)}</h1>
           </Col>
+
           <Col xs={12}>
             <h4 className='mb-3'>{t('character:ascension_materials')}</h4>
             {ascensionMaterials.map((value, index) => {
               if (!value[0]) return null
 
-              return <AscensionMaterial data={value} key={index}/>
+              return <AscensionMaterial data={value} key={index} imageFolderName={ImageFolderFame.ascension_materials}/>
             })}
           </Col>
+
+          {talentMaterials.length > 0 && (
+            <Col xs={12}>
+              <h4 className='mb-3'>{t('character:talents_materials')}</h4>
+              {talentMaterials.map((value, index) => {
+                if (!value[0]) return null
+
+                return <AscensionMaterial data={value} key={index} imageFolderName={ImageFolderFame.talent_materials}/>
+              })}
+            </Col>
+          )}
         </Row>
       </Col>
     </Row>
