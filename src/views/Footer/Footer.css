@@ -1,0 +1,7 @@
+.footer {
+  height: var(--footer-height);
+}
+
+.footer-link {
+  color: var(--bs-gray-200);
+}
