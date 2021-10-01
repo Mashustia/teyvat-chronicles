@@ -7,7 +7,6 @@ import {ICharacter} from '../../../../charactersData/types';
 import CHARACTERS from '../../../../charactersData';
 import AscensionMaterial from '../AscensionMaterial';
 import {IRouteParams} from '../../../../types/commonTypes';
-import {ImageFolderFame} from '../AscensionMaterial/types';
 
 const AscensionMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation();
@@ -35,7 +34,7 @@ const AscensionMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {para
             {ascensionMaterials.map((value, index) => {
               if (!value[0]) return null
 
-              return <AscensionMaterial data={value} key={index} imageFolderName={ImageFolderFame.ascension_materials}/>
+              return <AscensionMaterial data={value} key={index}/>
             })}
           </Col>
 
@@ -45,7 +44,7 @@ const AscensionMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {para
               {talentMaterials.map((value, index) => {
                 if (!value[0]) return null
 
-                return <AscensionMaterial data={value} key={index} imageFolderName={ImageFolderFame.talent_materials}/>
+                return <AscensionMaterial data={value} key={index}/>
               })}
             </Col>
           )}
