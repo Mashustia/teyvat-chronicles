@@ -155,5 +155,6 @@ export enum BossSkillMaterial {
   DRAGON_LORDS_CROWN = 'dragon_lords_crown',
   SPIRIT_LOCKET_OF_BOREAS = 'spirit_locket_of_boreas',
   SHADOW_OF_THE_WARRIOR = 'shadow_of_the_warrior',
+  GILDED_SCALE = 'gilded_scale',
 }
 
