@@ -72,7 +72,7 @@ const Albedo: ICharacter = {
     4: [
       { material: Books.GUIDE_TO_BALLAD, count: 4 },
       { material: Materials.SEALED_SCROLL, count: 4 },
-      { material: MORA, count: 25500 }
+      { material: MORA, count: 25000 }
     ],
     5: [
       { material: Books.GUIDE_TO_BALLAD, count: 6 },
@@ -97,14 +97,14 @@ const Albedo: ICharacter = {
       { material: MORA, count: 260000 }
     ],
     9: [
-      { material: Books.PHILOSOPHIES_OF_BALLAD, count: 9 },
-      { material: Materials.FORBIDDEN_CURSE_SCROLL, count: 12 },
+      { material: Books.PHILOSOPHIES_OF_BALLAD, count: 12 },
+      { material: Materials.FORBIDDEN_CURSE_SCROLL, count: 9 },
       { material: BossSkillMaterial.TUSK_OF_MONOCEROS_CAELI, count: 2 },
       { material: MORA, count: 450000 }
     ],
     10: [
-      { material: Books.PHILOSOPHIES_OF_BALLAD, count: 12 },
-      { material: Materials.FORBIDDEN_CURSE_SCROLL, count: 16 },
+      { material: Books.PHILOSOPHIES_OF_BALLAD, count: 16 },
+      { material: Materials.FORBIDDEN_CURSE_SCROLL, count: 12 },
       { material: BossSkillMaterial.TUSK_OF_MONOCEROS_CAELI, count: 2 },
       { material: CROWN_OF_INSIGHT, count: 1 },
       { material: MORA, count: 700000 }
