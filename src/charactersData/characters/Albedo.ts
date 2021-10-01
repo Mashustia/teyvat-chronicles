@@ -108,7 +108,7 @@ const Albedo: ICharacter = {
       { material: BossSkillMaterial.TUSK_OF_MONOCEROS_CAELI, count: 2 },
       { material: CROWN_OF_INSIGHT, count: 1 },
       { material: MORA, count: 700000 }
-    ],
+    ]
   }
 }
 
