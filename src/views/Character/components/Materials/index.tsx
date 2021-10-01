@@ -25,7 +25,6 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
       <Col sm={12} md={12} lg={8} xl={7} xxl={6}>
         <Row className='justify-content-center gx-3'>
           <Col xs={12}>
-            {/*<div className='character-img-wrapper mx-auto'>{image}</div>*/}
             <CharacterImage name={name}/>
             <h1 className='fs-3'>{t(`character:names.${name}`)}</h1>
           </Col>
@@ -41,7 +40,7 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
 
           {talentMaterials.length > 0 && (
             <Col xs={12}>
-              <h4 className='mb-3'>{t('character:talents_materials')}</h4>
+              <h4 className='mb-3'>{t('character:talents_enhancement')}</h4>
               {talentMaterials.map((value, index) => {
                 if (!value[0]) return null
 
