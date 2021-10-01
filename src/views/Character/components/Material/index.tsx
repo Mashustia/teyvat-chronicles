@@ -5,12 +5,12 @@ import {Img} from 'react-image';
 import {ITableItemProps as IProps} from './types';
 import {IMaterial} from '../../../../charactersData/types';
 
-import './AscensionMaterial.css'
-import {ReactComponent as Skeleton} from '../AscensionMaterialSkeleton/AscensionMaterialSkeleton.svg';
+import './Material.css'
+import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.svg';
 
-const AscensionMaterial: FC<IProps> = ({data: [lvl, materials]}) => {
+const Material: FC<IProps> = ({data: [lvl, materials]}) => {
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
-    const imagePath = `/images/ascensionMaterials/${material}.png`
+    const imagePath = `/images/materials/${material}.png`
 
     const image = (
       <Img
@@ -39,4 +39,4 @@ const AscensionMaterial: FC<IProps> = ({data: [lvl, materials]}) => {
   )
 }
 
-export default AscensionMaterial
+export default Material
