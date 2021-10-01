@@ -26,18 +26,20 @@ const Character: FC<IProps> = ({match: {params}, history}): ReactElement => {
   return (
     <Container>
       <Row className='justify-content-center'>
-        <Col sm={12} md={12} lg={9} xl={8} xxl={7} className='align-content-end'>
+        <Col sm={12} md={12} lg={8} xl={7} xxl={6} className='align-content-end'>
           <Stack direction='horizontal' gap={3}>
             <CloseButton variant='white' className='ms-auto' onClick={handleGoBack}/>
           </Stack>
         </Col>
-        <Col sm={12} md={12} lg={11} xl={9} xxl={8}>
+      </Row>
+      <Row className='justify-content-center'>
+        <Col sm={12} md={12} lg={8} xl={7} xxl={6}>
           <Row className='justify-content-center gx-3'>
-            <Col xs={12} md={3} lg={3}>
+            <Col xs={12}>
               <img src={imagePath} alt={name} className='character-img'/>
               <h1 className='fs-3'>{t(`character:names.${name}`)}</h1>
             </Col>
-            <Col xs={12} md={9} lg={9}>
+            <Col xs={12}>
               <h4 className='mb-3'>{t('character:ascension_materials')}</h4>
               {ascensionMaterials.map((value, index) => {
                 if (!value[0]) return null
