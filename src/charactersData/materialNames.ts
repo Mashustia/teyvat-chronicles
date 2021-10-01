@@ -134,6 +134,9 @@ export enum Books {
   TEACHINGS_OF_GOLD = 'teachings_of_gold',
   GUIDE_TO_GOLD = 'guide_to_gold',
   PHILOSOPHIES_OF_GOLD = 'philosophies_of_gold',
+  TEACHINGS_OF_RESISTANCE = 'teachings_of_resistance',
+  GUIDE_TO_RESISTANCE = 'guide_to_resistance',
+  PHILOSOPHIES_OF_RESISTANCE = 'philosophies_of_resistance',
 }
 
 export const CROWN_OF_INSIGHT = 'crown_of_insight'
@@ -144,5 +147,6 @@ export enum BossSkillMaterial {
   DVALINS_SIGH = 'dvalins_sigh',
   BLOODJADE_BRANCH = 'bloodjade_branch',
   RING_OF_BOREAS = 'ring_of_boreas',
+  DVALINS_PLUME = 'dvalins_plume',
 }
 
