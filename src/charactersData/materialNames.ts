@@ -127,7 +127,10 @@ export enum Books {
   PHILOSOPHIES_OF_BALLAD = 'philosophies_of_ballad',
   TEACHINGS_OF_FREEDOM = 'teachings_of_freedom',
   GUIDE_TO_FREEDOM = 'guide_to_freedom',
-  PHILOSOPHIES_OF_FREEDOM = 'philosophies_of_freedom'
+  PHILOSOPHIES_OF_FREEDOM = 'philosophies_of_freedom',
+  TEACHINGS_OF_ELEGANCE = 'teachings_of_elegance',
+  GUIDE_TO_ELEGANCE = 'guide_to_elegance',
+  PHILOSOPHIES_OF_ELEGANCE = 'philosophies_of_elegance',
 }
 
 export const CROWN_OF_INSIGHT = 'crown_of_insight'
@@ -135,6 +138,7 @@ export const CROWN_OF_INSIGHT = 'crown_of_insight'
 export enum BossSkillMaterial {
   TUSK_OF_MONOCEROS_CAELI = 'tusk_of_monoceros_caeli',
   MOLTEN_MOMENT = 'molten_moment',
-  DVALINS_SIGH = 'dvalins_sigh'
+  DVALINS_SIGH = 'dvalins_sigh',
+  BLOODJADE_BRANCH = 'bloodjade_branch',
 }
 
