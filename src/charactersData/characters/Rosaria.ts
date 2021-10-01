@@ -3,7 +3,7 @@ import {BossMaterials, Flower, Gem, Materials, MORA} from '../materialNames';
 
 const Rosaria = {
   name: 'Rosaria',
-  vision: Vision.ELECTRO,
+  vision: Vision.CRYO,
   ascension_materials: {
     20: [
       { material: Gem.CRYO.SHIVADA_TOPAZ_SLIVER, count: 1 },
