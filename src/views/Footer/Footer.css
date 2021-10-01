@@ -3,5 +3,14 @@
 }
 
 .footer-link {
-  color: var(--bs-gray-200);
+  color: var(--bs-gray-500);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--bs-gray-300);
+}
+
+.footer-link:active {
+  color: var(--bs-white);
 }
