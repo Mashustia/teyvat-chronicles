@@ -124,12 +124,16 @@ export enum TravelerAscensionMaterial {
 export enum Books {
   TEACHINGS_OF_BALLAD = 'teachings_of_ballad',
   GUIDE_TO_BALLAD = 'guide_to_ballad',
-  PHILOSOPHIES_OF_BALLAD = 'philosophies_of_ballad'
+  PHILOSOPHIES_OF_BALLAD = 'philosophies_of_ballad',
+  TEACHINGS_OF_FREEDOM = 'teachings_of_freedom',
+  GUIDE_TO_FREEDOM = 'guide_to_freedom',
+  PHILOSOPHIES_OF_FREEDOM = 'philosophies_of_freedom'
 }
 
 export const CROWN_OF_INSIGHT = 'crown_of_insight'
 
 export enum BossSkillMaterial {
-  TUSK_OF_MONOCEROS_CAELI = 'tusk_of_monoceros_caeli'
+  TUSK_OF_MONOCEROS_CAELI = 'tusk_of_monoceros_caeli',
+  MOLTEN_MOMENT = 'molten_moment'
 }
 
