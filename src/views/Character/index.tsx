@@ -1,13 +1,13 @@
 import {FC, ReactElement, useEffect} from 'react'
 import {withRouter} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
-import {Col, Row, Container, CloseButton, Stack} from 'react-bootstrap';
+import {Col, Row, Container} from 'react-bootstrap';
 
 import {ICharacterProps as IProps} from './types';
 import {ICharacter} from '../../charactersData/types';
 import CHARACTERS from '../../charactersData';
 import AscensionMaterial from './components/AscensionMaterial';
-import {RouteName} from '../../const/consts';
+import Header from './components/Header';
 
 const Character: FC<IProps> = ({match: {params}, history}): ReactElement => {
   useEffect(() => {
@@ -21,17 +21,10 @@ const Character: FC<IProps> = ({match: {params}, history}): ReactElement => {
   if (!activeCharacter) return <></>
 
   const ascensionMaterials = Object.entries(activeCharacter.ascension_materials)
-  const handleGoBack = () => history.push(RouteName.DEFAULT)
 
   return (
     <Container>
-      <Row className='justify-content-center'>
-        <Col sm={12} md={12} lg={8} xl={7} xxl={6} className='align-content-end'>
-          <Stack direction='horizontal' gap={3}>
-            <CloseButton variant='white' className='ms-auto' onClick={handleGoBack}/>
-          </Stack>
-        </Col>
-      </Row>
+      <Header/>
       <Row className='justify-content-center'>
         <Col sm={12} md={12} lg={8} xl={7} xxl={6}>
           <Row className='justify-content-center gx-3'>
