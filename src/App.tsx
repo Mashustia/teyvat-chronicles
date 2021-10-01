@@ -1,21 +1,16 @@
 import {FC} from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 import './App.css';
-import {RouteName} from './const/consts';
-import Layout from './views/Layout';
-import Character from './views/Character';
+import Footer from './views/Footer';
+import Main from './views/Main';
 
 const App: FC = () => {
   return (
-    <div className='App py-3'>
+    <div className='app pt-2'>
       <BrowserRouter>
-        <Switch>
-          <Route exact path={RouteName.DEFAULT} component={Layout} />
-          <Route exact path={RouteName.CHARACTER} component={Character} />
-
-          <Route component={Layout} />
-        </Switch>
+        <Route exact={true} component={Main} />
+        <Route exact={true} component={Footer} />
       </BrowserRouter>
     </div>
   );
