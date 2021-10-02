@@ -164,5 +164,6 @@ export enum BossSkillMaterial {
   GILDED_SCALE = 'gilded_scale',
   HELLFIRE_BUTTERFLY = 'hellfire_butterfly',
   DVALINS_CLAWN = 'dvalins_clawn',
+  TAIL_OF_BOREAS = 'tail_of_boreas',
 }
 
