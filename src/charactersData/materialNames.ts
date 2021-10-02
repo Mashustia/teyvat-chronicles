@@ -163,5 +163,6 @@ export enum BossSkillMaterial {
   SHADOW_OF_THE_WARRIOR = 'shadow_of_the_warrior',
   GILDED_SCALE = 'gilded_scale',
   HELLFIRE_BUTTERFLY = 'hellfire_butterfly',
+  DVALINS_CLAWN = 'dvalins_clawn',
 }
 
