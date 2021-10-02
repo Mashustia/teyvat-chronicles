@@ -39,52 +39,6 @@ export const Gem = {
 
 export const MORA = 'mora'
 
-export enum Materials {
-  TREASURE_HOARDER_INSIGNIA = 'treasure_hoarder_insignia',
-  SILVER_RAVEN_INSIGNIA = 'silver_raven_insignia',
-  GOLDEN_RAVEN_INSIGNIA = 'golden_raven_insignia',
-  WHOPPERFLOWER_NECTAR = 'whopperflower_nectar',
-  SHIMMERING_NECTAR = 'shimmering_nectar',
-  ENERGY_NECTAR = 'energy_nectar',
-  SLIME_CONDENSATE = 'slime_condensate',
-  SLIME_SECRETIONS = 'slime_secretions',
-  SLIME_CONCENTRATE = 'slime_concentrate',
-  DAMAGED_MASK = 'damaged_mask',
-  STAINED_MASK = 'stained_mask',
-  OMINOUS_MASK = 'ominous_mask',
-  FIRM_ARROWHEAD = 'firm_arrowhead',
-  SHARP_ARROWHEAD = 'sharp_arrowhead',
-  WEATHERED_ARROWHEAD = 'weathered_arrowhead',
-  RECRUITS_INSIGNIA = 'recruits_insignia',
-  SERGEANTS_INSIGNIA = 'sergeants_insignia',
-  LIEUTENANTS_INSIGNIA = 'lieutenants_insignia',
-  DIVINING_SCROLL = 'divining_scroll',
-  SEALED_SCROLL = 'sealed_scroll',
-  FORBIDDEN_CURSE_SCROLL = 'forbidden_curse_scroll',
-  OLD_HANDGUARD = 'old_handguard',
-  KAGEUCHI_HANDGUARD = 'kageuchi_handguard',
-  FAMED_HANDGUARD = 'famed_handguard',
-  SPECTRAL_HUSK = 'spectral_husk',
-  SPECTRAL_HEART = 'spectral_heart',
-  SPECTRAL_NUCLEUS = 'spectral_nucleus',
-}
-
-export enum BossMaterials {
-  LIGHTNING_PRISM = 'lightning_prism',
-  EVERFLAME_SEED = 'everflame_seed',
-  CLEANSING_HEART = 'cleansing_heart',
-  JUVENILE_JADE = 'juvenile_jade',
-  BASALT_PILLAR = 'basalt_pillar',
-  HOARFROST_CORE = 'hoarfrost_core',
-  HURRICANE_SEED = 'hurricane_seed',
-  STORM_BEADS = 'storm_beads',
-  MARIONETTE_CORE = 'marionette_core',
-  CRYSTALLINE_BLOOM = 'crystalline_bloom',
-  PERPETUAL_HEART = 'perpetual_heart',
-  DEW_OF_REPUDIATION = 'dew_of_repudiation',
-  SMOLDERING_PEARL = 'smoldering_pearl',
-}
-
 export enum Flower {
   WINDWHEEL_ASTER = 'windwheel_aster',
   PHILANEMO_MUSHROOM = 'philanemo_mushroom',
@@ -121,6 +75,36 @@ export enum TravelerAscensionMaterial {
   BRILLIANT_DIAMOND_GEMSTONE = 'brilliant_diamond_gemstone'
 }
 
+export enum Materials {
+  TREASURE_HOARDER_INSIGNIA = 'treasure_hoarder_insignia',
+  SILVER_RAVEN_INSIGNIA = 'silver_raven_insignia',
+  GOLDEN_RAVEN_INSIGNIA = 'golden_raven_insignia',
+  WHOPPERFLOWER_NECTAR = 'whopperflower_nectar',
+  SHIMMERING_NECTAR = 'shimmering_nectar',
+  ENERGY_NECTAR = 'energy_nectar',
+  SLIME_CONDENSATE = 'slime_condensate',
+  SLIME_SECRETIONS = 'slime_secretions',
+  SLIME_CONCENTRATE = 'slime_concentrate',
+  DAMAGED_MASK = 'damaged_mask',
+  STAINED_MASK = 'stained_mask',
+  OMINOUS_MASK = 'ominous_mask',
+  FIRM_ARROWHEAD = 'firm_arrowhead',
+  SHARP_ARROWHEAD = 'sharp_arrowhead',
+  WEATHERED_ARROWHEAD = 'weathered_arrowhead',
+  RECRUITS_INSIGNIA = 'recruits_insignia',
+  SERGEANTS_INSIGNIA = 'sergeants_insignia',
+  LIEUTENANTS_INSIGNIA = 'lieutenants_insignia',
+  DIVINING_SCROLL = 'divining_scroll',
+  SEALED_SCROLL = 'sealed_scroll',
+  FORBIDDEN_CURSE_SCROLL = 'forbidden_curse_scroll',
+  OLD_HANDGUARD = 'old_handguard',
+  KAGEUCHI_HANDGUARD = 'kageuchi_handguard',
+  FAMED_HANDGUARD = 'famed_handguard',
+  SPECTRAL_HUSK = 'spectral_husk',
+  SPECTRAL_HEART = 'spectral_heart',
+  SPECTRAL_NUCLEUS = 'spectral_nucleus',
+}
+
 export enum Books {
   TEACHINGS_OF_BALLAD = 'teachings_of_ballad',
   GUIDE_TO_BALLAD = 'guide_to_ballad',
@@ -152,6 +136,22 @@ export enum Books {
 }
 
 export const CROWN_OF_INSIGHT = 'crown_of_insight'
+
+export enum BossMaterials {
+  LIGHTNING_PRISM = 'lightning_prism',
+  EVERFLAME_SEED = 'everflame_seed',
+  CLEANSING_HEART = 'cleansing_heart',
+  JUVENILE_JADE = 'juvenile_jade',
+  BASALT_PILLAR = 'basalt_pillar',
+  HOARFROST_CORE = 'hoarfrost_core',
+  HURRICANE_SEED = 'hurricane_seed',
+  STORM_BEADS = 'storm_beads',
+  MARIONETTE_CORE = 'marionette_core',
+  CRYSTALLINE_BLOOM = 'crystalline_bloom',
+  PERPETUAL_HEART = 'perpetual_heart',
+  DEW_OF_REPUDIATION = 'dew_of_repudiation',
+  SMOLDERING_PEARL = 'smoldering_pearl',
+}
 
 export enum BossSkillMaterial {
   TUSK_OF_MONOCEROS_CAELI = 'tusk_of_monoceros_caeli',
