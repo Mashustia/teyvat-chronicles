@@ -146,6 +146,9 @@ export enum Books {
   TEACHINGS_OF_TRANSIENCE = 'teachings_of_transience',
   GUIDE_TO_TRANSIENCE = 'guide_to_transience',
   PHILOSOPHIES_OF_TRANSIENCE = 'philosophies_of_transience',
+  TEACHINGS_OF_LIGHT = 'teachings_of_light',
+  GUIDE_TO_LIGHT = 'guide_to_light',
+  PHILOSOPHIES_OF_LIGHT = 'philosophies_of_light',
 }
 
 export const CROWN_OF_INSIGHT = 'crown_of_insight'

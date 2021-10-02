@@ -1,5 +1,14 @@
 import {Vision} from '../../const/consts';
-import {BossMaterials, Flower, Gem, Materials, MORA} from '../materialNames';
+import {
+  Books,
+  BossMaterials,
+  BossSkillMaterial,
+  CROWN_OF_INSIGHT,
+  Flower,
+  Gem,
+  Materials,
+  MORA
+} from '../materialNames';
 
 // TODO: добавить картинку для BossMaterials.STORM_BEADS
 const Raiden = {
@@ -48,7 +57,59 @@ const Raiden = {
       { material: MORA, count: 120000 },
     ]
   },
-  rarity: 5
+  rarity: 5,
+  talent_materials: {
+    2: [
+      {material: Books.TEACHINGS_OF_LIGHT, count: 3},
+      {material: Materials.OLD_HANDGUARD, count: 6},
+      {material: MORA, count: 12500}
+    ],
+    3: [
+      {material: Books.GUIDE_TO_LIGHT, count: 2},
+      {material: Materials.KAGEUCHI_HANDGUARD, count: 3},
+      {material: MORA, count: 17500}
+    ],
+    4: [
+      {material: Books.GUIDE_TO_LIGHT, count: 4},
+      {material: Materials.KAGEUCHI_HANDGUARD, count: 4},
+      {material: MORA, count: 25000}
+    ],
+    5: [
+      {material: Books.GUIDE_TO_LIGHT, count: 6},
+      {material: Materials.KAGEUCHI_HANDGUARD, count: 6},
+      {material: MORA, count: 30000}
+    ],
+    6: [
+      {material: Books.GUIDE_TO_LIGHT, count: 9},
+      {material: Materials.KAGEUCHI_HANDGUARD, count: 9},
+      {material: MORA, count: 37500}
+    ],
+    7: [
+      {material: Books.PHILOSOPHIES_OF_LIGHT, count: 4},
+      {material: Materials.FAMED_HANDGUARD, count: 4},
+      {material: BossSkillMaterial.MOLTEN_MOMENT, count: 1},
+      {material: MORA, count: 120000}
+    ],
+    8: [
+      {material: Books.PHILOSOPHIES_OF_LIGHT, count: 6},
+      {material: Materials.FAMED_HANDGUARD, count: 6},
+      {material: BossSkillMaterial.MOLTEN_MOMENT, count: 1},
+      {material: MORA, count: 260000}
+    ],
+    9: [
+      {material: Books.PHILOSOPHIES_OF_LIGHT, count: 12},
+      {material: Materials.FAMED_HANDGUARD, count: 9},
+      {material: BossSkillMaterial.MOLTEN_MOMENT, count: 2},
+      {material: MORA, count: 450000}
+    ],
+    10: [
+      {material: Books.PHILOSOPHIES_OF_LIGHT, count: 16},
+      {material: Materials.FAMED_HANDGUARD, count: 12},
+      {material: BossSkillMaterial.MOLTEN_MOMENT, count: 2},
+      {material: CROWN_OF_INSIGHT, count: 1},
+      {material: MORA, count: 700000}
+    ]
+  }
 }
 
 export default Raiden
