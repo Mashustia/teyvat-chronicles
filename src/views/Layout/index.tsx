@@ -6,11 +6,11 @@ import Characters from '../Characters/components/Characters';
 
 const Layout: FC = () => {
   return (
-    <Container fluid className='pb-1'>
-      <Header/>
+      <Container fluid>
+        <Header/>
 
-      <Characters/>
-    </Container>
+        <Characters/>
+      </Container>
   )
 }
 

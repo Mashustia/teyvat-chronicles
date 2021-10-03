@@ -49,6 +49,8 @@
   --transition-time-fast: 100ms;
   --transition-time-sidebar-in: 250ms;
   --transition-time-sidebar-out: 350ms;
+
+  --footer-height: 40px;
 }
 
 .visually-hidden {
@@ -180,9 +182,14 @@ body {
   100%{background-position:50% 0%}
 }
 
-.App {
+.app {
   text-align: center;
   height: 100vh;
-  color: var(--bs-gray-200)
+  color: var(--bs-gray-200);
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 

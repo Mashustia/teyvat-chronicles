@@ -5,6 +5,7 @@ export interface ICharacter {
   vision: Vision
   ascension_materials: IAscensionMaterials
   rarity: number
+  talent_materials?: IAscensionMaterials
 }
 
 export interface IAscensionMaterials {
