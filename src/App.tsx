@@ -2,8 +2,8 @@ import {FC} from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 import './App.css';
-import Footer from './views/Footer';
 import Main from './views/Main';
+import Footer from './common/Footer';
 
 const App: FC = () => {
   return (
