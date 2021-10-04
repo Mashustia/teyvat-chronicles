@@ -2,8 +2,8 @@ import {FC} from 'react'
 import {Img} from 'react-image'
 
 import './CharacterImage.css'
-import {ReactComponent as CharacterImageSkeleton} from '../CharacterImageSkeleton/CharacterImageSkeleton.svg'
 import {ICharacterImageProps as IProps} from './types';
+import {ReactComponent as CharacterImageSkeleton} from '../../views/Characters/components/CharacterImageSkeleton/CharacterImageSkeleton.svg'
 
 const CharacterImage: FC<IProps> = ({name, withBorder}) => {
   const imagePath = `/images/characters/${name}.png`

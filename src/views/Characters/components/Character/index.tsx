@@ -5,7 +5,7 @@ import {useTranslation} from 'react-i18next';
 
 import {ICharacterProps as IProps} from './types';
 import {createUrl} from '../../../../utils/utils';
-import CharacterImage from '../CharacterImage';
+import CharacterImage from '../../../../common/CharacterImage';
 
 const Character: FC<IProps> = ({name, history, match}) => {
   const {t} = useTranslation();
