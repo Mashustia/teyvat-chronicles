@@ -5,11 +5,13 @@ import { initReactI18next } from 'react-i18next'
 import {Languages, NS} from './const/consts';
 import HEADER from './locales/ru/header.json';
 import CHARACTER from './locales/ru/character.json';
+import FOOTER from './locales/ru/footer.json';
 
 const Translations = {
   ru: {
     header: HEADER,
-    character: CHARACTER
+    character: CHARACTER,
+    footer: FOOTER
   }
 };
 
