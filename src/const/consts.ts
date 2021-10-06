@@ -4,7 +4,10 @@ export const Languages = {
 }
 
 export const NS = [
-  'header'
+  'header',
+  'character',
+  'footer',
+  'language'
 ]
 
 export enum Vision {
@@ -21,3 +24,5 @@ export enum RouteName {
   DEFAULT = '/',
   CHARACTER = '/:name'
 }
+
+export const lookupLocalStorage = 'i18nextLng'
