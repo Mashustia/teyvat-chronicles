@@ -1,9 +1,9 @@
-import {FC, ReactElement} from 'react'
+import {FC, ReactElement, MouseEvent} from 'react'
 import {Button, Dropdown} from 'react-bootstrap'
 import {useTranslation} from 'react-i18next';
 import {Route, Switch, withRouter} from 'react-router';
 
-import {Languages, RouteName} from '../../const/consts';
+import {Languages, lookupLocalStorage, RouteName} from '../../const/consts';
 import Flags from './components/flags';
 import {IHeaderProps as IProps} from './components/types';
 
@@ -19,11 +19,11 @@ const Header: FC<IProps> = (props): ReactElement => {
     </Button>
   )
 
-  // const handleLanguageChange = (lng: string) => (e: MouseEvent<HTMLLinkElement>): Promise<void> => {
-  //   console.log(lng)
-  //   e.preventDefault()
-  //   return changeLanguage(lng).then(() => window.localStorage.setItem(lookupLocalStorage, lng))
-  // }
+  const handleLanguageChange = (lng: string) => (e: MouseEvent<HTMLLinkElement>): Promise<void> => {
+    console.log(lng)
+    e.preventDefault()
+    return changeLanguage(lng).then(() => window.localStorage.setItem(lookupLocalStorage, lng))
+  }
 
   console.log(languages, language, useTranslation(), resolvedLanguage)
   return (
@@ -35,8 +35,8 @@ const Header: FC<IProps> = (props): ReactElement => {
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item onClick={() => changeLanguage(Languages.EN)}>{<Flags language={Languages.EN}/>}</Dropdown.Item>
-            <Dropdown.Item onClick={() => changeLanguage(Languages.RU)}>{<Flags language={Languages.RU}/>}</Dropdown.Item>
+            <Dropdown.Item onClick={handleLanguageChange(Languages.EN)}>{<Flags language={Languages.EN}/>}</Dropdown.Item>
+            <Dropdown.Item onClick={handleLanguageChange(Languages.RU)}>{<Flags language={Languages.RU}/>}</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
 
