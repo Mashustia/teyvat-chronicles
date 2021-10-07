@@ -32,6 +32,7 @@ const Header: FC<IProps> = (props: IProps): ReactElement => {
           <Dropdown.Menu>
             {i18n.languages.map((lng: string) => (
               <Dropdown.Item
+                key={lng}
                 onClick={handleLanguageChange(lng)}
               >
                 {<Flags language={lng}/>}
