@@ -41,7 +41,8 @@ i18n
     resources: Translations,
 
     react: {
-      nsMode: 'default'
+      nsMode: 'default',
+      useSuspense: true
     },
 
     interpolation: {
