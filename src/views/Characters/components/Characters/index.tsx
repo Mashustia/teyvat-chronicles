@@ -1,4 +1,4 @@
-import {FC} from 'react'
+import {FC, Fragment} from 'react'
 import {Row} from 'react-bootstrap';
 import {groupBy, sortBy} from 'lodash'
 
@@ -19,12 +19,12 @@ const Characters: FC = () => {
   const groupedCharacterKeys = Object.keys(charactersByVision)
 
   const items = () => groupedCharacterKeys.map((key: string) => (
-    <>
+    <Fragment key={key}>
       <Row className='justify-content-center gx-3 mt-3 mb-5'>
         {charactersByVision[key].map((character: ICharacter) =>
           <Character key={character.name} {...character}/>)}
       </Row>
-    </>
+    </Fragment>
   ))
 
   return <>{items()}</>

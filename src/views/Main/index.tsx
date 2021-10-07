@@ -1,7 +1,7 @@
 import {FC} from 'react'
+import {Route, Switch} from 'react-router-dom';
 
 import './Main.css'
-import {Route, Switch} from 'react-router-dom';
 import {RouteName} from '../../const/consts';
 import Layout from '../Layout';
 import Character from '../Character';

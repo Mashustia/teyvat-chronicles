@@ -7,7 +7,7 @@ import {ICharacter} from '../../../../charactersData/types';
 import CHARACTERS from '../../../../charactersData';
 import Material from '../Material';
 import {IRouteParams} from '../../../../types/commonTypes';
-import CharacterImage from '../../../Characters/components/CharacterImage';
+import CharacterImage from '../../../../common/CharacterImage';
 
 const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation();
