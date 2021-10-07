@@ -2,8 +2,7 @@
   height: var(--footer-height);
 }
 
-.footer-link,
-.footer-rights {
+.footer-link {
   color: var(--bs-gray-500);
 }
 
