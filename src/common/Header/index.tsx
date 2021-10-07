@@ -1,14 +1,14 @@
-import {FC, ReactElement, MouseEvent} from 'react'
+import {FC, ReactElement} from 'react'
 import {Button, Dropdown} from 'react-bootstrap'
 import {useTranslation} from 'react-i18next';
-import {Route, Switch, withRouter} from 'react-router';
+import {Route, Switch, withRouter} from 'react-router-dom';
 
-import {Languages, lookupLocalStorage, RouteName} from '../../const/consts';
+import {lookupLocalStorage, RouteName} from '../../const/consts';
 import Flags from './components/flags';
 import {IHeaderProps as IProps} from './components/types';
 
-const Header: FC<IProps> = (props): ReactElement => {
-  const {t, i18n: {language, languages, changeLanguage, resolvedLanguage}} = useTranslation()
+const Header: FC<IProps> = (props: IProps): ReactElement => {
+  const {t, i18n} = useTranslation(['header', 'language'])
   const {history} = props
 
   const handleGoBack = () => history.push(RouteName.DEFAULT)
@@ -19,24 +19,25 @@ const Header: FC<IProps> = (props): ReactElement => {
     </Button>
   )
 
-  const handleLanguageChange = (lng: string) => (e: MouseEvent<HTMLLinkElement>): Promise<void> => {
-    console.log(lng)
-    e.preventDefault()
-    return changeLanguage(lng).then(() => window.localStorage.setItem(lookupLocalStorage, lng))
-  }
+  const handleLanguageChange = (lng: string) => () => i18n.changeLanguage(lng).then(() => window.localStorage.setItem(lookupLocalStorage, lng))
 
-  console.log(languages, language, useTranslation(), resolvedLanguage)
   return (
     <header className='header mb-3'>
       <div className='d-flex flex-nowrap justify-content-between px-2'>
         <Dropdown>
           <Dropdown.Toggle variant='secondary' id='dropdown-basic' size='sm'>
-            <Flags language={resolvedLanguage}/>
+            <Flags language={i18n.language}/>
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item onClick={handleLanguageChange(Languages.EN)}>{<Flags language={Languages.EN}/>}</Dropdown.Item>
-            <Dropdown.Item onClick={handleLanguageChange(Languages.RU)}>{<Flags language={Languages.RU}/>}</Dropdown.Item>
+            {i18n.languages.map((lng: string) => (
+              <Dropdown.Item
+                onClick={handleLanguageChange(lng)}
+              >
+                {<Flags language={lng}/>}
+              </Dropdown.Item>
+            ))}
+
           </Dropdown.Menu>
         </Dropdown>
 
