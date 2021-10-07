@@ -14,7 +14,7 @@ const Character: FC<IProps> = ({name, history, match}) => {
   return (
     <Col xs={6} sm={3} md={3} lg={2} xl={2} xxl={1} className='pointer' onClick={handleCharacterClick}>
       <CharacterImage name={name} withBorder={true}/>
-      <h4>{t(`character:names.${name}`)}</h4>
+      <h4 className='d-flex justify-content-center'>{t(`character:names.${name}`)}</h4>
     </Col>
   )
 }
