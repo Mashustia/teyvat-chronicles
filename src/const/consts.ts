@@ -26,3 +26,8 @@ export enum RouteName {
 }
 
 export const lookupLocalStorage = 'i18nextLng'
+
+export enum InteractiveMapLanguage {
+  en = 'en-us',
+  ru = 'ru-ru'
+}
