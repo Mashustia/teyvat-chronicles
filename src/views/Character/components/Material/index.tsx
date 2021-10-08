@@ -1,16 +1,28 @@
 import {FC} from 'react'
 import {Col, Row} from 'react-bootstrap';
 import {Img} from 'react-image';
+import {useTranslation} from 'react-i18next';
 
 import {ITableItemProps as IProps} from './types';
 import {IMaterial} from '../../../../charactersData/types';
-
 import './Material.css'
 import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.svg';
+import {materialLink} from '../../../../charactersData/interactiveMapLinks';
+import {interactiveMapBaseUrl, InteractiveMapLanguage} from '../../../../const/consts';
 
 const Material: FC<IProps> = ({data: [lvl, materials]}) => {
+  const {i18n} = useTranslation()
+
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
     const imagePath = `/images/materials/${material}.png`
+
+    const getInteractiveMapLink = (materialLink: string | undefined): string | undefined => {
+      if (materialLink) return `${interactiveMapBaseUrl.replace('{{ language }}', InteractiveMapLanguage[i18n.language])}${materialLink}`
+
+      return undefined
+    }
+
+    const interactiveMapLink: string | undefined = getInteractiveMapLink(materialLink[material])
 
     const image = (
       <Img
@@ -24,7 +36,10 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
 
     return (
       <Col key={index}>
-        <div className='ascension-material-img-wrapper mx-auto'>{image}</div>
+        <div className='ascension-material-img-wrapper mx-auto'>
+          <a className={interactiveMapLink && 'pointer'} href={interactiveMapLink}
+             target='_blank' rel='noreferrer'>{image}</a>
+        </div>
         <p className='mb-0 fs-6'>{count}</p>
       </Col>
     )
