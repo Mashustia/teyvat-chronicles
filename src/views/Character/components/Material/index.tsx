@@ -24,7 +24,9 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
 
     return (
       <Col key={index}>
-        <div className='ascension-material-img-wrapper mx-auto'>{image}</div>
+        <div className='ascension-material-img-wrapper mx-auto'>
+          <a className='pointer'>{image}</a>
+        </div>
         <p className='mb-0 fs-6'>{count}</p>
       </Col>
     )
