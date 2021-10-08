@@ -1,3 +1,5 @@
+export const interactiveMapBaseUrl = 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang={{ language }}#/map/2?shown_types='
+
 export const Languages = {
   EN: 'en',
   RU: 'ru'
