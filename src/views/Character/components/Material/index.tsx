@@ -8,7 +8,7 @@ import {IMaterial} from '../../../../charactersData/types';
 import './Material.css'
 import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.svg';
 import {materialLink} from '../../../../charactersData/interactiveMapLinks';
-import {InteractiveMapLanguage} from '../../../../const/consts';
+import {interactiveMapBaseUrl, InteractiveMapLanguage} from '../../../../const/consts';
 
 const Material: FC<IProps> = ({data: [lvl, materials]}) => {
   const {i18n} = useTranslation()
@@ -16,7 +16,13 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
     const imagePath = `/images/materials/${material}.png`
 
-    const interactiveMapLink: string | undefined = materialLink[material]?.replace('{{ language }}', InteractiveMapLanguage[i18n.language])
+    const getInteractiveMapLink = (materialLink: string | undefined): string | undefined => {
+      if (materialLink) return `${interactiveMapBaseUrl.replace('{{ language }}', InteractiveMapLanguage[i18n.language])}${materialLink}`
+
+      return undefined
+    }
+
+    const interactiveMapLink: string | undefined = getInteractiveMapLink(materialLink[material])
 
     const image = (
       <Img
