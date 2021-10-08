@@ -16,5 +16,10 @@ export const materialLink = {
   sea_ganoderma: 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang=en-us#/map/2?shown_types=185&center=5622.00,1888.00&zoom=-1.00',
   sakura_bloom: 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang=en-us#/map/2?shown_types=199&center=4980.02,3566.82&zoom=0.50',
   naku_weed: 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang=en-us#/map/2?shown_types=197&center=6819.20,3300.94&zoom=0.50',
-  dendrobium: 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang=en-us#/map/2?shown_types=198&center=5811.50,1922.00&zoom=0.00'
+  dendrobium: 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang=en-us#/map/2?shown_types=198&center=5811.50,1922.00&zoom=0.00',
+  noctilucous_jade: 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang=en-us#/map/2?shown_types=42&center=1876.00,-1376.00&zoom=-1.00',
+  cor_lapis: 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang=en-us#/map/2?shown_types=40&center=1676.77,-1322.83&zoom=-1.50',
+  crystal_marrow: 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang=en-us#/map/2?shown_types=211&center=6043.50,1679.00&zoom=0.00',
+  sango_pearl: 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang=en-us#/map/2?shown_types=227&center=6101.50,-115.00&zoom=0.00',
+  starconch: 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang=en-us#/map/2?shown_types=78&center=2005.50,-341.00&zoom=0.00',
 }
