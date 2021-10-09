@@ -2,3 +2,9 @@
   min-height: calc(100% - var(--footer-height));
   margin-bottom: auto;
 }
+
+@media (min-width: 1280px) {
+  .main {
+    width: 1280px;
+  }
+}

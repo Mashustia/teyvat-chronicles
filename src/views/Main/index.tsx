@@ -8,7 +8,7 @@ import './Main.css'
 
 const Main: FC = (children) => {
   return (
-    <main role='main' className='main'>
+    <main role='main' className='main mx-auto'>
       <Switch>
         <Route exact path={RouteName.DEFAULT} component={Layout} />
         <Route exact path={RouteName.CHARACTER} component={Character} />
