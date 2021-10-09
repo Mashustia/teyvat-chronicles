@@ -11,7 +11,7 @@ export const materialLink = {
   dandelion_seed: '37&center=114.77,112.60&zoom=-0.50',
   amakumo_fruit: '228&center=6951.59,3605.93&zoom=0.00',
   wolfhook: '41&center=251.25,-322.50&zoom=1.00',
-  cecilia: '35&center=-214.75,886.50&zoom=1.00',
+  cecilia: '35&center=-212.92,967.15&zoom=0.50',
   violetgrass: '34&center=1509.18,-976.34&zoom=-0.50',
   sea_ganoderma: '185&center=5622.00,1888.00&zoom=-1.00',
   sakura_bloom: '199&center=4980.02,3566.82&zoom=0.50',

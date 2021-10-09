@@ -22,7 +22,7 @@ const Header: FC<IProps> = (props: IProps): ReactElement => {
   const handleLanguageChange = (lng: string) => () => i18n.changeLanguage(lng).then(() => window.localStorage.setItem(lookupLocalStorage, lng))
 
   return (
-    <header className='header mb-3'>
+    <header className='header mb-2'>
       <div className='d-flex flex-nowrap justify-content-between px-2'>
         <Dropdown>
           <Dropdown.Toggle variant='secondary' id='dropdown-basic' size='sm'>
