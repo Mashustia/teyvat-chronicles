@@ -24,8 +24,7 @@ const Characters: FC = () => {
       } ${
         t(`character:vision.${vision}`, { lng: Languages.RU}
         )}`).toLowerCase(),
-      translated_name: t(`character:names.${name}`),
-      translated_vision: t(`character:vision.${vision}`)
+      translated_name: t(`character:names.${name}`)
     })
   })
 

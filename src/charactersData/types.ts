@@ -11,7 +11,6 @@ export interface ICharacter {
 export interface ISearch {
   search_keys: string
   translated_name: string
-  translated_vision: string
 }
 
 export interface IAscensionMaterials {
