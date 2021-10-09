@@ -32,7 +32,7 @@ const Characters: FC = () => {
   const [filteredCharacters, setFilteredCharacters] = useState([...characterWithTranslatedNames])
 
   const handleFilter = ({target}: ChangeEvent<HTMLInputElement>) => {
-    const value = target.value.toLowerCase()
+    const value = target.value.toLowerCase().trim()
     const filteredCharacters = characterWithTranslatedNames.filter((character: ICharacterWithSearchKeys) => character.search_keys.includes(value))
 
     setFilteredCharacters(filteredCharacters)
