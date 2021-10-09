@@ -51,5 +51,6 @@
     "cryo": "Cryo",
     "hydro":  "Hydro",
     "geo": "Geo"
-  }
+  },
+  "search_placeholder": "Search character by name or vision"
 }
