@@ -10,7 +10,7 @@ import CharactersGroup from '../CharactersGroup';
 
 
 const Characters: FC = () => {
-  const {t} = useTranslation()
+  const {t} = useTranslation('character')
   const characterWithTranslatedNames: ICharacterWithSearchKeys[] = CHARACTERS.map((character: ICharacter) => {
     const {name, vision} = character
     return ({
