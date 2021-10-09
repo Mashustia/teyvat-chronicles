@@ -39,12 +39,12 @@ const Characters: FC = () => {
   }
 
   return <>
-    <Form>
-      <Form.Group className='mb-3' controlId='search'>
+    <Form className='mb-4'>
+      <Form.Group controlId='search'>
         <Form.Control type='text' placeholder={t('character:search_placeholder')} onChange={handleFilter}/>
       </Form.Group>
     </Form>
-    {<CharactersGroup characters={filteredCharacters}/>}
+    <CharactersGroup characters={filteredCharacters}/>
   </>
 }
 
