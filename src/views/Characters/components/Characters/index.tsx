@@ -1,5 +1,5 @@
 import {ChangeEvent, FC, useState} from 'react'
-import {Form} from 'react-bootstrap';
+import {CloseButton, Form, InputGroup} from 'react-bootstrap';
 import {useTranslation} from 'react-i18next';
 
 import CHARACTERS from '../../../../charactersData';
@@ -8,6 +8,7 @@ import {ICharacterProps as ICharacterWithSearchKeys} from '../Character/types';
 import {Languages} from '../../../../const/consts';
 import CharactersGroup from '../CharactersGroup';
 
+import './Characters.css'
 
 const Characters: FC = () => {
   const {t} = useTranslation('character')
@@ -37,10 +38,21 @@ const Characters: FC = () => {
     setFilteredCharacters(filteredCharacters)
   }
 
+  const handleFiltersReset = () => setFilteredCharacters([...characterWithTranslatedNames])
+
   return <>
     <Form className='mb-4'>
       <Form.Group controlId='search'>
-        <Form.Control type='text' placeholder={t('character:search_placeholder')} onChange={handleFilter}/>
+        <InputGroup className="mb-2">
+          <Form.Control
+            type='text'
+            placeholder={t('character:search_placeholder')}
+            onChange={handleFilter}
+          />
+          <InputGroup.Text>
+            <CloseButton className='characters-search-cross' onClick={handleFiltersReset}/>
+          </InputGroup.Text>
+        </InputGroup>
       </Form.Group>
     </Form>
     <CharactersGroup characters={filteredCharacters}/>
