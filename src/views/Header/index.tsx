@@ -6,7 +6,7 @@ const Header: FC = (props) => {
   const {t} = useTranslation();
 
   return (
-    <header className='mb-2'>
+    <div className='mb-2'>
       <Container>
         <Row>
           <Col xs={12}>
@@ -16,7 +16,7 @@ const Header: FC = (props) => {
           </Col>
         </Row>
       </Container>
-    </header>
+    </div>
   )
 }
 
