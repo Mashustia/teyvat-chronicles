@@ -52,5 +52,6 @@
     "hydro":  "Hydro",
     "geo": "Geo"
   },
-  "search_placeholder": "Search character by name or vision"
+  "search_placeholder": "Search character by name or vision",
+  "character_not_found": "Character not found"
 }
