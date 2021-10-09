@@ -6,8 +6,12 @@ export interface ICharacter {
   ascension_materials: IAscensionMaterials
   rarity: number
   talent_materials?: IAscensionMaterials
-  translated_name?: string
-  translated_vision?: string
+}
+
+export interface ISearch {
+  search_keys: string
+  translated_name: string
+  translated_vision: string
 }
 
 export interface IAscensionMaterials {
