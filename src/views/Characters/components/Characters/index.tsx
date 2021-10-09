@@ -1,46 +1,53 @@
-import {FC, Fragment} from 'react'
-import {Row} from 'react-bootstrap';
-import {groupBy, sortBy} from 'lodash'
-
-import Character from '../Character';
-import CHARACTERS from '../../../../charactersData';
-import {ICharacter} from '../../../../charactersData/types';
+import {ChangeEvent, FC, useState} from 'react'
+import {Form} from 'react-bootstrap';
 import {useTranslation} from 'react-i18next';
 
-enum groupField {
-  VISION = 'vision',
-  NAME = 'name',
-  TRANSLATED_NAME = 'translated_name'
-}
+import CHARACTERS from '../../../../charactersData';
+import {ICharacter} from '../../../../charactersData/types';
+import {ICharacterProps as ICharacterWithSearchKeys} from '../Character/types';
+import {Languages} from '../../../../const/consts';
+import CharactersGroup from '../CharactersGroup';
+
 
 const Characters: FC = () => {
   const {t} = useTranslation()
-
-  const characterWithTranslatedNames = CHARACTERS.map((character: ICharacter) => {
+  const characterWithTranslatedNames: ICharacterWithSearchKeys[] = CHARACTERS.map((character: ICharacter) => {
     const {name, vision} = character
     return ({
       ...character,
+      search_keys: (`${
+        t(`character:names.${name}`, { lng: Languages.EN})
+      } ${
+        t(`character:names.${name}`, { lng: Languages.RU})
+      } ${
+        t(`character:vision.${vision}`, { lng: Languages.EN})
+      } ${
+        t(`character:vision.${vision}`, { lng: Languages.RU}
+        )}`).toLowerCase(),
       translated_name: t(`character:names.${name}`),
       translated_vision: t(`character:vision.${vision}`)
     })
   })
 
-  const sortedCharacters = sortBy(characterWithTranslatedNames, [groupField.VISION, groupField.TRANSLATED_NAME])
+  const [filteredCharacters, setFilteredCharacters] = useState([...characterWithTranslatedNames])
 
-  const charactersByVision = groupBy(sortedCharacters, groupField.VISION)
+  const handleFilter = ({target}: ChangeEvent<HTMLInputElement>) => {
+    const value = target.value.toLowerCase()
 
-  const groupedCharacterKeys = Object.keys(charactersByVision)
+    const filteredCharacters = characterWithTranslatedNames.filter((character: ICharacterWithSearchKeys) => character.search_keys.includes(value))
+    console.log(filteredCharacters)
 
-  const items = () => groupedCharacterKeys.map((key: string) => (
-    <Fragment key={key}>
-      <Row className='justify-content-center gx-3 mt-3 mb-5'>
-        {charactersByVision[key].map((character: ICharacter) =>
-          <Character key={character.name} {...character}/>)}
-      </Row>
-    </Fragment>
-  ))
+    setFilteredCharacters(filteredCharacters)
+  }
 
-  return <>{items()}</>
+  return <>
+    <Form>
+      <Form.Group className='mb-3' controlId='search'>
+        <Form.Control type='text' placeholder={t('character:search_placeholder')} onChange={handleFilter}/>
+      </Form.Group>
+    </Form>
+    {<CharactersGroup characters={filteredCharacters}/>}
+  </>
 }
 
 export default Characters
