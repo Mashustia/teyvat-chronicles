@@ -43,5 +43,13 @@
     "Traveler": "Путешественник"
   },
   "ascension_materials": "Материалы возвышения",
-  "talents_enhancement": "Улучшение талантов"
+  "talents_enhancement": "Улучшение талантов",
+  "vision": {
+    "anemo": "Анемо",
+    "pyro": "Пиро",
+    "electro": "Электро",
+    "cryo": "Крио",
+    "hydro": "Гидро",
+    "geo": "Гео"
+  }
 }

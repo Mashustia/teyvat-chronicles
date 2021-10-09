@@ -43,5 +43,13 @@
     "Traveler": "Traveler"
   },
   "ascension_materials": "Ascension materials",
-  "talents_enhancement": "Talent level-up materials"
+  "talents_enhancement": "Talent level-up materials",
+  "vision": {
+    "anemo": "Anemo",
+    "pyro": "Pyro",
+    "electro":  "Electro",
+    "cryo": "Cryo",
+    "hydro":  "Hydro",
+    "geo": "Geo"
+  }
 }
