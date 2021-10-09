@@ -2,8 +2,8 @@ import {FC} from 'react'
 import {Col} from 'react-bootstrap';
 
 import CharacterImage from '../../../../common/CharacterImage';
-import {ICharacter as IProps} from '../../../../charactersData/types';
 import Stars from '../../../../common/Stars';
+import {ICharacterProps as IProps} from './types';
 
 const Character: FC<IProps> = ({name, rarity, translated_name}) => (
   <Col xs={6} sm={3} md={3} lg={2} xl={2} xxl={1}>
