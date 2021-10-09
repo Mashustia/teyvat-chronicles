@@ -12,6 +12,7 @@ import './Characters.css'
 
 const Characters: FC = () => {
   const {t} = useTranslation('character')
+
   const characterWithTranslatedNames: ICharacterWithSearchKeys[] = CHARACTERS.map((character: ICharacter) => {
     const {name, vision} = character
     return ({
@@ -30,15 +31,20 @@ const Characters: FC = () => {
   })
 
   const [filteredCharacters, setFilteredCharacters] = useState([...characterWithTranslatedNames])
+  const [search, setSearch] = useState('')
 
   const handleFilter = ({target}: ChangeEvent<HTMLInputElement>) => {
     const value = target.value.toLowerCase().trim()
     const filteredCharacters = characterWithTranslatedNames.filter((character: ICharacterWithSearchKeys) => character.search_keys.includes(value))
 
     setFilteredCharacters(filteredCharacters)
+    setSearch(value)
   }
 
-  const handleFiltersReset = () => setFilteredCharacters([...characterWithTranslatedNames])
+  const handleFiltersReset = () => {
+    setSearch('')
+    setFilteredCharacters([...characterWithTranslatedNames])
+  }
 
   return <>
     <Form className='mb-4'>
@@ -48,6 +54,7 @@ const Characters: FC = () => {
             type='text'
             placeholder={t('character:search_placeholder')}
             onChange={handleFilter}
+            value={search}
           />
           <InputGroup.Text>
             <CloseButton className='characters-search-cross' onClick={handleFiltersReset}/>
