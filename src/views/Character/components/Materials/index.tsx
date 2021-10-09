@@ -8,6 +8,7 @@ import CHARACTERS from '../../../../charactersData';
 import Material from '../Material';
 import {IRouteParams} from '../../../../types/commonTypes';
 import CharacterImage from '../../../../common/CharacterImage';
+import Stars from '../../../../common/Stars';
 
 const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation();
@@ -20,6 +21,8 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
   const talentMaterials = activeCharacter?.talent_materials ?
     Object.entries(activeCharacter.talent_materials) : []
 
+  const {rarity} = activeCharacter
+
   return (
     <Row className='justify-content-center'>
       <Col sm={12} md={12} lg={8} xl={7} xxl={6}>
@@ -27,6 +30,7 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
           <Col xs={12}>
             <CharacterImage name={name}/>
             <h1 className='fs-3 mb-0'>{t(`character:names.${name}`)}</h1>
+            <Stars count={rarity}/>
           </Col>
 
           <Col xs={12}>
