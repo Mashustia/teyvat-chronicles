@@ -1,4 +1,4 @@
-import {ChangeEvent, FC, useState} from 'react'
+import {ChangeEvent, FC, useEffect, useState} from 'react'
 import {CloseButton, Form, InputGroup} from 'react-bootstrap';
 import {useTranslation} from 'react-i18next';
 
@@ -11,7 +11,7 @@ import CharactersGroup from '../CharactersGroup';
 import './Characters.css'
 
 const Characters: FC = () => {
-  const {t} = useTranslation('character')
+  const {t, i18n} = useTranslation('character')
 
   const characterWithTranslatedNames: ICharacterWithSearchKeys[] = CHARACTERS.map((character: ICharacter) => {
     const {name, vision} = character
@@ -45,6 +45,12 @@ const Characters: FC = () => {
     setSearch('')
     setFilteredCharacters([...characterWithTranslatedNames])
   }
+
+  useEffect(() => {
+    const filteredCharacters = characterWithTranslatedNames.filter((character: ICharacterWithSearchKeys) => character.search_keys.includes(search))
+
+    setFilteredCharacters([...filteredCharacters])
+  }, [i18n.language]);
 
   return <>
     <Form className='mb-4'>
