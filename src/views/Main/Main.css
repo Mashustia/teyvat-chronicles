@@ -1,3 +1,4 @@
 .main {
   min-height: calc(100% - var(--footer-height));
+  margin-bottom: auto;
 }
