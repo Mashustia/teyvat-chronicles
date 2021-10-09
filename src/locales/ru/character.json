@@ -52,6 +52,6 @@
     "hydro": "Гидро",
     "geo": "Гео"
   },
-  "search_placeholder": "Поиск персонажа по имени или глазу бога",
+  "search_placeholder": "Поиск по имени или глазу бога",
   "character_not_found": "Персонаж не найден"
 }
