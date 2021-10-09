@@ -6,7 +6,7 @@ const Header: FC = (props) => {
   const {t} = useTranslation();
 
   return (
-    <header className='mb-4'>
+    <header className='mb-2'>
       <Container>
         <Row>
           <Col xs={12}>
@@ -14,7 +14,6 @@ const Header: FC = (props) => {
               {t('header:welcome')}
             </h1>
           </Col>
-          <Col xs={12} className='fs-5'>{t('header:choose_character')}</Col>
         </Row>
       </Container>
     </header>
