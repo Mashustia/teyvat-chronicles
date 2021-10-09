@@ -1,33 +1,50 @@
-import {FC, Fragment} from 'react'
-import {Row} from 'react-bootstrap';
-import {groupBy, sortBy} from 'lodash'
+import {ChangeEvent, FC, useState} from 'react'
+import {Form} from 'react-bootstrap';
+import {useTranslation} from 'react-i18next';
 
-import Character from '../Character';
 import CHARACTERS from '../../../../charactersData';
 import {ICharacter} from '../../../../charactersData/types';
+import {ICharacterProps as ICharacterWithSearchKeys} from '../Character/types';
+import {Languages} from '../../../../const/consts';
+import CharactersGroup from '../CharactersGroup';
 
-enum groupField {
-  VISION = 'vision',
-  NAME = 'name'
-}
-
-const sortedCharacters = sortBy(CHARACTERS, [groupField.VISION, groupField.NAME])
 
 const Characters: FC = () => {
-  const charactersByVision = groupBy(sortedCharacters, groupField.VISION)
+  const {t} = useTranslation('character')
+  const characterWithTranslatedNames: ICharacterWithSearchKeys[] = CHARACTERS.map((character: ICharacter) => {
+    const {name, vision} = character
+    return ({
+      ...character,
+      search_keys: (`${
+        t(`character:names.${name}`, { lng: Languages.EN})
+      } ${
+        t(`character:names.${name}`, { lng: Languages.RU})
+      } ${
+        t(`character:vision.${vision}`, { lng: Languages.EN})
+      } ${
+        t(`character:vision.${vision}`, { lng: Languages.RU}
+        )}`).toLowerCase(),
+      translated_name: t(`character:names.${name}`)
+    })
+  })
 
-  const groupedCharacterKeys = Object.keys(charactersByVision)
+  const [filteredCharacters, setFilteredCharacters] = useState([...characterWithTranslatedNames])
 
-  const items = () => groupedCharacterKeys.map((key: string) => (
-    <Fragment key={key}>
-      <Row className='justify-content-center gx-3 mt-3 mb-5'>
-        {charactersByVision[key].map((character: ICharacter) =>
-          <Character key={character.name} {...character}/>)}
-      </Row>
-    </Fragment>
-  ))
+  const handleFilter = ({target}: ChangeEvent<HTMLInputElement>) => {
+    const value = target.value.toLowerCase().trim()
+    const filteredCharacters = characterWithTranslatedNames.filter((character: ICharacterWithSearchKeys) => character.search_keys.includes(value))
 
-  return <>{items()}</>
+    setFilteredCharacters(filteredCharacters)
+  }
+
+  return <>
+    <Form className='mb-4'>
+      <Form.Group controlId='search'>
+        <Form.Control type='text' placeholder={t('character:search_placeholder')} onChange={handleFilter}/>
+      </Form.Group>
+    </Form>
+    <CharactersGroup characters={filteredCharacters}/>
+  </>
 }
 
 export default Characters

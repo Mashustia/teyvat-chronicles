@@ -8,6 +8,11 @@ export interface ICharacter {
   talent_materials?: IAscensionMaterials
 }
 
+export interface ISearch {
+  search_keys: string
+  translated_name: string
+}
+
 export interface IAscensionMaterials {
   [key: number]: IMaterial[]
 }
