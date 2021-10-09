@@ -33,9 +33,7 @@ const Characters: FC = () => {
 
   const handleFilter = ({target}: ChangeEvent<HTMLInputElement>) => {
     const value = target.value.toLowerCase()
-
     const filteredCharacters = characterWithTranslatedNames.filter((character: ICharacterWithSearchKeys) => character.search_keys.includes(value))
-    console.log(filteredCharacters)
 
     setFilteredCharacters(filteredCharacters)
   }
