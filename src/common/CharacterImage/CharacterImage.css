@@ -1,3 +1,4 @@
+.character-img-wrapper * svg,
 .character-img-wrapper > svg {
   border-radius: 30px;
   max-width: 130px;
