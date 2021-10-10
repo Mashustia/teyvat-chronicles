@@ -1,3 +1,7 @@
+.character-img-wrapper {
+  width: 130px;
+}
+
 .character-img-wrapper * svg,
 .character-img-wrapper > svg {
   border-radius: 30px;
