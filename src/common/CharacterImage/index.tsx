@@ -26,7 +26,7 @@ const CharacterImage: FC<IProps> = ({name, withBorder, withLink, match}) => {
   const characterImage = withLink ? link(image) : image
 
   return (
-    <div className='character-img-wrapper mx-auto'>{characterImage}</div>
+    <div className='character-img-wrapper mx-auto mb-1'>{characterImage}</div>
   )
 }
 
