@@ -1,4 +1,4 @@
-.ascension-material-img-wrapper > svg {
+.ascension-material-img-wrapper * svg {
   max-width: 100px;
   width: 100%;
   border-radius: 5px;

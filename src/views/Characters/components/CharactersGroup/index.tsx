@@ -1,11 +1,11 @@
 import {FC, Fragment} from 'react'
-import {Row} from 'react-bootstrap';
 import {groupBy, sortBy} from 'lodash'
+import {useTranslation} from 'react-i18next';
 
 import Character from '../Character';
 import {ICharactersGroup as IProps} from './types';
 import {ICharacterProps as ICharacter} from '../Character/types';
-import {useTranslation} from 'react-i18next';
+import './CharactersGroup.css'
 
 export enum groupField {
   VISION = 'vision',
@@ -28,10 +28,10 @@ const CharactersGroup: FC<IProps> = ({characters}) => {
 
   const items = () => groupedCharacterKeys.map((key: string) => (
     <Fragment key={key}>
-      <Row className='justify-content-center gx-3 mt-3 mb-5'>
+      <div className='characters-group mb-5 d-flex justify-content-center flex-wrap'>
         {charactersByVision[key].map((character: ICharacter) =>
           <Character key={character.name} {...character}/>)}
-      </Row>
+      </div>
     </Fragment>
   ))
 
