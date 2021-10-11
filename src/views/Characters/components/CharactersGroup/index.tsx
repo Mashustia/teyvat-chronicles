@@ -28,7 +28,7 @@ const CharactersGroup: FC<IProps> = ({characters}) => {
 
   const items = () => groupedCharacterKeys.map((key: string) => (
     <Fragment key={key}>
-      <div className='characters-group mb-5'>
+      <div className='characters-group mb-5 d-flex justify-content-center flex-wrap'>
         {charactersByVision[key].map((character: ICharacter) =>
           <Character key={character.name} {...character}/>)}
       </div>
