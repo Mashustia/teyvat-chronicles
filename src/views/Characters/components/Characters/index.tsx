@@ -24,7 +24,7 @@ const Characters: FC<ICharactersProps> = ({characters}) => {
   const filteredCharacters = characters.filter((character: ICharacterWithSearchKeys) => character.search_keys.includes(search))
 
   return <>
-    <Form className='mb-4 mx-3'>
+    <Form className='mb-4'>
       <Form.Group controlId='search'>
         <InputGroup className='mb-2'>
           <Form.Control
