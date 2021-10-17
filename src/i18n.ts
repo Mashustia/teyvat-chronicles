@@ -8,24 +8,28 @@ import HEADER_RU from './locales/ru/header.json';
 import CHARACTER_RU from './locales/ru/character.json';
 import FOOTER_RU from './locales/ru/footer.json';
 import LANGUAGE_RU from './locales/ru/language.json';
+import MATERIALS_RU from './locales/ru/materials.json';
 
 import HEADER_EN from './locales/en/header.json';
 import CHARACTER_EN from './locales/en/character.json';
 import FOOTER_EN from './locales/en/footer.json';
 import LANGUAGE_EN from './locales/en/language.json';
+import MATERIALS_EN from './locales/en/materials.json';
 
 const Translations = {
   ru: {
     header: HEADER_RU,
     character: CHARACTER_RU,
     footer: FOOTER_RU,
-    language: LANGUAGE_RU
+    language: LANGUAGE_RU,
+    materials: MATERIALS_RU
   },
   en: {
     header: HEADER_EN,
     character: CHARACTER_EN,
     footer: FOOTER_EN,
-    language: LANGUAGE_EN
+    language: LANGUAGE_EN,
+    materials: MATERIALS_EN
   }
 };
 

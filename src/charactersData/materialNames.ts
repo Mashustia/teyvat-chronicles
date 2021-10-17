@@ -6,34 +6,34 @@ export const Gem = {
     PRITHIVA_TOPAZ_SLIVER: 'prithiva_topaz_sliver'
   },
   ANEMO: {
-    VAYUDA_TOPAZ_GEMSTONE:  'vayuda_topaz_gemstone',
-    VAYUDA_TOPAZ_CHUNK:  'vayuda_topaz_chunk',
-    VAYUDA_TOPAZ_FRAGMENT:  'vayuda_topaz_fragment',
-    VAYUDA_TOPAZ_SLIVER:  'vayuda_topaz_sliver'
+    VAYUDA_TURQUOISE_GEMSTONE: 'vayuda_turquoise_gemstone',
+    VAYUDA_TURQUOISE_CHUNK: 'vayuda_turquoise_chunk',
+    VAYUDA_TURQUOISE_FRAGMENT: 'vayuda_turquoise_fragment',
+    VAYUDA_TURQUOISE_SLIVER: 'vayuda_turquoise_sliver'
   },
   CRYO: {
-    SHIVADA_TOPAZ_GEMSTONE: 'shivada_topaz_gemstone',
-    SHIVADA_TOPAZ_CHUNK: 'shivada_topaz_chunk',
-    SHIVADA_TOPAZ_FRAGMENT: 'shivada_topaz_fragment',
-    SHIVADA_TOPAZ_SLIVER: 'shivada_topaz_sliver'
+    SHIVADA_JADE_GEMSTONE: 'shivada_jade_gemstone',
+    SHIVADA_JADE_CHUNK: 'shivada_jade_chunk',
+    SHIVADA_JADE_FRAGMENT: 'shivada_jade_fragment',
+    SHIVADA_JADE_SLIVER: 'shivada_jade_sliver'
   },
   ELECTRO: {
-    VAJRADA_TOPAZ_GEMSTONE: 'vajrada_topaz_gemstone',
-    VAJRADA_TOPAZ_CHUNK: 'vajrada_topaz_chunk',
-    VAJRADA_TOPAZ_FRAGMENT: 'vajrada_topaz_fragment',
-    VAJRADA_TOPAZ_SLIVER: 'vajrada_topaz_sliver'
+    VAJRADA_AMETHYST_GEMSTONE: 'vajrada_amethyst_gemstone',
+    VAJRADA_AMETHYST_CHUNK: 'vajrada_amethyst_chunk',
+    VAJRADA_AMETHYST_FRAGMENT: 'vajrada_amethyst_fragment',
+    VAJRADA_AMETHYST_SLIVER: 'vajrada_amethyst_sliver'
 },
   HYDRO: {
-    VARUNADA_TOPAZ_GEMSTONE: 'varunada_topaz_gemstone',
-    VARUNADA_TOPAZ_CHUNK: 'varunada_topaz_chunk',
-    VARUNADA_TOPAZ_FRAGMENT: 'varunada_topaz_fragment',
-    VARUNADA_TOPAZ_SLIVER: 'varunada_topaz_sliver'
+    VARUNADA_LAZURITE_GEMSTONE: 'varunada_lazurite_gemstone',
+    VARUNADA_LAZURITE_CHUNK: 'varunada_lazurite_chunk',
+    VARUNADA_LAZURITE_FRAGMENT: 'varunada_lazurite_fragment',
+    VARUNADA_LAZURITE_SLIVER: 'varunada_lazurite_sliver'
   },
   PYRO: {
-    AGNIDUS_TOPAZ_GEMSTONE: 'agnidus_topaz_gemstone',
-    AGNIDUS_TOPAZ_CHUNK: 'agnidus_topaz_chunk',
-    AGNIDUS_TOPAZ_FRAGMENT: 'agnidus_topaz_fragment',
-    AGNIDUS_TOPAZ_SLIVER: 'agnidus_topaz_sliver'
+    AGNIDUS_AGATE_GEMSTONE: 'agnidus_agate_gemstone',
+    AGNIDUS_AGATE_CHUNK: 'agnidus_agate_chunk',
+    AGNIDUS_AGATE_FRAGMENT: 'agnidus_agate_fragment',
+    AGNIDUS_AGATE_SLIVER: 'agnidus_agate_sliver'
   }
 }
 
