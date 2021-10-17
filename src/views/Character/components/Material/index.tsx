@@ -11,7 +11,7 @@ import {materialLink} from '../../../../charactersData/interactiveMapLinks';
 import {interactiveMapBaseUrl, InteractiveMapLanguage} from '../../../../const/consts';
 
 const Material: FC<IProps> = ({data: [lvl, materials]}) => {
-  const {i18n} = useTranslation()
+  const {i18n, t} = useTranslation('materials')
 
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
     const imagePath = `/images/materials/${material}.png`
@@ -24,10 +24,12 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
 
     const interactiveMapLink: string | undefined = getInteractiveMapLink(materialLink[material])
 
+    const materialName = t(`materials:${material}`)
+
     const image = (
       <Img
         src={imagePath}
-        alt={material}
+        alt={materialName}
         className='ascension-material-img'
         loader={<Skeleton/>}
         unloader={<Skeleton/>}
@@ -35,11 +37,12 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
     )
 
     return (
-      <Col key={index}>
-        <div className='ascension-material-img-wrapper mx-auto'>
+      <Col key={index} className='d-flex flex-column'>
+        <div className='ascension-material-img-wrapper mb-1'>
           <a className={interactiveMapLink && 'pointer'} href={interactiveMapLink}
              target='_blank' rel='noreferrer'>{image}</a>
         </div>
+        <p className='my-auto text-break'>{materialName}</p>
         <p className='mb-0 fs-6'>{count}</p>
       </Col>
     )
@@ -49,7 +52,7 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
     <Row className='align-items-center gx-3 gy-2 table-border mb-3'>
       <Col xs={1} className='fs-5'>{lvl}</Col>
       <Col xs={11}>
-        <Row className='align-items-center gx-1'>{rows()}</Row>
+        <Row className='gx-1'>{rows()}</Row>
       </Col>
     </Row>
   )
