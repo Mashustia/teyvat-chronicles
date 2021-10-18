@@ -11,7 +11,7 @@ import {materialLink} from '../../../../charactersData/interactiveMapLinks';
 import {interactiveMapBaseUrl, InteractiveMapLanguage} from '../../../../const/consts';
 
 const Material: FC<IProps> = ({data: [lvl, materials]}) => {
-  const {i18n, t} = useTranslation('materials')
+  const {i18n, t} = useTranslation(['materials', 'material'])
   const [isAdditionalInfoShown, toggleAdditionalInfo] = useState(false)
   const [activeMaterial, toggleMaterial] = useState('')
 
@@ -73,7 +73,7 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
         >
           <Alert.Heading className='fs-5'>{materialName}</Alert.Heading>
 
-          <a href={interactiveMapLink} target='_blank' rel='noreferrer'>link to map</a>
+          <a href={interactiveMapLink} target='_blank' rel='noreferrer' className='link'>{t('material:interactive_map')}</a>
         </Alert>
       </Col>
     </Row>
