@@ -22,7 +22,11 @@
   "agnidus_agate_gemstone": "Драгоценный агат Агнидус",
   "agnidus_agate_chunk": "Кусок агата Агнидус",
   "agnidus_agate_fragment": "Фрагмент агата Агнидус",
-  "agnidus_agate_sliver": "Осколок агата Агнидус",
+  "agnidus_agate_sliver": "Осколок агата Агнидус",,
+  "brilliant_diamond_sliver": "Осколок бриллианта",
+  "brilliant_diamond_fragment": "Фрагмент бриллианта",
+  "brilliant_diamond_chunk": "Кусок бриллианта",
+  "brilliant_diamond_gemstone": "Драгоценный бриллиант",
   "mora": "Мора",
   "windwheel_aster": "Ветряная астра",
   "philanemo_mushroom": "Гриб филанемо",
@@ -41,5 +45,10 @@
   "sea_ganoderma": "Морской гриб",
   "sakura_bloom": "Цвет сакуры",
   "naku_weed": "Трава наку",
-  "dendrobium": "Кровоцвет"
+  "dendrobium": "Кровоцвет",
+  "noctilucous_jade": "Полуночный нефрит",
+  "cor_lapis": "Кор ляпис",
+  "crystal_marrow": "Кристальный костный мозг",
+  "sango_pearl": "Жемчужина Санго",
+  "starconch": "Звёздная ракушка"
 }

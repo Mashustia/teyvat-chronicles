@@ -23,6 +23,10 @@
   "agnidus_agate_chunk": "Agnidus agate chunk",
   "agnidus_agate_fragment": "Agnidus agate fragment",
   "agnidus_agate_sliver": "Agnidus agate sliver",
+  "brilliant_diamond_sliver": "Brilliant diamond sliver",
+  "brilliant_diamond_fragment": "Brilliant diamond fragment",
+  "brilliant_diamond_chunk": "Brilliant diamond chunk",
+  "brilliant_diamond_gemstone": "Brilliant diamond gemstone",
   "mora": "Mora",
   "windwheel_aster": "Windwheel aster",
   "philanemo_mushroom": "Philanemo mushroom",
@@ -41,5 +45,10 @@
   "sea_ganoderma": "Sea ganoderma",
   "sakura_bloom": "Sakura bloom",
   "naku_weed": "Naku weed",
-  "dendrobium": "Dendrobium"
+  "dendrobium": "Dendrobium",
+  "noctilucous_jade": "Noctilucous jade",
+  "cor_lapis": "Cor lapis",
+  "crystal_marrow": "Crystal marrow",
+  "sango_pearl": "Sango pearl",
+  "starconch": "Starconch"
 }
