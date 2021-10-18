@@ -54,7 +54,6 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
   const interactiveMapLink: string = getInteractiveMapLink(materialLink[activeMaterial])
 
   const materialName = t(`materials:${activeMaterial}`)
-  console.log(interactiveMapLink)
 
   return (
     <Row className='align-items-center gx-3 gy-2 table-border mb-3'>
@@ -73,7 +72,7 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
         >
           <Alert.Heading className='fs-5'>{materialName}</Alert.Heading>
 
-          <a href={interactiveMapLink} target='_blank' rel='noreferrer' className='link'>{t('material:interactive_map')}</a>
+          {interactiveMapLink && <a href={interactiveMapLink} target='_blank' rel='noreferrer' className='link'>{t('material:interactive_map')}</a>}
         </Alert>
       </Col>
     </Row>
