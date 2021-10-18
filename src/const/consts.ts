@@ -9,7 +9,9 @@ export const NS = [
   'header',
   'character',
   'footer',
-  'language'
+  'language',
+  'materials',
+  'material'
 ]
 
 export enum Vision {
