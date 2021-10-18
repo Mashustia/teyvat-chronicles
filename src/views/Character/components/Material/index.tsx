@@ -1,5 +1,5 @@
-import {FC} from 'react'
-import {Col, Row} from 'react-bootstrap';
+import {FC, useState} from 'react'
+import {Alert, Col, Row} from 'react-bootstrap';
 import {Img} from 'react-image';
 import {useTranslation} from 'react-i18next';
 
@@ -12,19 +12,16 @@ import {interactiveMapBaseUrl, InteractiveMapLanguage} from '../../../../const/c
 
 const Material: FC<IProps> = ({data: [lvl, materials]}) => {
   const {i18n, t} = useTranslation('materials')
+  const [isAdditionalInfoShown, toggleAdditionalInfo] = useState(false)
+  const [activeMaterial, toggleMaterial] = useState('')
+
+  const handleMaterialToggle = (material: string) => () => {
+    toggleAdditionalInfo(true)
+    toggleMaterial(material)
+  }
 
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
     const imagePath = `/images/materials/${material}.png`
-
-    const getInteractiveMapLink = (materialLink: string | undefined): string | undefined => {
-      if (materialLink) return `${interactiveMapBaseUrl.replace('{{ language }}', InteractiveMapLanguage[i18n.language])}${materialLink}`
-
-      return undefined
-    }
-
-    const interactiveMapLink: string | undefined = getInteractiveMapLink(materialLink[material])
-
-    const materialName = t(`materials:${material}`)
 
     const image = (
       <Img
@@ -33,26 +30,51 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
         className='ascension-material-img'
         loader={<Skeleton/>}
         unloader={<Skeleton/>}
+        onClick={handleMaterialToggle(material)}
       />
     )
 
     return (
       <Col key={index} className='d-flex flex-column'>
         <div className='ascension-material-img-wrapper mb-1'>
-          <a className={interactiveMapLink && 'pointer'} href={interactiveMapLink}
-             target='_blank' rel='noreferrer'>{image}</a>
+          {image}
         </div>
-        <p className='my-auto text-break'>{materialName}</p>
         <p className='mb-0 fs-6'>{count}</p>
       </Col>
     )
   })
+
+
+  const getInteractiveMapLink = (materialLink: string): string => {
+    if (materialLink) return `${interactiveMapBaseUrl.replace('{{ language }}', InteractiveMapLanguage[i18n.language])}${materialLink}`
+
+    return ''
+  }
+
+  const interactiveMapLink: string = getInteractiveMapLink(materialLink[activeMaterial])
+
+  const materialName = t(`materials:${activeMaterial}`)
+  console.log(interactiveMapLink)
 
   return (
     <Row className='align-items-center gx-3 gy-2 table-border mb-3'>
       <Col xs={1} className='fs-5'>{lvl}</Col>
       <Col xs={11}>
         <Row className='gx-1'>{rows()}</Row>
+      </Col>
+
+      <Col xs={12}>
+        <Alert
+          show={isAdditionalInfoShown}
+          closeVariant='white'
+          onClose={() => toggleAdditionalInfo(false)}
+          dismissible
+          className='ascension-material-alert'
+        >
+          <Alert.Heading className='fs-5'>{materialName}</Alert.Heading>
+
+          <a href={interactiveMapLink} target='_blank' rel='noreferrer'>link to map</a>
+        </Alert>
       </Col>
     </Row>
   )
