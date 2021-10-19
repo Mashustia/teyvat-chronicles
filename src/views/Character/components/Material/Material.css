@@ -25,3 +25,11 @@
   background-color: var(--background-color);
   color: var(--bs-gray-200);
 }
+
+.ascension-material-resin-image {
+  width: 30px;
+}
+
+.ascension-material-material-details-image {
+  width: 260px;
+}

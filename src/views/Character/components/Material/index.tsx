@@ -7,8 +7,10 @@ import {ITableItemProps as IProps} from './types';
 import {IMaterial} from '../../../../charactersData/types';
 import './Material.css'
 import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.svg';
+import {ReactComponent as MaterialDetailsImageSkeleton} from '../MaterialDetailsImageSkeleton/MaterialDetailsImageSkeleton.svg';
 import {materialLink} from '../../../../charactersData/interactiveMapLinks';
 import {interactiveMapBaseUrl, InteractiveMapLanguage} from '../../../../const/consts';
+import {Dungeon} from '../../../../charactersData/dungeons';
 
 const Material: FC<IProps> = ({data: [lvl, materials]}) => {
   const {i18n, t} = useTranslation(['materials', 'material'])
@@ -55,6 +57,8 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
 
   const materialName = t(`materials:${activeMaterial}`)
 
+  const materialDetails = Dungeon[activeMaterial] ?? undefined
+
   return (
     <Row className='align-items-center gx-3 gy-2 table-border mb-3'>
       <Col xs={1} className='fs-5'>{lvl}</Col>
@@ -70,9 +74,55 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
           dismissible
           className='ascension-material-alert'
         >
-          <Alert.Heading className='fs-5'>{materialName}</Alert.Heading>
+          <Alert.Heading className='fs-5 mb-3'>{materialName}</Alert.Heading>
 
-          {interactiveMapLink && <a href={interactiveMapLink} target='_blank' rel='noreferrer' className='link'>{t('material:interactive_map')}</a>}
+          {materialDetails && (
+            <>
+              <Row>
+                <Col>
+                  <p className='mb-1'>
+                    {t(`materials:${materialDetails.name}`)}
+                  </p>
+                  <div className='d-flex justify-content-center align-items-center flex-nowrap'>
+                    <p className='mb-0'>
+                      {t('common:consumes')}: {materialDetails.original_resin}
+                    </p>
+
+                    <Img
+                      src={'/images/materials/original_resin.png'}
+                      alt={t('materials:original_resin')}
+                      className='ascension-material-resin-image'
+                    />
+                  </div>
+                  <p className='mb-1'>
+                    {t('common:dungeon_days')}
+                    {materialDetails.is_open_days.map((day: string) => t(`common:${day}`))}
+                  </p>
+                </Col>
+                <Col>
+                  <Img
+                    src={`/images/dungeons/${materialDetails.name}.png`}
+                    alt={t(`materials:${materialDetails.name}`)}
+                    className='ascension-material-material-details-image'
+                    loader={<MaterialDetailsImageSkeleton/>}
+                    unloader={<MaterialDetailsImageSkeleton/>}
+                  />
+                </Col>
+
+              </Row>
+
+
+            </>
+          )}
+
+          {interactiveMapLink && (
+            <a
+              href={interactiveMapLink}
+              target='_blank'
+              rel='noreferrer'
+              className='link'
+            >{t('material:interactive_map')}</a>
+          )}
         </Alert>
       </Col>
     </Row>
