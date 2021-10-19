@@ -9,6 +9,7 @@ import './Material.css'
 import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.svg';
 import {materialLink} from '../../../../charactersData/interactiveMapLinks';
 import {interactiveMapBaseUrl, InteractiveMapLanguage} from '../../../../const/consts';
+import {Dungeon} from '../../../../charactersData/dungeons';
 
 const Material: FC<IProps> = ({data: [lvl, materials]}) => {
   const {i18n, t} = useTranslation(['materials', 'material'])
@@ -55,6 +56,8 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
 
   const materialName = t(`materials:${activeMaterial}`)
 
+  const materialDetails = Dungeon[activeMaterial] ?? undefined
+
   return (
     <Row className='align-items-center gx-3 gy-2 table-border mb-3'>
       <Col xs={1} className='fs-5'>{lvl}</Col>
@@ -72,7 +75,37 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
         >
           <Alert.Heading className='fs-5'>{materialName}</Alert.Heading>
 
-          {interactiveMapLink && <a href={interactiveMapLink} target='_blank' rel='noreferrer' className='link'>{t('material:interactive_map')}</a>}
+          {materialDetails && (
+            <>
+              <p className='mb-1'>
+                {t(`materials:${materialDetails.name}`)}
+              </p>
+              <p className='mb-1'>
+                {t('common:consumes')}: {materialDetails.original_resin}
+                <Img
+                  src={'/images/materials/original_resin.png'}
+                  alt={t('materials:original_resin')}
+                />
+              </p>
+              <p className='mb-1'>
+                {t('common:dungeon_days')}
+                {materialDetails.is_open_days.map((day: string) => t(`common:${day}`))}
+              </p>
+              <Img
+                src={`/images/dungeons/${materialDetails.name}.png`}
+                alt={t(`materials:${materialDetails.name}`)}
+              />
+            </>
+          )}
+
+          {interactiveMapLink && (
+            <a
+              href={interactiveMapLink}
+              target='_blank'
+              rel='noreferrer'
+              className='link'
+            >{t('material:interactive_map')}</a>
+          )}
         </Alert>
       </Col>
     </Row>
