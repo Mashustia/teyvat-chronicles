@@ -1,0 +1,12 @@
+{
+  "monday": "Monday",
+  "tuesday": "Tuesday",
+  "wednesday": "Wednesday",
+  "thursday": "Thursday",
+  "friday": "Friday",
+  "saturday": "Saturday",
+  "sunday": "Sunday",
+  "all_days": "Monday - Sunday",
+  "dungeon_days": "Opened: ",
+  "consumes": "Consumes"
+}
