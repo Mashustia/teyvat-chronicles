@@ -7,6 +7,7 @@ import {ITableItemProps as IProps} from './types';
 import {IMaterial} from '../../../../charactersData/types';
 import './Material.css'
 import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.svg';
+import {ReactComponent as MaterialDetailsImageSkeleton} from '../MaterialDetailsImageSkeleton/MaterialDetailsImageSkeleton.svg';
 import {materialLink} from '../../../../charactersData/interactiveMapLinks';
 import {interactiveMapBaseUrl, InteractiveMapLanguage} from '../../../../const/consts';
 import {Dungeon} from '../../../../charactersData/dungeons';
@@ -83,7 +84,7 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
                     {t(`materials:${materialDetails.name}`)}
                   </p>
                   <div className='d-flex justify-content-center align-items-center flex-nowrap'>
-                    <p className='mb-1'>
+                    <p className='mb-0'>
                       {t('common:consumes')}: {materialDetails.original_resin}
                     </p>
 
@@ -103,6 +104,8 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
                     src={`/images/dungeons/${materialDetails.name}.png`}
                     alt={t(`materials:${materialDetails.name}`)}
                     className='ascension-material-material-details-image'
+                    loader={<MaterialDetailsImageSkeleton/>}
+                    unloader={<MaterialDetailsImageSkeleton/>}
                   />
                 </Col>
 
