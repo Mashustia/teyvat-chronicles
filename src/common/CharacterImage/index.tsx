@@ -1,6 +1,7 @@
 import {FC, ReactNode} from 'react'
 import {Img} from 'react-image'
 import {withRouter} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './CharacterImage.css'
 import {ICharacterImageProps as IProps} from './types';
@@ -11,7 +12,7 @@ const CharacterImage: FC<IProps> = ({name, withBorder, withLink, match}) => {
   const imagePath = `/images/characters/${name}.png`
 
   const link = (children: ReactNode) => (
-    <a href={createUrl(match, name)} className='pointer'>{children}</a>
+    <Link to={createUrl(match, name)} className='pointer'>{children}</Link>
   )
 
   const image = (

@@ -168,3 +168,16 @@ body {
 .pointer {
   cursor: pointer;
 }
+
+.link {
+  color: var(--bs-gray-500);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--bs-gray-300);
+}
+
+.link:active {
+  color: var(--bs-white);
+}
