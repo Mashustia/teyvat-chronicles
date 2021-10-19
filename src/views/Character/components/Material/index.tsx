@@ -73,28 +73,42 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
           dismissible
           className='ascension-material-alert'
         >
-          <Alert.Heading className='fs-5'>{materialName}</Alert.Heading>
+          <Alert.Heading className='fs-5 mb-3'>{materialName}</Alert.Heading>
 
           {materialDetails && (
             <>
-              <p className='mb-1'>
-                {t(`materials:${materialDetails.name}`)}
-              </p>
-              <p className='mb-1'>
-                {t('common:consumes')}: {materialDetails.original_resin}
-                <Img
-                  src={'/images/materials/original_resin.png'}
-                  alt={t('materials:original_resin')}
-                />
-              </p>
-              <p className='mb-1'>
-                {t('common:dungeon_days')}
-                {materialDetails.is_open_days.map((day: string) => t(`common:${day}`))}
-              </p>
-              <Img
-                src={`/images/dungeons/${materialDetails.name}.png`}
-                alt={t(`materials:${materialDetails.name}`)}
-              />
+              <Row>
+                <Col>
+                  <p className='mb-1'>
+                    {t(`materials:${materialDetails.name}`)}
+                  </p>
+                  <div className='d-flex justify-content-center align-items-center flex-nowrap'>
+                    <p className='mb-1'>
+                      {t('common:consumes')}: {materialDetails.original_resin}
+                    </p>
+
+                    <Img
+                      src={'/images/materials/original_resin.png'}
+                      alt={t('materials:original_resin')}
+                      className='ascension-material-resin-image'
+                    />
+                  </div>
+                  <p className='mb-1'>
+                    {t('common:dungeon_days')}
+                    {materialDetails.is_open_days.map((day: string) => t(`common:${day}`))}
+                  </p>
+                </Col>
+                <Col>
+                  <Img
+                    src={`/images/dungeons/${materialDetails.name}.png`}
+                    alt={t(`materials:${materialDetails.name}`)}
+                    className='ascension-material-material-details-image'
+                  />
+                </Col>
+
+              </Row>
+
+
             </>
           )}
 
