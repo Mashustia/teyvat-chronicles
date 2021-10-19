@@ -33,7 +33,7 @@ export const materialLink = {
   shivada_jade_gemstone: '133,181&center=563.07,114.01&zoom=-0.50',
   shivada_jade_chunk: '133,181&center=563.07,114.01&zoom=-0.50',
   shivada_jade_fragment: '133,181&center=563.07,114.01&zoom=-0.50',
-  shivada_topaz_sliver: '133,181&center=563.07,114.01&zoom=-0.50',
+  shivada_jade_sliver: '133,181&center=563.07,114.01&zoom=-0.50',
   vajrada_amethyst_gemstone: '135,263&center=3415.00,1300.00&zoom=-3.00',
   vajrada_amethyst_chunk: '135,263&center=3415.00,1300.00&zoom=-3.00',
   vajrada_amethyst_fragment: '135,263&center=3415.00,1300.00&zoom=-3.00',
