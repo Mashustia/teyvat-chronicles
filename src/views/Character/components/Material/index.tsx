@@ -18,8 +18,8 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
   const [activeMaterial, toggleMaterial] = useState('')
 
   const handleMaterialToggle = (material: string) => () => {
-    toggleAdditionalInfo(true)
     toggleMaterial(material)
+    toggleAdditionalInfo(material === activeMaterial ? !isAdditionalInfoShown : true)
   }
 
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
@@ -72,7 +72,7 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
           closeVariant='white'
           onClose={() => toggleAdditionalInfo(false)}
           dismissible
-          className='ascension-material-alert'
+          className='ascension-material-alert px-3'
         >
           <Alert.Heading className='fs-5 mb-3'>{materialName}</Alert.Heading>
 
