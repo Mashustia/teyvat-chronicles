@@ -18,8 +18,8 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
   const [activeMaterial, toggleMaterial] = useState('')
 
   const handleMaterialToggle = (material: string) => () => {
-    toggleAdditionalInfo(true)
     toggleMaterial(material)
+    toggleAdditionalInfo(material === activeMaterial ? !isAdditionalInfoShown : true)
   }
 
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
