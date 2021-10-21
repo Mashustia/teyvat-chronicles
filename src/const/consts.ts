@@ -35,3 +35,14 @@ export enum InteractiveMapLanguage {
   en = 'en-us',
   ru = 'ru-ru'
 }
+
+export enum WeekDay {
+  ALL_DAYS = 'all_days',
+  MONDAY = 'monday',
+  TUESDAY = 'tuesday',
+  WEDNESDAY = 'wednesday',
+  THURSDAY = 'thursday',
+  FRIDAY = 'friday',
+  SATURDAY = 'saturday',
+  SUNDAY = 'sunday',
+}
