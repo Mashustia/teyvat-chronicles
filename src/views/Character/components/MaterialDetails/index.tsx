@@ -4,9 +4,9 @@ import {Img} from 'react-image';
 import {useTranslation} from 'react-i18next';
 
 import {IMaterialDetailsProps as IProps} from './types';
-import {ReactComponent as MaterialDetailsImageSkeleton} from '../MaterialDetailsImageSkeleton/MaterialDetailsImageSkeleton.svg';
 import {materialLink} from '../../../../charactersData/interactiveMapLinks';
 import {interactiveMapBaseUrl, InteractiveMapLanguage, WeekDay} from '../../../../const/consts';
+import './MaterialDetails.css'
 
 const MaterialDetails: FC<IProps> = ({
   activeMaterial,
@@ -28,7 +28,6 @@ const MaterialDetails: FC<IProps> = ({
   const interactiveMapLink: string = getInteractiveMapLink(materialLink[activeMaterial])
 
   const materialName = t(`materials:${activeMaterial}`)
-  console.log(activeMaterial)
 
   return (
     <Col xs={12}>
@@ -37,7 +36,7 @@ const MaterialDetails: FC<IProps> = ({
         closeVariant='white'
         onClose={() => toggleAdditionalInfo(false)}
         dismissible
-        className='ascension-material-alert px-3'
+        className='material-details-alert px-3'
       >
         <Alert.Heading className='fs-5 mb-3'>{materialName}</Alert.Heading>
 
@@ -57,7 +56,7 @@ const MaterialDetails: FC<IProps> = ({
                   <Img
                     src={'/images/materials/original_resin.png'}
                     alt={t('materials:original_resin')}
-                    className='ascension-material-resin-image'
+                    className='material-details-resin-image'
                   />
                 </div>
                 <p className='mb-1'>
@@ -68,12 +67,10 @@ const MaterialDetails: FC<IProps> = ({
                 </p>
               </Col>
               <Col>
-                <Img
+                <img
                   src={`/images/dungeons/${name}.png`}
                   alt={t(`materials:${name}`)}
-                  className='ascension-material-material-details-image'
-                  loader={<MaterialDetailsImageSkeleton/>}
-                  unloader={<MaterialDetailsImageSkeleton/>}
+                  className='material-details-image'
                 />
               </Col>
 

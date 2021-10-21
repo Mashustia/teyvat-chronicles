@@ -1,0 +1,12 @@
+.material-details-alert {
+  background-color: var(--background-color);
+  color: var(--bs-gray-200);
+}
+
+.material-details-resin-image {
+  width: 30px;
+}
+
+.material-details-image {
+  width: 260px;
+}
