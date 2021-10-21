@@ -1,5 +1,5 @@
 import {IMaterial} from '../../../../charactersData/types';
-import {WeekDays} from '../../../../const/consts';
+import {WeekDay} from '../../../../const/consts';
 import {Region} from '../../../../charactersData/dungeons';
 
 export type ITableItemProps = {
@@ -8,7 +8,7 @@ export type ITableItemProps = {
 
 export interface IDungeonType {
   name: string
-  is_open_days: WeekDays[]
+  is_open_days: WeekDay[]
   original_resin: number
   region?: Region
 }

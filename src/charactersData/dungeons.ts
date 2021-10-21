@@ -1,5 +1,5 @@
 import {IDungeon} from '../views/Character/components/Material/types';
-import {WeekDays} from '../const/consts';
+import {WeekDay} from '../const/consts';
 
 export enum Region {
   MONDSTADT = 'monstadt',
@@ -14,17 +14,17 @@ const ForsakenRift = {
 
 const Ballad = {
   ...ForsakenRift,
-  is_open_days: [WeekDays.WEDNESDAY, WeekDays.SATURDAY, WeekDays.SUNDAY]
+  is_open_days: [WeekDay.WEDNESDAY, WeekDay.SATURDAY, WeekDay.SUNDAY]
 }
 
 const Resistance = {
   ...ForsakenRift,
-  is_open_days: [WeekDays.TUESDAY, WeekDays.FRIDAY, WeekDays.SUNDAY]
+  is_open_days: [WeekDay.TUESDAY, WeekDay.FRIDAY, WeekDay.SUNDAY]
 }
 
 const Freedom = {
   ...ForsakenRift,
-  is_open_days: [WeekDays.MONDAY, WeekDays.THURSDAY, WeekDays.SUNDAY]
+  is_open_days: [WeekDay.MONDAY, WeekDay.THURSDAY, WeekDay.SUNDAY]
 }
 
 const TaishanMansion = {
@@ -35,23 +35,23 @@ const TaishanMansion = {
 
 const Prosperity = {
   ...TaishanMansion,
-  is_open_days: [WeekDays.MONDAY, WeekDays.THURSDAY, WeekDays.SUNDAY]
+  is_open_days: [WeekDay.MONDAY, WeekDay.THURSDAY, WeekDay.SUNDAY]
 }
 
 const Diligence = {
   ...TaishanMansion,
-  is_open_days: [WeekDays.TUESDAY, WeekDays.FRIDAY, WeekDays.SUNDAY]
+  is_open_days: [WeekDay.TUESDAY, WeekDay.FRIDAY, WeekDay.SUNDAY]
 }
 
 const Gold = {
   ...TaishanMansion,
-  is_open_days: [WeekDays.WEDNESDAY, WeekDays.SATURDAY, WeekDays.SUNDAY]
+  is_open_days: [WeekDay.WEDNESDAY, WeekDay.SATURDAY, WeekDay.SUNDAY]
 }
 
 export const Dungeon: IDungeon = {
   mora: {
     name: 'ley_line_gold',
-    is_open_days: [WeekDays.ALL_DAYS],
+    is_open_days: [WeekDay.ALL_DAYS],
     original_resin: 20
   },
   teachings_of_ballad: {...Ballad},
