@@ -80,8 +80,9 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
             <>
               <Row>
                 <Col>
-                  <p className='mb-0 fw-bold'>
-                    {t(`materials:${materialDetails.name}`)}
+                  <p className='mb-0'>
+                    <span className='fw-bold'>{t(`materials:${materialDetails.name}`)}</span>
+                    {materialDetails.region && ` (${t(`materials:${materialDetails.region}`)})`}
                   </p>
                   <div className='d-flex justify-content-center align-items-center flex-nowrap'>
                     <p className='mb-0'>

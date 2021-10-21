@@ -1,8 +1,13 @@
 import {IDungeon} from '../views/Character/components/Material/types';
 import {WeekDays} from '../const/consts';
 
+export enum Region {
+  MONDSTADT = 'monstadt'
+}
+
 const ForsakenRift = {
   name: 'forsaken_rift',
+  region: Region.MONDSTADT,
   is_open_days: [WeekDays.WEDNESDAY, WeekDays.SATURDAY, WeekDays.SUNDAY],
   original_resin: 20
 }
