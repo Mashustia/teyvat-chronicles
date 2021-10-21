@@ -80,7 +80,7 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
             <>
               <Row>
                 <Col>
-                  <p className='mb-1'>
+                  <p className='mb-0 fw-bold'>
                     {t(`materials:${materialDetails.name}`)}
                   </p>
                   <div className='d-flex justify-content-center align-items-center flex-nowrap'>
@@ -96,7 +96,9 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
                   </div>
                   <p className='mb-1'>
                     {t('common:dungeon_days')}
-                    {materialDetails.is_open_days.map((day: string) => t(`common:${day}`))}
+                    {materialDetails.is_open_days.map((day: string, index: number) =>
+                      `${t(`common:${day}`)}${index + 1 !== materialDetails.is_open_days.length ? ', ' : ''}`
+                    )}
                   </p>
                 </Col>
                 <Col>
