@@ -104,6 +104,14 @@ const Childe = {
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
+const Azhdaha = {
+  name: 'azhdaha',
+  region: Region.LIYUE,
+  original_resin: 60,
+  map_link: 'pin=620|1765|Azhdaha',
+  is_open_days: [WeekDay.ALL_DAYS]
+}
+
 export const Dungeon: IDungeon = {
   mora: {...Mora},
   teachings_of_ballad: {...Ballad},
@@ -142,4 +150,7 @@ export const Dungeon: IDungeon = {
   shard_of_a_foul_legacy: {...Childe},
   shadow_of_the_warrior: {...Childe},
   tusk_of_monoceros_caeli: {...Childe},
+  bloodjade_branch: {...Azhdaha},
+  dragon_lords_crown: {...Azhdaha},
+  gilded_scale: {...Azhdaha},
 }
