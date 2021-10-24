@@ -11,7 +11,7 @@ const ForsakenRift = {
   name: 'forsaken_rift',
   region: Region.MONDSTADT,
   original_resin: 20,
-  map_link: 'pin=1678.95703125|-894.38110351562|Forsaken Rift'
+  map_link: 'pin=1678|-894|Forsaken Rift'
 }
 
 const Mora = {
@@ -39,7 +39,8 @@ const Freedom = {
 const TaishanMansion = {
   name: 'taishan_mansion',
   region: Region.LIYUE,
-  original_resin: 20
+  original_resin: 20,
+  map_link: 'pin=645|1168|Taishan Mansion'
 }
 
 const Prosperity = {
@@ -60,7 +61,8 @@ const Gold = {
 const VioletCourt = {
   name: 'violet_court',
   region: Region.INAZUMA,
-  original_resin: 20
+  original_resin: 20,
+  map_link: 'pin=-3260|-3940|Violet Court'
 }
 
 const Light = {
