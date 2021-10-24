@@ -88,6 +88,14 @@ const LupusBoreas = {
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
+const Stormterror = {
+  name: 'stormterror',
+  region: Region.MONDSTADT,
+  original_resin: 60,
+  map_link: 'pin=2670|130|Stormterror',
+  is_open_days: [WeekDay.ALL_DAYS]
+}
+
 export const Dungeon: IDungeon = {
   mora: {...Mora},
   teachings_of_ballad: {...Ballad},
@@ -120,4 +128,7 @@ export const Dungeon: IDungeon = {
   tail_of_boreas: {...LupusBoreas},
   spirit_locket_of_boreas: {...LupusBoreas},
   ring_of_boreas: {...LupusBoreas},
+  dvalins_clawn: {...Stormterror},
+  dvalins_plume: {...Stormterror},
+  dvalins_sigh: {...Stormterror},
 }
