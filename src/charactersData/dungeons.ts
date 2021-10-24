@@ -10,7 +10,15 @@ export enum Region {
 const ForsakenRift = {
   name: 'forsaken_rift',
   region: Region.MONDSTADT,
-  original_resin: 20
+  original_resin: 20,
+  map_link: 'pin=1678.95703125|-894.38110351562|Forsaken Rift'
+}
+
+const Mora = {
+  name: 'ley_line_gold',
+  is_open_days: [WeekDay.ALL_DAYS],
+  original_resin: 20,
+  has_image: true
 }
 
 const Ballad = {
@@ -71,11 +79,7 @@ const Transience = {
 }
 
 export const Dungeon: IDungeon = {
-  mora: {
-    name: 'ley_line_gold',
-    is_open_days: [WeekDay.ALL_DAYS],
-    original_resin: 20
-  },
+  mora: {...Mora},
   teachings_of_ballad: {...Ballad},
   guide_to_ballad: {...Ballad},
   philosophies_of_ballad: {...Ballad},
