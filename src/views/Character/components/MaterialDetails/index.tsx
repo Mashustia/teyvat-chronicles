@@ -7,17 +7,21 @@ import {IMaterialDetailsProps as IProps} from './types';
 import {materialLink} from '../../../../charactersData/interactiveMapLinks';
 import {interactiveMapBaseUrl, InteractiveMapLanguage, WeekDay} from '../../../../const/consts';
 import './MaterialDetails.css'
+import Map from '../../../../common/Map';
 
-const MaterialDetails: FC<IProps> = ({
-  activeMaterial,
-  isAdditionalInfoShown,
-  toggleAdditionalInfo,
-  name,
-  region,
-  original_resin,
-  is_open_days
-}) => {
+const MaterialDetails: FC<IProps> = (props) => {
   const {t, i18n} = useTranslation(['materials', 'material'])
+  const {
+    activeMaterial,
+    isAdditionalInfoShown,
+    toggleAdditionalInfo,
+    name,
+    region,
+    original_resin,
+    is_open_days,
+    map_link,
+    has_image
+  } = props
 
   const getInteractiveMapLink = (materialLink: string): string => {
     if (materialLink) return `${interactiveMapBaseUrl.replace('{{ language }}', InteractiveMapLanguage[i18n.language])}${materialLink}`
@@ -40,7 +44,7 @@ const MaterialDetails: FC<IProps> = ({
       >
         <Alert.Heading className='fs-5 mb-3'>{materialName}</Alert.Heading>
 
-        {(activeMaterial && name) && (
+        {(activeMaterial && name) ? (
           <>
             <Row>
               <Col>
@@ -65,18 +69,19 @@ const MaterialDetails: FC<IProps> = ({
                     `${t(`common:${day}`)}${index + 1 !== is_open_days.length ? ', ' : ''}`
                   )}
                 </p>
-              </Col>
-              <Col>
-                <img
-                  src={`/images/dungeons/${name}.png`}
-                  alt={t(`materials:${name}`)}
-                  className='material-details-image'
-                />
+                {map_link && <Map name={name} map_link={map_link}/>}
+                {has_image && (
+                  <img
+                    src={`/images/dungeons/${name}.png`}
+                    alt={t(`materials:${name}`)}
+                    className='material-details-image'
+                  />
+                )}
               </Col>
 
             </Row>
           </>
-        )}
+        ) : null}
 
         {interactiveMapLink && (
           <a

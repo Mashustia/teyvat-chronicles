@@ -11,6 +11,8 @@ export interface IDungeonType {
   is_open_days: WeekDay[]
   original_resin: number
   region?: Region
+  map_link?: string
+  has_image?: boolean
 }
 
 export interface IDungeon {
