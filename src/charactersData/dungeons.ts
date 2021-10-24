@@ -96,6 +96,14 @@ const Stormterror = {
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
+const Childe = {
+  name: 'childe',
+  region: Region.LIYUE,
+  original_resin: 60,
+  map_link: 'pin=-940|230|Childe',
+  is_open_days: [WeekDay.ALL_DAYS]
+}
+
 export const Dungeon: IDungeon = {
   mora: {...Mora},
   teachings_of_ballad: {...Ballad},
@@ -131,4 +139,7 @@ export const Dungeon: IDungeon = {
   dvalins_clawn: {...Stormterror},
   dvalins_plume: {...Stormterror},
   dvalins_sigh: {...Stormterror},
+  shard_of_a_foul_legacy: {...Childe},
+  shadow_of_the_warrior: {...Childe},
+  tusk_of_monoceros_caeli: {...Childe},
 }
