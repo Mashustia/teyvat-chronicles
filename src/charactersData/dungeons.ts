@@ -80,6 +80,14 @@ const Transience = {
   is_open_days: [WeekDay.MONDAY, WeekDay.THURSDAY, WeekDay.SUNDAY]
 }
 
+const LupusBoreas = {
+  name: 'lupus_boreas',
+  region: Region.MONDSTADT,
+  original_resin: 60,
+  map_link: 'pin=2000|-260|Lupus Boreas',
+  is_open_days: [WeekDay.ALL_DAYS]
+}
+
 export const Dungeon: IDungeon = {
   mora: {...Mora},
   teachings_of_ballad: {...Ballad},
@@ -109,4 +117,7 @@ export const Dungeon: IDungeon = {
   teachings_of_elegance: {...Elegance},
   guide_to_elegance: {...Elegance},
   philosophies_of_elegance: {...Elegance},
+  tail_of_boreas: {...LupusBoreas},
+  spirit_locket_of_boreas: {...LupusBoreas},
+  ring_of_boreas: {...LupusBoreas},
 }
