@@ -69,8 +69,6 @@ const MaterialDetails: FC<IProps> = (props) => {
                     `${t(`common:${day}`)}${index + 1 !== is_open_days.length ? ', ' : ''}`
                   )}
                 </p>
-              </Col>
-              <Col>
                 {map_link && <Map name={name} map_link={map_link}/>}
                 {has_image && (
                   <img
