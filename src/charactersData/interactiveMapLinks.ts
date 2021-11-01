@@ -86,4 +86,5 @@ export const materialLink = {
   perpetual_heart: '204&center=4446.00,3721.50&zoom=1.00',
   dew_of_repudiation: '262&center=5879.50,216.50&zoom=1.00',
   smoldering_pearl: '203&center=5363.00,2430.00&zoom=1.00',
+  fluorescent_fungus: '266&center=8602.96,1826.00&zoom=-1.00',
 }
