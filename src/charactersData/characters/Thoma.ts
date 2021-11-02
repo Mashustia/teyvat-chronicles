@@ -56,7 +56,7 @@ const Thoma = {
       { material: MORA, count: 120000 },
     ]
   },
-  rarity: 5,
+  rarity: 4,
   talent_materials: {
     2: [
       {material: Books.TEACHINGS_OF_TRANSIENCE, count: 3},
