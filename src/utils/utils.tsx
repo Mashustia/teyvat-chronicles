@@ -1,6 +1,7 @@
 import {match} from 'react-router-dom';
 
 import {IRouteParams} from '../types/commonTypes';
+import {useEffect} from 'react';
 
 export const getOrgDataFromMatch = (matchData: match<IRouteParams>): string => {
   if (matchData?.params?.name) {
@@ -25,4 +26,12 @@ export const createUrl = (urlData: match<IRouteParams> | string, ...rest: Array<
       return `${accumulator}${newCurrentValue}`
     }, '')
   )
+}
+
+export const ScrollToTopOnMount = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
 }

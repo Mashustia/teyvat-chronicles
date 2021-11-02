@@ -4,7 +4,7 @@ import {Img} from 'react-image';
 import {useTranslation} from 'react-i18next';
 
 import {IMaterialDetailsProps as IProps} from './types';
-import {materialLink} from '../../../../charactersData/interactiveMapLinks';
+import {genshinImpactMap, materialLink} from '../../../../charactersData/interactiveMapLinks';
 import {interactiveMapBaseUrl, InteractiveMapLanguage, WeekDay} from '../../../../const/consts';
 import './MaterialDetails.css'
 import Map from '../../../../common/Map';
@@ -32,6 +32,8 @@ const MaterialDetails: FC<IProps> = (props) => {
   const interactiveMapLink: string = getInteractiveMapLink(materialLink[activeMaterial])
 
   const materialName = t(`materials:${activeMaterial}`)
+
+  const materialEmbeddedMapLink: string | undefined = genshinImpactMap[activeMaterial]
 
   return (
     <Col xs={12}>
@@ -82,6 +84,8 @@ const MaterialDetails: FC<IProps> = (props) => {
             </Row>
           </>
         ) : null}
+
+        {materialEmbeddedMapLink && <Map name={activeMaterial} map_link={materialEmbeddedMapLink}/>}
 
         {interactiveMapLink && (
           <a
