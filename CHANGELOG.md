@@ -1,4 +1,4 @@
-#### 0.1.3 November-2021
+#### 0.1.2 November-2021
 
 * Changes
   *  Added embedded map for ascension materials and talent level-up materials
