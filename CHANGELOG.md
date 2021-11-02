@@ -1,3 +1,39 @@
+#### 0.1.3 November-2021
+
+* Changes
+  *  Added embedded map for ascension materials and talent level-up materials
+  *  Fixed page scroll on character page
+
+#### 0.1.1 October-2021
+* Changed
+  *  Added embedded map for bosses materials and books
+  *  Added embedded map for dungeons
+  *  Fixed active material toggle
+  *  Added ley lines information
+  *  Added trademark info
+  *  Changed background style
+  *  Fixed errors in characters information
+  *  Changed grid for main page
+  *  Added live search
+  *  Added character stars information
+  *  Added interactive map links
+  *  Added english localisation
+  *  Added talent materials
+
+#### 0.1.0 September-2021
+
+* Changes
+  *  Group characters by vision
+  *  Skeleton for images
+  *  Added logo and minify images
+  *  Added characters information
+  *  Added material images
+  *  Added character ascension materials
+  *  Fixed vercel error
+  *  Add character page
+  *  Added character profile card
+  *  Added material design system
+
 #### 0.1.0 (2021-10-26)
 
 ##### Chores
