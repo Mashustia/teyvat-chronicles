@@ -58,6 +58,7 @@ export enum Flower {
   SAKURA_BLOOM = 'sakura_bloom',
   NAKU_WEED = 'naku_weed',
   DENDROBIUM = 'dendrobium',
+  FLUORESCENT_FUNGUS = 'fluorescent_fungus'
 }
 
 export enum Rocks {

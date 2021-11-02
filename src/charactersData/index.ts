@@ -41,6 +41,7 @@ import Xinyan from './characters/Xinyan';
 import Yanfei from './characters/Yanfei';
 import Yoimiya from './characters/Yoimiya';
 import Traveler from './characters/Traveler';
+import Thoma from './characters/Thoma';
 
 // TODO: не забыть добавить путешественника
 const CHARACTERS: ICharacter[] = [
@@ -84,7 +85,8 @@ const CHARACTERS: ICharacter[] = [
   Xinyan,
   Yanfei,
   Yoimiya,
-  Traveler
+  Traveler,
+  Thoma
 ]
 
 export default CHARACTERS
