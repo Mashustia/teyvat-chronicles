@@ -1,11 +1,13 @@
 #### 0.1.2 November-2021
 
 * Changes
+  *  Added ascension materials summary
   *  Added embedded map and description for ascension bosses
   *  Added embedded map for ascension materials and talent level-up materials
   *  Fixed page scroll on character page
 
 #### 0.1.1 October-2021
+
 * Changed
   *  Added embedded map for bosses materials and books
   *  Added embedded map for dungeons
