@@ -148,10 +148,11 @@
   "liyue": "Liyue",
   "inazuma": "Inazuma",
   "fluorescent_fungus": "Fluorescent fungus",
-  "anemo_hypostasis": "Anemo Hypostasis",
-  "electro_hypostasis": "Electro Hypostasis",
-  "pyro_regisvine": "Pyro Regisvine",
+  "anemo_hypostasis": "Anemo hypostasis",
+  "electro_hypostasis": "Electro hypostasis",
+  "pyro_regisvine": "Pyro regisvine",
   "oceanid": "Oceanid",
   "primo_geovishap": "Primo geovishap",
-  "geo_hypostasis": "Geo hypostasis"
+  "geo_hypostasis": "Geo hypostasis",
+  "cryo_regisvine": "Cryo regisvine"
 }

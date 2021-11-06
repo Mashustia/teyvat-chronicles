@@ -158,6 +158,13 @@ const PyroRegisvine = {
   map_link: 'pin=140|950|Pyro Regisvine'
 }
 
+const CryoRegisvine = {
+  name: 'cryo_regisvine',
+  region: Region.MONDSTADT,
+  original_resin: 40,
+  map_link: 'pin=2100|-1680|Cryo Regisvine'
+}
+
 // Others
 
 const Oceanid = {
@@ -224,4 +231,5 @@ export const ExpandedMaterialInfo: IDungeon = {
   cleansing_heart: {...Oceanid},
   juvenile_jade: {...PrimoGeovishap},
   basalt_pillar: {...GeoHypostasis},
+  hoarfrost_core: {...CryoRegisvine},
 }
