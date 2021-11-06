@@ -149,6 +149,13 @@ const GeoHypostasis = {
   map_link: 'pin=30|-850|Geo hypostasis'
 }
 
+const CryoHypostasis = {
+  name: 'cryo_hypostasis',
+  region: Region.MONDSTADT,
+  original_resin: 40,
+  map_link: 'pin=1040|-820|Cryo Hypostasis',
+}
+
 // Regisvines
 
 const PyroRegisvine = {
@@ -248,4 +255,5 @@ export const ExpandedMaterialInfo: IDungeon = {
   hoarfrost_core: {...CryoRegisvine},
   storm_beads: {...ThunderManifestation},
   marionette_core: {...MaguuKenki},
+  crystalline_bloom: {...CryoHypostasis},
 }

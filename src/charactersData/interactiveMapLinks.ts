@@ -164,7 +164,6 @@ export const genshinImpactMap = {
   spectral_husk: 'names=specter',
   spectral_heart: 'names=specter',
   spectral_nucleus: 'names=specter',
-  crystalline_bloom: 'pin=1040|-820|Cryo Hypostasis',
   perpetual_heart: 'pin=-2160|-4460|Perpetual mechanical array',
   dew_of_repudiation: 'pin=-3600|-970|Hydro Hypostasis',
   smoldering_pearl: 'pin=-3090|-3185|Pyro Hypostasis'
