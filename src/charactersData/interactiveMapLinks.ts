@@ -164,7 +164,6 @@ export const genshinImpactMap = {
   spectral_husk: 'names=specter',
   spectral_heart: 'names=specter',
   spectral_nucleus: 'names=specter',
-  cleansing_heart: 'pin=1800|280|Oceanid',
   juvenile_jade: 'pin=190|1480|Primo geovishap',
   basalt_pillar: 'pin=30|-850|Geo hypostasis',
   hoarfrost_core: 'pin=2100|-1680|Cryo Regisvine',
