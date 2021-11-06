@@ -164,7 +164,6 @@ export const genshinImpactMap = {
   spectral_husk: 'names=specter',
   spectral_heart: 'names=specter',
   spectral_nucleus: 'names=specter',
-  basalt_pillar: 'pin=30|-850|Geo hypostasis',
   hoarfrost_core: 'pin=2100|-1680|Cryo Regisvine',
   storm_beads: 'pin=-4760|-4260|Thunder Manifestation',
   marionette_core: 'pin=-4000|-2340|Maguu Kenki',

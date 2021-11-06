@@ -142,6 +142,13 @@ const ElectroHypostasis = {
   map_link: 'pin=1300|-1940|Electro Hypostasis'
 }
 
+const GeoHypostasis = {
+  name: 'geo_hypostasis',
+  region: Region.LIYUE,
+  original_resin: 40,
+  map_link: 'pin=30|-850|Geo hypostasis'
+}
+
 // Regisvines
 
 const PyroRegisvine = {
@@ -215,5 +222,6 @@ export const ExpandedMaterialInfo: IDungeon = {
   lightning_prism: {...ElectroHypostasis},
   everflame_seed: {...PyroRegisvine},
   cleansing_heart: {...Oceanid},
-  juvenile_jade: {...PrimoGeovishap}
+  juvenile_jade: {...PrimoGeovishap},
+  basalt_pillar: {...GeoHypostasis},
 }
