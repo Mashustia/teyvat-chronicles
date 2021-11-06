@@ -120,6 +120,13 @@ const NarukamiIslandTenshukaku = {
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
+const AnemoHypostasis = {
+  name: 'anemo_hypostasis',
+  region: Region.MONDSTADT,
+  original_resin: 40,
+  map_link: 'pin=2920|-1300|Anemo Hypostasis'
+}
+
 export const Dungeon: IDungeon = {
   mora: {...Mora},
   teachings_of_ballad: {...Ballad},
@@ -164,4 +171,5 @@ export const Dungeon: IDungeon = {
   ashen_heart: {...NarukamiIslandTenshukaku},
   hellfire_butterfly: {...NarukamiIslandTenshukaku},
   molten_moment: {...NarukamiIslandTenshukaku},
+  hurricane_seed: {...AnemoHypostasis},
 }

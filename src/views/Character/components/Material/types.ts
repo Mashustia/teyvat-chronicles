@@ -8,7 +8,7 @@ export type ITableItemProps = {
 
 export interface IDungeonType {
   name: string
-  is_open_days: WeekDay[]
+  is_open_days?: WeekDay[]
   original_resin: number
   region?: Region
   map_link?: string
