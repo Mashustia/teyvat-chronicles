@@ -174,6 +174,13 @@ const Oceanid = {
   map_link: 'pin=1800|280|Oceanid'
 }
 
+const ThunderManifestation = {
+  name: 'thunder_manifestation',
+  region: Region.INAZUMA,
+  original_resin: 40,
+  map_link: 'pin=-4760|-4260|Thunder Manifestation'
+}
+
 const PrimoGeovishap = {
   name: 'primo_geovishap',
   region: Region.LIYUE,
@@ -232,4 +239,5 @@ export const ExpandedMaterialInfo: IDungeon = {
   juvenile_jade: {...PrimoGeovishap},
   basalt_pillar: {...GeoHypostasis},
   hoarfrost_core: {...CryoRegisvine},
+  storm_beads: {...ThunderManifestation},
 }
