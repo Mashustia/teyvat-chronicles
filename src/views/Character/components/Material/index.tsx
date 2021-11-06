@@ -7,7 +7,7 @@ import {ITableItemProps as IProps} from './types';
 import {IMaterial} from '../../../../charactersData/types';
 import './Material.css'
 import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.svg';
-import {Dungeon} from '../../../../charactersData/dungeons';
+import {ExpandedMaterialInfo} from '../../../../charactersData/expandedMaterialInfo';
 import MaterialDetails from '../MaterialDetails';
 
 const Material: FC<IProps> = ({data: [lvl, materials]}) => {
@@ -46,7 +46,7 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
 
   const materialName = t(`materials:${activeMaterial}`)
 
-  const materialDetails = Dungeon[activeMaterial] ?? undefined
+  const materialDetails = ExpandedMaterialInfo[activeMaterial] ?? undefined
 
   return (
     <Row className='align-items-center gx-3 gy-2 table-border mb-3'>

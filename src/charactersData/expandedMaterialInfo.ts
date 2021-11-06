@@ -7,6 +7,15 @@ export enum Region {
   INAZUMA = 'inazuma'
 }
 
+const Mora = {
+  name: 'ley_line_gold',
+  is_open_days: [WeekDay.ALL_DAYS],
+  original_resin: 20,
+  has_image: true
+}
+
+// Dungeons
+
 const ForsakenRift = {
   name: 'forsaken_rift',
   region: Region.MONDSTADT,
@@ -14,12 +23,21 @@ const ForsakenRift = {
   map_link: 'pin=1678|-894|Forsaken Rift'
 }
 
-const Mora = {
-  name: 'ley_line_gold',
-  is_open_days: [WeekDay.ALL_DAYS],
+const VioletCourt = {
+  name: 'violet_court',
+  region: Region.INAZUMA,
   original_resin: 20,
-  has_image: true
+  map_link: 'pin=-3260|-3940|Violet Court'
 }
+
+const TaishanMansion = {
+  name: 'taishan_mansion',
+  region: Region.LIYUE,
+  original_resin: 20,
+  map_link: 'pin=645|1168|Taishan Mansion'
+}
+
+// Books
 
 const Ballad = {
   ...ForsakenRift,
@@ -34,13 +52,6 @@ const Resistance = {
 const Freedom = {
   ...ForsakenRift,
   is_open_days: [WeekDay.MONDAY, WeekDay.THURSDAY, WeekDay.SUNDAY]
-}
-
-const TaishanMansion = {
-  name: 'taishan_mansion',
-  region: Region.LIYUE,
-  original_resin: 20,
-  map_link: 'pin=645|1168|Taishan Mansion'
 }
 
 const Prosperity = {
@@ -58,13 +69,6 @@ const Gold = {
   is_open_days: [WeekDay.WEDNESDAY, WeekDay.SATURDAY, WeekDay.SUNDAY]
 }
 
-const VioletCourt = {
-  name: 'violet_court',
-  region: Region.INAZUMA,
-  original_resin: 20,
-  map_link: 'pin=-3260|-3940|Violet Court'
-}
-
 const Light = {
   ...VioletCourt,
   is_open_days: [WeekDay.WEDNESDAY, WeekDay.SATURDAY, WeekDay.SUNDAY]
@@ -79,6 +83,8 @@ const Transience = {
   ...VioletCourt,
   is_open_days: [WeekDay.MONDAY, WeekDay.THURSDAY, WeekDay.SUNDAY]
 }
+
+// Weekly Bosses
 
 const LupusBoreas = {
   name: 'lupus_boreas',
@@ -120,6 +126,8 @@ const NarukamiIslandTenshukaku = {
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
+// Hypostasis
+
 const AnemoHypostasis = {
   name: 'anemo_hypostasis',
   region: Region.MONDSTADT,
@@ -127,7 +135,7 @@ const AnemoHypostasis = {
   map_link: 'pin=2920|-1300|Anemo Hypostasis'
 }
 
-export const Dungeon: IDungeon = {
+export const ExpandedMaterialInfo: IDungeon = {
   mora: {...Mora},
   teachings_of_ballad: {...Ballad},
   guide_to_ballad: {...Ballad},
