@@ -8,5 +8,6 @@
   "sunday": "Sunday",
   "all_days": "Monday - Sunday",
   "dungeon_days": "Opened: ",
-  "consumes": "Consumes"
+  "consumes": "Consumes",
+  "total": "Total"
 }
