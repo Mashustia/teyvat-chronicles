@@ -160,6 +160,13 @@ const Oceanid = {
   map_link: 'pin=1800|280|Oceanid'
 }
 
+const PrimoGeovishap = {
+  name: 'primo_geovishap',
+  region: Region.LIYUE,
+  original_resin: 40,
+  map_link: 'pin=190|1480|Primo geovishap'
+}
+
 export const ExpandedMaterialInfo: IDungeon = {
   mora: {...Mora},
   teachings_of_ballad: {...Ballad},
@@ -207,5 +214,6 @@ export const ExpandedMaterialInfo: IDungeon = {
   hurricane_seed: {...AnemoHypostasis},
   lightning_prism: {...ElectroHypostasis},
   everflame_seed: {...PyroRegisvine},
-  cleansing_heart: {...Oceanid}
+  cleansing_heart: {...Oceanid},
+  juvenile_jade: {...PrimoGeovishap}
 }
