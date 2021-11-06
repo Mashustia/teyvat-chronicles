@@ -9,6 +9,7 @@ import Material from '../Material';
 import {IRouteParams} from '../../../../types/commonTypes';
 import CharacterImage from '../../../../common/CharacterImage';
 import Stars from '../../../../common/Stars';
+import AscensionSummary from '../AscensionSummary';
 
 const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation();
@@ -40,6 +41,7 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
 
               return <Material data={value} key={index}/>
             })}
+            <AscensionSummary ascensionMaterials={activeCharacter.ascension_materials}/>
           </Col>
 
           {talentMaterials.length > 0 && (

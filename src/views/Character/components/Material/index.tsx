@@ -10,7 +10,7 @@ import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.s
 import {ExpandedMaterialInfo} from '../../../../charactersData/expandedMaterialInfo';
 import MaterialDetails from '../MaterialDetails';
 
-const Material: FC<IProps> = ({data: [lvl, materials]}) => {
+const Material: FC<IProps> = ({data: [lvl, materials], isSummary}) => {
   const {t} = useTranslation(['materials', 'material'])
   const [isAdditionalInfoShown, toggleAdditionalInfo] = useState(false)
   const [activeMaterial, toggleMaterial] = useState('')
@@ -35,7 +35,7 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
     )
 
     return (
-      <Col key={index} className='d-flex flex-column'>
+      <Col key={index} className='d-flex flex-column' xs={isSummary ? 2 : undefined}>
         <div className='ascension-material-img-wrapper mb-1'>
           {image}
         </div>
@@ -50,8 +50,9 @@ const Material: FC<IProps> = ({data: [lvl, materials]}) => {
 
   return (
     <Row className='align-items-center gx-3 gy-2 table-border mb-3'>
-      <Col xs={1} className='fs-5'>{lvl}</Col>
-      <Col xs={11}>
+      <Col xs={isSummary ? undefined : 1} className='fs-5'>{isSummary ? '' : lvl}</Col>
+      <Col xs={isSummary ? 12 : 11}>
+        {isSummary && <h4 className='mb-3'>{lvl}</h4>}
         <Row className='gx-1'>{rows()}</Row>
       </Col>
 

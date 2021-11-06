@@ -4,6 +4,7 @@ import {Region} from '../../../../charactersData/expandedMaterialInfo';
 
 export type ITableItemProps = {
   data: [string, IMaterial[]]
+  isSummary?: boolean
 }
 
 export interface IDungeonType {
