@@ -188,6 +188,13 @@ const PrimoGeovishap = {
   map_link: 'pin=190|1480|Primo geovishap'
 }
 
+const MaguuKenki = {
+  name: 'maguu_kenki',
+  region: Region.LIYUE,
+  original_resin: 40,
+  map_link: 'pin=-4000|-2340|Maguu Kenki'
+}
+
 export const ExpandedMaterialInfo: IDungeon = {
   mora: {...Mora},
   teachings_of_ballad: {...Ballad},
@@ -240,4 +247,5 @@ export const ExpandedMaterialInfo: IDungeon = {
   basalt_pillar: {...GeoHypostasis},
   hoarfrost_core: {...CryoRegisvine},
   storm_beads: {...ThunderManifestation},
+  marionette_core: {...MaguuKenki},
 }
