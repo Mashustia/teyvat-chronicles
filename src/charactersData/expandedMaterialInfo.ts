@@ -163,6 +163,13 @@ const PerpetualMechanicalArray = {
   map_link: 'pin=-2160|-4460|Perpetual mechanical array',
 }
 
+const HydroHypostasis = {
+  name: 'hydro_hypostasis',
+  region: Region.INAZUMA,
+  original_resin: 40,
+  map_link: 'pin=-3600|-970|Hydro Hypostasis'
+}
+
 // Regisvines
 
 const PyroRegisvine = {
@@ -263,5 +270,6 @@ export const ExpandedMaterialInfo: IDungeon = {
   storm_beads: {...ThunderManifestation},
   marionette_core: {...MaguuKenki},
   crystalline_bloom: {...CryoHypostasis},
-  perpetual_heart: {...PerpetualMechanicalArray}
+  perpetual_heart: {...PerpetualMechanicalArray},
+  dew_of_repudiation: {...HydroHypostasis}
 }
