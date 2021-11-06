@@ -163,6 +163,5 @@ export const genshinImpactMap = {
   famed_handguard: 'names=nobushi',
   spectral_husk: 'names=specter',
   spectral_heart: 'names=specter',
-  spectral_nucleus: 'names=specter',
-  smoldering_pearl: 'pin=-3090|-3185|Pyro Hypostasis'
+  spectral_nucleus: 'names=specter'
 }

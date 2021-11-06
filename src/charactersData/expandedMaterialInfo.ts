@@ -170,6 +170,13 @@ const HydroHypostasis = {
   map_link: 'pin=-3600|-970|Hydro Hypostasis'
 }
 
+const PyroHypostasis = {
+  name: 'pyro_hypostasis',
+  region: Region.INAZUMA,
+  original_resin: 40,
+  map_link: 'pin=-3090|-3185|Pyro Hypostasis'
+}
+
 // Regisvines
 
 const PyroRegisvine = {
@@ -271,5 +278,6 @@ export const ExpandedMaterialInfo: IDungeon = {
   marionette_core: {...MaguuKenki},
   crystalline_bloom: {...CryoHypostasis},
   perpetual_heart: {...PerpetualMechanicalArray},
-  dew_of_repudiation: {...HydroHypostasis}
+  dew_of_repudiation: {...HydroHypostasis},
+  smoldering_pearl: {...PyroHypostasis}
 }
