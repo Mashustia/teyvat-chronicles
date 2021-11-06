@@ -35,6 +35,19 @@ const MaterialDetails: FC<IProps> = (props) => {
 
   const materialEmbeddedMapLink: string | undefined = genshinImpactMap[activeMaterial]
 
+  const getDays = (is_open_days?: WeekDay[]) => {
+    if (!is_open_days) return null
+
+    return (
+      <>
+        {t('common:dungeon_days')}
+        {is_open_days.map((day: WeekDay, index: number) =>
+          `${t(`common:${day}`)}${index + 1 !== is_open_days.length ? ', ' : ''}`
+        )}
+      </>
+    )
+  }
+
   return (
     <Col xs={12}>
       <Alert
@@ -66,10 +79,7 @@ const MaterialDetails: FC<IProps> = (props) => {
                   />
                 </div>
                 <p className='mb-1'>
-                  {t('common:dungeon_days')}
-                  {is_open_days.map((day: WeekDay, index: number) =>
-                    `${t(`common:${day}`)}${index + 1 !== is_open_days.length ? ', ' : ''}`
-                  )}
+                  {getDays(is_open_days)}
                 </p>
                 {map_link && <Map name={name} map_link={map_link}/>}
                 {has_image && (
