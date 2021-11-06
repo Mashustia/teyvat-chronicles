@@ -135,6 +135,13 @@ const AnemoHypostasis = {
   map_link: 'pin=2920|-1300|Anemo Hypostasis'
 }
 
+const ElectroHypostasis = {
+  name: 'electro_hypostasis',
+  region: Region.MONDSTADT,
+  original_resin: 40,
+  map_link: 'pin=1300|-1940|Electro Hypostasis'
+}
+
 export const ExpandedMaterialInfo: IDungeon = {
   mora: {...Mora},
   teachings_of_ballad: {...Ballad},
@@ -180,4 +187,5 @@ export const ExpandedMaterialInfo: IDungeon = {
   hellfire_butterfly: {...NarukamiIslandTenshukaku},
   molten_moment: {...NarukamiIslandTenshukaku},
   hurricane_seed: {...AnemoHypostasis},
+  lightning_prism: {...ElectroHypostasis}
 }
