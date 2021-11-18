@@ -3,12 +3,12 @@ import {
   Books,
   BossMaterials,
   BossSkillMaterial,
-  CROWN_OF_INSIGHT,
   Flower,
   Gem,
   Materials,
   MORA
 } from '../materialNames';
+import {fillTalentMaterials} from '../../utils/utils';
 
 const Venti = {
   name: 'Venti',
@@ -57,58 +57,19 @@ const Venti = {
     ]
   },
   rarity: 5,
-  talent_materials: {
-    2: [
-      {material: Books.TEACHINGS_OF_BALLAD, count: 3},
-      {material: Materials.SLIME_CONDENSATE, count: 6},
-      {material: MORA, count: 12500}
-    ],
-    3: [
-      {material: Books.GUIDE_TO_BALLAD, count: 2},
-      {material: Materials.SLIME_SECRETIONS, count: 3},
-      {material: MORA, count: 17500}
-    ],
-    4: [
-      {material: Books.GUIDE_TO_BALLAD, count: 4},
-      {material: Materials.SLIME_SECRETIONS, count: 4},
-      {material: MORA, count: 25000}
-    ],
-    5: [
-      {material: Books.GUIDE_TO_BALLAD, count: 6},
-      {material: Materials.SLIME_SECRETIONS, count: 6},
-      {material: MORA, count: 30000}
-    ],
-    6: [
-      {material: Books.GUIDE_TO_BALLAD, count: 9},
-      {material: Materials.SLIME_SECRETIONS, count: 9},
-      {material: MORA, count: 37500}
-    ],
-    7: [
-      {material: Books.PHILOSOPHIES_OF_BALLAD, count: 4},
-      {material: Materials.SLIME_CONCENTRATE, count: 4},
-      {material: BossSkillMaterial.TAIL_OF_BOREAS, count: 1},
-      {material: MORA, count: 120000}
-    ],
-    8: [
-      {material: Books.PHILOSOPHIES_OF_BALLAD, count: 6},
-      {material: Materials.SLIME_CONCENTRATE, count: 6},
-      {material: BossSkillMaterial.TAIL_OF_BOREAS, count: 1},
-      {material: MORA, count: 260000}
-    ],
-    9: [
-      {material: Books.PHILOSOPHIES_OF_BALLAD, count: 12},
-      {material: Materials.SLIME_CONCENTRATE, count: 9},
-      {material: BossSkillMaterial.TAIL_OF_BOREAS, count: 2},
-      {material: MORA, count: 450000}
-    ],
-    10: [
-      {material: Books.PHILOSOPHIES_OF_BALLAD, count: 16},
-      {material: Materials.SLIME_CONCENTRATE, count: 12},
-      {material: BossSkillMaterial.TAIL_OF_BOREAS, count: 2},
-      {material: CROWN_OF_INSIGHT, count: 1},
-      {material: MORA, count: 700000}
-    ]
-  }
+  talent_materials: fillTalentMaterials({
+    books: {
+      1: Books.TEACHINGS_OF_BALLAD,
+      2: Books.GUIDE_TO_BALLAD,
+      3: Books.PHILOSOPHIES_OF_BALLAD,
+    },
+    materials: {
+      1: Materials.SLIME_CONDENSATE,
+      2: Materials.SLIME_SECRETIONS,
+      3: Materials.SLIME_CONCENTRATE,
+    },
+    bossMaterial: BossSkillMaterial.TAIL_OF_BOREAS
+  })
 }
 
 export default Venti

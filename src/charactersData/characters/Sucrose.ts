@@ -3,12 +3,12 @@ import {
   Books,
   BossMaterials,
   BossSkillMaterial,
-  CROWN_OF_INSIGHT,
   Flower,
   Gem,
   Materials,
   MORA
 } from '../materialNames';
+import {fillTalentMaterials} from '../../utils/utils';
 
 const Sucrose = {
   name: 'Sucrose',
@@ -57,58 +57,19 @@ const Sucrose = {
     ]
   },
   rarity: 4,
-  talent_materials: {
-    2: [
-      {material: Books.TEACHINGS_OF_FREEDOM, count: 3},
-      {material: Materials.WHOPPERFLOWER_NECTAR, count: 6},
-      {material: MORA, count: 12500}
-    ],
-    3: [
-      {material: Books.GUIDE_TO_FREEDOM, count: 2},
-      {material: Materials.SHIMMERING_NECTAR, count: 3},
-      {material: MORA, count: 17500}
-    ],
-    4: [
-      {material: Books.GUIDE_TO_FREEDOM, count: 4},
-      {material: Materials.SHIMMERING_NECTAR, count: 4},
-      {material: MORA, count: 25000}
-    ],
-    5: [
-      {material: Books.GUIDE_TO_FREEDOM, count: 6},
-      {material: Materials.SHIMMERING_NECTAR, count: 6},
-      {material: MORA, count: 30000}
-    ],
-    6: [
-      {material: Books.GUIDE_TO_FREEDOM, count: 9},
-      {material: Materials.SHIMMERING_NECTAR, count: 9},
-      {material: MORA, count: 37500}
-    ],
-    7: [
-      {material: Books.PHILOSOPHIES_OF_FREEDOM, count: 4},
-      {material: Materials.ENERGY_NECTAR, count: 4},
-      {material: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS, count: 1},
-      {material: MORA, count: 120000}
-    ],
-    8: [
-      {material: Books.PHILOSOPHIES_OF_FREEDOM, count: 6},
-      {material: Materials.ENERGY_NECTAR, count: 6},
-      {material: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS, count: 1},
-      {material: MORA, count: 260000}
-    ],
-    9: [
-      {material: Books.PHILOSOPHIES_OF_FREEDOM, count: 12},
-      {material: Materials.ENERGY_NECTAR, count: 9},
-      {material: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS, count: 2},
-      {material: MORA, count: 450000}
-    ],
-    10: [
-      {material: Books.PHILOSOPHIES_OF_FREEDOM, count: 16},
-      {material: Materials.ENERGY_NECTAR, count: 12},
-      {material: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS, count: 2},
-      {material: CROWN_OF_INSIGHT, count: 1},
-      {material: MORA, count: 700000}
-    ]
-  }
+  talent_materials: fillTalentMaterials({
+    books: {
+      1: Books.TEACHINGS_OF_FREEDOM,
+      2: Books.GUIDE_TO_FREEDOM,
+      3: Books.PHILOSOPHIES_OF_FREEDOM,
+    },
+    materials: {
+      1: Materials.WHOPPERFLOWER_NECTAR,
+      2: Materials.SHIMMERING_NECTAR,
+      3: Materials.ENERGY_NECTAR,
+    },
+    bossMaterial: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS
+  })
 }
 
 export default Sucrose
