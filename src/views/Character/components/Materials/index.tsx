@@ -52,6 +52,7 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
 
                 return <Material data={value} key={index}/>
               })}
+              {activeCharacter?.talent_materials && <AscensionSummary ascensionMaterials={activeCharacter.talent_materials}/>}
             </Col>
           )}
         </Row>

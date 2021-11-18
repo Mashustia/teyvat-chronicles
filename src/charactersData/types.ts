@@ -20,4 +20,5 @@ export interface IAscensionMaterials {
 export interface IMaterial {
   material: string
   count: number
+  sorting_index?: number
 }
