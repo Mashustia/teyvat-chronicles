@@ -82,11 +82,9 @@ export const fillAscensionMaterials = ({ gems, materials, bossMaterial, specialt
     }
   })
 
-
   // lvl 20
   talentMaterials[20][0].material = gems[1]
   talentMaterials[20][2].material = materials[1]
-
 
   // lvl 40, 50
   const lvl40And50Materials = [40, 50]
