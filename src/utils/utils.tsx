@@ -1,7 +1,11 @@
 import {match} from 'react-router-dom';
+import {useEffect} from 'react';
+import {cloneDeep} from 'lodash'
 
 import {IRouteParams} from '../types/commonTypes';
-import {useEffect} from 'react';
+import {defaultTalentMaterials} from '../charactersData/expandedMaterialInfo';
+import {ICharacterTalentMaterials} from './types';
+import {IAscensionMaterials} from '../charactersData/types';
 
 export const getOrgDataFromMatch = (matchData: match<IRouteParams>): string => {
   if (matchData?.params?.name) {
@@ -34,4 +38,31 @@ export const ScrollToTopOnMount = () => {
   }, []);
 
   return null;
+}
+
+export const fillTalentMaterials = ({ books, materials, bossMaterial }: ICharacterTalentMaterials): IAscensionMaterials => {
+  const talentMaterials = cloneDeep(defaultTalentMaterials)
+
+  // lvl 2
+  talentMaterials[2][0].material = books[1]
+  talentMaterials[2][1].material = materials[1]
+
+  // lvl 3, 4, 5, 6
+  const lvl2Materials = [3, 4, 5, 6]
+  lvl2Materials.forEach((lvl: number) => {
+      talentMaterials[lvl][0].material = books[2]
+      talentMaterials[lvl][1].material = materials[2]
+    }
+  )
+
+  // lvl 7, 8, 9, 10
+  const lvl3Materials = [7, 8, 9, 10]
+  lvl3Materials.forEach((lvl: number) => {
+    talentMaterials[lvl][0].material = books[3]
+    talentMaterials[lvl][1].material = materials[3]
+    talentMaterials[lvl][2].material = bossMaterial
+    }
+  )
+
+  return talentMaterials
 }
