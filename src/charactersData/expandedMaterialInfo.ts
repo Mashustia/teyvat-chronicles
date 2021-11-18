@@ -283,6 +283,7 @@ export const ExpandedMaterialInfo: IDungeon = {
   smoldering_pearl: {...PyroHypostasis}
 }
 
+// order is important
 export const defaultTalentMaterials = {
   2: [
     {material: '', count: 3, sorting_index: 1},
@@ -333,5 +334,50 @@ export const defaultTalentMaterials = {
     {material: '', count: 2, sorting_index: 3},
     {material: CROWN_OF_INSIGHT, count: 1},
     {material: MORA, count: 700000}
+  ]
+}
+
+// order is important
+export const defaultAscensionMaterials = {
+  20: [
+    { material: '', count: 1, sorting_index: 1 },
+    { material: '', count: 3 },
+    { material: '', count: 3 },
+    { material: MORA, count: 20000 },
+  ],
+  40: [
+    { material: '', count: 3, sorting_index: 2 },
+    { material: '', count: 2 },
+    { material: '', count: 10 },
+    { material: '', count: 15 },
+    { material: MORA, count: 40000 },
+  ],
+  50: [
+    { material: '', count: 6, sorting_index: 2 },
+    { material: '', count: 4 },
+    { material: '', count: 20 },
+    { material: '', count: 12 },
+    { material: MORA, count: 60000 },
+  ],
+  60: [
+    { material: '', count: 3, sorting_index: 3 },
+    { material: '', count: 8 },
+    { material: '', count: 30 },
+    { material: '', count: 18 },
+    { material: MORA, count: 80000 },
+  ],
+  70: [
+    { material: '', count: 6, sorting_index: 3 },
+    { material: '', count: 12 },
+    { material: '', count: 45 },
+    { material: '', count: 12 },
+    { material: MORA, count: 100000 },
+  ],
+  80: [
+    { material: '', count: 6, sorting_index: 4 },
+    { material: '', count: 20 },
+    { material: '', count: 60 },
+    { material: '', count: 24 },
+    { material: MORA, count: 120000 },
   ]
 }

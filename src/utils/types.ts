@@ -11,3 +11,19 @@ export interface ICharacterTalentMaterials {
   },
   bossMaterial: string
 }
+
+export interface ICharacterAscensionMaterials {
+  gems: {
+    1: string
+    2: string
+    3: string
+    4: string
+  },
+  materials: {
+    1: string
+    2: string
+    3: string
+  },
+  bossMaterial: string
+  specialty: string
+}
