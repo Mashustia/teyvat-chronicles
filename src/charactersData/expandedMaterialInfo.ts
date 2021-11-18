@@ -312,25 +312,25 @@ export const defaultTalentMaterials = {
   7: [
     {material: '', count: 4, sorting_index: 1},
     {material: '', count: 4, sorting_index: 2},
-    {material: '', count: 1},
+    {material: '', count: 1, sorting_index: 3},
     {material: MORA, count: 120000}
   ],
   8: [
     {material: '', count: 6, sorting_index: 1},
     {material: '', count: 6, sorting_index: 2},
-    {material: '', count: 1},
+    {material: '', count: 1, sorting_index: 3},
     {material: MORA, count: 260000}
   ],
   9: [
     {material: '', count: 12, sorting_index: 1},
     {material: '', count: 9, sorting_index: 2},
-    {material: '', count: 2},
+    {material: '', count: 2, sorting_index: 3},
     {material: MORA, count: 450000}
   ],
   10: [
     {material: '', count: 16, sorting_index: 1},
     {material: '', count: 12, sorting_index: 2},
-    {material: '', count: 2},
+    {material: '', count: 2, sorting_index: 3},
     {material: CROWN_OF_INSIGHT, count: 1},
     {material: MORA, count: 700000}
   ]
