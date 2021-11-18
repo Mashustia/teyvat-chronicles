@@ -3,12 +3,12 @@ import {
   Books,
   BossMaterials,
   BossSkillMaterial,
-  CROWN_OF_INSIGHT,
   Flower,
   Gem,
   Materials,
   MORA
 } from '../materialNames';
+import {fillTalentMaterials} from '../../utils/utils';
 
 const Ningguang = {
   name: 'Ningguang',
@@ -57,58 +57,19 @@ const Ningguang = {
     ]
   },
   rarity: 4,
-  talent_materials: {
-    2: [
-      {material: Books.TEACHINGS_OF_PROSPERITY, count: 3},
-      {material: Materials.RECRUITS_INSIGNIA, count: 6},
-      {material: MORA, count: 12500}
-    ],
-    3: [
-      {material: Books.GUIDE_TO_PROSPERITY, count: 2},
-      {material: Materials.SERGEANTS_INSIGNIA, count: 3},
-      {material: MORA, count: 17500}
-    ],
-    4: [
-      {material: Books.GUIDE_TO_PROSPERITY, count: 4},
-      {material: Materials.SERGEANTS_INSIGNIA, count: 4},
-      {material: MORA, count: 25000}
-    ],
-    5: [
-      {material: Books.GUIDE_TO_PROSPERITY, count: 6},
-      {material: Materials.SERGEANTS_INSIGNIA, count: 6},
-      {material: MORA, count: 30000}
-    ],
-    6: [
-      {material: Books.GUIDE_TO_PROSPERITY, count: 9},
-      {material: Materials.SERGEANTS_INSIGNIA, count: 9},
-      {material: MORA, count: 37500}
-    ],
-    7: [
-      {material: Books.PHILOSOPHIES_OF_BALLAD, count: 4},
-      {material: Materials.LIEUTENANTS_INSIGNIA, count: 4},
-      {material: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS, count: 1},
-      {material: MORA, count: 120000}
-    ],
-    8: [
-      {material: Books.PHILOSOPHIES_OF_BALLAD, count: 6},
-      {material: Materials.LIEUTENANTS_INSIGNIA, count: 6},
-      {material: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS, count: 1},
-      {material: MORA, count: 260000}
-    ],
-    9: [
-      {material: Books.PHILOSOPHIES_OF_BALLAD, count: 12},
-      {material: Materials.LIEUTENANTS_INSIGNIA, count: 9},
-      {material: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS, count: 2},
-      {material: MORA, count: 450000}
-    ],
-    10: [
-      {material: Books.PHILOSOPHIES_OF_BALLAD, count: 16},
-      {material: Materials.LIEUTENANTS_INSIGNIA, count: 12},
-      {material: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS, count: 2},
-      {material: CROWN_OF_INSIGHT, count: 1},
-      {material: MORA, count: 700000}
-    ]
-  }
+  talent_materials: fillTalentMaterials({
+    books: {
+      1: Books.TEACHINGS_OF_PROSPERITY,
+      2: Books.GUIDE_TO_PROSPERITY,
+      3: Books.PHILOSOPHIES_OF_PROSPERITY,
+    },
+    materials: {
+      1: Materials.RECRUITS_INSIGNIA,
+      2: Materials.SERGEANTS_INSIGNIA,
+      3: Materials.LIEUTENANTS_INSIGNIA,
+    },
+    bossMaterial: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS
+  })
 }
 
 export default Ningguang
