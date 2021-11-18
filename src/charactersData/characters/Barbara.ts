@@ -3,12 +3,12 @@ import {
   Books,
   BossMaterials,
   BossSkillMaterial,
-  CROWN_OF_INSIGHT,
   Flower,
   Gem,
   Materials,
   MORA
 } from '../materialNames';
+import {fillTalentMaterials} from '../../utils/utils';
 
 const Barbara = {
   name: 'Barbara',
@@ -57,58 +57,19 @@ const Barbara = {
     ]
   },
   rarity: 4,
-  talent_materials: {
-    2: [
-      {material: Books.TEACHINGS_OF_FREEDOM, count: 3},
-      {material: Materials.DIVINING_SCROLL, count: 6},
-      {material: MORA, count: 12500}
-    ],
-    3: [
-      {material: Books.GUIDE_TO_FREEDOM, count: 2},
-      {material: Materials.SEALED_SCROLL, count: 3},
-      {material: MORA, count: 17500}
-    ],
-    4: [
-      {material: Books.GUIDE_TO_FREEDOM, count: 4},
-      {material: Materials.SEALED_SCROLL, count: 4},
-      {material: MORA, count: 25000}
-    ],
-    5: [
-      {material: Books.GUIDE_TO_FREEDOM, count: 6},
-      {material: Materials.SEALED_SCROLL, count: 6},
-      {material: MORA, count: 30000}
-    ],
-    6: [
-      {material: Books.GUIDE_TO_FREEDOM, count: 9},
-      {material: Materials.SEALED_SCROLL, count: 9},
-      {material: MORA, count: 37500}
-    ],
-    7: [
-      {material: Books.PHILOSOPHIES_OF_FREEDOM, count: 4},
-      {material: Materials.FORBIDDEN_CURSE_SCROLL, count: 4},
-      {material: BossSkillMaterial.RING_OF_BOREAS, count: 1},
-      {material: MORA, count: 120000}
-    ],
-    8: [
-      {material: Books.PHILOSOPHIES_OF_FREEDOM, count: 6},
-      {material: Materials.FORBIDDEN_CURSE_SCROLL, count: 6},
-      {material: BossSkillMaterial.RING_OF_BOREAS, count: 1},
-      {material: MORA, count: 260000}
-    ],
-    9: [
-      {material: Books.PHILOSOPHIES_OF_FREEDOM, count: 12},
-      {material: Materials.FORBIDDEN_CURSE_SCROLL, count: 9},
-      {material: BossSkillMaterial.RING_OF_BOREAS, count: 2},
-      {material: MORA, count: 450000}
-    ],
-    10: [
-      {material: Books.PHILOSOPHIES_OF_FREEDOM, count: 16},
-      {material: Materials.FORBIDDEN_CURSE_SCROLL, count: 12},
-      {material: BossSkillMaterial.RING_OF_BOREAS, count: 2},
-      {material: CROWN_OF_INSIGHT, count: 1},
-      {material: MORA, count: 700000}
-    ]
-  }
+  talent_materials: fillTalentMaterials({
+    books: {
+      1: Books.TEACHINGS_OF_FREEDOM,
+      2: Books.GUIDE_TO_FREEDOM,
+      3: Books.PHILOSOPHIES_OF_FREEDOM,
+    },
+    materials: {
+      1: Materials.DIVINING_SCROLL,
+      2: Materials.SEALED_SCROLL,
+      3: Materials.FORBIDDEN_CURSE_SCROLL,
+    },
+    bossMaterial: BossSkillMaterial.RING_OF_BOREAS
+  })
 }
 
 export default Barbara

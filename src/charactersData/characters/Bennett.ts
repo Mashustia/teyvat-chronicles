@@ -3,12 +3,12 @@ import {
   Books,
   BossMaterials,
   BossSkillMaterial,
-  CROWN_OF_INSIGHT,
   Flower,
   Gem,
   Materials,
   MORA
 } from '../materialNames';
+import {fillTalentMaterials} from '../../utils/utils';
 
 const Bennett = {
   name: 'Bennett',
@@ -57,58 +57,19 @@ const Bennett = {
     ]
   },
   rarity: 4,
-  talent_materials: {
-    2: [
-      {material: Books.TEACHINGS_OF_RESISTANCE, count: 3},
-      {material: Materials.TREASURE_HOARDER_INSIGNIA, count: 6},
-      {material: MORA, count: 12500}
-    ],
-    3: [
-      {material: Books.GUIDE_TO_RESISTANCE, count: 2},
-      {material: Materials.SILVER_RAVEN_INSIGNIA, count: 3},
-      {material: MORA, count: 17500}
-    ],
-    4: [
-      {material: Books.GUIDE_TO_RESISTANCE, count: 4},
-      {material: Materials.SILVER_RAVEN_INSIGNIA, count: 4},
-      {material: MORA, count: 25000}
-    ],
-    5: [
-      {material: Books.GUIDE_TO_RESISTANCE, count: 6},
-      {material: Materials.SILVER_RAVEN_INSIGNIA, count: 6},
-      {material: MORA, count: 30000}
-    ],
-    6: [
-      {material: Books.GUIDE_TO_RESISTANCE, count: 9},
-      {material: Materials.SILVER_RAVEN_INSIGNIA, count: 9},
-      {material: MORA, count: 37500}
-    ],
-    7: [
-      {material: Books.PHILOSOPHIES_OF_RESISTANCE, count: 4},
-      {material: Materials.GOLDEN_RAVEN_INSIGNIA, count: 4},
-      {material: BossSkillMaterial.DVALINS_PLUME, count: 1},
-      {material: MORA, count: 120000}
-    ],
-    8: [
-      {material: Books.PHILOSOPHIES_OF_RESISTANCE, count: 6},
-      {material: Materials.GOLDEN_RAVEN_INSIGNIA, count: 6},
-      {material: BossSkillMaterial.DVALINS_PLUME, count: 1},
-      {material: MORA, count: 260000}
-    ],
-    9: [
-      {material: Books.PHILOSOPHIES_OF_RESISTANCE, count: 12},
-      {material: Materials.GOLDEN_RAVEN_INSIGNIA, count: 9},
-      {material: BossSkillMaterial.DVALINS_PLUME, count: 2},
-      {material: MORA, count: 450000}
-    ],
-    10: [
-      {material: Books.PHILOSOPHIES_OF_RESISTANCE, count: 16},
-      {material: Materials.GOLDEN_RAVEN_INSIGNIA, count: 12},
-      {material: BossSkillMaterial.DVALINS_PLUME, count: 2},
-      {material: CROWN_OF_INSIGHT, count: 1},
-      {material: MORA, count: 700000}
-    ]
-  }
+  talent_materials: fillTalentMaterials({
+    books: {
+      1: Books.TEACHINGS_OF_RESISTANCE,
+      2: Books.GUIDE_TO_RESISTANCE,
+      3: Books.PHILOSOPHIES_OF_RESISTANCE,
+    },
+    materials: {
+      1: Materials.TREASURE_HOARDER_INSIGNIA,
+      2: Materials.SILVER_RAVEN_INSIGNIA,
+      3: Materials.GOLDEN_RAVEN_INSIGNIA,
+    },
+    bossMaterial: BossSkillMaterial.DVALINS_PLUME
+  })
 }
 
 export default Bennett
