@@ -7,6 +7,7 @@ import {IAscensionSummary} from './types';
 import {IMaterial} from '../../../../charactersData/types';
 
 const MATERIAL = 'material'
+const SORTING_INDEX = 'sorting_index'
 const COUNT = 'count'
 
 const AscensionSummary: FC<IAscensionSummary> = ({ ascensionMaterials }): ReactElement => {
@@ -27,13 +28,18 @@ const AscensionSummary: FC<IAscensionSummary> = ({ ascensionMaterials }): ReactE
 
     const material: IMaterial = {
       material: currentValue,
-      count: counter
+      count: counter,
+    }
+
+    const sortingIndex = materialGroupedByName[currentValue][0]?.sorting_index
+    if (sortingIndex) {
+      material[SORTING_INDEX] = sortingIndex
     }
 
     return [...accumulator, material]
   }, [])
 
-  const sortedMaterials = sortBy(materials, COUNT)
+  const sortedMaterials = sortBy(materials, [SORTING_INDEX, COUNT])
 
   return <Material data={[t('common:total'), sortedMaterials]} isSummary={true}/>
 }

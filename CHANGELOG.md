@@ -1,6 +1,7 @@
 #### 0.1.2 November-2021
 
 * Changes
+  *  Added talent materials summary, fixed Traveler, Zhongli, Ningguang, Beidou ascension materials.
   *  Added ascension materials summary
   *  Added embedded map and description for ascension bosses
   *  Added embedded map for ascension materials and talent level-up materials

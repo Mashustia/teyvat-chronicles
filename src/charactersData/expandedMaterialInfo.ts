@@ -1,5 +1,6 @@
 import {IDungeon} from '../views/Character/components/Material/types';
 import {WeekDay} from '../const/consts';
+import {CROWN_OF_INSIGHT, MORA} from './materialNames';
 
 export enum Region {
   MONDSTADT = 'monstadt',
@@ -280,4 +281,103 @@ export const ExpandedMaterialInfo: IDungeon = {
   perpetual_heart: {...PerpetualMechanicalArray},
   dew_of_repudiation: {...HydroHypostasis},
   smoldering_pearl: {...PyroHypostasis}
+}
+
+// order is important
+export const defaultTalentMaterials = {
+  2: [
+    {material: '', count: 3, sorting_index: 1},
+    {material: '', count: 6, sorting_index: 2},
+    {material: MORA, count: 12500}
+  ],
+  3: [
+    {material: '', count: 2, sorting_index: 1},
+    {material: '', count: 3, sorting_index: 2},
+    {material: MORA, count: 17500}
+  ],
+  4: [
+    {material: '', count: 4, sorting_index: 1},
+    {material: '', count: 4, sorting_index: 2},
+    {material: MORA, count: 25000}
+  ],
+  5: [
+    {material: '', count: 6, sorting_index: 1},
+    {material: '', count: 6, sorting_index: 2},
+    {material: MORA, count: 30000}
+  ],
+  6: [
+    {material: '', count: 9, sorting_index: 1},
+    {material: '', count: 9, sorting_index: 2},
+    {material: MORA, count: 37500}
+  ],
+  7: [
+    {material: '', count: 4, sorting_index: 1},
+    {material: '', count: 4, sorting_index: 2},
+    {material: '', count: 1, sorting_index: 3},
+    {material: MORA, count: 120000}
+  ],
+  8: [
+    {material: '', count: 6, sorting_index: 1},
+    {material: '', count: 6, sorting_index: 2},
+    {material: '', count: 1, sorting_index: 3},
+    {material: MORA, count: 260000}
+  ],
+  9: [
+    {material: '', count: 12, sorting_index: 1},
+    {material: '', count: 9, sorting_index: 2},
+    {material: '', count: 2, sorting_index: 3},
+    {material: MORA, count: 450000}
+  ],
+  10: [
+    {material: '', count: 16, sorting_index: 1},
+    {material: '', count: 12, sorting_index: 2},
+    {material: '', count: 2, sorting_index: 3},
+    {material: CROWN_OF_INSIGHT, count: 1},
+    {material: MORA, count: 700000}
+  ]
+}
+
+// order is important
+export const defaultAscensionMaterials = {
+  20: [
+    { material: '', count: 1, sorting_index: 1 },
+    { material: '', count: 3 },
+    { material: '', count: 3 },
+    { material: MORA, count: 20000 },
+  ],
+  40: [
+    { material: '', count: 3, sorting_index: 2 },
+    { material: '', count: 2 },
+    { material: '', count: 10 },
+    { material: '', count: 15 },
+    { material: MORA, count: 40000 },
+  ],
+  50: [
+    { material: '', count: 6, sorting_index: 2 },
+    { material: '', count: 4 },
+    { material: '', count: 20 },
+    { material: '', count: 12 },
+    { material: MORA, count: 60000 },
+  ],
+  60: [
+    { material: '', count: 3, sorting_index: 3 },
+    { material: '', count: 8 },
+    { material: '', count: 30 },
+    { material: '', count: 18 },
+    { material: MORA, count: 80000 },
+  ],
+  70: [
+    { material: '', count: 6, sorting_index: 3 },
+    { material: '', count: 12 },
+    { material: '', count: 45 },
+    { material: '', count: 12 },
+    { material: MORA, count: 100000 },
+  ],
+  80: [
+    { material: '', count: 6, sorting_index: 4 },
+    { material: '', count: 20 },
+    { material: '', count: 60 },
+    { material: '', count: 24 },
+    { material: MORA, count: 120000 },
+  ]
 }
