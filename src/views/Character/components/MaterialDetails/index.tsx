@@ -20,7 +20,8 @@ const MaterialDetails: FC<IProps> = (props) => {
     original_resin,
     is_open_days,
     map_link,
-    has_image
+    has_image,
+    additional_info
   } = props
 
   const getInteractiveMapLink = (materialLink: string): string => {
@@ -59,29 +60,43 @@ const MaterialDetails: FC<IProps> = (props) => {
       >
         <Alert.Heading className='fs-5 mb-3'>{materialName}</Alert.Heading>
 
-        {(activeMaterial && name) ? (
+        {(activeMaterial && (name || additional_info)) ? (
           <>
             <Row>
               <Col>
-                <p className='mb-0'>
+                {name && (<p className='mb-0'>
                   <span className='fw-bold'>{t(`materials:${name}`)}</span>
                   {region && ` (${t(`materials:${region}`)})`}
-                </p>
-                <div className='d-flex justify-content-center align-items-center flex-nowrap'>
-                  <p className='mb-0'>
-                    {t('common:consumes')}: {original_resin}
-                  </p>
+                </p>)}
 
-                  <Img
-                    src={'/images/materials/original_resin.png'}
-                    alt={t('materials:original_resin')}
-                    className='material-details-resin-image'
-                  />
-                </div>
-                <p className='mb-1'>
-                  {getDays(is_open_days)}
-                </p>
-                {map_link && <Map name={name} map_link={map_link}/>}
+                {additional_info && (
+                  <p className='mb-0'>
+                    {t(`materials:${additional_info}`)}
+                  </p>
+                )}
+
+                {original_resin && (
+                  <div className='d-flex justify-content-center align-items-center flex-nowrap'>
+                    <p className='mb-0'>
+                      {t('common:consumes')}: {original_resin}
+                    </p>
+
+                    <Img
+                      src={'/images/materials/original_resin.png'}
+                      alt={t('materials:original_resin')}
+                      className='material-details-resin-image'
+                    />
+                  </div>
+                )}
+
+                {is_open_days && (
+                  <p className='mb-1'>
+                    {getDays(is_open_days)}
+                  </p>
+                )}
+
+                {(map_link && name) && <Map name={name} map_link={map_link}/>}
+
                 {has_image && (
                   <img
                     src={`/images/dungeons/${name}.png`}
