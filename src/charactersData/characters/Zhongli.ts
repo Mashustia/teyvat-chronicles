@@ -1,53 +1,25 @@
 import {Vision} from '../../const/consts';
-import {BossMaterials, Rocks, Gem, Materials, MORA, Books, BossSkillMaterial} from '../materialNames';
-import {fillTalentMaterials} from '../../utils/utils';
+import {BossMaterials, Rocks, Gem, Materials, Books, BossSkillMaterial} from '../materialNames';
+import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Zhongli = {
   name: 'Zhongli',
   vision: Vision.GEO,
-  ascension_materials: {
-    20: [
-      { material: Gem.GEO.PRITHIVA_TOPAZ_SLIVER, count: 1 },
-      { material: Rocks.COR_LAPIS, count: 3 },
-      { material: Materials.SLIME_SECRETIONS, count: 3 },
-      { material: MORA, count: 20000 },
-    ],
-    40: [
-      { material: Gem.GEO.PRITHIVA_TOPAZ_FRAGMENT, count: 3 },
-      { material: BossMaterials.BASALT_PILLAR, count: 2 },
-      { material: Rocks.COR_LAPIS, count: 10 },
-      { material: Materials.SLIME_SECRETIONS, count: 15 },
-      { material: MORA, count: 40000 },
-    ],
-    50: [
-      { material: Gem.GEO.PRITHIVA_TOPAZ_FRAGMENT, count: 6 },
-      { material: BossMaterials.BASALT_PILLAR, count: 4 },
-      { material: Rocks.COR_LAPIS, count: 20 },
-      { material: Materials.SLIME_SECRETIONS, count: 12 },
-      { material: MORA, count: 60000 },
-    ],
-    60: [
-      { material: Gem.GEO.PRITHIVA_TOPAZ_CHUNK, count: 3 },
-      { material: BossMaterials.BASALT_PILLAR, count: 8 },
-      { material: Rocks.COR_LAPIS, count: 30 },
-      { material: Materials.SLIME_SECRETIONS, count: 18 },
-      { material: MORA, count: 80000 },
-    ],
-    70: [
-      { material: Gem.GEO.PRITHIVA_TOPAZ_CHUNK, count: 6 },
-      { material: BossMaterials.BASALT_PILLAR, count: 12 },
-      { material: Rocks.COR_LAPIS, count: 45 },
-      { material: Materials.SLIME_CONCENTRATE, count: 12 },
-      { material: MORA, count: 100000 },
-    ],
-    80: [
-      { material: Gem.GEO.PRITHIVA_TOPAZ_GEMSTONE, count: 6 },
-      { material: BossMaterials.BASALT_PILLAR, count: 20 },
-      { material: Rocks.COR_LAPIS, count: 60 },
-      { material: Materials.SLIME_CONCENTRATE, count: 24 },
-      { material: MORA, count: 120000 },
-    ]
-  },
+  ascension_materials: fillAscensionMaterials({
+    gems: {
+      1: Gem.GEO.PRITHIVA_TOPAZ_SLIVER,
+      2: Gem.GEO.PRITHIVA_TOPAZ_FRAGMENT,
+      3: Gem.GEO.PRITHIVA_TOPAZ_CHUNK,
+      4: Gem.GEO.PRITHIVA_TOPAZ_GEMSTONE
+    },
+    materials: {
+      1: Materials.SLIME_CONDENSATE,
+      2: Materials.SLIME_SECRETIONS,
+      3: Materials.SLIME_CONCENTRATE,
+    },
+    bossMaterial: BossMaterials.BASALT_PILLAR,
+    specialty: Rocks.COR_LAPIS
+  }),
   rarity: 5,
   talent_materials: fillTalentMaterials({
     books: {
