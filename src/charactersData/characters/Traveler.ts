@@ -6,55 +6,29 @@ import {
   Materials,
   MORA,
   Books,
-  BossSkillMaterial, CROWN_OF_INSIGHT
+  BossSkillMaterial,
+  CROWN_OF_INSIGHT
 } from '../materialNames';
+import {fillAscensionMaterials} from '../../utils/utils';
 
 const Traveler = {
   name: 'Traveler',
   vision: Vision.NONE,
-  ascension_materials: {
-    20: [
-      {material: TravelerAscensionMaterial.BRILLIANT_DIAMOND_SLIVER, count: 1},
-      {material: Flower.WINDWHEEL_ASTER, count: 3},
-      {material: Materials.DAMAGED_MASK, count: 3},
-      {material: MORA, count: 20000},
-    ],
-    40: [
-      {material: TravelerAscensionMaterial.BRILLIANT_DIAMOND_FRAGMENT, count: 3},
-      {material: BossMaterials.HURRICANE_SEED, count: 2},
-      {material: Flower.WINDWHEEL_ASTER, count: 10},
-      {material: Materials.DAMAGED_MASK, count: 15},
-      {material: MORA, count: 40000},
-    ],
-    50: [
-      {material: TravelerAscensionMaterial.BRILLIANT_DIAMOND_FRAGMENT, count: 6},
-      {material: BossMaterials.HURRICANE_SEED, count: 4},
-      {material: Flower.WINDWHEEL_ASTER, count: 20},
-      {material: Materials.SEALED_SCROLL, count: 12},
-      {material: MORA, count: 60000},
-    ],
-    60: [
-      {material: TravelerAscensionMaterial.BRILLIANT_DIAMOND_CHUNK, count: 3},
-      {material: BossMaterials.HURRICANE_SEED, count: 8},
-      {material: Flower.WINDWHEEL_ASTER, count: 30},
-      {material: Materials.SEALED_SCROLL, count: 18},
-      {material: MORA, count: 80000},
-    ],
-    70: [
-      {material: TravelerAscensionMaterial.BRILLIANT_DIAMOND_CHUNK, count: 6},
-      {material: BossMaterials.HURRICANE_SEED, count: 12},
-      {material: Flower.WINDWHEEL_ASTER, count: 45},
-      {material: Materials.FORBIDDEN_CURSE_SCROLL, count: 12},
-      {material: MORA, count: 100000},
-    ],
-    80: [
-      {material: TravelerAscensionMaterial.BRILLIANT_DIAMOND_GEMSTONE, count: 6},
-      {material: BossMaterials.HURRICANE_SEED, count: 20},
-      {material: Flower.WINDWHEEL_ASTER, count: 60},
-      {material: Materials.FORBIDDEN_CURSE_SCROLL, count: 24},
-      {material: MORA, count: 120000},
-    ]
-  },
+  ascension_materials: fillAscensionMaterials({
+    gems: {
+      1: TravelerAscensionMaterial.BRILLIANT_DIAMOND_SLIVER,
+      2: TravelerAscensionMaterial.BRILLIANT_DIAMOND_FRAGMENT,
+      3: TravelerAscensionMaterial.BRILLIANT_DIAMOND_CHUNK,
+      4: TravelerAscensionMaterial.BRILLIANT_DIAMOND_GEMSTONE
+    },
+    materials: {
+      1: Materials.DIVINING_SCROLL,
+      2: Materials.SEALED_SCROLL,
+      3: Materials.FORBIDDEN_CURSE_SCROLL,
+    },
+    bossMaterial: BossMaterials.HURRICANE_SEED,
+    specialty: Flower.WINDWHEEL_ASTER
+  }),
   rarity: 5,
   talent_materials: {
     2: [
