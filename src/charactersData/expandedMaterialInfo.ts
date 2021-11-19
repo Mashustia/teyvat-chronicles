@@ -228,6 +228,22 @@ const crownOfInsight = {
   additional_info: 'crown_of_insight_how_to_get'
 }
 
+const brilliantDiamondSliver = {
+  additional_info: 'brilliant_diamond_sliver_how_to_get'
+}
+
+const brilliantDiamondFragment = {
+  additional_info: 'brilliant_diamond_fragment_how_to_get'
+}
+
+const brilliantDiamondChunk = {
+  additional_info: 'brilliant_diamond_chunk_how_to_get'
+}
+
+const brilliantDiamondGemstone = {
+  additional_info: 'brilliant_diamond_gemstone_how_to_get'
+}
+
 export const ExpandedMaterialInfo: IDungeon = {
   mora: {...Mora},
   teachings_of_ballad: {...Ballad},
@@ -285,7 +301,11 @@ export const ExpandedMaterialInfo: IDungeon = {
   perpetual_heart: {...PerpetualMechanicalArray},
   dew_of_repudiation: {...HydroHypostasis},
   smoldering_pearl: {...PyroHypostasis},
-  crown_of_insight: {...crownOfInsight}
+  crown_of_insight: {...crownOfInsight},
+  brilliant_diamond_sliver: {...brilliantDiamondSliver},
+  brilliant_diamond_fragment: {...brilliantDiamondFragment},
+  brilliant_diamond_chunk: {...brilliantDiamondChunk},
+  brilliant_diamond_gemstone: {...brilliantDiamondGemstone},
 }
 
 // order is important
