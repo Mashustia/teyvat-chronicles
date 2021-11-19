@@ -77,7 +77,9 @@ export const fillAscensionMaterials = ({ gems, materials, bossMaterial, specialt
     if (lvl === 20) {
       talentMaterials[lvl][1].material = specialty
     } else {
-      talentMaterials[lvl][1].material = bossMaterial
+      if (bossMaterial) {
+        talentMaterials[lvl][1].material = bossMaterial
+      }
       talentMaterials[lvl][2].material = specialty
     }
   })

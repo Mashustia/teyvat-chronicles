@@ -24,6 +24,6 @@ export interface ICharacterAscensionMaterials {
     2: string
     3: string
   },
-  bossMaterial: string
+  bossMaterial?: string
   specialty: string
 }

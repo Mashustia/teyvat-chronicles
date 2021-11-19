@@ -1,6 +1,5 @@
 import {Vision} from '../../const/consts';
 import {
-  BossMaterials,
   Flower,
   TravelerAscensionMaterial,
   Materials,
@@ -22,11 +21,10 @@ const Traveler = {
       4: TravelerAscensionMaterial.BRILLIANT_DIAMOND_GEMSTONE
     },
     materials: {
-      1: Materials.DIVINING_SCROLL,
-      2: Materials.SEALED_SCROLL,
-      3: Materials.FORBIDDEN_CURSE_SCROLL,
+      1: Materials.DAMAGED_MASK,
+      2: Materials.STAINED_MASK,
+      3: Materials.OMINOUS_MASK,
     },
-    bossMaterial: BossMaterials.HURRICANE_SEED,
     specialty: Flower.WINDWHEEL_ASTER
   }),
   rarity: 5,

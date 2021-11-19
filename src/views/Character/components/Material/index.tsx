@@ -34,7 +34,7 @@ const Material: FC<IProps> = ({data: [lvl, materials], isSummary}) => {
       />
     )
 
-    return (
+    return material && (
       <Col key={index} className='d-flex flex-column' xs={isSummary ? 2 : undefined}>
         <div className='ascension-material-img-wrapper mb-1'>
           {image}
