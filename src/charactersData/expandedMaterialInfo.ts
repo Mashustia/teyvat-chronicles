@@ -224,6 +224,10 @@ const MaguuKenki = {
   map_link: 'pin=-4000|-2340|Maguu Kenki'
 }
 
+const crownOfInsight = {
+  additional_info: 'crown_of_insight_how_to_get'
+}
+
 export const ExpandedMaterialInfo: IDungeon = {
   mora: {...Mora},
   teachings_of_ballad: {...Ballad},
@@ -280,7 +284,8 @@ export const ExpandedMaterialInfo: IDungeon = {
   crystalline_bloom: {...CryoHypostasis},
   perpetual_heart: {...PerpetualMechanicalArray},
   dew_of_repudiation: {...HydroHypostasis},
-  smoldering_pearl: {...PyroHypostasis}
+  smoldering_pearl: {...PyroHypostasis},
+  crown_of_insight: {...crownOfInsight}
 }
 
 // order is important
