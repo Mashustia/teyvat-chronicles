@@ -53,7 +53,7 @@
   /*old*/
   --background-color: #00115b;
 
-  --background-color-dark: #373a6d;
+  --background-color-dark: #29282f;
   --background-color-light: #ffffff;
 
   --primary: #ff8246;
@@ -63,7 +63,6 @@
   --text-light: #fff;
   --text-dark: #000000;
   --heading-1: #beeef7;
-
 }
 
 body {
