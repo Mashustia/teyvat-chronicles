@@ -1,3 +1,7 @@
+.ascension-material {
+  background-color: var(--gray-200);
+}
+
 .ascension-material-img-wrapper > svg {
   max-width: 100px;
   width: 100%;
