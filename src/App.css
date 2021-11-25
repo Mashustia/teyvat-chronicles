@@ -50,7 +50,9 @@
   --transition-time-sidebar-in: 250ms;
   --transition-time-sidebar-out: 350ms;
 
+  /*old*/
   --background-color: #00115b;
+
   --background-color-dark: #373a6d;
   --background-color-light: #ffffff;
 
@@ -65,7 +67,7 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--background-color-dark);
 }
 
 .app {
