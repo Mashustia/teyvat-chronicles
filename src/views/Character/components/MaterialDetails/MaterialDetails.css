@@ -1,5 +1,5 @@
 .material-details-alert {
-  background-color: var(--background-color);
+  background-color: var(--gray-100);
   color: var(--bs-gray-200);
 }
 
