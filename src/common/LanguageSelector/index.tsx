@@ -22,7 +22,7 @@ const LanguageSelector: FC<IDropdownProps> = ({languages, activeLanguage, onSele
       className={cn(isOpen ? 'open' : 'hidden', 'language-selector position-absolute d-flex flex-column py-2')}
     >
       {languages.map((language: string) =>
-        <span className='language-selector__option d-flex px-3 py-1' onClick={handleLanguageChange(language)}>
+        <span key={language} className='language-selector__option d-flex px-3 py-1' onClick={handleLanguageChange(language)}>
           {<Flags language={language}/>}
         </span>
       )}
@@ -31,6 +31,8 @@ const LanguageSelector: FC<IDropdownProps> = ({languages, activeLanguage, onSele
 
   const handleDropdownToggle = (value: boolean) => () => setIsOpen(value)
 
+  // TODO: fix error message 'React Hook useEffect received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps'
+  // eslint-disable-next-line
   useEffect(listenForOutsideClicks(
     listening,
     setListening,

@@ -12,7 +12,8 @@ export const listenForOutsideClicks = (
     setListening(true);
     [`click`, `touchstart`].forEach((type) => {
       document.addEventListener(`click`, (evt) => {
-        if (menuRef?.current?.current?.contains(evt.target)) return;
+        console.log(menuRef)
+        if (menuRef?.current?.contains(evt.target)) return;
         setIsOpen(false);
       });
     });
