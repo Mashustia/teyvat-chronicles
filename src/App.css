@@ -50,11 +50,28 @@
   --transition-time-sidebar-in: 250ms;
   --transition-time-sidebar-out: 350ms;
 
+  /*old*/
   --background-color: #00115b;
+
+  --background-color-dark: #29282f;
+  --background-color-light: #ffffff;
+  --background-color-gray: #464548;
+
+  --primary: #ff8246;
+  --primary-dark: #f25a11;
+  --primary-light: #fca479;
+
+  --text-light: #fff;
+  --text-dark: #000000;
+  --heading-1: #beeef7;
+
+  --gray-100: #464548;
+  --gray-200: #37363b;
+  --gray-300: #2c2b30;
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--background-color-dark);
 }
 
 .app {

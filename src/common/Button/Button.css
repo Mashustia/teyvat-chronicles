@@ -1,0 +1,19 @@
+.button {
+  background: linear-gradient(to left top, #ec4645, #2c52c7);
+  color: var(--text-light);
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0 0 0 2px var(--text-light) inset;
+  -moz-box-shadow: 0 0 0 2px var(--text-light) inset;
+  box-shadow: 0 0 0 2px var(--text-light) inset;
+}
+
+.button:focus {
+  -webkit-box-shadow: 0 0 0 2px var(--bs-gray-500) inset;
+  -moz-box-shadow: 0 0 0 2px var(--bs-gray-500) inset;
+  box-shadow: 0 0 0 2px var(--bs-gray-500) inset;
+}

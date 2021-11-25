@@ -1,0 +1,18 @@
+.language-selector__arrow {
+  width: 10px;
+  fill: var(--primary-light)
+}
+
+.language-selector {
+  background-color: var(--gray-100);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.language-selector__option:hover {
+  background: linear-gradient(to left top, #ec4645, #2c52c7);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 2px var(--text-light) inset;
+  -moz-box-shadow: 0 0 0 2px var(--text-light) inset;
+  box-shadow: 0 0 0 2px var(--text-light) inset;
+}
