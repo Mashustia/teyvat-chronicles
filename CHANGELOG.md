@@ -1,13 +1,14 @@
 #### 1.0.3 November-2021
 
 * Changes
-  *  Fixed release number in changelog
-  *  Added information about crown of insight and traveler's brilliant diamond material
-  *  Added talent materials summary, fixed Traveler, Zhongli, Ningguang, Beidou ascension materials
-  *  Added ascension materials summary
-  *  Added embedded map and description for ascension bosses
-  *  Added embedded map for ascension materials and talent level-up materials
-  *  Fixed page scroll on character page
+  * Changed main color scheme
+  * Fixed release number in changelog
+  * Added information about crown of insight and traveler's brilliant diamond material
+  * Added talent materials summary, fixed Traveler, Zhongli, Ningguang, Beidou ascension materials
+  * Added ascension materials summary
+  * Added embedded map and description for ascension bosses
+  * Added embedded map for ascension materials and talent level-up materials
+  * Fixed page scroll on character page
 
 #### 1.0.2 October-2021
 
