@@ -1,11 +1,12 @@
 import {FC, ReactElement} from 'react'
-import {Button, Dropdown} from 'react-bootstrap'
+import {Dropdown} from 'react-bootstrap'
 import {useTranslation} from 'react-i18next';
 import {Route, Switch, withRouter} from 'react-router-dom';
 
 import {lookupLocalStorage, RouteName} from '../../const/consts';
 import Flags from './components/flags';
 import {IHeaderProps as IProps} from './components/types';
+import Button from '../Button';
 
 const Header: FC<IProps> = (props: IProps): ReactElement => {
   const {t, i18n} = useTranslation(['header', 'language'])
@@ -14,7 +15,7 @@ const Header: FC<IProps> = (props: IProps): ReactElement => {
   const handleGoBack = () => history.push(RouteName.DEFAULT)
 
   const goBackButton = () => (
-    <Button variant='secondary' size='sm' onClick={handleGoBack}>
+    <Button onClick={handleGoBack}>
       {t('header:go_back')}
     </Button>
   )

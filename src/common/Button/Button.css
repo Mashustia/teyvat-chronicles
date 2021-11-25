@@ -1,0 +1,15 @@
+.button {
+  background-color: var(--primary);
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+  color: var(--text-light)
+}
+
+.button:hover {
+  background-color: var(--primary-dark);
+}
+
+.button:focus {
+  background-color: var(--primary-light);
+}

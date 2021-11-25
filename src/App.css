@@ -51,6 +51,17 @@
   --transition-time-sidebar-out: 350ms;
 
   --background-color: #00115b;
+  --background-color-dark: #373a6d;
+  --background-color-light: #ffffff;
+
+  --primary: #ff8246;
+  --primary-dark: #f25a11;
+  --primary-light: #fca479;
+
+  --text-light: #fff;
+  --text-dark: #000000;
+  --heading-1: #beeef7;
+
 }
 
 body {
