@@ -46,3 +46,8 @@ export enum WeekDay {
   SATURDAY = 'saturday',
   SUNDAY = 'sunday',
 }
+
+export enum Event {
+  CLICK = 'click',
+  TOUCHSTART = 'touchstart'
+}
