@@ -1,4 +1,4 @@
-import {FC, ReactElement, useState} from 'react'
+import {FC, ReactElement, useRef, useState} from 'react'
 import {useTranslation} from 'react-i18next';
 import {Route, Switch, withRouter} from 'react-router-dom';
 
@@ -8,11 +8,16 @@ import Button from '../Button';
 import LanguageSelector from '../LanguageSelector';
 import Burger from '../Navigarion/components/Burger';
 import Sidebar from '../Navigarion/components/Sidebar';
+import {useOnClickOutside} from '../../Hooks/useOnClickOutside';
 
 const Header: FC<IProps> = (props: IProps): ReactElement => {
   const {t, i18n} = useTranslation(['header', 'language'])
   const {history} = props
+
   const [isSidebarShown, toggleIsSidebarShown] = useState(false);
+  const sidebarRef = useRef(null);
+
+  useOnClickOutside(sidebarRef, () => toggleIsSidebarShown(false))
 
   const handleClick = () => toggleIsSidebarShown(!isSidebarShown);
 
@@ -35,7 +40,7 @@ const Header: FC<IProps> = (props: IProps): ReactElement => {
   )
 
   const renderSidebar = isSidebarShown && (
-    <Sidebar>
+    <Sidebar innerRef={sidebarRef}>
       <li className='d-flex flex-nowrap'>
         <Burger classes='me-2' onClick={handleClick}/>
       </li>
