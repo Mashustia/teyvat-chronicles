@@ -6,6 +6,7 @@ import {lookupLocalStorage, RouteName} from '../../const/consts';
 import {IHeaderProps as IProps} from './components/types';
 import Button from '../Button';
 import LanguageSelector from '../LanguageSelector';
+import Burger from '../Navigarion/components/Burger';
 
 const Header: FC<IProps> = (props: IProps): ReactElement => {
   const {t, i18n} = useTranslation(['header', 'language'])
@@ -14,7 +15,7 @@ const Header: FC<IProps> = (props: IProps): ReactElement => {
   const handleGoBack = () => history.push(RouteName.DEFAULT)
 
   const goBackButton = () => (
-    <Button onClick={handleGoBack}>
+    <Button onClick={handleGoBack} classes='ml-auto'>
       {t('header:go_back')}
     </Button>
   )
@@ -23,7 +24,9 @@ const Header: FC<IProps> = (props: IProps): ReactElement => {
 
   return (
     <header className='header mb-2'>
-      <div className='d-flex flex-nowrap justify-content-between px-2'>
+      <div className='d-flex flex-nowrap px-2'>
+        <Burger classes='me-2' />
+
         <LanguageSelector
           languages={[...i18n.languages]}
           onSelect={handleLanguageChange}
