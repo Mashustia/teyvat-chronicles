@@ -8,7 +8,7 @@ import Button from '../Button';
 import LanguageSelector from '../LanguageSelector';
 import Burger from '../Navigarion/components/Burger';
 import Sidebar from '../Navigarion/components/Sidebar';
-import {useOnClickOutside} from '../../Hooks/useOnClickOutside';
+import {useOnClickOutside} from '../../hooks/useOnClickOutside';
 
 const listItemStyle = 'text-left p-2 ps-3 pointer'
 

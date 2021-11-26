@@ -4,7 +4,7 @@ import cn from 'classnames'
 import Button from '../Button';
 import {IDropdownProps} from './types';
 import Flags from '../Header/components/flags';
-import {useOnClickOutside} from '../../Hooks/useOnClickOutside';
+import {useOnClickOutside} from '../../hooks/useOnClickOutside';
 import './LanguageSelector.css';
 
 const LanguageSelector: FC<IDropdownProps> = ({languages, activeLanguage, onSelect}): ReactElement => {
