@@ -1,5 +1,7 @@
 export const interactiveMapBaseUrl = 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang={{ language }}#/map/2?shown_types='
 
+export const twitterUrl = 'https://twitter.com/{{ twitterName }}?ref_src=twsrc%5Etfw'
+
 export const Languages = {
   EN: 'en',
   RU: 'ru'
@@ -55,4 +57,9 @@ export enum Event {
   TOUCHSTART = 'touchstart',
   KEYPRESS = 'keypress',
   MOUSEUP = 'mouseup'
+}
+
+export enum GenshinImpactTwitter {
+  ru = 'RUGenshinimpact',
+  en = 'GenshinImpact'
 }
