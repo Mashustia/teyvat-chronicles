@@ -9,5 +9,7 @@
   "all_days": "Понедельник - Воскресенье",
   "dungeon_days": "Открыто: ",
   "consumes": "Стоимость",
-  "total": "Всего"
+  "total": "Всего",
+  "news": "Новости",
+  "tweets": "Твитты от {{ twitter_name }}"
 }
