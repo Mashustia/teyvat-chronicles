@@ -10,6 +10,5 @@
   "dungeon_days": "Opened: ",
   "consumes": "Consumes",
   "total": "Total",
-  "news": "News",
-  "tweets": "Tweets by {{ twitter_name }}"
+  "news": "News"
 }

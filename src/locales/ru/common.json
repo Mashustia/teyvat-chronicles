@@ -10,6 +10,5 @@
   "dungeon_days": "Открыто: ",
   "consumes": "Стоимость",
   "total": "Всего",
-  "news": "Новости",
-  "tweets": "Твитты от {{ twitter_name }}"
+  "news": "Новости"
 }
