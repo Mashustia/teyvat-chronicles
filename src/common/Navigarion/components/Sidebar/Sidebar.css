@@ -9,17 +9,21 @@
   background-color: var(--gray-200);
   border-right: 1px solid var(--gray-100);
 
-  z-index: 2;
+  z-index: 4;
 }
 
-.sidebar li:nth-child(2) {
+.sidebar a:nth-child(2) {
   border-top: 1px solid var(--gray-100);
 }
 
-.sidebar li:nth-child(n+2) {
+.sidebar a:nth-child(n+2) {
   border-bottom: 1px solid var(--gray-100);
+  color: var(--text-light);
+  text-decoration: none;
 }
 
-.sidebar li:nth-child(n+2):hover {
+.sidebar a:nth-child(n+2):hover,
+.sidebar a:nth-child(n+2):focus {
+  outline: none;
   background: linear-gradient(to left top, #ec4645, #2c52c7);
 }

@@ -1,6 +1,6 @@
 import {FC, ReactElement, useRef, useState} from 'react'
 import {useTranslation} from 'react-i18next';
-import {Route, Switch, withRouter} from 'react-router-dom';
+import {Link, Route, Switch, withRouter} from 'react-router-dom';
 
 import {lookupLocalStorage, RouteName} from '../../const/consts';
 import {IHeaderProps as IProps} from './components/types';
@@ -13,7 +13,7 @@ import {useOnClickOutside} from '../../Hooks/useOnClickOutside';
 const listItemStyle = 'text-left p-2 ps-3 pointer'
 
 const Header: FC<IProps> = (props: IProps): ReactElement => {
-  const {t, i18n} = useTranslation(['header', 'language'])
+  const {t, i18n} = useTranslation(['header', 'language', 'menu'])
   const {history} = props
 
   const [isSidebarShown, toggleIsSidebarShown] = useState(false);
@@ -43,12 +43,16 @@ const Header: FC<IProps> = (props: IProps): ReactElement => {
 
   const renderSidebar = isSidebarShown && (
     <Sidebar innerRef={sidebarRef}>
-      <li className='text-left ps-2'>
+      <div className='text-left ps-2'>
         <Burger classes='me-2 mb-1' onClick={handleClick}/>
-      </li>
+      </div>
 
-      <li className={listItemStyle}>Персонажи</li>
-      <li className={listItemStyle}>Новости</li>
+      <Link className={listItemStyle} to={RouteName.DEFAULT} onClick={handleClick}>
+        {t('menu:characters')}
+      </Link>
+      <Link className={listItemStyle} to={RouteName.NEWS} onClick={handleClick}>
+        {t('menu:news')}
+      </Link>
     </Sidebar>
   )
 
