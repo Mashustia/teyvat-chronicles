@@ -1,5 +1,7 @@
 import {RefObject} from 'react';
 
+import {Event} from '../../const/consts';
+
 export const listenForOutsideClicks = (
   listening: boolean,
   setListening: (arg: boolean) => void,
@@ -10,8 +12,8 @@ export const listenForOutsideClicks = (
     if (listening) return;
     if (!menuRef.current) return;
     setListening(true);
-    [`click`, `touchstart`].forEach((type) => {
-      document.addEventListener(`click`, (evt) => {
+    [Event.CLICK, Event.TOUCHSTART].forEach((type) => {
+      document.addEventListener(Event.CLICK, (evt) => {
         if (menuRef?.current?.contains(evt.target)) return;
         setIsOpen(false);
       });
