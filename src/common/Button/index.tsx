@@ -1,10 +1,11 @@
 import {FC, ReactElement} from 'react'
+import cn from 'classnames';
 
 import './Button.css';
-import {IButtonProps as IProps} from './types';
+import {ButtonType, IButtonProps as IProps} from './types';
 
-const Button: FC<IProps> = ({ children,  onClick, iconLeft }): ReactElement => (
-  <button className='button' onClick={onClick}>
+const Button: FC<IProps> = ({ children,  onClick, iconLeft, type, classes = ButtonType.BUTTON }): ReactElement => (
+  <button className={cn('button', classes)} onClick={onClick} type={type}>
     {children}
     {iconLeft}
   </button>

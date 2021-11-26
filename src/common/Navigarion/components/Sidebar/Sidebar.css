@@ -1,0 +1,29 @@
+.sidebar {
+  height: 100%;
+  width: var(--sidebar-width);
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  background-color: var(--gray-200);
+  border-right: 1px solid var(--gray-100);
+
+  z-index: 4;
+}
+
+.sidebar a:nth-child(2) {
+  border-top: 1px solid var(--gray-100);
+}
+
+.sidebar a:nth-child(n+2) {
+  border-bottom: 1px solid var(--gray-100);
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.sidebar a:nth-child(n+2):hover,
+.sidebar a:nth-child(n+2):focus {
+  outline: none;
+  background: linear-gradient(to left top, #ec4645, #2c52c7);
+}

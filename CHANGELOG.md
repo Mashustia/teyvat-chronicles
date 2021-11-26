@@ -1,6 +1,8 @@
 #### 1.0.3 November-2021
 
 * Changes
+  * Added news section
+  * Added menu sidebar
   * Changed main color scheme
   * Fixed release number in changelog
   * Added information about crown of insight and traveler's brilliant diamond material

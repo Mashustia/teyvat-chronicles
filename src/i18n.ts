@@ -11,6 +11,7 @@ import LANGUAGE_RU from './locales/ru/language.json';
 import MATERIALS_RU from './locales/ru/materials.json';
 import MATERIAL_RU from './locales/ru/material.json';
 import COMMON_RU from './locales/ru/common.json';
+import MENU_RU from './locales/ru/menu.json';
 
 import HEADER_EN from './locales/en/header.json';
 import CHARACTER_EN from './locales/en/character.json';
@@ -19,6 +20,7 @@ import LANGUAGE_EN from './locales/en/language.json';
 import MATERIALS_EN from './locales/en/materials.json';
 import MATERIAL_EN from './locales/en/material.json';
 import COMMON_EN from './locales/en/common.json';
+import MENU_EN from './locales/en/menu.json';
 
 const Translations = {
   ru: {
@@ -28,7 +30,8 @@ const Translations = {
     language: LANGUAGE_RU,
     materials: MATERIALS_RU,
     material: MATERIAL_RU,
-    common: COMMON_RU
+    common: COMMON_RU,
+    menu: MENU_RU
   },
   en: {
     header: HEADER_EN,
@@ -37,7 +40,8 @@ const Translations = {
     language: LANGUAGE_EN,
     materials: MATERIALS_EN,
     material: MATERIAL_EN,
-    common: COMMON_EN
+    common: COMMON_EN,
+    menu: MENU_EN
   }
 };
 

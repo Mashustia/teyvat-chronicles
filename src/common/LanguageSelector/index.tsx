@@ -1,16 +1,17 @@
-import {FC, ReactElement, useEffect, useRef, useState} from 'react'
+import {FC, ReactElement, useRef, useState} from 'react'
 import cn from 'classnames'
 
 import Button from '../Button';
 import {IDropdownProps} from './types';
 import Flags from '../Header/components/flags';
-import {listenForOutsideClicks} from '../../Hooks/listenForOutsideClicks';
+import {useOnClickOutside} from '../../hooks/useOnClickOutside';
 import './LanguageSelector.css';
 
 const LanguageSelector: FC<IDropdownProps> = ({languages, activeLanguage, onSelect}): ReactElement => {
   const [isOpen, setIsOpen] = useState(false)
   const menuRef = useRef(null);
-  const [listening, setListening] = useState(false);
+
+  useOnClickOutside(menuRef, () => setIsOpen(false))
 
   const handleLanguageChange = (language: string) => () => {
     onSelect(language)
@@ -30,15 +31,6 @@ const LanguageSelector: FC<IDropdownProps> = ({languages, activeLanguage, onSele
   )
 
   const handleDropdownToggle = (value: boolean) => () => setIsOpen(value)
-
-  // TODO: fix error message 'React Hook useEffect received a function whose dependencies are unknown. Pass an inline function instead  react-hooks/exhaustive-deps'
-  // eslint-disable-next-line
-  useEffect(listenForOutsideClicks(
-    listening,
-    setListening,
-    menuRef,
-    setIsOpen
-  ))
 
   const arrowDownIcon = (
     <span className='ps-2'>
