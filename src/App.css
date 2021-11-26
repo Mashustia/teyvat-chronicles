@@ -68,6 +68,8 @@
   --gray-100: #464548;
   --gray-200: #37363b;
   --gray-300: #2c2b30;
+
+  --sidebar-width: 195px;
 }
 
 body {
