@@ -10,6 +10,8 @@ import Burger from '../Navigarion/components/Burger';
 import Sidebar from '../Navigarion/components/Sidebar';
 import {useOnClickOutside} from '../../Hooks/useOnClickOutside';
 
+const listItemStyle = 'text-left p-2 ps-3 pointer'
+
 const Header: FC<IProps> = (props: IProps): ReactElement => {
   const {t, i18n} = useTranslation(['header', 'language'])
   const {history} = props
@@ -41,12 +43,12 @@ const Header: FC<IProps> = (props: IProps): ReactElement => {
 
   const renderSidebar = isSidebarShown && (
     <Sidebar innerRef={sidebarRef}>
-      <li className='d-flex flex-nowrap'>
-        <Burger classes='me-2' onClick={handleClick}/>
+      <li className='text-left ps-2'>
+        <Burger classes='me-2 mb-1' onClick={handleClick}/>
       </li>
 
-      <li className='p-4'>Персонажи</li>
-      <li className='p-4'>Новости</li>
+      <li className={listItemStyle}>Персонажи</li>
+      <li className={listItemStyle}>Новости</li>
     </Sidebar>
   )
 
