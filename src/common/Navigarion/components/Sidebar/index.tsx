@@ -6,7 +6,7 @@ import {ISidebarProps as IProps} from './types';
 const Sidebar: FC<IProps> = ({ children, innerRef}): ReactElement => {
 
   return (
-    <ul className='list-unstyled d-flex flex-column fixed sidebar px-2 pt-2' ref={innerRef}>
+    <ul className='list-unstyled d-flex flex-column fixed sidebar pt-2' ref={innerRef}>
       {children}
     </ul>
   )
