@@ -11,7 +11,9 @@ export const NS = [
   'footer',
   'language',
   'materials',
-  'material'
+  'material',
+  'common',
+  'menu'
 ]
 
 export enum Vision {
@@ -26,7 +28,8 @@ export enum Vision {
 
 export enum RouteName {
   DEFAULT = '/',
-  CHARACTER = '/:name'
+  CHARACTER = '/:name',
+  NEWS = '/news'
 }
 
 export const lookupLocalStorage = 'i18nextLng'
@@ -49,5 +52,7 @@ export enum WeekDay {
 
 export enum Event {
   CLICK = 'click',
-  TOUCHSTART = 'touchstart'
+  TOUCHSTART = 'touchstart',
+  KEYPRESS = 'keypress',
+  MOUSEUP = 'mouseup'
 }
