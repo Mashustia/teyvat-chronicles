@@ -35,3 +35,41 @@ export const characterExperience = {
     mora: 684625
   }
 }
+
+export const fiveStarWeaponExperience = {
+  '1-20': {
+    exp_needed: 121550,
+    number_of_mystic_ores: 13,
+    mora: 12155
+  },
+  '20-40': {
+    exp_needed: 622800,
+    number_of_mystic_ores: 63,
+    mora: 62280
+  },
+  '40-50': {
+    exp_needed: 628150,
+    number_of_mystic_ores: 63,
+    mora: 62815
+  },
+  '50-60': {
+    exp_needed: 927657,
+    number_of_mystic_ores: 93,
+    mora: 92768
+  },
+  '60-70': {
+    exp_needed: 1299125,
+    number_of_mystic_ores: 130,
+    mora: 129913
+  },
+  '70-80': {
+    exp_needed: 1750375,
+    number_of_mystic_ores: 176,
+    mora: 175038
+  },
+  '80-90': {
+    exp_needed: 3714775,
+    number_of_mystic_ores: 372,
+    mora: 371478
+  }
+}
