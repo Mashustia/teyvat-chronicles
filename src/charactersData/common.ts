@@ -112,3 +112,41 @@ export const fiveStarWeaponAscension = {
     common_material_2: 18
   }
 }
+
+export const fourStarWeaponExperience = {
+  '1-20': {
+    exp_needed: 81000,
+    number_of_mystic_ores: 9,
+    mora: 8100
+  },
+  '20-40': {
+    exp_needed: 415125,
+    number_of_mystic_ores: 42,
+    mora: 41513
+  },
+  '40-50': {
+    exp_needed: 418725,
+    number_of_mystic_ores: 42,
+    mora: 41873
+  },
+  '50-60': {
+    exp_needed: 618400,
+    number_of_mystic_ores: 62,
+    mora: 61840
+  },
+  '60-70': {
+    exp_needed: 866050,
+    number_of_mystic_ores: 87,
+    mora: 86605
+  },
+  '70-80': {
+    exp_needed: 1166875,
+    number_of_mystic_ores: 117,
+    mora: 116688
+  },
+  '80-90': {
+    exp_needed: 2476475,
+    number_of_mystic_ores: 248,
+    mora: 247648
+  }
+}
