@@ -73,3 +73,42 @@ export const fiveStarWeaponExperience = {
     mora: 371478
   }
 }
+
+export const fiveStarWeaponAscension = {
+  20: {
+    mora: 10000,
+    ascension_material: 5,
+    common_material_1: 5,
+    common_material_2: 3
+  },
+  40: {
+    mora: 20000,
+    ascension_material: 5,
+    common_material_1: 18,
+    common_material_2: 12
+  },
+  50: {
+    mora: 30000,
+    ascension_material: 9,
+    common_material_1: 9,
+    common_material_2: 9
+  },
+  60: {
+    mora: 45000,
+    ascension_material: 5,
+    common_material_1: 18,
+    common_material_2: 14
+  },
+  70: {
+    mora: 55000,
+    ascension_material: 9,
+    common_material_1: 14,
+    common_material_2: 9
+  },
+  80: {
+    mora: 65000,
+    ascension_material: 6,
+    common_material_1: 27,
+    common_material_2: 18
+  }
+}
