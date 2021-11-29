@@ -150,3 +150,42 @@ export const fourStarWeaponExperience = {
     mora: 247648
   }
 }
+
+export const fourStarWeaponAscension = {
+  20: {
+    mora: 5000,
+    ascension_material: 3,
+    common_material_1: 3,
+    common_material_2: 2
+  },
+  40: {
+    mora: 15000,
+    ascension_material: 3,
+    common_material_1: 12,
+    common_material_2: 8
+  },
+  50: {
+    mora: 20000,
+    ascension_material: 6,
+    common_material_1: 6,
+    common_material_2: 6
+  },
+  60: {
+    mora: 30000,
+    ascension_material: 3,
+    common_material_1: 12,
+    common_material_2: 9
+  },
+  70: {
+    mora: 35000,
+    ascension_material: 9,
+    common_material_1: 9,
+    common_material_2: 6
+  },
+  80: {
+    mora: 45000,
+    ascension_material: 4,
+    common_material_1: 18,
+    common_material_2: 12
+  }
+}
