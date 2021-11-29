@@ -189,3 +189,17 @@ export const fourStarWeaponAscension = {
     common_material_2: 12
   }
 }
+
+export const fiveStarArtifactExp = {
+  '1-20': {
+    exp: 270475,
+    mora: 270475
+  }
+}
+
+export const fourStarArtifactExp = {
+  '1-16': {
+    exp: 122675,
+    mora: 122675
+  }
+}
