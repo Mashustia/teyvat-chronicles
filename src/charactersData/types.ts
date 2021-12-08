@@ -1,11 +1,12 @@
-import {Vision} from '../const/consts';
+import {Character, Vision} from '../const/consts';
 
 export interface ICharacter {
-  name: string
+  name: string | Character
   vision: Vision
   ascension_materials: IAscensionMaterials
   rarity: number
   talent_materials?: IAscensionMaterials
+  possible_teams?: Array<string[]>
 }
 
 export interface ISearch {
