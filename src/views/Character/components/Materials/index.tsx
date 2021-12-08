@@ -40,9 +40,9 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
   const renderPossibleTeams = (): ReactNode => activeCharacter.possible_teams && (
     <Col xs={12}>
       <h4 className='mb-3'>{t('character:possible_teams')}</h4>
+      <p className='fs-6'>{t('character:teams_warning')}</p>
       {activeCharacter.possible_teams.map((team: string[]) => (
         <Row className='align-items-center gx-3 gy-2 table-border mb-3 ascension-material' key={uuid()}>
-          <p className='mb-0 fs-6'>{t('character:teams_warning')}</p>
           {team.map((characterName: string) => (
             <Col key={uuid()} className='d-flex flex-column' xs={3}>
               <CharacterImage name={characterName} key={characterName} withBorder={true}/>
