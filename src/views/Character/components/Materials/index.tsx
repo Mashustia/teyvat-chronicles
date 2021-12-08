@@ -2,7 +2,7 @@ import {FC, ReactElement, ReactNode} from 'react'
 import {RouteComponentProps, withRouter} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Col, Row} from 'react-bootstrap';
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuid } from 'uuid';
 
 import {ICharacter} from '../../../../charactersData/types';
 import CHARACTERS from '../../../../charactersData';
@@ -41,9 +41,10 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
     <Col xs={12}>
       <h4 className='mb-3'>{t('character:possible_teams')}</h4>
       {activeCharacter.possible_teams.map((team: string[]) => (
-        <Row className='align-items-center gx-3 gy-2 table-border mb-3 ascension-material' key={uuidv4()}>
+        <Row className='align-items-center gx-3 gy-2 table-border mb-3 ascension-material' key={uuid()}>
+          <p className='mb-0 fs-6'>{t('character:teams_warning')}</p>
           {team.map((characterName: string) => (
-            <Col key={uuidv4()} className='d-flex flex-column' xs={3}>
+            <Col key={uuid()} className='d-flex flex-column' xs={3}>
               <CharacterImage name={characterName} key={characterName} withBorder={true}/>
               <p className='mb-0 fs-6'>{characterName}</p>
             </Col>
