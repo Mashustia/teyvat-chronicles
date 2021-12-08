@@ -54,5 +54,7 @@
     "geo": "Geo"
   },
   "search_placeholder": "Search by name or vision",
-  "character_not_found": "Character not found"
+  "character_not_found": "Character not found",
+  "possible_teams": "Possible teams",
+  "teams_warning": "The teams below are just examples, you can play whichever team you want"
 }

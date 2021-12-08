@@ -1,5 +1,5 @@
 .character-img-wrapper {
-  width: 130px;
+  max-width: 130px;
 }
 
 .character-img-wrapper * svg,
@@ -21,6 +21,5 @@
   background-origin: border-box;
   background-size: cover;
   box-sizing: border-box;
-  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom left, #fff, #8a8a8a)
 }

@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -11,7 +11,7 @@ import {ICharacter} from '../types';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Albedo: ICharacter = {
-  name: 'Albedo',
+  name: Character.ALBEDO,
   vision: Vision.GEO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -41,7 +41,13 @@ const Albedo: ICharacter = {
       3: Materials.FORBIDDEN_CURSE_SCROLL,
     },
     bossMaterial: BossSkillMaterial.TUSK_OF_MONOCEROS_CAELI
-  })
+  }),
+  possible_teams: [
+    [Character.XIAO, Character.ZHONGLI, Character.ALBEDO, Character.JEAN],
+    [Character.HUTAO, Character.ZHONGLI, Character.XINGQIU, Character.ALBEDO],
+    [Character.NOELLE, Character.ALBEDO, Character.FISCHL, Character.BEIDOU],
+    [Character.ALBEDO, Character.TRAVELER, Character.ZHONGLI, Character.BEIDOU]
+  ]
 }
 
 export default Albedo
