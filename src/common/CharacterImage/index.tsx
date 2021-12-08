@@ -2,12 +2,12 @@ import {FC, ReactNode} from 'react'
 import {Img} from 'react-image'
 import {withRouter} from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import cn from 'classnames';
 
 import './CharacterImage.css'
 import {ICharacterImageProps as IProps} from './types';
 import {ReactComponent as CharacterImageSkeleton} from '../../views/Characters/components/CharacterImageSkeleton/CharacterImageSkeleton.svg'
 import {createUrl} from '../../utils/utils';
-import cn from 'classnames';
 
 const CharacterImage: FC<IProps> = ({name, withBorder, withLink, match}) => {
   const imagePath = `/images/characters/${name}.png`
