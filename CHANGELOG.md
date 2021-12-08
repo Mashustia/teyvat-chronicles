@@ -1,3 +1,9 @@
+#### 1.0.4 December-2021
+* Changes
+  * Added possible teams section
+  * Added possible teams for:
+    * Albedo
+
 #### 1.0.3 November-2021
 
 * Changes
