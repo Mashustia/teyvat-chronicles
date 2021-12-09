@@ -13,7 +13,7 @@ import Stars from '../../../../common/Stars';
 import AscensionSummary from '../AscensionSummary';
 
 const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
-  const {t} = useTranslation();
+  const {t} = useTranslation('character');
   const {name} = params
   const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === params.name)
 
@@ -46,7 +46,7 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
           {team.map((characterName: string) => (
             <Col key={uuid()} className='d-flex flex-column' xs={3}>
               <CharacterImage name={characterName} key={characterName} withBorder={true}/>
-              <p className='mb-0 fs-6'>{characterName}</p>
+              <p className='mb-0 fs-6'>{t(`character:names.${characterName}`)}</p>
             </Col>
           ))}
         </Row>
