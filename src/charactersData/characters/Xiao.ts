@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Xiao = {
-  name: 'Xiao',
+  name: Character.XIAO,
   vision: Vision.ANEMO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,12 @@ const Xiao = {
       3: Materials.SLIME_CONCENTRATE,
     },
     bossMaterial: BossSkillMaterial.SHADOW_OF_THE_WARRIOR
-  })
+  }),
+  possible_teams: [
+    [Character.XIAO, Character.ZHONGLI, Character.ALBEDO, Character.JEAN],
+    [Character.XIAO, Character.SUCROSE, Character.XIANGLING, Character.BENNETT],
+    [Character.XIAO, Character.SUCROSE, Character.FISCHL, Character.BARBARA]
+  ]
 }
 
 export default Xiao

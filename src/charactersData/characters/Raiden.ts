@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Raiden = {
-  name: 'Raiden',
+  name: Character.RAIDEN,
   vision: Vision.ELECTRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,12 @@ const Raiden = {
       3: Materials.FAMED_HANDGUARD,
     },
     bossMaterial: BossSkillMaterial.MOLTEN_MOMENT
-  })
+  }),
+  possible_teams: [
+    [Character.RAIDEN, Character.XINGQIU, Character.XIANGLING, Character.BENNETT],
+    [Character.RAIDEN, Character.SARA, Character.SUCROSE, Character.BENNETT],
+    [Character.EULA, Character.RAIDEN, Character.ROSARIA, Character.BENNETT],
+  ]
 }
 
 export default Raiden

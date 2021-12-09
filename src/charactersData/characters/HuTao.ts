@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const HuTao = {
-  name: 'HuTao',
+  name: Character.HUTAO,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,14 @@ const HuTao = {
       3: Materials.ENERGY_NECTAR,
     },
     bossMaterial: BossSkillMaterial.SHARD_OF_A_FOUL_LEGACY
-  })
+  }),
+  possible_teams: [
+    [Character.HUTAO, Character.XINGQIU, Character.ZHONGLI, Character.ALBEDO],
+    [Character.HUTAO, Character.XINGQIU, Character.ZHONGLI, Character.SUCROSE],
+    [Character.HUTAO, Character.XINGQIU, Character.ZHONGLI, Character.GANYU],
+    [Character.HUTAO, Character.XINGQIU, Character.ROSARIA, Character.MONA],
+    [Character.HUTAO, Character.XINGQIU, Character.ROSARIA, Character.DIONA],
+  ]
 }
 
 export default HuTao
