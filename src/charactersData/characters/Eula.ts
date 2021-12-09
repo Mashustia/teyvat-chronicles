@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   BossMaterials,
   Gem,
@@ -40,7 +40,13 @@ const Eula = {
       3: Materials.OMINOUS_MASK,
     },
     bossMaterial: BossSkillMaterial.DRAGON_LORDS_CROWN
-  })
+  }),
+  possible_teams: [
+    [Character.EULA, Character.RAIDEN, Character.ROSARIA, Character.BENNETT],
+    [Character.EULA, Character.FISCHL, Character.DIONA, Character.BENNETT],
+    [Character.EULA, Character.RAIDEN, Character.ROSARIA, Character.ZHONGLI],
+    [Character.EULA, Character.FISCHL, Character.BEIDOU, Character.DIONA],
+  ]
 }
 
 export default Eula

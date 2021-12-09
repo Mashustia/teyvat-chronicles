@@ -3,6 +3,10 @@
   * Added possible teams section
   * Added possible teams for:
     * Albedo
+    * Beidou
+    * Hu Tao
+    * Xiao
+    * Eula
 
 #### 1.0.3 November-2021
 
