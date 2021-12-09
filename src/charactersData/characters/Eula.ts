@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Eula = {
-  name: 'Eula',
+  name: Character.EULA,
   vision: Vision.CRYO,
   ascension_materials: fillAscensionMaterials({
     gems: {
