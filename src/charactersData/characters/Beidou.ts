@@ -1,9 +1,9 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {Books, BossMaterials, BossSkillMaterial, Gem, Materials, Rocks} from '../materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Beidou = {
-  name: 'Beidou',
+  name: Character.BEIDOU,
   vision: Vision.ELECTRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -33,7 +33,13 @@ const Beidou = {
       3: Materials.GOLDEN_RAVEN_INSIGNIA,
     },
     bossMaterial: BossSkillMaterial.DVALINS_SIGH
-  })
+  }),
+  possible_teams: [
+    [Character.BEIDOU, Character.FISCHL, Character.XINGQIU, Character.SUCROSE],
+    [Character.TARTAGLIA, Character.BEIDOU, Character.FISCHL, Character.JEAN],
+    [Character.KEQING, Character.BEIDOU, Character.SUCROSE, Character.XINGQIU],
+    [Character.EULA, Character.BEIDOU, Character.FISCHL, Character.DIONA],
+  ]
 }
 
 export default Beidou
