@@ -1,9 +1,9 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {BossMaterials, Rocks, Gem, Materials, Books, BossSkillMaterial} from '../materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Tartaglia = {
-  name: 'Tartaglia',
+  name: Character.TARTAGLIA,
   vision: Vision.HYDRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -33,7 +33,13 @@ const Tartaglia = {
       3: Materials.LIEUTENANTS_INSIGNIA,
     },
     bossMaterial: BossSkillMaterial.SHARD_OF_A_FOUL_LEGACY
-  })
+  }),
+  possible_teams: [
+    [Character.TARTAGLIA, Character.XIANGLING, Character.KAZUHA, Character.BENNETT],
+    [Character.TARTAGLIA, Character.XIANGLING, Character.SUCROSE, Character.BENNETT],
+    [Character.TARTAGLIA, Character.XIANGLING, Character.GANYU, Character.BENNETT],
+    [Character.TARTAGLIA, Character.FISCHL, Character.BEIDOU, Character.JEAN],
+  ]
 }
 
 export default Tartaglia
