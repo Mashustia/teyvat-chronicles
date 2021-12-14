@@ -69,6 +69,10 @@ export enum Rocks {
   STARCONCH = 'starconch',
 }
 
+export enum OtherMaterials {
+  ONIKABUTO = 'onikabuto'
+}
+
 export enum TravelerAscensionMaterial {
   BRILLIANT_DIAMOND_SLIVER = 'brilliant_diamond_sliver',
   BRILLIANT_DIAMOND_FRAGMENT = 'brilliant_diamond_fragment',
@@ -152,6 +156,7 @@ export enum BossMaterials {
   PERPETUAL_HEART = 'perpetual_heart',
   DEW_OF_REPUDIATION = 'dew_of_repudiation',
   SMOLDERING_PEARL = 'smoldering_pearl',
+  RIFTBORN_REGALIA = 'riftborn_regalia',
 }
 
 export enum BossSkillMaterial {

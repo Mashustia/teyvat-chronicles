@@ -89,7 +89,7 @@ export enum Character {
   ALOY = 'Aloy',
   EULA = 'Eula',
   GANYU = 'Ganyu',
-  HUTAO = 'HuTao',
+  HU_TAO = 'HuTao',
   KAZUHA = 'Kazuha',
   KAEYA = 'Kaeya',
   AYAKA = 'Ayaka',
@@ -104,5 +104,7 @@ export enum Character {
   YANFEI = 'Yanfei',
   YOIMIYA = 'Yoimiya',
   TRAVELER = 'Traveler',
-  THOMA = 'Thoma'
+  THOMA = 'Thoma',
+  GOROU = 'Gorou',
+  ARATAKI_ITTO = 'AratakiItto'
 }
