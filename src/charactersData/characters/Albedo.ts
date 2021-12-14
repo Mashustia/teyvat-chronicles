@@ -44,7 +44,7 @@ const Albedo: ICharacter = {
   }),
   possible_teams: [
     [Character.XIAO, Character.ZHONGLI, Character.ALBEDO, Character.JEAN],
-    [Character.HUTAO, Character.ZHONGLI, Character.XINGQIU, Character.ALBEDO],
+    [Character.HU_TAO, Character.ZHONGLI, Character.XINGQIU, Character.ALBEDO],
     [Character.NOELLE, Character.ALBEDO, Character.FISCHL, Character.BEIDOU],
     [Character.ALBEDO, Character.TRAVELER, Character.ZHONGLI, Character.BEIDOU]
   ]

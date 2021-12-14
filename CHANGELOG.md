@@ -9,6 +9,7 @@
     * Eula
     * Tartaglia
     * Raiden
+  * Added Itto and Gorou
 
 #### 1.0.3 November-2021
 
