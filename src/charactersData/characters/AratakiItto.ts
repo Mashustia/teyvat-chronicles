@@ -30,7 +30,7 @@ const AratakiItto = {
   rarity: 4,
   talent_materials: fillTalentMaterials({
     books: {
-      1: Books.PHILOSOPHIES_OF_ELEGANCE,
+      1: Books.TEACHINGS_OF_ELEGANCE,
       2: Books.GUIDE_TO_ELEGANCE,
       3: Books.PHILOSOPHIES_OF_ELEGANCE,
     },
