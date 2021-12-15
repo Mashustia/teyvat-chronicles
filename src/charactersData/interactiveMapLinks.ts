@@ -87,6 +87,8 @@ export const materialLink = {
   dew_of_repudiation: '262&center=5879.50,216.50&zoom=1.00',
   smoldering_pearl: '203&center=5363.00,2430.00&zoom=1.00',
   fluorescent_fungus: '266&center=8602.96,1826.00&zoom=-1.00',
+  riftborn_regalia: '318&center=8663.00,1892.00&zoom=-1.00',
+  onikabuto: '196&center=5861.00,2708.00&zoom=-1.00',
 }
 
 export const genshinImpactMap = {
@@ -163,5 +165,6 @@ export const genshinImpactMap = {
   famed_handguard: 'names=nobushi',
   spectral_husk: 'names=specter',
   spectral_heart: 'names=specter',
-  spectral_nucleus: 'names=specter'
+  spectral_nucleus: 'names=specter',
+  onikabuto: 'names=onikabuto',
 }

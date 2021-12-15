@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const HuTao = {
-  name: Character.HUTAO,
+  name: Character.HU_TAO,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -42,11 +42,11 @@ const HuTao = {
     bossMaterial: BossSkillMaterial.SHARD_OF_A_FOUL_LEGACY
   }),
   possible_teams: [
-    [Character.HUTAO, Character.XINGQIU, Character.ZHONGLI, Character.ALBEDO],
-    [Character.HUTAO, Character.XINGQIU, Character.ZHONGLI, Character.SUCROSE],
-    [Character.HUTAO, Character.XINGQIU, Character.ZHONGLI, Character.GANYU],
-    [Character.HUTAO, Character.XINGQIU, Character.ROSARIA, Character.MONA],
-    [Character.HUTAO, Character.XINGQIU, Character.ROSARIA, Character.DIONA],
+    [Character.HU_TAO, Character.XINGQIU, Character.ZHONGLI, Character.ALBEDO],
+    [Character.HU_TAO, Character.XINGQIU, Character.ZHONGLI, Character.SUCROSE],
+    [Character.HU_TAO, Character.XINGQIU, Character.ZHONGLI, Character.GANYU],
+    [Character.HU_TAO, Character.XINGQIU, Character.ROSARIA, Character.MONA],
+    [Character.HU_TAO, Character.XINGQIU, Character.ROSARIA, Character.DIONA],
   ]
 }
 

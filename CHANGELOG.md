@@ -9,6 +9,8 @@
     * Eula
     * Tartaglia
     * Raiden
+  * Added Itto and Gorou
+  * Added Golden Wolflord material
 
 #### 1.0.3 November-2021
 

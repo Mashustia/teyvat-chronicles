@@ -224,6 +224,14 @@ const MaguuKenki = {
   map_link: 'pin=-4000|-2340|Maguu Kenki'
 }
 
+
+const GoldenWolflord = {
+  name: 'golden_wolflord',
+  region: Region.INAZUMA,
+  original_resin: 40,
+  map_link: 'pin=-6720|-2660|Golden Wolflord'
+}
+
 const crownOfInsight = {
   additional_info: 'crown_of_insight_how_to_get'
 }
@@ -306,6 +314,7 @@ export const ExpandedMaterialInfo: IDungeon = {
   brilliant_diamond_fragment: {...brilliantDiamondFragment},
   brilliant_diamond_chunk: {...brilliantDiamondChunk},
   brilliant_diamond_gemstone: {...brilliantDiamondGemstone},
+  riftborn_regalia: {...GoldenWolflord},
 }
 
 // order is important
