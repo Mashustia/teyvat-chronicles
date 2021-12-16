@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   BossMaterials,
   Gem,
@@ -9,8 +9,8 @@ import {
 } from '../materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
-const Ayaka = {
-  name: 'Ayaka',
+const KamisatoAyaka = {
+  name: Character.KAMISATO_AYAKA,
   vision: Vision.CRYO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -43,4 +43,4 @@ const Ayaka = {
   })
 }
 
-export default Ayaka
+export default KamisatoAyaka

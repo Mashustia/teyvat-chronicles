@@ -35,7 +35,7 @@ const Tartaglia = {
     bossMaterial: BossSkillMaterial.SHARD_OF_A_FOUL_LEGACY
   }),
   possible_teams: [
-    [Character.TARTAGLIA, Character.XIANGLING, Character.KAZUHA, Character.BENNETT],
+    [Character.TARTAGLIA, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.TARTAGLIA, Character.XIANGLING, Character.SUCROSE, Character.BENNETT],
     [Character.TARTAGLIA, Character.XIANGLING, Character.GANYU, Character.BENNETT],
     [Character.TARTAGLIA, Character.FISCHL, Character.BEIDOU, Character.JEAN],

@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -9,8 +9,8 @@ import {
 } from '../materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
-const Kazuha = {
-  name: 'Kazuha',
+const KaedeharaKazuha = {
+  name: Character.KAEDEHARA_KAZUHA,
   vision: Vision.ANEMO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -43,4 +43,4 @@ const Kazuha = {
   })
 }
 
-export default Kazuha
+export default KaedeharaKazuha

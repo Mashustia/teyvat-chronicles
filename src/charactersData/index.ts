@@ -27,9 +27,9 @@ import Aloy from './characters/Aloy';
 import Eula from './characters/Eula';
 import Ganyu from './characters/Ganyu';
 import HuTao from './characters/HuTao';
-import Kazuha from './characters/Kazuha';
+import KaedeharaKazuha from './characters/KaedeharaKazuha';
 import Kaeya from './characters/Kaeya';
-import Ayaka from './characters/Ayaka';
+import KamisatoAyaka from './characters/KamisatoAyaka';
 import Sara from './characters/Sara';
 import Qiqi from './characters/Qiqi';
 import Kokomi from './characters/Kokomi';
@@ -74,9 +74,9 @@ const CHARACTERS: ICharacter[] = [
   Eula,
   Ganyu,
   HuTao,
-  Kazuha,
+  KaedeharaKazuha,
   Kaeya,
-  Ayaka,
+  KamisatoAyaka,
   Sara,
   Qiqi,
   Kokomi,
