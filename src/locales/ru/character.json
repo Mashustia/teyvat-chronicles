@@ -43,7 +43,10 @@
     "Traveler": "Путешественник",
     "Thoma": "Тома",
     "Gorou": "Горо",
-    "AratakiItto": "Аратаки Итто"
+    "Arataki_Itto": "Аратаки Итто",
+    "Anemo_Traveler": "Путешественник",
+    "Electro_Traveler": "Путешественник",
+    "Geo_Traveler": "Путешественник"
   },
   "ascension_materials": "Материалы возвышения",
   "talents_enhancement": "Улучшение талантов",
