@@ -104,9 +104,6 @@ export enum Character {
   YANFEI = 'Yanfei',
   YOIMIYA = 'Yoimiya',
   TRAVELER = 'Traveler',
-  ANEMO_TRAVELER = 'Anemo_Traveler',
-  ELECTRO_TRAVELER = 'Electro_Traveler',
-  GEO_TRAVELER = 'Geo_Traveler',
   THOMA = 'Thoma',
   GOROU = 'Gorou',
   ARATAKI_ITTO = 'Arataki_Itto'
