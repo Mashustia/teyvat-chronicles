@@ -11,6 +11,8 @@
     * Raiden
   * Added Itto and Gorou
   * Added Golden Wolflord material
+  * Fixed talent level-up materials for Traveler
+  * Images for characters were changed with images with better quality
 
 #### 1.0.3 November-2021
 

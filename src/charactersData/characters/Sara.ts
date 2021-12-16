@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Sara = {
-  name: 'Sara',
+  name: Character.KUJOU_SARA,
   vision: Vision.ELECTRO,
   ascension_materials: fillAscensionMaterials({
     gems: {

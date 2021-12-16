@@ -4,7 +4,6 @@
 
 .character-img-wrapper * svg,
 .character-img-wrapper > svg {
-  border-radius: 30px;
   max-width: 130px;
   width: 100%;
 }
@@ -12,7 +11,6 @@
 .character-img {
   max-width: 130px;
   width: 100%;
-  border-radius: 30px;
 }
 
 .img-border {
@@ -21,5 +19,21 @@
   background-origin: border-box;
   background-size: cover;
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom left, #fff, #8a8a8a)
+  background-image: linear-gradient(to bottom left, #fff, #8a8a8a);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.character-vision {
+  top: 5px;
+  left: 5px;
+  width: 30%;
+}
+
+.character-background-five-star {
+  background-color: var(--five-star-background);
+}
+
+.character-background-four-star {
+  background-color: var(--four-star-background);
 }

@@ -7,6 +7,9 @@ export interface ICharacter {
   rarity: number
   talent_materials?: IAscensionMaterials
   possible_teams?: Array<string[]>
+  attack?: IAscensionMaterials
+  elemental_skill?: IAscensionMaterials
+  elemental_burst?: IAscensionMaterials
 }
 
 export interface ISearch {
