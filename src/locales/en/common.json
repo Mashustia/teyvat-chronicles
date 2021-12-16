@@ -10,5 +10,8 @@
   "dungeon_days": "Opened: ",
   "consumes": "Consumes",
   "total": "Total",
-  "news": "News"
+  "news": "News",
+  "attack": "Normal/Charged Attack",
+  "elemental_skill": "Elemental skill",
+  "elemental_burst": "Elemental burst"
 }
