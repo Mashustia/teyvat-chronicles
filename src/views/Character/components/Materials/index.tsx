@@ -59,7 +59,7 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
       <Col sm={12} md={12} lg={8} xl={7} xxl={6}>
         <Row className='justify-content-center gx-3 gy-3'>
           <Col xs={12}>
-            <CharacterImage name={name}/>
+            <CharacterImage name={name} withBorder={true}/>
             <h1 className='fs-3 mb-0'>{t(`character:names.${name}`)}</h1>
             <Stars count={rarity}/>
           </Col>
