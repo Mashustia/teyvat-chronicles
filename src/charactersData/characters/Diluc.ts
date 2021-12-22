@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Diluc = {
-  name: 'Diluc',
+  name: Character.DILUC,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,15 @@ const Diluc = {
       3: Materials.LIEUTENANTS_INSIGNIA,
     },
     bossMaterial: BossSkillMaterial.DVALINS_PLUME
-  })
+  }),
+  possible_teams: [
+    [Character.DILUC, Character.XINGQIU, Character.SUCROSE, Character.BENNETT],
+    [Character.DILUC, Character.XINGQIU, Character.SUCROSE, Character.ZHONGLI],
+    [Character.DILUC, Character.XINGQIU, Character.GANYU, Character.BENNETT],
+    [Character.DILUC, Character.XINGQIU, Character.DIONA, Character.BENNETT],
+    [Character.DILUC, Character.GANYU, Character.ROSARIA, Character.BENNETT],
+    [Character.DILUC, Character.GANYU, Character.SUCROSE, Character.DIONA],
+  ]
 }
 
 export default Diluc
