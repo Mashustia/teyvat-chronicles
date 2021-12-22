@@ -39,7 +39,14 @@ const Gorou = {
       3: Materials.SPECTRAL_NUCLEUS,
     },
     bossMaterial: BossSkillMaterial.MOLTEN_MOMENT
-  })
+  }),
+  possible_teams: [
+    [Character.ARATAKI_ITTO, Character.GOROU, Character.ALBEDO, Character.BENNETT],
+    [Character.ARATAKI_ITTO, Character.GOROU, Character.ALBEDO, Character.ZHONGLI],
+    [Character.ARATAKI_ITTO, Character.GOROU, Character.ZHONGLI, Character.BENNETT],
+    [Character.NOELLE, Character.GOROU, Character.ALBEDO, Character.BENNETT],
+    [Character.NOELLE, Character.GOROU, Character.ZHONGLI, Character.BENNETT],
+  ]
 }
 
 export default Gorou
