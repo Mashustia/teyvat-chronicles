@@ -40,7 +40,15 @@ const KamisatoAyaka = {
       3: Materials.FAMED_HANDGUARD,
     },
     bossMaterial: BossSkillMaterial.BLOODJADE_BRANCH
-  })
+  }),
+  possible_teams: [
+    [Character.KAMISATO_AYAKA, Character.MONA, Character.VENTI, Character.GANYU],
+    [Character.KAMISATO_AYAKA, Character.MONA, Character.VENTI, Character.DIONA],
+    [Character.KAMISATO_AYAKA, Character.XINGQIU, Character.SUCROSE, Character.DIONA],
+    [Character.KAMISATO_AYAKA, Character.ROSARIA, Character.SUCROSE, Character.BARBARA],
+    [Character.KAMISATO_AYAKA, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.KAMISATO_AYAKA, Character.XIANGLING, Character.DIONA, Character.BENNETT],
+  ]
 }
 
 export default KamisatoAyaka

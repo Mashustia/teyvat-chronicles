@@ -9,6 +9,7 @@
     * Eula
     * Tartaglia
     * Raiden
+    * Ayaka
   * Added Itto and Gorou
   * Added Golden Wolflord material
   * Fixed talent level-up materials for Traveler
