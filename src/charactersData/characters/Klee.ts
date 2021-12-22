@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Klee = {
-  name: 'Klee',
+  name: Character.KLEE,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,15 @@ const Klee = {
       3: Materials.FORBIDDEN_CURSE_SCROLL,
     },
     bossMaterial: BossSkillMaterial.RING_OF_BOREAS
-  })
+  }),
+  possible_teams: [
+    [Character.KLEE, Character.GANYU, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.KLEE, Character.GANYU, Character.SUCROSE, Character.BENNETT],
+    [Character.KLEE, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.KLEE, Character.XINGQIU, Character.SUCROSE, Character.KOKOMI],
+    [Character.KLEE, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.KLEE, Character.AMBER, Character.SUCROSE, Character.DIONA],
+  ]
 }
 
 export default Klee
