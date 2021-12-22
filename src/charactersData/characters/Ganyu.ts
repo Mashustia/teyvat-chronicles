@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   BossMaterials,
   Gem,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Ganyu = {
-  name: 'Ganyu',
+  name: Character.GANYU,
   vision: Vision.CRYO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,15 @@ const Ganyu = {
       3: Materials.ENERGY_NECTAR,
     },
     bossMaterial: BossSkillMaterial.SHADOW_OF_THE_WARRIOR
-  })
+  }),
+  possible_teams: [
+    [Character.GANYU, Character.MONA, Character.VENTI, Character.DIONA],
+    [Character.GANYU, Character.MONA, Character.KAEDEHARA_KAZUHA, Character.DIONA],
+    [Character.KAMISATO_AYAKA, Character.MONA, Character.VENTI, Character.GANYU],
+    [Character.GANYU, Character.XIANGLING, Character.SUCROSE, Character.BENNETT],
+    [Character.GANYU, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.HU_TAO, Character.ZHONGLI, Character.XINGQIU, Character.GANYU]
+  ]
 }
 
 export default Ganyu
