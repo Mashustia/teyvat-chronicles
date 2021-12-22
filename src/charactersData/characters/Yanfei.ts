@@ -1,9 +1,9 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {BossMaterials, Rocks, Gem, Materials, Books, BossSkillMaterial} from '../materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Yanfei = {
-  name: 'Yanfei',
+  name: Character.YANFEI,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -33,7 +33,14 @@ const Yanfei = {
       3: Materials.GOLDEN_RAVEN_INSIGNIA,
     },
     bossMaterial: BossSkillMaterial.BLOODJADE_BRANCH
-  })
+  }),
+  possible_teams: [
+    [Character.YANFEI, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.YANFEI, Character.XINGQIU, Character.SUCROSE, Character.BENNETT],
+    [Character.YANFEI, Character.XINGQIU, Character.SUCROSE, Character.KOKOMI],
+    [Character.YANFEI, Character.XINGQIU, Character.GANYU, Character.BENNETT],
+    [Character.YANFEI, Character.XINGQIU, Character.ZHONGLI, Character.BENNETT],
+  ]
 }
 
 export default Yanfei
