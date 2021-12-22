@@ -40,7 +40,12 @@ const AratakiItto = {
       3: Materials.SLIME_CONCENTRATE,
     },
     bossMaterial: BossSkillMaterial.ASHEN_HEART
-  })
+  }),
+  possible_teams: [
+    [Character.ARATAKI_ITTO, Character.GOROU, Character.ALBEDO, Character.BENNETT],
+    [Character.ARATAKI_ITTO, Character.GOROU, Character.ALBEDO, Character.ZHONGLI],
+    [Character.ARATAKI_ITTO, Character.GOROU, Character.ZHONGLI, Character.BENNETT],
+  ]
 }
 
 export default AratakiItto

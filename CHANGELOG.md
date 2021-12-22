@@ -13,6 +13,7 @@
     * Ganyu
     * Yanfei
     * Klee
+    * Itto
   * Added Itto and Gorou
   * Added Golden Wolflord material
   * Fixed talent level-up materials for Traveler
