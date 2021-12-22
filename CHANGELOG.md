@@ -14,6 +14,7 @@
     * Yanfei
     * Klee
     * Itto
+    * Gorou
     * Diluc
   * Added Itto and Gorou
   * Added Golden Wolflord material
