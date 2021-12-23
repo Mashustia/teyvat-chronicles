@@ -2,6 +2,7 @@
 * Changes
   * Added possible teams for:
     * Yoimiya
+    * Zhongli
 
 #### 1.1.4 December-2021
 * Changes

@@ -1,9 +1,9 @@
-import {Vision} from '../../const/consts';
-import {BossMaterials, Rocks, Gem, Materials, Books, BossSkillMaterial} from '../materialNames';
+import {Character, Vision} from '../../const/consts';
+import {Books, BossMaterials, BossSkillMaterial, Gem, Materials, Rocks} from '../materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Zhongli = {
-  name: 'Zhongli',
+  name: Character.ZHONGLI,
   vision: Vision.GEO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -33,7 +33,14 @@ const Zhongli = {
       3: Materials.SLIME_CONCENTRATE,
     },
     bossMaterial: BossSkillMaterial.TUSK_OF_MONOCEROS_CAELI
-  })
+  }),
+  possible_teams: [
+    [Character.ZHONGLI, Character.ALBEDO, Character.XINGQIU, Character.FISCHL],
+    [Character.ZHONGLI, Character.GANYU, Character.FISCHL, Character.BEIDOU],
+    [Character.XIAO, Character.ZHONGLI, Character.SUCROSE, Character.BENNETT],
+    [Character.HU_TAO, Character.XINGQIU, Character.ZHONGLI, Character.ALBEDO],
+    [Character.ARATAKI_ITTO, Character.GOROU, Character.ALBEDO, Character.ZHONGLI],
+  ]
 }
 
 export default Zhongli
