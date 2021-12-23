@@ -36,7 +36,7 @@ const Aloy = {
   }),
   possible_teams: [
     [Character.KLEE, Character.KAEDEHARA_KAZUHA, Character.ALOY, Character.BENNETT],
-    [Character.GANYU, Character.KAEDEHARA_KAZUHA, Character.ALOY, Character.JEAN],
+    [Character.GANYU, Character.XINGQIU, Character.VENTI, Character.ALOY],
     [Character.KAMISATO_AYAKA, Character.XINGQIU, Character.ALOY, Character.JEAN],
     [Character.HU_TAO, Character.XINGQIU, Character.SUCROSE, Character.ALOY]
   ]

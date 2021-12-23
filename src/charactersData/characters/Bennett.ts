@@ -42,6 +42,7 @@ const Bennett = {
     bossMaterial: BossSkillMaterial.DVALINS_PLUME
   }),
   possible_teams: [
+    [Character.XIANGLING, Character.XINGQIU, Character.CHONGYUN, Character.BENNETT],
     [Character.KLEE, Character.KAEDEHARA_KAZUHA, Character.XINGQIU, Character.BENNETT],
     [Character.GANYU, Character.KAEDEHARA_KAZUHA, Character.XIANGLING, Character.BENNETT],
     [Character.TARTAGLIA, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],

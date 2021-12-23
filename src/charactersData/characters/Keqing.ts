@@ -1,9 +1,9 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {BossMaterials, Rocks, Gem, Materials, Books, BossSkillMaterial} from '../materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Keqing = {
-  name: 'Keqing',
+  name: Character.KEQING,
   vision: Vision.ELECTRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -33,7 +33,14 @@ const Keqing = {
       3: Materials.ENERGY_NECTAR,
     },
     bossMaterial: BossSkillMaterial.RING_OF_BOREAS
-  })
+  }),
+  possible_teams: [
+    [Character.KEQING, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.KEQING, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.XINGQIU],
+    [Character.KEQING, Character.BEIDOU, Character.SUCROSE, Character.XINGQIU],
+    [Character.KEQING, Character.FISCHL, Character.XINGQIU, Character.ZHONGLI],
+    [Character.KEQING, Character.XINGQIU, Character.GANYU, Character.ROSARIA],
+  ]
 }
 
 export default Keqing
