@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   BossMaterials,
   Gem,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Qiqi = {
-  name: 'Qiqi',
+  name: Character.QIQI,
   vision: Vision.CRYO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,12 @@ const Qiqi = {
       3: Materials.FORBIDDEN_CURSE_SCROLL,
     },
     bossMaterial: BossSkillMaterial.TAIL_OF_BOREAS
-  })
+  }),
+  possible_teams: [
+    [Character.GANYU, Character.MONA, Character.VENTI, Character.QIQI],
+    [Character.KAMISATO_AYAKA, Character.MONA, Character.VENTI, Character.QIQI],
+    [Character.XIAO, Character.SUCROSE, Character.XINGQIU, Character.QIQI],
+  ]
 }
 
 export default Qiqi
