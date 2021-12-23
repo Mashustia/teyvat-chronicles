@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Mona = {
-  name: 'Mona',
+  name: Character.MONA,
   vision: Vision.HYDRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,14 @@ const Mona = {
       3: Materials.ENERGY_NECTAR,
     },
     bossMaterial: BossSkillMaterial.RING_OF_BOREAS
-  })
+  }),
+  possible_teams: [
+    [Character.MONA, Character.XIANGLING, Character.SUCROSE, Character.BENNETT],
+    [Character.GANYU, Character.MONA, Character.VENTI, Character.DIONA],
+    [Character.KLEE, Character.MONA, Character.VENTI, Character.BENNETT],
+    [Character.MONA, Character.FISCHL, Character.XIANGLING, Character.JEAN],
+    [Character.GANYU, Character.MONA, Character.XIANGLING, Character.BENNETT],
+  ]
 }
 
 export default Mona
