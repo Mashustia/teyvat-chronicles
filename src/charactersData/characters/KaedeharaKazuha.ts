@@ -40,7 +40,14 @@ const KaedeharaKazuha = {
       3: Materials.GOLDEN_RAVEN_INSIGNIA,
     },
     bossMaterial: BossSkillMaterial.GILDED_SCALE
-  })
+  }),
+  possible_teams: [
+    [Character.KLEE, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.TARTAGLIA, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.GANYU, Character.MONA, Character.KAEDEHARA_KAZUHA, Character.DIONA],
+    [Character.KEQING, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.KEQING, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+  ]
 }
 
 export default KaedeharaKazuha

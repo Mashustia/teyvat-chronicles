@@ -5,6 +5,7 @@
     * Zhongli
     * Qiqi
     * Jean
+    * Kazuha
 
 #### 1.1.4 December-2021
 * Changes
