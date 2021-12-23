@@ -1,4 +1,4 @@
-#### 1.0.4 December-2021
+#### 1.1.4 December-2021
 * Changes
   * Added possible teams section
   * Added possible teams for:
@@ -21,7 +21,7 @@
   * Fixed talent level-up materials for Traveler
   * Images for characters were changed with images with better quality
 
-#### 1.0.3 November-2021
+#### 1.1.3 November-2021
 
 * Changes
   * Added news section
@@ -35,7 +35,7 @@
   * Added embedded map for ascension materials and talent level-up materials
   * Fixed page scroll on character page
 
-#### 1.0.2 October-2021
+#### 1.1.2 October-2021
 
 * Changed
   *  Added embedded map for bosses materials and books
@@ -52,7 +52,7 @@
   *  Added english localisation
   *  Added talent materials
 
-#### 1.0.1 September-2021
+#### 1.1.1 September-2021
 
 * Changes
   *  Group characters by vision
