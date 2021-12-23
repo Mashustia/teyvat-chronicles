@@ -1,9 +1,9 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {BossMaterials, Rocks, Gem, Materials, Books, BossSkillMaterial} from '../materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Kokomi = {
-  name: 'Kokomi',
+  name: Character.KOKOMI,
   vision: Vision.HYDRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -33,7 +33,13 @@ const Kokomi = {
       3: Materials.SPECTRAL_NUCLEUS,
     },
     bossMaterial: BossSkillMaterial.HELLFIRE_BUTTERFLY
-  })
+  }),
+  possible_teams: [
+    [Character.KLEE, Character.XINGQIU, Character.SUCROSE, Character.KOKOMI],
+    [Character.GANYU, Character.VENTI, Character.KAMISATO_AYAKA, Character.KOKOMI],
+    [Character.GANYU, Character.VENTI, Character.ROSARIA, Character.KOKOMI],
+    [Character.ARATAKI_ITTO, Character.GOROU, Character.ALBEDO, Character.KOKOMI],
+  ]
 }
 
 export default Kokomi
