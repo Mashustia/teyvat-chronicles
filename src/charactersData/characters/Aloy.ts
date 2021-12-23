@@ -1,9 +1,9 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {Books, BossMaterials, BossSkillMaterial, Gem, Materials, Rocks} from '../materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Aloy = {
-  name: 'Aloy',
+  name: Character.ALOY,
   vision: Vision.CRYO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -33,7 +33,13 @@ const Aloy = {
       3: Materials.SPECTRAL_NUCLEUS,
     },
     bossMaterial: BossSkillMaterial.MOLTEN_MOMENT
-  })
+  }),
+  possible_teams: [
+    [Character.KLEE, Character.KAEDEHARA_KAZUHA, Character.ALOY, Character.BENNETT],
+    [Character.GANYU, Character.KAEDEHARA_KAZUHA, Character.ALOY, Character.JEAN],
+    [Character.KAMISATO_AYAKA, Character.XINGQIU, Character.ALOY, Character.JEAN],
+    [Character.HU_TAO, Character.XINGQIU, Character.SUCROSE, Character.ALOY]
+  ]
 }
 
 export default Aloy

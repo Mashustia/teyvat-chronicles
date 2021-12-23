@@ -9,6 +9,7 @@
     * Kokomi
     * Venti
     * Mona
+    * Aloy
 
 #### 1.1.4 December-2021
 * Changes
