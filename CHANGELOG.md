@@ -3,6 +3,8 @@
   * Added possible teams for:
     * Yoimiya
     * Zhongli
+    * Qiqi
+    * Jean
 
 #### 1.1.4 December-2021
 * Changes
