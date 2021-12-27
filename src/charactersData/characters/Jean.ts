@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Jean = {
-  name: 'Jean',
+  name: Character.JEAN,
   vision: Vision.ANEMO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,12 @@ const Jean = {
       3: Materials.OMINOUS_MASK,
     },
     bossMaterial: BossSkillMaterial.DVALINS_PLUME
-  })
+  }),
+  possible_teams: [
+    [Character.XIAO, Character.ZHONGLI, Character.ALBEDO, Character.JEAN],
+    [Character.DILUC, Character.XINGQIU, Character.YANFEI, Character.JEAN],
+    [Character.KEQING, Character.FISCHL, Character.XINGQIU, Character.JEAN],
+  ]
 }
 
 export default Jean

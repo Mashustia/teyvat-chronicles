@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Venti = {
-  name: 'Venti',
+  name: Character.VENTI,
   vision: Vision.ANEMO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,13 @@ const Venti = {
       3: Materials.SLIME_CONCENTRATE,
     },
     bossMaterial: BossSkillMaterial.TAIL_OF_BOREAS
-  })
+  }),
+  possible_teams: [
+    [Character.GANYU, Character.VENTI, Character.MONA, Character.DIONA],
+    [Character.KAMISATO_AYAKA, Character.VENTI, Character.MONA, Character.DIONA],
+    [Character.KLEE, Character.VENTI, Character.MONA, Character.BENNETT],
+    [Character.KEQING, Character.VENTI, Character.FISCHL, Character.BENNETT],
+  ]
 }
 
 export default Venti

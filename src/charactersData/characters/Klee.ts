@@ -47,7 +47,7 @@ const Klee = {
     [Character.KLEE, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.KLEE, Character.XINGQIU, Character.SUCROSE, Character.KOKOMI],
     [Character.KLEE, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
-    [Character.KLEE, Character.AMBER, Character.SUCROSE, Character.DIONA],
+    [Character.KLEE, Character.THOMA, Character.SUCROSE, Character.DIONA],
   ]
 }
 

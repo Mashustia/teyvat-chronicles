@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Yoimiya = {
-  name: 'Yoimiya',
+  name: Character.YOIMIYA,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,16 @@ const Yoimiya = {
       3: Materials.FORBIDDEN_CURSE_SCROLL,
     },
     bossMaterial: BossSkillMaterial.DRAGON_LORDS_CROWN
-  })
+  }),
+  possible_teams: [
+    [Character.YOIMIYA, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.YOIMIYA, Character.XINGQIU, Character.BEIDOU, Character.BENNETT],
+    [Character.YOIMIYA, Character.VENTI, Character.MONA, Character.BENNETT],
+    [Character.YOIMIYA, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.YOIMIYA, Character.BEIDOU, Character.FISCHL, Character.BENNETT],
+    [Character.YOIMIYA, Character.BEIDOU, Character.FISCHL, Character.ZHONGLI],
+    [Character.YOIMIYA, Character.BEIDOU, Character.FISCHL, Character.JEAN],
+  ]
 }
 
 export default Yoimiya

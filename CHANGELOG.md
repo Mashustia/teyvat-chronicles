@@ -1,3 +1,16 @@
+#### 1.1.5 January-2022
+* Changes
+  * Added possible teams for:
+    * Yoimiya
+    * Zhongli
+    * Qiqi
+    * Jean
+    * Kazuha
+    * Kokomi
+    * Venti
+    * Mona
+    * Aloy
+
 #### 1.1.4 December-2021
 * Changes
   * Added possible teams section

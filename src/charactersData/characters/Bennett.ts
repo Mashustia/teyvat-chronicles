@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Bennett = {
-  name: 'Bennett',
+  name: Character.BENNETT,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,16 @@ const Bennett = {
       3: Materials.GOLDEN_RAVEN_INSIGNIA,
     },
     bossMaterial: BossSkillMaterial.DVALINS_PLUME
-  })
+  }),
+  possible_teams: [
+    [Character.XIANGLING, Character.XINGQIU, Character.CHONGYUN, Character.BENNETT],
+    [Character.KLEE, Character.KAEDEHARA_KAZUHA, Character.XINGQIU, Character.BENNETT],
+    [Character.GANYU, Character.KAEDEHARA_KAZUHA, Character.XIANGLING, Character.BENNETT],
+    [Character.TARTAGLIA, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.EULA, Character.RAIDEN, Character.ROSARIA, Character.BENNETT],
+    [Character.DILUC, Character.XINGQIU, Character.SUCROSE, Character.BENNETT],
+    [Character.BENNETT, Character.XINGQIU, Character.SUCROSE, Character.THOMA],
+  ]
 }
 
 export default Bennett
