@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Xiangling = {
-  name: 'Xiangling',
+  name: Character.XIANGLING,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,15 @@ const Xiangling = {
       3: Materials.SLIME_CONCENTRATE,
     },
     bossMaterial: BossSkillMaterial.DVALINS_CLAWN
-  })
+  }),
+  possible_teams: [
+    [Character.CHONGYUN, Character.XINGQIU, Character.XIANGLING, Character.BENNETT],
+    [Character.TARTAGLIA, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.KLEE, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.RAIDEN, Character.XIANGLING, Character.XINGQIU, Character.BENNETT],
+    [Character.XIANGLING, Character.KAMISATO_AYAKA, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.SUCROSE, Character.XIANGLING, Character.KOKOMI, Character.FISCHL],
+  ]
 }
 
 export default Xiangling

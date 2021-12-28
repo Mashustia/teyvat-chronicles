@@ -42,8 +42,8 @@ const Sucrose = {
     bossMaterial: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS
   }),
   possible_teams: [
-    [Character.SUCROSE, Character.XINGQIU, Character.FISCHL, Character.BENNETT],
-    [Character.SUCROSE, Character.XIANGLING, Character.KOKOMI, Character.BENNETT],
+    [Character.SUCROSE, Character.XINGQIU, Character.FISCHL, Character.BEIDOU],
+    [Character.SUCROSE, Character.XIANGLING, Character.KOKOMI, Character.FISCHL],
     [Character.TARTAGLIA, Character.XIANGLING, Character.SUCROSE, Character.BENNETT],
     [Character.HU_TAO, Character.ZHONGLI, Character.XINGQIU, Character.SUCROSE],
     [Character.GANYU, Character.XIANGLING, Character.SUCROSE, Character.BENNETT],
