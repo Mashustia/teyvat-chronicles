@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Rosaria = {
-  name: 'Rosaria',
+  name: Character.ROSARIA,
   vision: Vision.CRYO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,14 @@ const Rosaria = {
       3: Materials.LIEUTENANTS_INSIGNIA,
     },
     bossMaterial: BossSkillMaterial.SHADOW_OF_THE_WARRIOR
-  })
+  }),
+  possible_teams: [
+    [Character.HU_TAO, Character.XINGQIU, Character.ROSARIA, Character.ZHONGLI],
+    [Character.EULA, Character.RAIDEN, Character.ROSARIA, Character.BENNETT],
+    [Character.YANFEI, Character.XINGQIU, Character.ROSARIA, Character.BENNETT],
+    [Character.KLEE, Character.GANYU, Character.ROSARIA, Character.ZHONGLI],
+    [Character.RAZOR, Character.FISCHL, Character.ROSARIA, Character.BENNETT],
+  ]
 }
 
 export default Rosaria

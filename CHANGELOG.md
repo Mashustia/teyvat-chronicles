@@ -10,6 +10,12 @@
     * Venti
     * Mona
     * Aloy
+    * Sucrose
+    * Chongyun
+    * Xiangling
+    * Xingqiu
+    * Diona
+    * Rosaria
 
 #### 1.1.4 December-2021
 * Changes

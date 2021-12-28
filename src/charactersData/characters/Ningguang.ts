@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Ningguang = {
-  name: 'Ningguang',
+  name: Character.NINGGUANG,
   vision: Vision.GEO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,14 @@ const Ningguang = {
       3: Materials.LIEUTENANTS_INSIGNIA,
     },
     bossMaterial: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS
-  })
+  }),
+  possible_teams: [
+    [Character.NINGGUANG, Character.ZHONGLI, Character.XIANGLING, Character.BENNETT],
+    [Character.NINGGUANG, Character.ZHONGLI, Character.FISCHL, Character.BENNETT],
+    [Character.NINGGUANG, Character.ZHONGLI, Character.ALBEDO, Character.FISCHL],
+    [Character.NINGGUANG, Character.ALBEDO, Character.XIANGLING, Character.BENNETT],
+    [Character.NINGGUANG, Character.NOELLE, Character.FISCHL, Character.XINGQIU],
+  ]
 }
 
 export default Ningguang

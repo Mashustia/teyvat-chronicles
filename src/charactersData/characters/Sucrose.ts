@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Sucrose = {
-  name: 'Sucrose',
+  name: Character.SUCROSE,
   vision: Vision.ANEMO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,15 @@ const Sucrose = {
       3: Materials.ENERGY_NECTAR,
     },
     bossMaterial: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS
-  })
+  }),
+  possible_teams: [
+    [Character.SUCROSE, Character.XINGQIU, Character.FISCHL, Character.BEIDOU],
+    [Character.SUCROSE, Character.XIANGLING, Character.KOKOMI, Character.FISCHL],
+    [Character.TARTAGLIA, Character.XIANGLING, Character.SUCROSE, Character.BENNETT],
+    [Character.HU_TAO, Character.ZHONGLI, Character.XINGQIU, Character.SUCROSE],
+    [Character.GANYU, Character.XIANGLING, Character.SUCROSE, Character.BENNETT],
+    [Character.DILUC, Character.XINGQIU, Character.SUCROSE, Character.BENNETT],
+  ]
 }
 
 export default Sucrose

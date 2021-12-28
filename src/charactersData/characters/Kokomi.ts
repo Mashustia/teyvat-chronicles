@@ -35,6 +35,7 @@ const Kokomi = {
     bossMaterial: BossSkillMaterial.HELLFIRE_BUTTERFLY
   }),
   possible_teams: [
+    [Character.SUCROSE, Character.XIANGLING, Character.KOKOMI, Character.FISCHL],
     [Character.KLEE, Character.XINGQIU, Character.SUCROSE, Character.KOKOMI],
     [Character.GANYU, Character.VENTI, Character.KAMISATO_AYAKA, Character.KOKOMI],
     [Character.GANYU, Character.VENTI, Character.ROSARIA, Character.KOKOMI],

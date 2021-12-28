@@ -1,9 +1,9 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {BossMaterials, Rocks, Gem, Materials, BossSkillMaterial, Books} from '../materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Chongyun = {
-  name: 'Chongyun',
+  name: Character.CHONGYUN,
   vision: Vision.CRYO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -33,7 +33,12 @@ const Chongyun = {
       3: Materials.OMINOUS_MASK,
     },
     bossMaterial: BossSkillMaterial.DVALINS_SIGH
-  })
+  }),
+  possible_teams: [
+    [Character.CHONGYUN, Character.XINGQIU, Character.XIANGLING, Character.BENNETT],
+    [Character.KAEYA, Character.CHONGYUN, Character.XINGQIU, Character.DIONA],
+    [Character.DILUC, Character.CHONGYUN, Character.SUCROSE, Character.BENNETT],
+  ]
 }
 
 export default Chongyun
