@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   BossMaterials,
   Gem,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Diona = {
-  name: 'Diona',
+  name: Character.DIONA,
   vision: Vision.CRYO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,15 @@ const Diona = {
       3: Materials.WEATHERED_ARROWHEAD,
     },
     bossMaterial: BossSkillMaterial.SHARD_OF_A_FOUL_LEGACY
-  })
+  }),
+  possible_teams: [
+    [Character.GANYU, Character.MONA, Character.VENTI, Character.DIONA],
+    [Character.HU_TAO, Character.XINGQIU, Character.ROSARIA, Character.DIONA],
+    [Character.RAZOR, Character.FISCHL, Character.ROSARIA, Character.DIONA],
+    [Character.EULA, Character.RAIDEN, Character.ROSARIA, Character.DIONA],
+    [Character.KLEE, Character.ROSARIA, Character.KAEDEHARA_KAZUHA, Character.DIONA],
+    [Character.YANFEI, Character.XINGQIU, Character.ROSARIA, Character.DIONA],
+  ]
 }
 
 export default Diona
