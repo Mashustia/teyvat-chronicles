@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   BossMaterials,
   Gem,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Kaeya = {
-  name: 'Kaeya',
+  name: Character.KAEYA,
   vision: Vision.CRYO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,15 @@ const Kaeya = {
       3: Materials.GOLDEN_RAVEN_INSIGNIA,
     },
     bossMaterial: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS
-  })
+  }),
+  possible_teams: [
+    [Character.KAEYA, Character.CHONGYUN, Character.XINGQIU, Character.JEAN],
+    [Character.KAEYA, Character.ROSARIA, Character.XIANGLING, Character.BENNETT],
+    [Character.KAEYA, Character.XINGQIU, Character.FISCHL, Character.JEAN],
+    [Character.HU_TAO, Character.XINGQIU, Character.KAEYA, Character.ZHONGLI],
+    [Character.RAZOR, Character.FISCHL, Character.KAEYA, Character.BENNETT],
+    [Character.KAMISATO_AYAKA, Character.KAEYA, Character.XINGQIU, Character.JEAN],
+  ]
 }
 
 export default Kaeya
