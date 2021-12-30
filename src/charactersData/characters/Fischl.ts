@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Fischl = {
-  name: 'Fischl',
+  name: Character.FISCHL,
   vision: Vision.ELECTRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,14 @@ const Fischl = {
       3: Materials.WEATHERED_ARROWHEAD,
     },
     bossMaterial: BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS
-  })
+  }),
+  possible_teams: [
+    [Character.KEQING, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.EULA, Character.FISCHL, Character.ROSARIA, Character.BENNETT],
+    [Character.RAZOR, Character.FISCHL, Character.ROSARIA, Character.DIONA],
+    [Character.ARATAKI_ITTO, Character.GOROU, Character.ZHONGLI, Character.FISCHL],
+    [Character.FISCHL, Character.XIANGLING, Character.SUCROSE, Character.KOKOMI],
+  ]
 }
 
 export default Fischl

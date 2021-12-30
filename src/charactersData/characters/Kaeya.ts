@@ -46,7 +46,7 @@ const Kaeya = {
     [Character.KAEYA, Character.ROSARIA, Character.XIANGLING, Character.BENNETT],
     [Character.KAEYA, Character.XINGQIU, Character.FISCHL, Character.JEAN],
     [Character.HU_TAO, Character.XINGQIU, Character.KAEYA, Character.ZHONGLI],
-    [Character.RAZOR, Character.FISCHL, Character.KAEYA, Character.BENNETT],
+    [Character.RAZOR, Character.FISCHL, Character.KAEYA, Character.DIONA],
     [Character.KAMISATO_AYAKA, Character.KAEYA, Character.XINGQIU, Character.JEAN],
   ]
 }
