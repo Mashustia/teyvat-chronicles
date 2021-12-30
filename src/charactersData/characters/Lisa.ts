@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   BossMaterials,
   Gem,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Lisa = {
-  name: 'Lisa',
+  name: Character.LISA,
   vision: Vision.ELECTRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,14 @@ const Lisa = {
       3: Materials.SLIME_CONCENTRATE,
     },
     bossMaterial: BossSkillMaterial.DVALINS_CLAWN
-  })
+  }),
+  possible_teams: [
+    [Character.LISA, Character.BEIDOU, Character.VENTI, Character.BENNETT],
+    [Character.LISA, Character.XINGQIU, Character.FISCHL, Character.JEAN],
+    [Character.LISA, Character.BEIDOU, Character.KUJOU_SARA, Character.JEAN],
+    [Character.LISA, Character.XIANGLING, Character.SUCROSE, Character.BENNETT],
+    [Character.EULA, Character.LISA, Character.FISCHL, Character.DIONA],
+  ]
 }
 
 export default Lisa
