@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Thoma = {
-  name: 'Thoma',
+  name: Character.XINGQIU,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,12 @@ const Thoma = {
       3: Materials.GOLDEN_RAVEN_INSIGNIA,
     },
     bossMaterial: BossSkillMaterial.HELLFIRE_BUTTERFLY
-  })
+  }),
+  possible_teams: [
+    [Character.TARTAGLIA, Character.THOMA, Character.SUCROSE, Character.BENNETT],
+    [Character.HU_TAO, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.KLEE, Character.XINGQIU, Character.THOMA, Character.SAYU],
+  ]
 }
 
 export default Thoma

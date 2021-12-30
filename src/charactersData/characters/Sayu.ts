@@ -38,7 +38,7 @@ const Sayu = {
     [Character.DILUC, Character.XINGQIU, Character.ZHONGLI, Character.SAYU],
     [Character.YOIMIYA, Character.XINGQIU, Character.ZHONGLI, Character.SAYU],
     [Character.KAMISATO_AYAKA, Character.XINGQIU, Character.ROSARIA, Character.SAYU],
-    [Character.YANFEI, Character.XINGQIU, Character.THOMA, Character.SAYU],
+    [Character.KLEE, Character.XINGQIU, Character.THOMA, Character.SAYU],
     [Character.KAEYA, Character.CHONGYUN, Character.XINGQIU, Character.SAYU],
   ]
 }
