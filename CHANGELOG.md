@@ -16,6 +16,7 @@
     * Xingqiu
     * Diona
     * Rosaria
+    * Sayu
 
 #### 1.1.4 December-2021
 * Changes

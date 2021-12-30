@@ -1,9 +1,9 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {BossMaterials, Rocks, Gem, Materials, Books, BossSkillMaterial} from '../materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Sayu = {
-  name: 'Sayu',
+  name: Character.SAYU,
   vision: Vision.ANEMO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -33,7 +33,14 @@ const Sayu = {
       3: Materials.ENERGY_NECTAR,
     },
     bossMaterial: BossSkillMaterial.GILDED_SCALE
-  })
+  }),
+  possible_teams: [
+    [Character.DILUC, Character.XINGQIU, Character.ZHONGLI, Character.SAYU],
+    [Character.YOIMIYA, Character.XINGQIU, Character.ZHONGLI, Character.SAYU],
+    [Character.KAMISATO_AYAKA, Character.XINGQIU, Character.ROSARIA, Character.SAYU],
+    [Character.YANFEI, Character.XINGQIU, Character.THOMA, Character.SAYU],
+    [Character.KAEYA, Character.CHONGYUN, Character.XINGQIU, Character.SAYU],
+  ]
 }
 
 export default Sayu
