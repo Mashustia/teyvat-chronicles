@@ -21,6 +21,7 @@
     * Fischl
     * Sara
     * Lisa
+    * Razor
 
 #### 1.1.4 December-2021
 * Changes
