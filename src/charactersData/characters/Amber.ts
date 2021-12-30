@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Amber = {
-  name: 'Amber',
+  name: Character.AMBER,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,12 @@ const Amber = {
       3: Materials.WEATHERED_ARROWHEAD,
     },
     bossMaterial: BossSkillMaterial.DVALINS_SIGH
-  })
+  }),
+  possible_teams: [
+    [Character.YANFEI, Character.XINGQIU, Character.SUCROSE, Character.AMBER],
+    [Character.HU_TAO, Character.ZHONGLI, Character.XINGQIU, Character.AMBER],
+    [Character.GANYU, Character.AMBER, Character.MONA, Character.BENNETT],
+  ]
 }
 
 export default Amber

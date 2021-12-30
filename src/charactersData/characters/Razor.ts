@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Razor = {
-  name: 'Razor',
+  name: Character.RAZOR,
   vision: Vision.ELECTRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,12 @@ const Razor = {
       3: Materials.OMINOUS_MASK,
     },
     bossMaterial: BossSkillMaterial.DVALINS_CLAWN
-  })
+  }),
+  possible_teams: [
+    [Character.RAZOR, Character.FISCHL, Character.ZHONGLI, Character.ROSARIA],
+    [Character.RAZOR, Character.BEIDOU, Character.KAEYA, Character.DIONA],
+    [Character.RAZOR, Character.FISCHL, Character.XINGQIU, Character.DIONA],
+  ]
 }
 
 export default Razor

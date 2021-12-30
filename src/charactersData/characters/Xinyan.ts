@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Xinyan = {
-  name: 'Xinyan',
+  name: Character.XINYAN,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,12 @@ const Xinyan = {
       3: Materials.GOLDEN_RAVEN_INSIGNIA,
     },
     bossMaterial: BossSkillMaterial.TUSK_OF_MONOCEROS_CAELI
-  })
+  }),
+  possible_teams: [
+    [Character.RAZOR, Character.ROSARIA, Character.XINYAN, Character.BENNETT],
+    [Character.XINYAN, Character.ROSARIA, Character.BEIDOU, Character.BENNETT],
+    [Character.GANYU, Character.XINYAN, Character.XIANGLING, Character.DIONA],
+  ]
 }
 
 export default Xinyan

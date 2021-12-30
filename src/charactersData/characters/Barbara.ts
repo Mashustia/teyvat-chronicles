@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Barbara = {
-  name: 'Barbara',
+  name: Character.BARBARA,
   vision: Vision.HYDRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -40,7 +40,13 @@ const Barbara = {
       3: Materials.FORBIDDEN_CURSE_SCROLL,
     },
     bossMaterial: BossSkillMaterial.RING_OF_BOREAS
-  })
+  }),
+  possible_teams: [
+    [Character.DILUC, Character.BARBARA, Character.SUCROSE, Character.THOMA],
+    [Character.KAMISATO_AYAKA, Character.BARBARA, Character.KAEDEHARA_KAZUHA, Character.ROSARIA],
+    [Character.KAEYA, Character.CHONGYUN, Character.BARBARA, Character.SUCROSE],
+    [Character.BEIDOU, Character.FISCHL, Character.BARBARA, Character.SUCROSE],
+  ]
 }
 
 export default Barbara
