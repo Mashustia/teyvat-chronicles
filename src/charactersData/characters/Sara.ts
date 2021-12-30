@@ -40,7 +40,13 @@ const Sara = {
       3: Materials.OMINOUS_MASK,
     },
     bossMaterial: BossSkillMaterial.ASHEN_HEART
-  })
+  }),
+  possible_teams: [
+    [Character.RAIDEN, Character.KUJOU_SARA, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.KEQING, Character.KUJOU_SARA, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.RAIDEN, Character.KUJOU_SARA, Character.FISCHL, Character.JEAN],
+    [Character.BEIDOU, Character.KUJOU_SARA, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+  ]
 }
 
 export default Sara
