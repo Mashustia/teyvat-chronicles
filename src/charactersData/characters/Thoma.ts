@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Thoma = {
-  name: Character.XINGQIU,
+  name: Character.THOMA,
   vision: Vision.PYRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -43,7 +43,7 @@ const Thoma = {
   }),
   possible_teams: [
     [Character.TARTAGLIA, Character.THOMA, Character.SUCROSE, Character.BENNETT],
-    [Character.HU_TAO, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.HU_TAO, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.THOMA],
     [Character.KLEE, Character.XINGQIU, Character.THOMA, Character.SAYU],
   ]
 }
