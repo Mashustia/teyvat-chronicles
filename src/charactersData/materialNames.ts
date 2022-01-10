@@ -157,6 +157,7 @@ export enum BossMaterials {
   DEW_OF_REPUDIATION = 'dew_of_repudiation',
   SMOLDERING_PEARL = 'smoldering_pearl',
   RIFTBORN_REGALIA = 'riftborn_regalia',
+  DRAGONHEIRS_FALSE_FIN = 'dragonheirs_false_fin',
 }
 
 export enum BossSkillMaterial {
