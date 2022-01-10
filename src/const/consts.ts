@@ -106,5 +106,6 @@ export enum Character {
   TRAVELER = 'Traveler',
   THOMA = 'Thoma',
   GOROU = 'Gorou',
-  ARATAKI_ITTO = 'Arataki_Itto'
+  ARATAKI_ITTO = 'Arataki_Itto',
+  YUN_JIN = 'Yun_Jin'
 }

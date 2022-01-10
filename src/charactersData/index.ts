@@ -44,6 +44,7 @@ import Traveler from './characters/Traveler';
 import Thoma from './characters/Thoma';
 import Gorou from './characters/Gorou';
 import AratakiItto from './characters/AratakiItto';
+import YunJin from './characters/YunJin';
 
 // TODO: не забыть добавить путешественника
 const CHARACTERS: ICharacter[] = [
@@ -90,7 +91,8 @@ const CHARACTERS: ICharacter[] = [
   Traveler,
   Thoma,
   Gorou,
-  AratakiItto
+  AratakiItto,
+  YunJin
 ]
 
 export default CHARACTERS
