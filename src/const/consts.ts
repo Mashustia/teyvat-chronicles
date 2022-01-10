@@ -1,4 +1,6 @@
-export const interactiveMapBaseUrl = 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang={{ language }}#/map/2?shown_types='
+// old map url
+// export const interactiveMapBaseUrl = 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang={{ language }}#/map/2?shown_types='
+export const interactiveMapBaseUrl = 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/index.html?bbs_presentation_style=no_header&ts=123&lang={{ language }}#/map/'
 
 export const Languages = {
   EN: 'en',
@@ -106,5 +108,7 @@ export enum Character {
   TRAVELER = 'Traveler',
   THOMA = 'Thoma',
   GOROU = 'Gorou',
-  ARATAKI_ITTO = 'Arataki_Itto'
+  ARATAKI_ITTO = 'Arataki_Itto',
+  YUN_JIN = 'Yun_Jin',
+  SHENHE = 'Shenhe'
 }
