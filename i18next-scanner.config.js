@@ -8,7 +8,7 @@ module.exports = {
     debug: false,
     func: {
       list: ['i18next.t', 'i18n.t', 't', 'transFunc'],
-      extensions: ['.js', '.jsx', '.ts', '.tsx']
+      extensions: ['.ts', '.tsx']
     },
     trans: false,
     lngs: [Languages.EN, Languages.RU],
