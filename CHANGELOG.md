@@ -33,6 +33,9 @@
   * Added monster info:
     * Bathysmal Vishap Herd
   * Added scanner for translation files instead of manual import of these files
+  * Added section for links with farming routes in material info
+  * Added farming routes for:
+    * Whopperflower
 
 #### 1.1.4 December-2021
 * Changes
