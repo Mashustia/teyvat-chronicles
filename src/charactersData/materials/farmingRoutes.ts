@@ -9,7 +9,6 @@ export const Whopperflower: IFarmingRoute = {
   ]
 }
 
-
 export const farmingRoutes: IFarmingRoutes = {
   [Materials.WHOPPERFLOWER_NECTAR]: {...Whopperflower},
   [Materials.SHIMMERING_NECTAR]: {...Whopperflower},
