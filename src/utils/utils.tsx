@@ -3,7 +3,7 @@ import {useEffect} from 'react';
 import {cloneDeep} from 'lodash'
 
 import {IRouteParams} from '../types/commonTypes';
-import {defaultAscensionMaterials, defaultTalentMaterials} from '../charactersData/expandedMaterialInfo';
+import {defaultAscensionMaterials, defaultTalentMaterials} from '../charactersData/materials/expandedMaterialInfo';
 import {ICharacterAscensionMaterials, ICharacterTalentMaterials} from './types';
 import {IAscensionMaterials} from '../charactersData/types';
 
