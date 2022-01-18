@@ -7,7 +7,7 @@ import {ITableItemProps as IProps} from './types';
 import {IMaterial} from '../../../../charactersData/types';
 import './Material.css'
 import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.svg';
-import {ExpandedMaterialInfo} from '../../../../charactersData/expandedMaterialInfo';
+import {ExpandedMaterialInfo} from '../../../../charactersData/materials/expandedMaterialInfo';
 import MaterialDetails from '../MaterialDetails';
 
 const Material: FC<IProps> = ({data: [lvl, materials], isSummary}) => {
