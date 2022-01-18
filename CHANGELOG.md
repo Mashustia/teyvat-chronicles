@@ -32,6 +32,7 @@
     * Shenhe
   * Added monster info:
     * Bathysmal Vishap Herd
+  * Added scanner for translation files instead of manual import of these files
 
 #### 1.1.4 December-2021
 * Changes
