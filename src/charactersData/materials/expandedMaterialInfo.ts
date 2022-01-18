@@ -1,5 +1,5 @@
-import {IDungeon} from '../views/Character/components/Material/types';
-import {WeekDay} from '../const/consts';
+import {IDungeon} from '../../views/Character/components/Material/types';
+import {WeekDay} from '../../const/consts';
 import {CROWN_OF_INSIGHT, MORA} from './materialNames';
 
 export enum Region {

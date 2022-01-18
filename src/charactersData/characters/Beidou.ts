@@ -1,5 +1,5 @@
 import {Character, Vision} from '../../const/consts';
-import {Books, BossMaterials, BossSkillMaterial, Gem, Materials, Rocks} from '../materialNames';
+import {Books, BossMaterials, BossSkillMaterial, Gem, Materials, Rocks} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Beidou = {
