@@ -4,10 +4,12 @@ import {Img} from 'react-image';
 import {useTranslation} from 'react-i18next';
 
 import {IMaterialDetailsProps as IProps} from './types';
-import {genshinImpactMap, materialLink} from '../../../../charactersData/interactiveMapLinks';
+import {genshinImpactMap, materialLink} from '../../../../charactersData/materials/interactiveMapLinks';
 import {interactiveMapBaseUrl, InteractiveMapLanguage, WeekDay} from '../../../../const/consts';
 import './MaterialDetails.css'
 import Map from '../../../../common/Map';
+import {farmingRoutes} from '../../../../charactersData/materials/farmingRoutes';
+import FarmingRoutes from '../FarmigRoutes';
 
 const MaterialDetails: FC<IProps> = (props) => {
   const {t, i18n} = useTranslation(['materials', 'material'])
@@ -48,6 +50,8 @@ const MaterialDetails: FC<IProps> = (props) => {
       </>
     )
   }
+
+  const farmingRoute = farmingRoutes[activeMaterial] ?? undefined
 
   return (
     <Col xs={12}>
@@ -120,6 +124,8 @@ const MaterialDetails: FC<IProps> = (props) => {
             className='link'
           >{t('material:interactive_map')}</a>
         )}
+
+        {<FarmingRoutes route={farmingRoute}/>}
       </Alert>
     </Col>
   )

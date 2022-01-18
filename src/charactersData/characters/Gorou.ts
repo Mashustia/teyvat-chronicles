@@ -5,7 +5,7 @@ import {
   BossSkillMaterial,
   Gem,
   Materials, Rocks
-} from '../materialNames';
+} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Gorou = {

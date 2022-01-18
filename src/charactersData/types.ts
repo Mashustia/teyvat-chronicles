@@ -26,3 +26,12 @@ export interface IMaterial {
   count: number
   sorting_index?: number
 }
+
+export interface IFarmingRoute {
+  en?: string[]
+  ru?: string[]
+}
+
+export interface IFarmingRoutes {
+  [key: string]: IFarmingRoute
+}

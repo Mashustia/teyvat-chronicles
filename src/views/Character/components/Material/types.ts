@@ -1,6 +1,6 @@
 import {IMaterial} from '../../../../charactersData/types';
 import {WeekDay} from '../../../../const/consts';
-import {Region} from '../../../../charactersData/expandedMaterialInfo';
+import {Region} from '../../../../charactersData/materials/expandedMaterialInfo';
 
 export type ITableItemProps = {
   data: [string, IMaterial[]]

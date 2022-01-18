@@ -1,5 +1,5 @@
 import {Character, Vision} from '../../const/consts';
-import {BossMaterials, Rocks, Gem, Materials, Books, BossSkillMaterial} from '../materialNames';
+import {BossMaterials, Rocks, Gem, Materials, Books, BossSkillMaterial} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Tartaglia = {

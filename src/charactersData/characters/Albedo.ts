@@ -6,7 +6,7 @@ import {
   Flower,
   Gem,
   Materials
-} from '../materialNames';
+} from '../materials/materialNames';
 import {ICharacter} from '../types';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 

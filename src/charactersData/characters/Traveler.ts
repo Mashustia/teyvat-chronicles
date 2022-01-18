@@ -3,7 +3,7 @@ import {
   Flower,
   TravelerAscensionMaterial,
   Materials, Books, MORA, BossSkillMaterial, CROWN_OF_INSIGHT,
-} from '../materialNames';
+} from '../materials/materialNames';
 import {fillAscensionMaterials} from '../../utils/utils';
 
 const talent1 = {

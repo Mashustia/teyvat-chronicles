@@ -5,7 +5,7 @@ import {
   BossSkillMaterial, Flower,
   Gem,
   Materials
-} from '../materialNames';
+} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const YunJin = {
