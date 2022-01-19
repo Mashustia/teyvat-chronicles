@@ -36,6 +36,14 @@
   * Added section for links with farming routes in material info
   * Added farming routes for:
     * Whopperflower
+    * Qingxin
+    * Sango Pearl
+    * Amakumo Fruit
+    * Specter
+    * Sakura Bloom
+    * Naku Weed
+    * Crystal Marrow
+    * Handguard
 
 #### 1.1.4 December-2021
 * Changes
