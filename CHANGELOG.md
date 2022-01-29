@@ -1,4 +1,22 @@
-#### 1.1.5 January-2022
+#### 1.1.6 February-2022
+* Changes
+  * Added farming routes for:
+    * Treasure hoarder
+    * Sea Ganoderma
+    * Damaged Mask
+    * Glaze Lily
+    * Dandelion Seed
+    * Slime
+    * Windwheel Aster
+    * Cor Lapis
+    * Calla lily
+    * Violetgrass
+    * Sealed scroll
+    * Valberry
+    * Sergeants insignia
+    * Dendrobium
+    * Noctilucous jade
+
 * Changes
   * Added possible teams for:
     * Yoimiya
