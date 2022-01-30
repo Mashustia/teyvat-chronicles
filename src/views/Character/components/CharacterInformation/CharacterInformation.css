@@ -2,7 +2,12 @@
   display: grid;
   min-height: 0;
   min-width: 0;
-  width: 640px;
-  padding: 0 10px;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .character-info {
+    width: var(--screen-576);
+  }
 }
