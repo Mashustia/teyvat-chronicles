@@ -112,3 +112,13 @@ export enum Character {
   YUN_JIN = 'Yun_Jin',
   SHENHE = 'Shenhe'
 }
+
+export const DefaultStartingLevel = {
+  lvl: 1,
+  isAscended: false
+}
+
+export const DefaultFinalLevel = {
+  lvl: 70,
+  isAscended: true
+}
