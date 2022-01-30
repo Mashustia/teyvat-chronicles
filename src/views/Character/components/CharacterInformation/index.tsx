@@ -12,6 +12,7 @@ import CharacterImage from '../../../../common/CharacterImage';
 import Stars from '../../../../common/Stars';
 import AscensionSummary from '../AscensionSummary';
 import {Character} from '../../../../const/consts';
+import LevelMaterials from '../LevelMaterials';
 import './CharacterInformation.css'
 
 const CharacterInformation: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
@@ -20,8 +21,6 @@ const CharacterInformation: FC<RouteComponentProps<IRouteParams>> = ({match: {pa
   const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === params.name)
 
   if (!activeCharacter) return <></>
-
-  const ascensionMaterials = Object.entries(activeCharacter.ascension_materials)
 
   const {rarity} = activeCharacter
 
@@ -97,15 +96,7 @@ const CharacterInformation: FC<RouteComponentProps<IRouteParams>> = ({match: {pa
           <Stars count={rarity}/>
         </div>
 
-        <Col xs={12}>
-          <h4 className='mb-3'>{t('character:ascension_materials')}</h4>
-          {ascensionMaterials.map((value, index) => {
-            if (!value[0]) return null
-
-            return <Material data={value} key={index}/>
-          })}
-          <AscensionSummary ascensionMaterials={activeCharacter.ascension_materials}/>
-        </Col>
+        <LevelMaterials/>
 
         {renderTalentMaterials()}
 
