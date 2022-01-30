@@ -7,7 +7,7 @@ import {ILevelSelect} from './types';
 import LevelSelectOptions from '../LevelSelectOptions';
 import './LevelSelect.css'
 
-const LevelSelect: FC<ILevelSelect> = ({ text, position }): ReactElement => {
+const LevelSelect: FC<ILevelSelect> = ({ text, position, onSelectOption }): ReactElement => {
   const [isPopoverShown, togglePopover] = useState(false)
 
   const handlePopoverToggle = () => togglePopover(!isPopoverShown)
@@ -16,7 +16,7 @@ const LevelSelect: FC<ILevelSelect> = ({ text, position }): ReactElement => {
     <div className='relative'>
       <Button type={ButtonType.BUTTON} onClick={handlePopoverToggle} classes='level-select__button'>{text}</Button>
       <Popover isShown={isPopoverShown} onClickOutside={togglePopover} position={position}>
-        <LevelSelectOptions/>
+        <LevelSelectOptions onSelectOption={onSelectOption}/>
       </Popover>
     </div>
   )
