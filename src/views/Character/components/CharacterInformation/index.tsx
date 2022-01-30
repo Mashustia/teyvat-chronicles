@@ -12,6 +12,7 @@ import CharacterImage from '../../../../common/CharacterImage';
 import Stars from '../../../../common/Stars';
 import AscensionSummary from '../AscensionSummary';
 import {Character} from '../../../../const/consts';
+import './CharacterInformation.css'
 
 const CharacterInformation: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation(['character', 'common']);
@@ -88,32 +89,30 @@ const CharacterInformation: FC<RouteComponentProps<IRouteParams>> = ({match: {pa
   )
 
   return (
-    <Row className='justify-content-center'>
-      <Col sm={12} md={12} lg={8} xl={7} xxl={6}>
-        <Row className='justify-content-center gx-3 gy-3'>
-          <Col xs={12}>
-            <CharacterImage name={name} withBorder={true}/>
-            <h1 className='fs-3 mb-0'>{t(`character:names.${name}`)}</h1>
-            <Stars count={rarity}/>
-          </Col>
+    <div className='character-info'>
+      <Row className='justify-content-center gx-3 gy-3'>
+        <div className='grid'>
+          <CharacterImage name={name} withBorder={true}/>
+          <h1 className='fs-3 mb-0'>{t(`character:names.${name}`)}</h1>
+          <Stars count={rarity}/>
+        </div>
 
-          <Col xs={12}>
-            <h4 className='mb-3'>{t('character:ascension_materials')}</h4>
-            {ascensionMaterials.map((value, index) => {
-              if (!value[0]) return null
+        <Col xs={12}>
+          <h4 className='mb-3'>{t('character:ascension_materials')}</h4>
+          {ascensionMaterials.map((value, index) => {
+            if (!value[0]) return null
 
-              return <Material data={value} key={index}/>
-            })}
-            <AscensionSummary ascensionMaterials={activeCharacter.ascension_materials}/>
-          </Col>
+            return <Material data={value} key={index}/>
+          })}
+          <AscensionSummary ascensionMaterials={activeCharacter.ascension_materials}/>
+        </Col>
 
-          {renderTalentMaterials()}
+        {renderTalentMaterials()}
 
-          {renderPossibleTeams()}
+        {renderPossibleTeams()}
 
-        </Row>
-      </Col>
-    </Row>
+      </Row>
+    </div>
   )
 }
 
