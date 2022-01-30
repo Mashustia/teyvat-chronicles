@@ -13,7 +13,7 @@ import Stars from '../../../../common/Stars';
 import AscensionSummary from '../AscensionSummary';
 import {Character} from '../../../../const/consts';
 
-const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
+const CharacterInformation: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation(['character', 'common']);
   const {name} = params
   const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === params.name)
@@ -117,4 +117,4 @@ const Materials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): Re
   )
 }
 
-export default withRouter(Materials)
+export default withRouter(CharacterInformation)
