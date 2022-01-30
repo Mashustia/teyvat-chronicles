@@ -10,6 +10,8 @@ import {IRouteParams} from '../../../../types/commonTypes';
 import AscensionSummary from '../AscensionSummary';
 import LevelSelect from '../Inputs/components/LevelSelect';
 import {DefaultFinalLevel, DefaultStartingLevel} from '../../../../const/consts';
+import './LevelMaterials.css'
+import {Position} from '../../../../common/Popover/types';
 
 const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation(['character', 'common']);
@@ -25,8 +27,10 @@ const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}
   return (
     <Col xs={12}>
       <h4 className='mb-3'>{t('character:level')}</h4>
-      <LevelSelect text={lvlFrom}/>
-      <LevelSelect text={lvlTo}/>
+      <div className='d-flex justify-content-between mx-auto level-materials__lvl-buttons'>
+        <LevelSelect text={lvlFrom}/>
+        <LevelSelect text={lvlTo} position={Position.RIGHT}/>
+      </div>
 
       <h4 className='mb-3'>{t('character:ascension_materials')}</h4>
       {ascensionMaterials.map((value, index) => {
