@@ -1,3 +1,5 @@
+import {ILevel} from './types';
+
 export const characterExperience = {
   '1-20': {
     exp_needed: 120175,
@@ -203,3 +205,62 @@ export const fourStarArtifactExp = {
     mora: 122675
   }
 }
+
+export const Levels: ILevel[] = [
+  {
+    lvl: 1,
+    isAscended: false
+  },
+  {
+    lvl: 20,
+    isAscended: false
+  },
+  {
+    lvl: 20,
+    isAscended: true
+  },
+  {
+    lvl: 40,
+    isAscended: false
+  },
+  {
+    lvl: 40,
+    isAscended: true
+  },
+  {
+    lvl: 50,
+    isAscended: false
+  },
+  {
+    lvl: 50,
+    isAscended: true
+  },
+  {
+    lvl: 60,
+    isAscended: false
+  },
+  {
+    lvl: 60,
+    isAscended: true
+  },
+  {
+    lvl: 70,
+    isAscended: false
+  },
+  {
+    lvl: 70,
+    isAscended: true
+  },
+  {
+    lvl: 80,
+    isAscended: false
+  },
+  {
+    lvl: 80,
+    isAscended: true
+  },
+  {
+    lvl: 90,
+    isAscended: false
+  }
+]

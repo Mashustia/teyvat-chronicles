@@ -35,3 +35,8 @@ export interface IFarmingRoute {
 export interface IFarmingRoutes {
   [key: string]: IFarmingRoute
 }
+
+export interface ILevel {
+  lvl: number
+  isAscended: boolean
+}
