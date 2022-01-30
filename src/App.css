@@ -73,6 +73,11 @@
   --four-star-background: #9a77ca;
 
   --sidebar-width: 195px;
+
+  /* grid-breakpoints */
+  --screen-1256: 1256px;
+  --screen-768: 768px;
+  --screen-576: 576px;
 }
 
 body {

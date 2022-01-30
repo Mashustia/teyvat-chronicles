@@ -1,0 +1,10 @@
+.container {
+  width: auto;
+  padding: 0 12px;
+}
+
+@media (min-width: 1256px) {
+  .layout-container {
+    width: var(--screen-1256);
+  }
+}
