@@ -61,7 +61,7 @@
   "character_not_found": "Персонаж не найден",
   "possible_teams": "Возможные команды",
   "teams_warning": "Команды, представленные ниже, являются лишь примерами, вы можете играть той командой, которой хотите",
-  "from_lvl": "С уровня {{ number }}",
-  "to_lvl": "По уровень {{ number }}",
-  "level": "Level"
+  "from_lvl": "С {{ number }}",
+  "to_lvl": "По {{ number }}",
+  "level": "Уровень"
 }

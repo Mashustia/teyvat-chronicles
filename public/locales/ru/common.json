@@ -15,6 +15,5 @@
   "elemental_skill": "Элементальный навык",
   "elemental_burst": "Взрыв стихии",
   "farming_routes": "Маршруты фарма",
-  "link_with_counter": "Ссылка {{ number }}",
-  "level": "Уровень"
+  "link_with_counter": "Ссылка {{ number }}"
 }

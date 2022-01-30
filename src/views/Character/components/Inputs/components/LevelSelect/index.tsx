@@ -7,10 +7,14 @@ import {ILevelSelect} from './types';
 import LevelSelectOptions from '../LevelSelectOptions';
 import './LevelSelect.css'
 
-const LevelSelect: FC<ILevelSelect> = ({ text, position, onSelectOption }): ReactElement => {
+const LevelSelect: FC<ILevelSelect> = ({ text, position, onSelectOption, isAscended }): ReactElement => {
   const [isPopoverShown, togglePopover] = useState(false)
 
   const handlePopoverToggle = () => togglePopover(!isPopoverShown)
+
+  const ascensionIcon = (
+    <img src='/images/icons/primogem-2.png' alt='primogem' className='level-select__image ms-1'/>
+  )
 
   return (
     <div className='relative'>
@@ -19,7 +23,10 @@ const LevelSelect: FC<ILevelSelect> = ({ text, position, onSelectOption }): Reac
         onClick={handlePopoverToggle}
         classes='level-select__button'
       >
-        {text}
+        <span className='d-flex align-items-center justify-content-center'>
+          {text}
+          {isAscended ? ascensionIcon : undefined}
+        </span>
       </Button>
       <Popover isShown={isPopoverShown} onClickOutside={togglePopover} position={position}>
         <LevelSelectOptions onSelectOption={onSelectOption}/>
