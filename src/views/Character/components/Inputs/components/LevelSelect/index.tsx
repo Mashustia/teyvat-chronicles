@@ -14,7 +14,13 @@ const LevelSelect: FC<ILevelSelect> = ({ text, position, onSelectOption }): Reac
 
   return (
     <div className='relative'>
-      <Button type={ButtonType.BUTTON} onClick={handlePopoverToggle} classes='level-select__button'>{text}</Button>
+      <Button
+        type={ButtonType.BUTTON}
+        onClick={handlePopoverToggle}
+        classes='level-select__button'
+      >
+        {text}
+      </Button>
       <Popover isShown={isPopoverShown} onClickOutside={togglePopover} position={position}>
         <LevelSelectOptions onSelectOption={onSelectOption}/>
       </Popover>
