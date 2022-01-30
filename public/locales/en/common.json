@@ -15,7 +15,5 @@
   "elemental_skill": "Elemental skill",
   "elemental_burst": "Elemental burst",
   "farming_routes": "Farming routes",
-  "link_with_counter": "Link {{ number }}",
-  "from_lvl": "From level {{ number }}",
-  "to_lvl": "To level {{ number }}"
+  "link_with_counter": "Link {{ number }}"
 }

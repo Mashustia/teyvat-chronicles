@@ -2,8 +2,8 @@ import {FC, ReactElement} from 'react'
 
 import {Levels} from '../../../../../../charactersData/common';
 import {ILevel} from '../../../../../../charactersData/types';
-import './LevelSelectOptions.css'
 import {ILevelSelectOption} from './types';
+import './LevelSelectOptions.css'
 
 const LevelSelectOptions: FC<ILevelSelectOption> = ({onSelectOption}): ReactElement => {
   const handleSelectOption = (option: ILevel) => () => onSelectOption(option)
@@ -12,7 +12,7 @@ const LevelSelectOptions: FC<ILevelSelectOption> = ({onSelectOption}): ReactElem
   const buttons = Levels.map(levelButton)
 
   return (
-    <div className='level-select-options grid-4'>{buttons}</div>
+    <div className='level-select-options py-3 px-4 grid-4 grid-gutters-lg'>{buttons}</div>
   )
 }
 

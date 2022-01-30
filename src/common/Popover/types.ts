@@ -6,7 +6,6 @@ export interface IPopoverProps {
 }
 
 export enum Position {
-  LEFT = 'left',
   RIGHT = 'right'
 }
 

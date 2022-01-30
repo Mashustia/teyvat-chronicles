@@ -14,7 +14,7 @@ import './LevelMaterials.css'
 import {Position} from '../../../../common/Popover/types';
 
 const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
-  const {t} = useTranslation(['character', 'common']);
+  const {t} = useTranslation(['character']);
 
   const [startingLevel, changeStartingLevel] = useState(DefaultStartingLevel)
   const [finalLevel, changeFinalLevel] = useState(DefaultFinalLevel)
@@ -25,12 +25,12 @@ const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}
 
   const ascensionMaterials = Object.entries(activeCharacter.ascension_materials)
 
-  const lvlFrom = t('common:from_lvl', { number: startingLevel.lvl})
-  const lvlTo = t('common:to_lvl', { number: finalLevel.lvl})
+  const lvlFrom = t('character:from_lvl', { number: startingLevel.lvl})
+  const lvlTo = t('character:to_lvl', { number: finalLevel.lvl})
 
   return (
     <Col xs={12}>
-      <h4 className='mb-3'>{t('character:level')}</h4>
+      <h4 className='my-3'>{t('character:level')}</h4>
       <div className='d-flex justify-content-between mx-auto level-materials__lvl-buttons'>
         <LevelSelect text={lvlFrom} onSelectOption={changeStartingLevel}/>
         <LevelSelect text={lvlTo} position={Position.RIGHT} onSelectOption={changeFinalLevel}/>

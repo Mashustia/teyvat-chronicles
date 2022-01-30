@@ -1,5 +1,8 @@
 .level-select-options {
-  width: 200px;
+  width: 250px;
+  background-color: var(--gray-200);
+  border-radius: 5px;
+  border: 1px solid var(--gray-100)
 }
 
 .level-select-options__button {

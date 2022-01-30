@@ -297,7 +297,7 @@ body {
   grid-row-gap: 8px;
 }
 
-.grid.grid-gutters-lg, .grid-gutters-lg.grid-2 {
+.grid.grid-gutters-lg, .grid-gutters-lg.grid-2, .grid-gutters-lg.grid-3, .grid-gutters-lg.grid-4 {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
 }
