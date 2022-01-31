@@ -32,8 +32,17 @@ const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}
     <Col xs={12}>
       <h4 className='my-3'>{t('character:level')}</h4>
       <div className='d-flex justify-content-between mx-auto level-materials__lvl-buttons'>
-        <LevelSelect text={lvlFrom} onSelectOption={changeStartingLevel} isAscended={startingLevel.isAscended}/>
-        <LevelSelect text={lvlTo} position={Position.RIGHT} onSelectOption={changeFinalLevel} isAscended={finalLevel.isAscended}/>
+        <LevelSelect
+          text={lvlFrom}
+          onSelectOption={changeStartingLevel}
+          levelInfo={startingLevel}
+        />
+        <LevelSelect
+          text={lvlTo}
+          position={Position.RIGHT}
+          onSelectOption={changeFinalLevel}
+          levelInfo={finalLevel}
+        />
       </div>
 
       <h4 className='mb-3'>{t('character:ascension_materials')}</h4>

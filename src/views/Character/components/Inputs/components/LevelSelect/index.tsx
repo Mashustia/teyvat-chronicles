@@ -7,7 +7,7 @@ import {ILevelSelect} from './types';
 import LevelSelectOptions from '../LevelSelectOptions';
 import './LevelSelect.css'
 
-const LevelSelect: FC<ILevelSelect> = ({ text, position, onSelectOption, isAscended }): ReactElement => {
+const LevelSelect: FC<ILevelSelect> = ({ text, position, onSelectOption, levelInfo }): ReactElement => {
   const [isPopoverShown, togglePopover] = useState(false)
 
   const handlePopoverToggle = () => togglePopover(!isPopoverShown)
@@ -25,11 +25,11 @@ const LevelSelect: FC<ILevelSelect> = ({ text, position, onSelectOption, isAscen
       >
         <span className='d-flex align-items-center justify-content-center'>
           {text}
-          {isAscended ? ascensionIcon : undefined}
+          {levelInfo.isAscended ? ascensionIcon : undefined}
         </span>
       </Button>
       <Popover isShown={isPopoverShown} onClickOutside={togglePopover} position={position}>
-        <LevelSelectOptions onSelectOption={onSelectOption}/>
+        <LevelSelectOptions onSelectOption={onSelectOption} selectedLevel={levelInfo}/>
       </Popover>
     </div>
   )

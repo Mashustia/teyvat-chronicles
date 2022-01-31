@@ -8,7 +8,26 @@
 .level-select-options__button {
   border-radius: 10px;
   background: var(--gray-600);
-  border: none;
+
+  border: 1px solid var(--gray-1200);
+  outline: none;
+}
+
+.level-select-options__button--selected {
+  background: linear-gradient(to left top, #ec4645, #2c52c7);
+}
+
+.level-select-options__button:hover,
+.level-select-options__button:active {
+  -webkit-box-shadow: 0 0 0 1px var(--text-light) inset;
+  -moz-box-shadow: 0 0 0 1px var(--text-light) inset;
+  box-shadow: 0 0 0 1px var(--text-light) inset;
+}
+
+.level-select-options__button:focus {
+  -webkit-box-shadow: 0 0 0 1px var(--gray-1200) inset;
+  -moz-box-shadow: 0 0 0 1px var(--gray-1200) inset;
+  box-shadow: 0 0 0 1px var(--gray-1200) inset;
 }
 
 .level-select-options__icon {

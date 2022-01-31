@@ -5,5 +5,5 @@ export interface ILevelSelect {
   text: string
   position?: Position
   onSelectOption: (arg: ILevel) => void
-  isAscended: boolean
+  levelInfo: ILevel
 }
