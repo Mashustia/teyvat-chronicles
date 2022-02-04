@@ -1,4 +1,4 @@
-import {FC, ReactElement, useRef, useState} from 'react'
+import {FC, MouseEvent, ReactElement, RefObject, useRef, useState} from 'react'
 import cn from 'classnames'
 
 import Button from '../Button';
@@ -10,8 +10,15 @@ import './LanguageSelector.css';
 const LanguageSelector: FC<IDropdownProps> = ({languages, activeLanguage, onSelect}): ReactElement => {
   const [isOpen, setIsOpen] = useState(false)
   const menuRef = useRef(null);
+  const toggleButtonRef: RefObject<HTMLButtonElement> | null = useRef(null);
 
-  useOnClickOutside(menuRef, () => setIsOpen(false))
+  const handleOutsideClick = (e: MouseEvent | KeyboardEvent) => {
+    if (toggleButtonRef?.current?.contains(e.target as HTMLElement)) return
+
+    return setIsOpen(false)
+  }
+
+  useOnClickOutside(menuRef, handleOutsideClick)
 
   const handleLanguageChange = (language: string) => () => {
     onSelect(language)
@@ -24,14 +31,18 @@ const LanguageSelector: FC<IDropdownProps> = ({languages, activeLanguage, onSele
       ref={menuRef}
     >
       {languages.map((language: string) =>
-        <span key={language} className='language-selector__option d-flex px-3 py-1' onClick={handleLanguageChange(language)}>
+        <span
+          key={language}
+          className={cn('language-selector__option d-flex px-3 py-1', (activeLanguage !== language) && 'pointer')}
+          onClick={handleLanguageChange(language)}
+        >
           {<Flags language={language}/>}
         </span>
       )}
     </div>
   )
 
-  const handleDropdownToggle = (value: boolean) => () => setIsOpen(value)
+  const handleDropdownToggle = () => setIsOpen(!isOpen)
 
   const arrowDownIcon = (
     <span className='ps-2'>
@@ -41,8 +52,13 @@ const LanguageSelector: FC<IDropdownProps> = ({languages, activeLanguage, onSele
 
   return (
     <div className='position-relative'>
-      <Button iconLeft={arrowDownIcon} onClick={handleDropdownToggle(!isOpen)}>{<Flags
-        language={activeLanguage}/>}</Button>
+      <Button
+        iconLeft={arrowDownIcon}
+        onClick={handleDropdownToggle}
+        innerRef={toggleButtonRef}
+      >
+        {<Flags language={activeLanguage}/>}
+      </Button>
       {isOpen && renderOptions()}
     </div>
   )
