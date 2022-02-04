@@ -15,9 +15,7 @@ const LevelSelectOptions: FC<ILevelSelectOption> = ({onSelectOption, selectedLev
     const isLevelSelected = selectedLevel.lvl === levelInfo.lvl && selectedLevel.isAscended === levelInfo.isAscended
 
     const levelIsLowerThanAllowed = minLevel &&
-      (minLevel.lvl > levelInfo.lvl ||
-        minLevel.lvl === levelInfo.lvl && (minLevel?.isAscended && !levelInfo.isAscended)
-      )
+      ((minLevel.lvl > levelInfo.lvl) || (minLevel.lvl === levelInfo.lvl && (minLevel?.isAscended && !levelInfo.isAscended)))
 
     const buttonStyles = cn(
       'level-select-options__button px-1 py-2 d-flex align-items-center justify-content-center',
