@@ -205,6 +205,10 @@ body {
   cursor: pointer;
 }
 
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
 .link {
   color: var(--bs-gray-500);
 }
