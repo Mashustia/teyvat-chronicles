@@ -6,6 +6,7 @@ import {ButtonType} from '../../../../../../common/Button/types';
 import {ILevelSelect} from './types';
 import LevelSelectOptions from '../LevelSelectOptions';
 import './LevelSelect.css'
+import {ILevel} from '../../../../../../charactersData/types';
 
 const LevelSelect: FC<ILevelSelect> = ({text, position, onSelectOption, levelInfo}): ReactElement => {
   const [isPopoverShown, togglePopover] = useState(false)
@@ -18,6 +19,11 @@ const LevelSelect: FC<ILevelSelect> = ({text, position, onSelectOption, levelInf
   }
 
   const handlePopoverToggle = () => togglePopover(!isPopoverShown)
+
+  const handleSelectOption = (option: ILevel) => () => {
+    onSelectOption(option)
+    handlePopoverToggle()
+  }
 
   const ascensionIcon = (
     <img src='/images/icons/primogem-2.png' alt='primogem' className='level-select__image ms-1'/>
@@ -37,7 +43,7 @@ const LevelSelect: FC<ILevelSelect> = ({text, position, onSelectOption, levelInf
         </span>
       </Button>
       <Popover isShown={isPopoverShown} onClickOutside={handleOutsideClick} position={position}>
-        <LevelSelectOptions onSelectOption={onSelectOption} selectedLevel={levelInfo}/>
+        <LevelSelectOptions onSelectOption={handleSelectOption} selectedLevel={levelInfo}/>
       </Popover>
     </div>
   )
