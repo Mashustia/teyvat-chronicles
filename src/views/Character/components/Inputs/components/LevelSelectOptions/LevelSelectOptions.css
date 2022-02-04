@@ -7,7 +7,7 @@
 
 .level-select-options__button {
   border-radius: 10px;
-  background: var(--gray-900);
+  background: var(--gray-200);
 
   color: var(--text-light);
   border: 1px solid var(--gray-1200);
@@ -29,6 +29,14 @@
   -webkit-box-shadow: 0 0 0 2px var(--gray-1200) inset;
   -moz-box-shadow: 0 0 0 2px var(--gray-1200) inset;
   box-shadow: 0 0 0 2px var(--gray-1200) inset;
+}
+
+.level-select-options__button--disabled {
+  background: var(--gray-1000);
+}
+
+.level-select-options__button--disabled:hover {
+  box-shadow: none;
 }
 
 .level-select-options__icon {

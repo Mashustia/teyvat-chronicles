@@ -52,6 +52,7 @@ const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}
           position={Position.RIGHT}
           onSelectOption={changeFinalLevel}
           levelInfo={finalLevel}
+          minLevel={startingLevel}
         />
       </div>
 

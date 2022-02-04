@@ -6,4 +6,5 @@ export interface ILevelSelect {
   position?: Position
   onSelectOption: (arg: ILevel) => void
   levelInfo: ILevel
+  minLevel?: ILevel
 }

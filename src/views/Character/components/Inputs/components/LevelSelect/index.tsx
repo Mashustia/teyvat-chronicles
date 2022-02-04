@@ -8,7 +8,13 @@ import LevelSelectOptions from '../LevelSelectOptions';
 import './LevelSelect.css'
 import {ILevel} from '../../../../../../charactersData/types';
 
-const LevelSelect: FC<ILevelSelect> = ({text, position, onSelectOption, levelInfo}): ReactElement => {
+const LevelSelect: FC<ILevelSelect> = ({
+   text,
+   position,
+   onSelectOption,
+   levelInfo,
+   minLevel
+}): ReactElement => {
   const [isPopoverShown, togglePopover] = useState(false)
   const toggleButtonRef: RefObject<HTMLButtonElement> | null = useRef(null);
 
@@ -43,7 +49,7 @@ const LevelSelect: FC<ILevelSelect> = ({text, position, onSelectOption, levelInf
         </span>
       </Button>
       <Popover isShown={isPopoverShown} onClickOutside={handleOutsideClick} position={position}>
-        <LevelSelectOptions onSelectOption={handleSelectOption} selectedLevel={levelInfo}/>
+        <LevelSelectOptions onSelectOption={handleSelectOption} selectedLevel={levelInfo} minLevel={minLevel}/>
       </Popover>
     </div>
   )
