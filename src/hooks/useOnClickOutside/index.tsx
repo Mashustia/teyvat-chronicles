@@ -1,14 +1,15 @@
-import {RefObject, useEffect} from 'react';
+import {MouseEvent, RefObject, useEffect} from 'react';
 import {Event} from '../../const/consts';
 
-export const useOnClickOutside = (ref: RefObject<any>, handler: (e: any) => void) => {
+export const useOnClickOutside = (ref: RefObject<HTMLElement>, handler: (e: MouseEvent | KeyboardEvent) => void) => {
   useEffect(
     () => {
       const listener = (event: any) => {
-        // Do nothing if clicking ref's element or descendent elements
-        if (!ref.current || ref.current.contains(event.target)) {
+        if (!ref.current || ref.current.contains(event.target)
+        ) {
           return;
         }
+
         handler(event);
       };
       document.addEventListener(Event.MOUSEUP, listener);
