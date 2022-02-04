@@ -1,6 +1,8 @@
+import {MouseEvent} from 'react';
+
 export interface IPopoverProps {
   isShown: boolean
-  onClickOutside: (arg: boolean) => void
+  onClickOutside: (e: MouseEvent | KeyboardEvent) => void
   classes?: string
   position?: Position
 }
