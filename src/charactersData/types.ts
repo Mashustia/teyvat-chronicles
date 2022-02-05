@@ -40,3 +40,9 @@ export interface ILevel {
   lvl: number
   isAscended: boolean
 }
+
+export interface ICharacterExperience {
+  exp_needed: number
+  number_of_heros_wit: number
+  mora: number
+}
