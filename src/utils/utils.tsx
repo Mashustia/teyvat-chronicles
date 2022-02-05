@@ -14,7 +14,7 @@ import {IAscensionMaterials, ICharacter, ILevel, IMaterial} from '../charactersD
 import {characterExperience, HEROS_WIT_EXP as HEROS_WIT_EXP_QUANTITY} from '../charactersData/common';
 import CHARACTERS from '../charactersData';
 import {COUNT, MATERIAL, SORTING_INDEX} from '../const/consts';
-import {HEROS_WIT_EXP as HEROS_WIT_EXP_NAME, MORA} from '../charactersData/materials/materialNames';
+import {HEROS_WIT, MORA} from '../charactersData/materials/materialNames';
 
 export const getOrgDataFromMatch = (matchData: match<IRouteParams>): string => {
   if (matchData?.params?.name) {
@@ -189,7 +189,7 @@ export const calculateMaterials = (characterName: string, startingLevel: ILevel,
     const ascensionMaterialsSummary: IMaterial[] = getAscensionMaterialsSummary(materialsNeeded)
     const booksSummary = calculateExperience(startingLevel, finalLevel)
 
-    const overallSummary: IMaterial[] = [...ascensionMaterialsSummary, { material: HEROS_WIT_EXP_NAME, count: booksSummary.books, sorting_index: 2}]
+    const overallSummary: IMaterial[] = [...ascensionMaterialsSummary, { material: HEROS_WIT, count: booksSummary.books, sorting_index: 2}]
 
     const moraIndex = overallSummary.findIndex((material: IMaterial) => material.material === MORA)
 

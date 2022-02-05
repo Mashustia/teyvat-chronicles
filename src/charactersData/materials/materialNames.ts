@@ -39,7 +39,7 @@ export const Gem = {
 
 export const MORA = 'mora'
 
-export const HEROS_WIT_EXP = 'heros_wit_exp'
+export const HEROS_WIT = 'heros_wit'
 
 export enum Flower {
   WINDWHEEL_ASTER = 'windwheel_aster',
