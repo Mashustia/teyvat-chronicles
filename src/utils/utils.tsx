@@ -177,7 +177,9 @@ export const calculateMaterials = (characterName: string, startingLevel: ILevel,
     const materialsNeeded: IAscensionMaterials = {}
 
     materialLevels.forEach((materialLevel: string) => {
-      if (parseInt(materialLevel) <= startingLevel.lvl) return
+      if (parseInt(materialLevel) < startingLevel.lvl) return
+      if ((parseInt(materialLevel) === startingLevel.lvl) && startingLevel.isAscended) return
+      if ((parseInt(materialLevel) === finalLevel.lvl) && !finalLevel.isAscended) return
       if (parseInt(materialLevel) > finalLevel.lvl) return
 
       materialsNeeded[materialLevel] = characterMaterials[materialLevel]
