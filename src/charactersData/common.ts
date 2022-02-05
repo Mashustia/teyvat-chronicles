@@ -4,6 +4,7 @@ export const HEROS_WIT_EXP = 20000
 export const ADVENTURERS_EXPERIENCE_EXP = 5000
 export const WANDERERS_ADVICE_EXP = 1000
 
+// checked until 50
 export const characterExperience = {
   '1': {
     exp_needed: 0,
@@ -23,7 +24,7 @@ export const characterExperience = {
   '50': {
     exp_needed: 579100,
     number_of_heros_wit: 29,
-    mora: 115820
+    mora: 116000
   },
   '60': {
     exp_needed: 854125,
