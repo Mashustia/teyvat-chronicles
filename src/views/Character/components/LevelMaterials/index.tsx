@@ -5,9 +5,7 @@ import {Col} from 'react-bootstrap';
 
 import {ICharacter} from '../../../../charactersData/types';
 import CHARACTERS from '../../../../charactersData';
-import Material from '../Material';
 import {IRouteParams} from '../../../../types/commonTypes';
-import AscensionSummary from '../AscensionSummary';
 import LevelSelect from '../Inputs/components/LevelSelect';
 import {DefaultFinalLevel, DefaultStartingLevel} from '../../../../const/consts';
 import './LevelMaterials.css'
@@ -34,15 +32,13 @@ const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}
 
   if (!activeCharacter) return <></>
 
-  const ascensionMaterials = Object.entries(activeCharacter.ascension_materials)
-
   const lvlFrom = t('character:from_lvl', {number: startingLevel.lvl})
   const lvlTo = t('character:to_lvl', {number: finalLevel.lvl})
 
   return (
     <Col xs={12}>
       <h4 className='my-3'>{t('character:level')}</h4>
-      <div className='d-flex justify-content-between mx-auto level-materials__lvl-buttons'>
+      <div className='d-flex justify-content-between mx-auto level-materials__lvl-buttons mb-3'>
         <LevelSelect
           text={lvlFrom}
           onSelectOption={changeStartingLevel}
@@ -55,17 +51,9 @@ const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}
           levelInfo={finalLevel}
           minLevel={startingLevel}
         />
-
-        <LevelMaterialsSummary startingLevel={startingLevel} finalLevel={finalLevel}/>
       </div>
 
-      <h4 className='mb-3'>{t('character:ascension_materials')}</h4>
-      {ascensionMaterials.map((value, index) => {
-        if (!value[0]) return null
-
-        return <Material data={value} key={index}/>
-      })}
-      <AscensionSummary ascensionMaterials={activeCharacter.ascension_materials}/>
+      <LevelMaterialsSummary startingLevel={startingLevel} finalLevel={finalLevel}/>
     </Col>
   )
 }

@@ -168,7 +168,7 @@ export const getAscensionMaterialsSummary = (ascensionMaterials: IAscensionMater
   return sortBy(materials, [SORTING_INDEX, COUNT])
 }
 
-export const calculateMaterials = (characterName: string, startingLevel: ILevel, finalLevel: ILevel): IMaterial[] | null => {
+export const calculateMaterials = (characterName: string, startingLevel: ILevel, finalLevel: ILevel): IMaterial[] | [] => {
   const characterMaterials = CHARACTERS.find((character: ICharacter) => character.name === characterName)?.ascension_materials
 
   if (characterMaterials) {
@@ -193,10 +193,14 @@ export const calculateMaterials = (characterName: string, startingLevel: ILevel,
 
     const moraIndex = overallSummary.findIndex((material: IMaterial) => material.material === MORA)
 
-    overallSummary[moraIndex].count = overallSummary[moraIndex].count + booksSummary.mora
+    if (moraIndex !== -1) {
+      overallSummary[moraIndex].count = overallSummary[moraIndex].count + booksSummary.mora
+    } else {
+      overallSummary.push({ material: MORA, count: booksSummary.mora})
+    }
 
     return overallSummary
   }
 
-  return null
+  return []
 }

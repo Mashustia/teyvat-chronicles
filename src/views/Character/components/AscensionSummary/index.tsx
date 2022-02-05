@@ -17,7 +17,6 @@ const AscensionSummary: FC<IAscensionSummary> = ({ ascensionMaterials }): ReactE
     .reduce((accumulator, currentValue) => [...accumulator, ...currentValue], [])
 
   const ascensionMaterialsSummary = getAscensionMaterialsSummary()
-  // console.log(ascensionMaterialsSummary)
 
   const materialGroupedByName = groupBy(ascensionMaterialsSummary, MATERIAL)
   const groupedMaterialKeys = Object.keys(materialGroupedByName)
