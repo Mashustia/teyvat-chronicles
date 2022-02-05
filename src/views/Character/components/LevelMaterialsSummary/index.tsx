@@ -5,7 +5,7 @@ import {Col, Row} from 'react-bootstrap';
 
 import {ILevelMaterialsSummaryProps as IProps} from './types';
 import {calculateMaterials} from '../../../../utils/utils';
-import Material from '../Material';
+import MaterialReworked from '../Material/MaterialReworked';
 
 const LevelMaterialsSummary: FC<IProps> = ({match: {params}, startingLevel, finalLevel}): ReactElement => {
   const {t} = useTranslation(['common', 'material']);
@@ -18,7 +18,7 @@ const LevelMaterialsSummary: FC<IProps> = ({match: {params}, startingLevel, fina
     <Col xs={12}>
       {isMaterialsSummaryShown ?
         (
-          <Material data={[t('common:total'), materialsNeeded]} isSummary={true}/>
+          <MaterialReworked data={[materialsNeeded]}/>
         ) :
         (
           <Row className='align-items-center gx-3 gy-2 table-border mb-3 ascension-material'>

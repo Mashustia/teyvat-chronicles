@@ -20,3 +20,7 @@ export interface IDungeonType {
 export interface IDungeon {
   [key: string]: IDungeonType
 }
+
+export type ITableItemPropsReworked = {
+  data: [IMaterial[]]
+}

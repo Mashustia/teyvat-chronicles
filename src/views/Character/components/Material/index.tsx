@@ -52,7 +52,7 @@ const Material: FC<IProps> = ({data: [lvl, materials], isSummary}) => {
     <Row className='align-items-center gx-3 gy-2 table-border mb-3 ascension-material'>
       <Col xs={isSummary ? undefined : 1} className='fs-5'>{isSummary ? '' : lvl}</Col>
       <Col xs={isSummary ? 12 : 11}>
-        {/*{isSummary && <h4 className='mb-3'>{lvl}</h4>}*/}
+        {isSummary && <h4 className='mb-3'>{lvl}</h4>}
         <Row className='gx-1'>{rows()}</Row>
       </Col>
 

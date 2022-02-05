@@ -9,6 +9,7 @@ import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.s
 import {ExpandedMaterialInfo} from '../../../../charactersData/materials/expandedMaterialInfo';
 import MaterialDetails from '../MaterialDetails';
 
+// TODO: rename to Material after refactoring
 const MaterialReworked: FC<IProps> = ({data: [materials]}) => {
   const {t} = useTranslation(['materials', 'material'])
   const [isAdditionalInfoShown, toggleAdditionalInfo] = useState(false)
