@@ -1,11 +1,20 @@
 import {match} from 'react-router-dom';
 import {useEffect} from 'react';
-import {cloneDeep} from 'lodash'
+import {cloneDeep, groupBy, sortBy} from 'lodash'
 
 import {IRouteParams} from '../types/commonTypes';
 import {defaultAscensionMaterials, defaultTalentMaterials} from '../charactersData/materials/expandedMaterialInfo';
-import {ICharacterAscensionMaterials, ICharacterTalentMaterials} from './types';
-import {IAscensionMaterials} from '../charactersData/types';
+import {
+  IBooksAndMoraForLevel,
+  ICalculatedExperience,
+  ICharacterAscensionMaterials,
+  ICharacterTalentMaterials
+} from './types';
+import {IAscensionMaterials, ICharacter, ILevel, IMaterial} from '../charactersData/types';
+import {characterExperience, HEROS_WIT_EXP as HEROS_WIT_EXP_QUANTITY} from '../charactersData/common';
+import CHARACTERS from '../charactersData';
+import {COUNT, MATERIAL, SORTING_INDEX} from '../const/consts';
+import {HEROS_WIT_EXP as HEROS_WIT_EXP_NAME, MORA} from '../charactersData/materials/materialNames';
 
 export const getOrgDataFromMatch = (matchData: match<IRouteParams>): string => {
   if (matchData?.params?.name) {
@@ -109,4 +118,83 @@ export const fillAscensionMaterials = ({ gems, materials, bossMaterial, specialt
   talentMaterials[80][3].material = materials[3]
 
   return talentMaterials
+}
+
+export const calculateExperience = (startingLevel: ILevel, finalLevel: ILevel): IBooksAndMoraForLevel => {
+  const expLevels = Object.keys(characterExperience)
+
+  const expNeeded = expLevels.reduce((accumulator: ICalculatedExperience, currentValue: string): ICalculatedExperience  => {
+    if (parseInt(currentValue) <= startingLevel.lvl) return accumulator
+    if (parseInt(currentValue) > finalLevel.lvl) return accumulator
+
+    accumulator.exp = accumulator.exp + characterExperience[currentValue].exp_needed
+    accumulator.mora = accumulator.mora + characterExperience[currentValue].mora
+
+    return accumulator
+  }, { exp: 0, mora: 0 })
+
+  const booksCount = Math.ceil(expNeeded.exp / HEROS_WIT_EXP_QUANTITY)
+
+  return { books: booksCount, mora: expNeeded.mora}
+}
+
+export const getAscensionMaterialsSummary = (ascensionMaterials: IAscensionMaterials): IMaterial[] => {
+  const getAscensionMaterialsSummary = () => Object.values(ascensionMaterials)
+    .reduce((accumulator, currentValue) => [...accumulator, ...currentValue], [])
+
+  const ascensionMaterialsSummary = getAscensionMaterialsSummary()
+
+  const materialGroupedByName = groupBy(ascensionMaterialsSummary, MATERIAL)
+  const groupedMaterialKeys = Object.keys(materialGroupedByName)
+
+  const materials: IMaterial[] = groupedMaterialKeys.reduce((accumulator: IMaterial[], currentValue: string) => {
+    const counter: number = materialGroupedByName[currentValue].reduce((materialAccumulator: number, materialCurrentValue: IMaterial) => {
+      return materialAccumulator + materialCurrentValue.count
+    }, 0)
+
+    const material: IMaterial = {
+      material: currentValue,
+      count: counter,
+    }
+
+    const sortingIndex = materialGroupedByName[currentValue][0]?.sorting_index
+    if (sortingIndex) {
+      material[SORTING_INDEX] = sortingIndex
+    }
+
+    return [...accumulator, material]
+  }, [])
+
+  return sortBy(materials, [SORTING_INDEX, COUNT])
+}
+
+export const calculateMaterials = (characterName: string, startingLevel: ILevel, finalLevel: ILevel): IMaterial[] | null => {
+  const characterMaterials = CHARACTERS.find((character: ICharacter) => character.name === characterName)?.ascension_materials
+
+  if (characterMaterials) {
+    const materialLevels = Object.keys(characterMaterials)
+
+    const materialsNeeded: IAscensionMaterials = {}
+
+    materialLevels.forEach((materialLevel: string) => {
+      if (parseInt(materialLevel) <= startingLevel.lvl) return
+      if (parseInt(materialLevel) > finalLevel.lvl) return
+
+      materialsNeeded[materialLevel] = characterMaterials[materialLevel]
+
+    }, [])
+
+    const ascensionMaterialsSummary: IMaterial[] = getAscensionMaterialsSummary(materialsNeeded)
+    const booksSummary = calculateExperience(startingLevel, finalLevel)
+
+    const overallSummary: IMaterial[] = [...ascensionMaterialsSummary, { material: HEROS_WIT_EXP_NAME, count: booksSummary.books}]
+
+    const moraIndex = overallSummary.findIndex((material: IMaterial) => material.material === MORA)
+
+    overallSummary[moraIndex].count = overallSummary[moraIndex].count + booksSummary.mora
+
+    return overallSummary
+  }
+
+  return null
 }

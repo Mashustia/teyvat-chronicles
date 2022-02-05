@@ -12,6 +12,7 @@ import LevelSelect from '../Inputs/components/LevelSelect';
 import {DefaultFinalLevel, DefaultStartingLevel} from '../../../../const/consts';
 import './LevelMaterials.css'
 import {Position} from '../../../../common/Popover/types';
+import LevelMaterialsSummary from '../LevelMaterialsSummary';
 
 const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation(['character']);
@@ -54,6 +55,8 @@ const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}
           levelInfo={finalLevel}
           minLevel={startingLevel}
         />
+
+        <LevelMaterialsSummary startingLevel={startingLevel} finalLevel={finalLevel}/>
       </div>
 
       <h4 className='mb-3'>{t('character:ascension_materials')}</h4>

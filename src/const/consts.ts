@@ -122,3 +122,9 @@ export const DefaultFinalLevel = {
   lvl: 70,
   isAscended: true
 }
+
+export const MATERIAL = 'material'
+
+export const SORTING_INDEX = 'sorting_index'
+
+export const COUNT = 'count'

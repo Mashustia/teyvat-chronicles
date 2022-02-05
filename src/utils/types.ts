@@ -27,3 +27,13 @@ export interface ICharacterAscensionMaterials {
   bossMaterial?: string
   specialty: string
 }
+
+export interface ICalculatedExperience {
+  exp: number
+  mora: number
+}
+
+export interface IBooksAndMoraForLevel {
+  books: number
+  mora: number
+}
