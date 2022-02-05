@@ -23,7 +23,7 @@ const CharacterInformation: FC<RouteComponentProps<IRouteParams>> = ({match: {pa
 
   return (
     <div className='character-info'>
-      <div className='grid'>
+      <div className='grid mb-2'>
         <CharacterImage name={name} withBorder={true}/>
         <h1 className='fs-3 mb-0'>{t(`character:names.${name}`)}</h1>
         <Stars count={rarity}/>
