@@ -48,7 +48,12 @@ const LevelSelect: FC<ILevelSelect> = ({
           {levelInfo.isAscended ? ascensionIcon : undefined}
         </span>
       </Button>
-      <Popover isShown={isPopoverShown} onClickOutside={handleOutsideClick} position={position}>
+      <Popover
+        isShown={isPopoverShown}
+        onClickOutside={handleOutsideClick}
+        onEscapePress={handlePopoverToggle}
+        position={position}
+      >
         <LevelSelectOptions onSelectOption={handleSelectOption} selectedLevel={levelInfo} minLevel={minLevel}/>
       </Popover>
     </div>

@@ -5,6 +5,7 @@ export interface IPopoverProps {
   onClickOutside: (e: MouseEvent | KeyboardEvent) => void
   classes?: string
   position?: Position
+  onEscapePress: (e: KeyboardEvent) => void
 }
 
 export enum Position {

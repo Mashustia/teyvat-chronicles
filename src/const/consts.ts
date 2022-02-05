@@ -56,6 +56,7 @@ export enum Event {
   CLICK = 'click',
   TOUCHSTART = 'touchstart',
   KEYPRESS = 'keypress',
+  KEYDOWN = 'keydown',
   MOUSEUP = 'mouseup'
 }
 
@@ -128,3 +129,7 @@ export const MATERIAL = 'material'
 export const SORTING_INDEX = 'sorting_index'
 
 export const COUNT = 'count'
+
+export enum Key {
+  ESCAPE = 'Escape'
+}

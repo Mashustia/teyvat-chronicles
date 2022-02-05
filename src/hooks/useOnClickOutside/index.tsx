@@ -1,7 +1,7 @@
 import {MouseEvent, RefObject, useEffect} from 'react';
 import {Event} from '../../const/consts';
 
-export const useOnClickOutside = (ref: RefObject<HTMLElement>, handler: (e: MouseEvent | KeyboardEvent) => void) => {
+const useOnClickOutside = (ref: RefObject<HTMLElement>, handler: (e: MouseEvent | KeyboardEvent) => void) => {
   useEffect(
     () => {
       const listener = (event: any) => {
@@ -22,3 +22,5 @@ export const useOnClickOutside = (ref: RefObject<HTMLElement>, handler: (e: Mous
     [ref, handler]
   );
 }
+
+export default useOnClickOutside
