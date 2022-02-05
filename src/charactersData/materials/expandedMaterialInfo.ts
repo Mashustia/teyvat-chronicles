@@ -381,44 +381,44 @@ export const defaultTalentMaterials = {
 // order is important
 export const defaultAscensionMaterials = {
   20: [
-    { material: '', count: 1, sorting_index: 1 },
+    { material: '', count: 1, sorting_index: 3 },
     { material: '', count: 3 },
     { material: '', count: 3 },
-    { material: MORA, count: 20000 },
+    { material: MORA, count: 20000, sorting_index: 1 },
   ],
   40: [
-    { material: '', count: 3, sorting_index: 2 },
+    { material: '', count: 3, sorting_index: 4 },
     { material: '', count: 2 },
     { material: '', count: 10 },
     { material: '', count: 15 },
-    { material: MORA, count: 40000 },
+    { material: MORA, count: 40000, sorting_index: 1 },
   ],
   50: [
-    { material: '', count: 6, sorting_index: 2 },
+    { material: '', count: 6, sorting_index: 4 },
     { material: '', count: 4 },
     { material: '', count: 20 },
     { material: '', count: 12 },
-    { material: MORA, count: 60000 },
+    { material: MORA, count: 60000, sorting_index: 1 },
   ],
   60: [
-    { material: '', count: 3, sorting_index: 3 },
+    { material: '', count: 3, sorting_index: 5 },
     { material: '', count: 8 },
     { material: '', count: 30 },
     { material: '', count: 18 },
-    { material: MORA, count: 80000 },
+    { material: MORA, count: 80000, sorting_index: 1 },
   ],
   70: [
-    { material: '', count: 6, sorting_index: 3 },
+    { material: '', count: 6, sorting_index: 5 },
     { material: '', count: 12 },
     { material: '', count: 45 },
     { material: '', count: 12 },
-    { material: MORA, count: 100000 },
+    { material: MORA, count: 100000, sorting_index: 1 },
   ],
   80: [
-    { material: '', count: 6, sorting_index: 4 },
+    { material: '', count: 6, sorting_index: 6 },
     { material: '', count: 20 },
     { material: '', count: 60 },
     { material: '', count: 24 },
-    { material: MORA, count: 120000 },
+    { material: MORA, count: 120000, sorting_index: 1 },
   ]
 }
