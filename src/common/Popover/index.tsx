@@ -8,6 +8,7 @@ import useEscapePress from '../../hooks/useButtonClick';
 
 const Popover: FC<IProps> = ({ children, isShown, onClickOutside, position, classes, onEscapePress }) => {
   const popoverRef = useRef(null);
+
   useOnClickOutside(popoverRef, onClickOutside)
   useEscapePress(isShown, onEscapePress)
 
