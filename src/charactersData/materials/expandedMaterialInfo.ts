@@ -9,8 +9,15 @@ export enum Region {
   ENKANOMIA = 'enkanomia'
 }
 
-const Mora = {
-  name: 'ley_line_gold',
+const LeyLineOutcropsBlossomOfWealth = {
+  name: 'ley_line_outcrops_blossom_of_wealth',
+  is_open_days: [WeekDay.ALL_DAYS],
+  original_resin: 20,
+  has_image: true
+}
+
+const LeyLineOutcropsBlossomOfRevelation = {
+  name: 'ley_line_outcrops_blossom_of_revelation',
   is_open_days: [WeekDay.ALL_DAYS],
   original_resin: 20,
   has_image: true
@@ -259,7 +266,8 @@ const brilliantDiamondGemstone = {
 }
 
 export const ExpandedMaterialInfo: IDungeon = {
-  mora: {...Mora},
+  mora: {...LeyLineOutcropsBlossomOfWealth},
+  heros_wit: {...LeyLineOutcropsBlossomOfRevelation},
   teachings_of_ballad: {...Ballad},
   guide_to_ballad: {...Ballad},
   philosophies_of_ballad: {...Ballad},
