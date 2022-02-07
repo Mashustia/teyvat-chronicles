@@ -2,6 +2,7 @@ import {FC, useState} from 'react'
 import {Col, Row} from 'react-bootstrap';
 import {Img} from 'react-image';
 import {useTranslation} from 'react-i18next';
+import prettyNum from 'prettify-numbers';
 
 import {ITableItemProps as IProps} from './types';
 import {IMaterial} from '../../../../charactersData/types';
@@ -9,6 +10,7 @@ import './Material.css'
 import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.svg';
 import {ExpandedMaterialInfo} from '../../../../charactersData/materials/expandedMaterialInfo';
 import MaterialDetails from '../MaterialDetails';
+import {THOUSAND_SEPARATOR} from '../../../../const/consts';
 
 const Material: FC<IProps> = ({data: [lvl, materials], isSummary}) => {
   const {t} = useTranslation(['materials', 'material'])
@@ -19,7 +21,6 @@ const Material: FC<IProps> = ({data: [lvl, materials], isSummary}) => {
     toggleMaterial(material)
     toggleAdditionalInfo(material === activeMaterial ? !isAdditionalInfoShown : true)
   }
-
   const rows = () => materials?.map(({material, count}: IMaterial, index: number) => {
     const imagePath = `/images/materials/${material}.png`
 
@@ -39,7 +40,7 @@ const Material: FC<IProps> = ({data: [lvl, materials], isSummary}) => {
         <div className='ascension-material-img-wrapper mb-1'>
           {image}
         </div>
-        <p className='mb-0 fs-6'>{count}</p>
+        <p className='mb-0 fs-6'>{prettyNum(count, THOUSAND_SEPARATOR)}</p>
       </Col>
     )
   })

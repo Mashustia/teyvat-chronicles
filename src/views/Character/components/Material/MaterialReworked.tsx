@@ -1,6 +1,7 @@
 import {FC, useState} from 'react'
 import {Img} from 'react-image';
 import {useTranslation} from 'react-i18next';
+import prettyNum from 'prettify-numbers';
 
 import {ITableItemPropsReworked as IProps} from './types';
 import {IMaterial} from '../../../../charactersData/types';
@@ -8,6 +9,7 @@ import './Material.css'
 import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.svg';
 import {ExpandedMaterialInfo} from '../../../../charactersData/materials/expandedMaterialInfo';
 import MaterialDetails from '../MaterialDetails';
+import {THOUSAND_SEPARATOR} from '../../../../const/consts';
 
 // TODO: rename to Material after refactoring
 const MaterialReworked: FC<IProps> = ({data: [materials]}) => {
@@ -39,7 +41,7 @@ const MaterialReworked: FC<IProps> = ({data: [materials]}) => {
         <div className='ascension-material-img-wrapper mb-1'>
           {image}
         </div>
-        <p className='mb-0 fs-6'>{count}</p>
+        <p className='mb-0 fs-6'>{prettyNum(count, THOUSAND_SEPARATOR)}</p>
       </div>
     )
   })
