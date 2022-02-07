@@ -34,12 +34,12 @@ export const characterExperience = {
   '70': {
     exp_needed: 1195925,
     number_of_heros_wit: 60,
-    mora: 239185
+    mora: 240000
   },
   '80': {
     exp_needed: 1611875,
     number_of_heros_wit: 81,
-    mora: 322375
+    mora: 324000
   },
   '90': {
     exp_needed: 3423125,
