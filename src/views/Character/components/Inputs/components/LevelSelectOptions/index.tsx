@@ -4,8 +4,8 @@ import cn from 'classnames';
 import {Levels} from '../../../../../../charactersData/common';
 import {ILevel} from '../../../../../../charactersData/types';
 import {ILevelSelectOption} from './types';
-import './LevelSelectOptions.css'
 import PrimogemTooltip from '../PrimogemTooltip';
+import './LevelSelectOptions.css'
 
 const LevelSelectOptions: FC<ILevelSelectOption> = ({onSelectOption, selectedLevel, minLevel}): ReactElement => {
   const ascensionIcon = (

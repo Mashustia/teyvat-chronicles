@@ -6,8 +6,7 @@ import {useTranslation} from 'react-i18next';
 import {FontAwesomeIconSize} from '../../../../../../const/consts';
 import './PrimogemTooltip.css'
 
-const PrimogemTooltip: FC = ({
- }): ReactElement => {
+const PrimogemTooltip: FC = (): ReactElement => {
   const {t} = useTranslation(['common']);
   const [isTooltipShown, toggleTooltip] = useState(false)
 
