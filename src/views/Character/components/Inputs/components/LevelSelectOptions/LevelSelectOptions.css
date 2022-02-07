@@ -43,9 +43,3 @@
   width: 16px;
   margin-left: 2px;
 }
-
-.level-select__tooltip {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  font-size: 14px;
-}
