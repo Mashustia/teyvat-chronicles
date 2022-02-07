@@ -135,3 +135,7 @@ export enum Key {
 }
 
 export const THOUSAND_SEPARATOR = ' '
+
+export enum FontAwesomeIconSize {
+  LG = 'lg'
+}
