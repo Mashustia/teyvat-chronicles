@@ -1,12 +1,15 @@
 import {FC, ReactElement} from 'react'
+import cn from 'classnames';
+import {useTranslation} from 'react-i18next';
 
 import {Levels} from '../../../../../../charactersData/common';
 import {ILevel} from '../../../../../../charactersData/types';
 import {ILevelSelectOption} from './types';
 import './LevelSelectOptions.css'
-import cn from 'classnames';
 
 const LevelSelectOptions: FC<ILevelSelectOption> = ({onSelectOption, selectedLevel, minLevel}): ReactElement => {
+  const {t} = useTranslation(['common']);
+
   const ascensionIcon = (
     <img src='/images/icons/primogem-2.png' alt='primogem' className='level-select-options__icon'/>
   )
@@ -41,6 +44,7 @@ const LevelSelectOptions: FC<ILevelSelectOption> = ({onSelectOption, selectedLev
   return (
     <div className='level-select-options py-2 px-2 grid-4 grid-gutters-lg'>
       {buttons}
+      <p className='mb-0 level-select__tooltip'>{t('common:primogem_meaning')}</p>
     </div>
   )
 }

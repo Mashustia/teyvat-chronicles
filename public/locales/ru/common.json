@@ -15,5 +15,6 @@
   "elemental_skill": "Элементальный навык",
   "elemental_burst": "Взрыв стихии",
   "farming_routes": "Маршруты фарма",
-  "link_with_counter": "Ссылка {{ number }}"
+  "link_with_counter": "Ссылка {{ number }}",
+  "primogem_meaning": "Примогем означает возвышение персонажа на этом уровне"
 }
