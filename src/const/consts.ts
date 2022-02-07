@@ -133,3 +133,5 @@ export const COUNT = 'count'
 export enum Key {
   ESCAPE = 'Escape'
 }
+
+export const THOUSAND_SEPARATOR = ' '
