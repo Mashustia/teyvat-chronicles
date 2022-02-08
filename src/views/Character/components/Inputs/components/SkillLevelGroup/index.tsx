@@ -6,26 +6,41 @@ import {SKILL_LEVEL_OPTIONS} from '../../../../../../const/consts';
 import {Skill} from '../../../../../../const/translations';
 import Button from '../../../../../../common/Button';
 import './SkillLevelGroup.css'
+import {ISkillLevelGroupProps} from './types';
+import {ButtonType} from '../../../../../../common/Button/types';
 
-const SkillLevelGroup: FC = (): ReactElement => {
+const SkillLevelGroup: FC<ISkillLevelGroupProps> = ({skillLevel, onChangeLevel, onReset}): ReactElement => {
   const {t} = useTranslation(['character', 'common']);
+  const handleReset = (name: string) => () => onReset(name)
 
-  const renderGroup = (name: string) => {
+  const renderGroup = (name: string, text: string) => {
     return (
-      <div className='d-flex flex-wrap align-items-baseline'>
-        <p className='mb-0 text-left fs-6 me-auto mb-2 skill-level-group__name'>{name}</p>
+      <div className='d-flex flex-wrap align-items-baseline' key={name}>
+        <p className='mb-0 text-left fs-6 me-auto mb-2 skill-level-group__name'>{text}</p>
         <div className='d-flex'>
           <div className='grid-3 align-items-center me-3'>
-            <SkillLevelSelect id='attack_from' options={SKILL_LEVEL_OPTIONS}/>
+            <SkillLevelSelect
+              id='from'
+              name={name}
+              options={SKILL_LEVEL_OPTIONS}
+              value={skillLevel[name].from}
+              onChange={onChangeLevel}
+            />
             -
-            <SkillLevelSelect id='attack_to' options={SKILL_LEVEL_OPTIONS}/>
+            <SkillLevelSelect
+              id='to'
+              name={name}
+              options={SKILL_LEVEL_OPTIONS}
+              value={skillLevel[name].to}
+              onChange={onChangeLevel}
+            />
           </div>
-          <Button>{t('common:reset')}</Button></div>
+          <Button type={ButtonType.BUTTON} onClick={handleReset(name)}>{t('common:reset')}</Button></div>
       </div>
     )
   }
 
-  const groups = Object.entries(Skill).map((groupName: [string, string]) => renderGroup(t(groupName[1])))
+  const groups = Object.entries(Skill).map((groupName: [string, string]) => renderGroup(groupName[0], t(groupName[1])))
 
   return (
     <div>
