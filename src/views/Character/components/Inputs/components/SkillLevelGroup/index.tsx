@@ -11,9 +11,9 @@ const SkillLevelGroup: FC = (): ReactElement => {
 
   const renderGroup = (name: string) => {
     return (
-      <div className='grid-2 my-2'>
+      <div className='grid-2 align-items-center my-1'>
         <p className='mb-0 text-left fs-6'>{name}</p>
-        <div className='grid-3'>
+        <div className='grid-3 align-items-center'>
           <SkillLevelSelect id='attack_from' options={SKILL_LEVEL_OPTIONS}/>
           -
           <SkillLevelSelect id='attack_to' options={SKILL_LEVEL_OPTIONS}/>
@@ -28,7 +28,7 @@ const SkillLevelGroup: FC = (): ReactElement => {
     <div>
       <h4 className='mb-3 px-2'>{t('character:talents_enhancement')}</h4>
 
-      <div className='skill-level-group table-border p-2'>{groups}</div>
+      <div className='skill-level-group table-border p-2 grid grid-gap-y-lg'>{groups}</div>
     </div>
   )
 }
