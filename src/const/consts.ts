@@ -1,5 +1,7 @@
 // old map url
 // export const interactiveMapBaseUrl = 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/?lang={{ language }}#/map/2?shown_types='
+import {IOption} from '../views/Character/components/Inputs/components/SkillLevelSelect/types';
+
 export const interactiveMapBaseUrl = 'https://webstatic-sea.mihoyo.com/app/ys-map-sea/index.html?bbs_presentation_style=no_header&ts=123&lang={{ language }}#/map/'
 
 export const Languages = {
@@ -139,3 +141,12 @@ export const THOUSAND_SEPARATOR = ' '
 export enum FontAwesomeIconSize {
   LG = 'lg'
 }
+
+export const skillLevelOption = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+export const SKILL_LEVEL_OPTIONS: IOption[] = skillLevelOption.map((key: number) => ({
+  text: key,
+  id: key
+}))
+
+console.log(SKILL_LEVEL_OPTIONS)
