@@ -36,7 +36,7 @@ const LevelSelect: FC<ILevelSelect> = ({
   )
 
   return (
-    <div className='relative'>
+    <div className='relative mb-3'>
       <Button
         type={ButtonType.BUTTON}
         onClick={handlePopoverToggle}

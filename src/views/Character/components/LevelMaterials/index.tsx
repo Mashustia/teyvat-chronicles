@@ -38,7 +38,7 @@ const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}
   return (
     <Col xs={12} className='mb-2'>
       <h4 className='my-3'>{t('character:level')}</h4>
-      <div className='d-flex justify-content-between mx-auto level-materials__lvl-buttons mb-3'>
+      <div className='d-flex justify-content-between mx-auto level-materials__lvl-buttons flex-wrap'>
         <LevelSelect
           text={lvlFrom}
           onSelectOption={changeStartingLevel}
