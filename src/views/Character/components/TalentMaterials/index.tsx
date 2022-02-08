@@ -1,7 +1,8 @@
-import {FC, ReactElement, ReactNode} from 'react'
+import {FC, ReactElement, ReactNode, useState} from 'react'
 import {RouteComponentProps, withRouter} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Col} from 'react-bootstrap';
+import {cloneDeep} from 'lodash';
 
 import {IAscensionMaterials, ICharacter} from '../../../../charactersData/types';
 import CHARACTERS from '../../../../charactersData';
@@ -9,9 +10,42 @@ import Material from '../Material';
 import {IRouteParams} from '../../../../types/commonTypes';
 import AscensionSummary from '../AscensionSummary';
 import {Character} from '../../../../const/consts';
+import SkillLevelGroup from '../Inputs/components/SkillLevelGroup';
+import {IInitialSkillLevel} from './types';
+
+const initialSkillLevel: IInitialSkillLevel = {
+  attack: {
+    from: 1,
+    to: 1
+  },
+  elemental_skill: {
+    from: 1,
+    to: 1
+  },
+  elemental_burst: {
+    from: 1,
+    to: 1
+  },
+}
 
 const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const {t} = useTranslation(['character', 'common']);
+  const [skillLevel, changeSkillLevel] = useState(initialSkillLevel)
+
+  const handleChange = (name: string | number, id: string, value: string | number) => {
+    const newSkillLevel = cloneDeep(skillLevel)
+    newSkillLevel[name][id] = value
+
+    changeSkillLevel(newSkillLevel)
+  }
+
+  const handleLevelReset = (skill: string) => {
+    const newSkillLevel = cloneDeep(skillLevel)
+    newSkillLevel[skill] = initialSkillLevel[skill]
+
+    changeSkillLevel(newSkillLevel)
+  }
+
   const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === params.name)
 
   if (!activeCharacter) return <></>
@@ -35,6 +69,7 @@ const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}
 
   const renderOtherCharactersTalentMaterials = (): ReactNode => activeCharacter?.talent_materials && (
     <Col xs={12}>
+      <SkillLevelGroup skillLevel={skillLevel} onChangeLevel={handleChange} onReset={handleLevelReset}/>
       <h4 className='mb-3'>{t('character:talents_enhancement')}</h4>
       {renderMaterials(activeCharacter?.talent_materials)}
     </Col>
