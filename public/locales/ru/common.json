@@ -16,5 +16,6 @@
   "elemental_burst": "Взрыв стихии",
   "farming_routes": "Маршруты фарма",
   "link_with_counter": "Ссылка {{ number }}",
-  "primogem_meaning": "означает возвышение"
+  "primogem_meaning": "означает возвышение",
+  "reset": "Сбросить"
 }

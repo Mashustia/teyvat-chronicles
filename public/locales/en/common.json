@@ -16,5 +16,6 @@
   "elemental_burst": "Elemental burst",
   "farming_routes": "Farming routes",
   "link_with_counter": "Link {{ number }}",
-  "primogem_meaning": "means ascension"
+  "primogem_meaning": "means ascension",
+  "reset": "Reset"
 }
