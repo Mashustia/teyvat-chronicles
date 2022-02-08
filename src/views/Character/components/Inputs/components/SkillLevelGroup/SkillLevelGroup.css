@@ -1,3 +1,7 @@
 .skill-level-group {
   background-color: var(--gray-200);
 }
+
+.skill-level-group__name {
+  width: 200px;
+}
