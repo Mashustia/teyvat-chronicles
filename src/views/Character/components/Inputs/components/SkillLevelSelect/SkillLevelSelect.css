@@ -1,0 +1,28 @@
+.skill-select__select {
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(to left top, #ec4645, #2c52c7);
+  color: var(--text-light);
+  border: 1px solid var(--gray-1200);
+  outline: none;
+}
+
+.skill-select__select:hover,
+.skill-select__select:active {
+  -webkit-box-shadow: 0 0 0 2px var(--text-light) inset;
+  -moz-box-shadow: 0 0 0 2px var(--text-light) inset;
+  box-shadow: 0 0 0 2px var(--text-light) inset;
+}
+
+.skill-select__select:focus {
+  -webkit-box-shadow: 0 0 0 2px var(--gray-1200) inset;
+  -moz-box-shadow: 0 0 0 2px var(--gray-1200) inset;
+  box-shadow: 0 0 0 2px var(--gray-1200) inset;
+}
+
+.skill-select__option {
+  background: var(--gray-200);
+  line-height: 50px;
+}
+
