@@ -148,5 +148,3 @@ export const SKILL_LEVEL_OPTIONS: IOption[] = skillLevelOption.map((key: number)
   text: key,
   id: key
 }))
-
-console.log(SKILL_LEVEL_OPTIONS)
