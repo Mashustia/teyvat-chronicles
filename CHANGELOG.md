@@ -22,6 +22,7 @@
     * Added thousand separator for big numbers
     * Added information about Ley Line Outcrops: Blossom of revelation
     * Now user can go to character profile from possible teams
+    * Separate traveler into 3 profiles (anemo, geo, electro)
   * Refactored react-image usage in project
 
 * Changes
