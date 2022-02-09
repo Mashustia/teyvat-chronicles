@@ -10,17 +10,24 @@ import {ExpandedMaterialInfo} from '../../../../charactersData/materials/expande
 import MaterialDetails from '../MaterialDetails';
 import {THOUSAND_SEPARATOR} from '../../../../const/consts';
 import Img from '../../../../common/Img';
+import {useParams, withRouter} from 'react-router-dom';
+import {IRouteParams} from '../../../../types/commonTypes';
 
 const Material: FC<IProps> = ({data: [materials]}) => {
   const {t} = useTranslation(['materials', 'material'])
   const [isAdditionalInfoShown, toggleAdditionalInfo] = useState(false)
   const [activeMaterial, toggleMaterial] = useState('')
+  const { name }: IRouteParams = useParams();
 
   useEffect(() => {
     if (!materials.find((material: IMaterial) => material.material === activeMaterial)) {
       toggleMaterial(materials[0].material)
     }
   }, [materials, activeMaterial])
+
+  useEffect(() => {
+    toggleAdditionalInfo(false)
+  }, [name])
 
   const handleMaterialToggle = (material: string) => () => {
     toggleMaterial(material)
@@ -69,4 +76,4 @@ const Material: FC<IProps> = ({data: [materials]}) => {
   )
 }
 
-export default Material
+export default withRouter(Material)

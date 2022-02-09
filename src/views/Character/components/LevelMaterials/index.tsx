@@ -1,5 +1,5 @@
 import {FC, ReactElement, useEffect, useState} from 'react'
-import {RouteComponentProps, withRouter} from 'react-router-dom';
+import {RouteComponentProps, useParams, withRouter} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Col} from 'react-bootstrap';
 
@@ -12,8 +12,9 @@ import './LevelMaterials.css'
 import {Position} from '../../../../common/Popover/types';
 import LevelMaterialsSummary from '../LevelMaterialsSummary';
 
-const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
+const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = (): ReactElement => {
   const {t} = useTranslation(['character']);
+  const { name }: IRouteParams = useParams();
 
   const [startingLevel, changeStartingLevel] = useState(DefaultStartingLevel)
   const [finalLevel, changeFinalLevel] = useState(DefaultFinalLevel)
@@ -28,7 +29,12 @@ const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}
 
   }, [startingLevel, finalLevel])
 
-  const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === params.name)
+  useEffect(() => {
+    changeStartingLevel(DefaultStartingLevel)
+    changeFinalLevel(DefaultFinalLevel)
+  }, [name])
+
+  const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === name)
 
   if (!activeCharacter) return <></>
 

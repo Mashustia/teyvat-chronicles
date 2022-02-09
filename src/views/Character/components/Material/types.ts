@@ -1,8 +1,10 @@
 import {IMaterial} from '../../../../charactersData/types';
 import {WeekDay} from '../../../../const/consts';
 import {Region} from '../../../../charactersData/materials/expandedMaterialInfo';
+import {RouteComponentProps} from 'react-router-dom';
+import {IRouteParams} from '../../../../types/commonTypes';
 
-export type ITableItemProps = {
+export interface ITableItemProps {
   data: [string, IMaterial[]]
   isSummary?: boolean
 }
@@ -21,6 +23,6 @@ export interface IDungeon {
   [key: string]: IDungeonType
 }
 
-export type ITableItemPropsReworked = {
+export interface ITableItemPropsReworked extends RouteComponentProps<IRouteParams> {
   data: [IMaterial[]]
 }

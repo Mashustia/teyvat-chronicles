@@ -1,5 +1,5 @@
-import {FC, ReactElement, useState} from 'react'
-import {RouteComponentProps, withRouter} from 'react-router-dom';
+import {FC, ReactElement, useEffect, useState} from 'react'
+import {RouteComponentProps, useParams, withRouter} from 'react-router-dom';
 import {Col} from 'react-bootstrap';
 import {cloneDeep} from 'lodash';
 
@@ -28,6 +28,11 @@ const initialSkillLevel: IInitialSkillLevel = {
 
 const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
   const [skillLevel, changeSkillLevel] = useState(initialSkillLevel)
+  const { name }: IRouteParams = useParams();
+
+  useEffect(() => {
+    changeSkillLevel(initialSkillLevel)
+  }, [name])
 
   const handleChange = (name: string | number, id: string, value: string | number) => {
     const newSkillLevel = cloneDeep(skillLevel)
@@ -57,7 +62,7 @@ const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}
   if (!activeCharacter) return <></>
 
   const renderOtherCharactersTalentMaterials = (): ReactElement => (
-    <Col xs={12} className='mb-3'>
+    <Col xs={12} className='mb-4'>
       <SkillLevelGroup skillLevel={skillLevel} onChangeLevel={handleChange} onReset={handleLevelReset}/>
 
       <AscensionSummary
