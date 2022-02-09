@@ -7,7 +7,7 @@
 }
 
 .skill-level-group__select-wrapper {
-  min-width: 250px;
+  flex-shrink: 0;
 }
 
 @media (min-width: 450px) {
