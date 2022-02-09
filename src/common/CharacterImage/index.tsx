@@ -32,10 +32,10 @@ const CharacterImage: FC<IProps> = ({name, withBorder, withLink}) => {
   )
 
   const visionImage = (
-    <Img
-      imagePath={visionPath}
+    <img
+      src={visionPath}
       alt={name}
-      classes='character-vision absolute'
+      className='character-vision absolute'
     />
   )
 
