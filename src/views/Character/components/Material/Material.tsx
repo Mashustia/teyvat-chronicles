@@ -20,7 +20,7 @@ const Material: FC<IProps> = ({data: [materials]}) => {
     if (!materials.find((material: IMaterial) => material.material === activeMaterial)) {
       toggleMaterial(materials[0].material)
     }
-  }, [materials])
+  }, [materials, activeMaterial])
 
   const handleMaterialToggle = (material: string) => () => {
     toggleMaterial(material)
