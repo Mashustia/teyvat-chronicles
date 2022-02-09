@@ -1,4 +1,4 @@
-import {FC, useState} from 'react'
+import {FC, useEffect, useState} from 'react'
 import {Img} from 'react-image';
 import {useTranslation} from 'react-i18next';
 import prettyNum from 'prettify-numbers';
@@ -15,6 +15,12 @@ const Material: FC<IProps> = ({data: [materials]}) => {
   const {t} = useTranslation(['materials', 'material'])
   const [isAdditionalInfoShown, toggleAdditionalInfo] = useState(false)
   const [activeMaterial, toggleMaterial] = useState('')
+
+  useEffect(() => {
+    if (!materials.find((material: IMaterial) => material.material === activeMaterial)) {
+      toggleMaterial(materials[0].material)
+    }
+  }, [materials])
 
   const handleMaterialToggle = (material: string) => () => {
     toggleMaterial(material)
