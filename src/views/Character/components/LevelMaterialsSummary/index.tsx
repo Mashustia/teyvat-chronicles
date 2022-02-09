@@ -4,7 +4,7 @@ import {useTranslation} from 'react-i18next';
 
 import {ILevelMaterialsSummaryProps as IProps} from './types';
 import {calculateMaterials} from '../../../../utils/utils';
-import Material from '../Material/Material';
+import Material from '../Material';
 
 const LevelMaterialsSummary: FC<IProps> = ({match: {params}, startingLevel, finalLevel}): ReactElement => {
   const {t} = useTranslation(['common', 'material']);
