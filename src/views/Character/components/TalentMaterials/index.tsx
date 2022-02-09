@@ -63,7 +63,7 @@ const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}
       <AscensionSummary
         characterData={activeCharacter}
         skillLevel={skillLevel}
-        isTraveler={activeCharacter.name === Character.TRAVELER}
+        isTraveler={activeCharacter.name === Character.TRAVELER_GEO}
       />
     </Col>
   )

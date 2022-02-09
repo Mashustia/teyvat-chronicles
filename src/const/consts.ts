@@ -26,8 +26,7 @@ export enum Vision {
   ELECTRO = 'electro',
   CRYO = 'cryo',
   HYDRO = 'hydro',
-  GEO = 'geo',
-  NONE = 'none'
+  GEO = 'geo'
 }
 
 export enum RouteName {
@@ -108,7 +107,9 @@ export enum Character {
   XINYAN = 'Xinyan',
   YANFEI = 'Yanfei',
   YOIMIYA = 'Yoimiya',
-  TRAVELER = 'Traveler',
+  TRAVELER_GEO = 'Traveler_geo',
+  TRAVELER_ANEMO = 'Traveler_anemo',
+  TRAVELER_ELECTRO = 'Traveler_electro',
   THOMA = 'Thoma',
   GOROU = 'Gorou',
   ARATAKI_ITTO = 'Arataki_Itto',

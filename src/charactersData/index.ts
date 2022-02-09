@@ -40,7 +40,9 @@ import Venti from './characters/Venti';
 import Xinyan from './characters/Xinyan';
 import Yanfei from './characters/Yanfei';
 import Yoimiya from './characters/Yoimiya';
-import Traveler from './characters/Traveler';
+import TravelerGeo from './characters/TravelerGeo';
+import TravelerAnemo from './characters/TravelerAnemo';
+import TravelerElectro from './characters/TravelerElectro';
 import Thoma from './characters/Thoma';
 import Gorou from './characters/Gorou';
 import AratakiItto from './characters/AratakiItto';
@@ -89,7 +91,9 @@ const CHARACTERS: ICharacter[] = [
   Xinyan,
   Yanfei,
   Yoimiya,
-  Traveler,
+  TravelerGeo,
+  TravelerAnemo,
+  TravelerElectro,
   Thoma,
   Gorou,
   AratakiItto,
