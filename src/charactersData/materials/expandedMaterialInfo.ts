@@ -335,52 +335,52 @@ export const ExpandedMaterialInfo: IDungeon = {
 // order is important
 export const defaultTalentMaterials = {
   2: [
-    {material: '', count: 3, sorting_index: 1},
-    {material: '', count: 6, sorting_index: 2},
-    {material: MORA, count: 12500}
+    {material: '', count: 3, sorting_index: 2},
+    {material: '', count: 6, sorting_index: 5},
+    {material: MORA, count: 12500, sorting_index: 1}
   ],
   3: [
-    {material: '', count: 2, sorting_index: 1},
-    {material: '', count: 3, sorting_index: 2},
-    {material: MORA, count: 17500}
+    {material: '', count: 2, sorting_index: 3},
+    {material: '', count: 3, sorting_index: 6},
+    {material: MORA, count: 17500, sorting_index: 1}
   ],
   4: [
-    {material: '', count: 4, sorting_index: 1},
-    {material: '', count: 4, sorting_index: 2},
-    {material: MORA, count: 25000}
+    {material: '', count: 4, sorting_index: 3},
+    {material: '', count: 4, sorting_index: 6},
+    {material: MORA, count: 25000, sorting_index: 1}
   ],
   5: [
-    {material: '', count: 6, sorting_index: 1},
-    {material: '', count: 6, sorting_index: 2},
-    {material: MORA, count: 30000}
+    {material: '', count: 6, sorting_index: 3},
+    {material: '', count: 6, sorting_index: 6},
+    {material: MORA, count: 30000, sorting_index: 1}
   ],
   6: [
-    {material: '', count: 9, sorting_index: 1},
-    {material: '', count: 9, sorting_index: 2},
-    {material: MORA, count: 37500}
+    {material: '', count: 9, sorting_index: 3},
+    {material: '', count: 9, sorting_index: 6},
+    {material: MORA, count: 37500, sorting_index: 1}
   ],
   7: [
-    {material: '', count: 4, sorting_index: 1},
-    {material: '', count: 4, sorting_index: 2},
-    {material: '', count: 1, sorting_index: 3},
-    {material: MORA, count: 120000}
+    {material: '', count: 4, sorting_index: 4},
+    {material: '', count: 4, sorting_index: 7},
+    {material: '', count: 1, sorting_index: 8},
+    {material: MORA, count: 120000, sorting_index: 1}
   ],
   8: [
-    {material: '', count: 6, sorting_index: 1},
-    {material: '', count: 6, sorting_index: 2},
-    {material: '', count: 1, sorting_index: 3},
-    {material: MORA, count: 260000}
+    {material: '', count: 6, sorting_index: 4},
+    {material: '', count: 6, sorting_index: 7},
+    {material: '', count: 1, sorting_index: 8},
+    {material: MORA, count: 260000, sorting_index: 1}
   ],
   9: [
-    {material: '', count: 12, sorting_index: 1},
-    {material: '', count: 9, sorting_index: 2},
-    {material: '', count: 2, sorting_index: 3},
-    {material: MORA, count: 450000}
+    {material: '', count: 12, sorting_index: 4},
+    {material: '', count: 9, sorting_index: 7},
+    {material: '', count: 2, sorting_index: 8},
+    {material: MORA, count: 450000, sorting_index: 1}
   ],
   10: [
-    {material: '', count: 16, sorting_index: 1},
-    {material: '', count: 12, sorting_index: 2},
-    {material: '', count: 2, sorting_index: 3},
+    {material: '', count: 16, sorting_index: 4},
+    {material: '', count: 12, sorting_index: 7},
+    {material: '', count: 2, sorting_index: 8},
     {material: CROWN_OF_INSIGHT, count: 1},
     {material: MORA, count: 700000}
   ]
