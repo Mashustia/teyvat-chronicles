@@ -2,14 +2,14 @@ import {FC, ReactElement} from 'react'
 import { groupBy, sortBy } from 'lodash';
 
 import {IAscensionSummary} from './types';
-import {IMaterial} from '../../../../charactersData/types';
+import {IAscensionMaterials, IMaterial} from '../../../../charactersData/types';
 import MaterialReworked from '../Material/MaterialReworked';
 
 const MATERIAL = 'material'
 const SORTING_INDEX = 'sorting_index'
 const COUNT = 'count'
 
-const AscensionSummaryReworked: FC<IAscensionSummary> = ({ ascensionMaterials, skillLevel}): ReactElement => {
+const AscensionSummaryReworked: FC<IAscensionSummary> = ({ characterData, skillLevel, isTraveler}): ReactElement => {
   const skills = Object.keys(skillLevel)
 
   const cumulativeMaterials: IMaterial[] = []
@@ -17,9 +17,15 @@ const AscensionSummaryReworked: FC<IAscensionSummary> = ({ ascensionMaterials, s
   skills.forEach((skill: string) => {
     const level = skillLevel[skill]
 
-    return Object.keys(ascensionMaterials).forEach((skillLevel: string) => {
+    let talentMaterials: IAscensionMaterials = {}
+
+    if (isTraveler) talentMaterials = characterData[skill]
+
+    if (!isTraveler && characterData?.talent_materials) talentMaterials = characterData.talent_materials
+
+    return Object.keys(talentMaterials).forEach((skillLevel: string) => {
       if (skillLevel > level.from && skillLevel <= level.to) {
-        return cumulativeMaterials.push(...ascensionMaterials[skillLevel])
+        return cumulativeMaterials.push(...talentMaterials[skillLevel])
       }
       return
     })

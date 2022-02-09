@@ -10,10 +10,10 @@ const MATERIAL = 'material'
 const SORTING_INDEX = 'sorting_index'
 const COUNT = 'count'
 
-const AscensionSummary: FC<IAscensionSummary> = ({ ascensionMaterials }): ReactElement => {
+const AscensionSummary: FC<IAscensionSummary> = ({ characterData }): ReactElement => {
   const {t} = useTranslation('common');
 
-  const getAscensionMaterialsSummary = () => Object.values(ascensionMaterials)
+  const getAscensionMaterialsSummary = () => Object.values(characterData)
     .reduce((accumulator, currentValue) => [...accumulator, ...currentValue], [])
 
   const ascensionMaterialsSummary = getAscensionMaterialsSummary()
