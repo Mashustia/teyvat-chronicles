@@ -18,7 +18,7 @@ const SkillLevelGroup: FC<ISkillLevelGroupProps> = ({skillLevel, onChangeLevel, 
       <div className='skill-level-group__skill' key={name}>
         <p className='text-left me-3 skill-level-group__skill-name'>{text}</p>
         <div className='d-flex justify-content-between skill-level-group__select-wrapper'>
-          <div className='me-3'>
+          <div className='me-4'>
             <SkillLevelSelect
               id='from'
               name={name}
@@ -26,7 +26,7 @@ const SkillLevelGroup: FC<ISkillLevelGroupProps> = ({skillLevel, onChangeLevel, 
               value={skillLevel[name].from}
               onChange={onChangeLevel}
             />
-            <span className='mx-3'>-</span>
+            <span className='skill-level-group__select-separator'>-</span>
             <SkillLevelSelect
               id='to'
               name={name}

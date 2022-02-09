@@ -10,7 +10,11 @@
   flex-shrink: 0;
 }
 
-@media (min-width: 450px) {
+.skill-level-group__select-separator {
+  margin: 0 1.5rem;
+}
+
+@media (min-width: 455px) {
   .skill-level-group__skill {
     display: flex;
     justify-content: space-between;
@@ -24,4 +28,9 @@
   .skill-level-group__reset {
     margin: 0;
   }
+
+  .skill-level-group__select-separator {
+    margin: 0 1rem;
+  }
+
 }
