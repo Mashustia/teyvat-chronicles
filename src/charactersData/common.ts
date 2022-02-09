@@ -44,7 +44,7 @@ export const characterExperience = {
   '90': {
     exp_needed: 3423125,
     number_of_heros_wit: 172,
-    mora: 684625
+    mora: 688000
   }
 }
 
