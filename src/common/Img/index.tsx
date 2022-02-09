@@ -5,7 +5,7 @@ export interface IImg {
   imagePath: string
   alt: string
   classes: string
-  onClick: () => void
+  onClick?: () => void
 }
 
 const Img: FC<IImg> = ({ imagePath, alt, classes, onClick }) => {
