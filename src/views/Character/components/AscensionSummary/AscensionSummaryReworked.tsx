@@ -1,18 +1,15 @@
 import {FC, ReactElement} from 'react'
-import {useTranslation} from 'react-i18next';
 import { groupBy, sortBy } from 'lodash';
 
-import Material from '../Material';
 import {IAscensionSummary} from './types';
 import {IMaterial} from '../../../../charactersData/types';
+import MaterialReworked from '../Material/MaterialReworked';
 
 const MATERIAL = 'material'
 const SORTING_INDEX = 'sorting_index'
 const COUNT = 'count'
 
 const AscensionSummaryReworked: FC<IAscensionSummary> = ({ ascensionMaterials, skillLevel}): ReactElement => {
-  const {t} = useTranslation('common');
-
   const skills = Object.keys(skillLevel)
 
   const cumulativeMaterials: IMaterial[] = []
@@ -51,7 +48,7 @@ const AscensionSummaryReworked: FC<IAscensionSummary> = ({ ascensionMaterials, s
 
   const sortedMaterials = sortBy(materials, [SORTING_INDEX, COUNT])
 
-  return <Material data={[t('common:total'), sortedMaterials]} isSummary={true}/>
+  return sortedMaterials.length > 0 ? <MaterialReworked data={[sortedMaterials]}/> : <></>
 }
 
 export default AscensionSummaryReworked

@@ -75,7 +75,7 @@ const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}
   }
 
   const renderOtherCharactersTalentMaterials = (): ReactNode => activeCharacter?.talent_materials && (
-    <Col xs={12}>
+    <Col xs={12} className='mb-3'>
       <SkillLevelGroup skillLevel={skillLevel} onChangeLevel={handleChange} onReset={handleLevelReset}/>
       {renderMaterialsSummary(activeCharacter?.talent_materials)}
     </Col>
