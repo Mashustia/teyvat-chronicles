@@ -15,10 +15,10 @@ const SkillLevelGroup: FC<ISkillLevelGroupProps> = ({skillLevel, onChangeLevel, 
 
   const renderGroup = (name: string, text: string) => {
     return (
-      <div className='d-flex flex-wrap align-items-baseline' key={name}>
-        <p className='mb-0 text-left fs-6 me-auto mb-2 skill-level-group__name'>{text}</p>
-        <div className='d-flex'>
-          <div className='grid-3 align-items-center me-3'>
+      <div className='skill-level-group__skill' key={name}>
+        <p className='text-left mb-2 me-3'>{text}</p>
+        <div className='d-flex justify-content-between'>
+          <div className='me-3'>
             <SkillLevelSelect
               id='from'
               name={name}
@@ -26,7 +26,7 @@ const SkillLevelGroup: FC<ISkillLevelGroupProps> = ({skillLevel, onChangeLevel, 
               value={skillLevel[name].from}
               onChange={onChangeLevel}
             />
-            -
+            <span className='mx-3'>-</span>
             <SkillLevelSelect
               id='to'
               name={name}

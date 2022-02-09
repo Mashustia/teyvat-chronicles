@@ -2,6 +2,15 @@
   background-color: var(--gray-200);
 }
 
-.skill-level-group__name {
-  width: 200px;
+@media (min-width: 500px) {
+  .skill-level-group__skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .skill-level-group__reset {
+    margin: 0;
+  }
 }
