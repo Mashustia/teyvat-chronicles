@@ -9,8 +9,15 @@ export enum Region {
   ENKANOMIA = 'enkanomia'
 }
 
-const Mora = {
-  name: 'ley_line_gold',
+const LeyLineOutcropsBlossomOfWealth = {
+  name: 'ley_line_outcrops_blossom_of_wealth',
+  is_open_days: [WeekDay.ALL_DAYS],
+  original_resin: 20,
+  has_image: true
+}
+
+const LeyLineOutcropsBlossomOfRevelation = {
+  name: 'ley_line_outcrops_blossom_of_revelation',
   is_open_days: [WeekDay.ALL_DAYS],
   original_resin: 20,
   has_image: true
@@ -259,7 +266,8 @@ const brilliantDiamondGemstone = {
 }
 
 export const ExpandedMaterialInfo: IDungeon = {
-  mora: {...Mora},
+  mora: {...LeyLineOutcropsBlossomOfWealth},
+  heros_wit: {...LeyLineOutcropsBlossomOfRevelation},
   teachings_of_ballad: {...Ballad},
   guide_to_ballad: {...Ballad},
   philosophies_of_ballad: {...Ballad},
@@ -327,52 +335,52 @@ export const ExpandedMaterialInfo: IDungeon = {
 // order is important
 export const defaultTalentMaterials = {
   2: [
-    {material: '', count: 3, sorting_index: 1},
-    {material: '', count: 6, sorting_index: 2},
-    {material: MORA, count: 12500}
+    {material: '', count: 3, sorting_index: 2},
+    {material: '', count: 6, sorting_index: 5},
+    {material: MORA, count: 12500, sorting_index: 1}
   ],
   3: [
-    {material: '', count: 2, sorting_index: 1},
-    {material: '', count: 3, sorting_index: 2},
-    {material: MORA, count: 17500}
+    {material: '', count: 2, sorting_index: 3},
+    {material: '', count: 3, sorting_index: 6},
+    {material: MORA, count: 17500, sorting_index: 1}
   ],
   4: [
-    {material: '', count: 4, sorting_index: 1},
-    {material: '', count: 4, sorting_index: 2},
-    {material: MORA, count: 25000}
+    {material: '', count: 4, sorting_index: 3},
+    {material: '', count: 4, sorting_index: 6},
+    {material: MORA, count: 25000, sorting_index: 1}
   ],
   5: [
-    {material: '', count: 6, sorting_index: 1},
-    {material: '', count: 6, sorting_index: 2},
-    {material: MORA, count: 30000}
+    {material: '', count: 6, sorting_index: 3},
+    {material: '', count: 6, sorting_index: 6},
+    {material: MORA, count: 30000, sorting_index: 1}
   ],
   6: [
-    {material: '', count: 9, sorting_index: 1},
-    {material: '', count: 9, sorting_index: 2},
-    {material: MORA, count: 37500}
+    {material: '', count: 9, sorting_index: 3},
+    {material: '', count: 9, sorting_index: 6},
+    {material: MORA, count: 37500, sorting_index: 1}
   ],
   7: [
-    {material: '', count: 4, sorting_index: 1},
-    {material: '', count: 4, sorting_index: 2},
-    {material: '', count: 1, sorting_index: 3},
-    {material: MORA, count: 120000}
+    {material: '', count: 4, sorting_index: 4},
+    {material: '', count: 4, sorting_index: 7},
+    {material: '', count: 1, sorting_index: 8},
+    {material: MORA, count: 120000, sorting_index: 1}
   ],
   8: [
-    {material: '', count: 6, sorting_index: 1},
-    {material: '', count: 6, sorting_index: 2},
-    {material: '', count: 1, sorting_index: 3},
-    {material: MORA, count: 260000}
+    {material: '', count: 6, sorting_index: 4},
+    {material: '', count: 6, sorting_index: 7},
+    {material: '', count: 1, sorting_index: 8},
+    {material: MORA, count: 260000, sorting_index: 1}
   ],
   9: [
-    {material: '', count: 12, sorting_index: 1},
-    {material: '', count: 9, sorting_index: 2},
-    {material: '', count: 2, sorting_index: 3},
-    {material: MORA, count: 450000}
+    {material: '', count: 12, sorting_index: 4},
+    {material: '', count: 9, sorting_index: 7},
+    {material: '', count: 2, sorting_index: 8},
+    {material: MORA, count: 450000, sorting_index: 1}
   ],
   10: [
-    {material: '', count: 16, sorting_index: 1},
-    {material: '', count: 12, sorting_index: 2},
-    {material: '', count: 2, sorting_index: 3},
+    {material: '', count: 16, sorting_index: 4},
+    {material: '', count: 12, sorting_index: 7},
+    {material: '', count: 2, sorting_index: 8},
     {material: CROWN_OF_INSIGHT, count: 1},
     {material: MORA, count: 700000}
   ]
@@ -381,44 +389,44 @@ export const defaultTalentMaterials = {
 // order is important
 export const defaultAscensionMaterials = {
   20: [
-    { material: '', count: 1, sorting_index: 1 },
+    { material: '', count: 1, sorting_index: 3 },
     { material: '', count: 3 },
     { material: '', count: 3 },
-    { material: MORA, count: 20000 },
+    { material: MORA, count: 20000, sorting_index: 1 },
   ],
   40: [
-    { material: '', count: 3, sorting_index: 2 },
+    { material: '', count: 3, sorting_index: 4 },
     { material: '', count: 2 },
     { material: '', count: 10 },
     { material: '', count: 15 },
-    { material: MORA, count: 40000 },
+    { material: MORA, count: 40000, sorting_index: 1 },
   ],
   50: [
-    { material: '', count: 6, sorting_index: 2 },
+    { material: '', count: 6, sorting_index: 4 },
     { material: '', count: 4 },
     { material: '', count: 20 },
     { material: '', count: 12 },
-    { material: MORA, count: 60000 },
+    { material: MORA, count: 60000, sorting_index: 1 },
   ],
   60: [
-    { material: '', count: 3, sorting_index: 3 },
+    { material: '', count: 3, sorting_index: 5 },
     { material: '', count: 8 },
     { material: '', count: 30 },
     { material: '', count: 18 },
-    { material: MORA, count: 80000 },
+    { material: MORA, count: 80000, sorting_index: 1 },
   ],
   70: [
-    { material: '', count: 6, sorting_index: 3 },
+    { material: '', count: 6, sorting_index: 5 },
     { material: '', count: 12 },
     { material: '', count: 45 },
     { material: '', count: 12 },
-    { material: MORA, count: 100000 },
+    { material: MORA, count: 100000, sorting_index: 1 },
   ],
   80: [
-    { material: '', count: 6, sorting_index: 4 },
+    { material: '', count: 6, sorting_index: 6 },
     { material: '', count: 20 },
     { material: '', count: 60 },
     { material: '', count: 24 },
-    { material: MORA, count: 120000 },
+    { material: MORA, count: 120000, sorting_index: 1 },
   ]
 }

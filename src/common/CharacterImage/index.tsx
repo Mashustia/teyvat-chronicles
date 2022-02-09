@@ -1,5 +1,4 @@
-import {FC, ReactNode} from 'react'
-import {Img} from 'react-image'
+import {FC, ReactNode, Suspense} from 'react'
 import {withRouter} from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import cn from 'classnames';
@@ -10,6 +9,7 @@ import {ReactComponent as CharacterImageSkeleton} from '../../views/Characters/c
 import {createUrl} from '../../utils/utils';
 import CHARACTERS from '../../charactersData';
 import {ICharacter} from '../../charactersData/types';
+import Img from '../Img';
 
 const CharacterImage: FC<IProps> = ({name, withBorder, withLink}) => {
   const imagePath = `/images/characters/${name}.png`
@@ -21,31 +21,36 @@ const CharacterImage: FC<IProps> = ({name, withBorder, withLink}) => {
     <Link to={createUrl(name)} className='pointer'>{children}</Link>
   )
 
-  const image = (
-    <Img
-      src={imagePath}
-      alt={name}
-      className={cn('character-img', characterVision?.rarity === 5 ? 'character-background-five-star' : 'character-background-four-star')}
-      loader={<CharacterImageSkeleton/>}
-    />
+  const characterImage = (
+    <Suspense fallback={<CharacterImageSkeleton/>}>
+      <Img
+        imagePath={imagePath}
+        alt={name}
+        classes={cn('character-img', characterVision?.rarity === 5 ? 'character-background-five-star' : 'character-background-four-star')}
+      />
+    </Suspense>
   )
 
   const visionImage = (
-    <Img
+    <img
       src={visionPath}
       alt={name}
       className='character-vision absolute'
     />
   )
 
-  const characterImage = withLink ? link(image) : image
+  const character = (
+    <div className={cn(withBorder && 'img-border')}>
+      {characterImage}
+      {characterVision?.vision && visionImage}
+    </div>
+  )
+
+  const characterWrapper = withLink ? link(character) : character
 
   return (
     <div className='character-img-wrapper mx-auto mb-2 relative'>
-      <div className={cn(withBorder && 'img-border')}>
-        {characterImage}
-        {characterVision?.vision && visionImage}
-      </div>
+      {characterWrapper}
     </div>
   )
 }

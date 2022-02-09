@@ -1,6 +1,5 @@
 import {FC} from 'react'
 import {Alert, Col, Row} from 'react-bootstrap';
-import {Img} from 'react-image';
 import {useTranslation} from 'react-i18next';
 
 import {IMaterialDetailsProps as IProps} from './types';
@@ -85,8 +84,8 @@ const MaterialDetails: FC<IProps> = (props) => {
                       {t('common:consumes')}: {original_resin}
                     </p>
 
-                    <Img
-                      src={'/images/materials/original_resin.png'}
+                    <img
+                      src='/images/materials/original_resin.png'
                       alt={t('materials:original_resin')}
                       className='material-details-resin-image'
                     />

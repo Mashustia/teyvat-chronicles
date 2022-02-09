@@ -1,0 +1,12 @@
+.primogem-tooltip {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.primogem-tooltip__text {
+  font-size: 14px;
+}
+
+.primogem-tooltip__primogem {
+  width: 16px;
+}

@@ -1,13 +1,13 @@
 import {FC, ReactElement} from 'react'
-import {Container} from 'react-bootstrap';
 
-import Materials from './components/Materials';
+import CharacterInformation from './components/CharacterInformation';
 import {ScrollToTopOnMount} from '../../utils/utils';
+import Container from '../../common/Container';
 
 const Character: FC = (): ReactElement => (
   <Container>
     <ScrollToTopOnMount/>
-    <Materials/>
+    <CharacterInformation/>
   </Container>
 )
 

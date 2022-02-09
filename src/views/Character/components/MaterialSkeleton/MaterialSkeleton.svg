@@ -1,7 +1,7 @@
 <svg
   role="img"
   aria-labelledby="loading-aria"
-  viewBox="0 0 164 173"
+  viewBox="0 0 76 80"
   preserveAspectRatio="none"
 >
   <title id="loading-aria">Loading...</title>
@@ -15,7 +15,7 @@
   />
   <defs>
     <clipPath id="clip-path">
-      <rect x="0" y="0" rx="3" ry="3" width="164" height="173"/>
+      <rect x="0" y="0" rx="3" ry="3" width="76" height="80"/>
     </clipPath>
     <linearGradient id="fill">
       <stop

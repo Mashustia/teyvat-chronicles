@@ -1,19 +1,26 @@
-import {FC, useState} from 'react'
-import {Col, Row} from 'react-bootstrap';
-import {Img} from 'react-image';
+import {FC, useEffect, useState, Suspense} from 'react'
 import {useTranslation} from 'react-i18next';
+import prettyNum from 'prettify-numbers';
 
-import {ITableItemProps as IProps} from './types';
+import {ITableItemPropsReworked as IProps} from './types';
 import {IMaterial} from '../../../../charactersData/types';
 import './Material.css'
 import {ReactComponent as Skeleton} from '../MaterialSkeleton/MaterialSkeleton.svg';
 import {ExpandedMaterialInfo} from '../../../../charactersData/materials/expandedMaterialInfo';
 import MaterialDetails from '../MaterialDetails';
+import {THOUSAND_SEPARATOR} from '../../../../const/consts';
+import Img from '../../../../common/Img';
 
-const Material: FC<IProps> = ({data: [lvl, materials], isSummary}) => {
+const Material: FC<IProps> = ({data: [materials]}) => {
   const {t} = useTranslation(['materials', 'material'])
   const [isAdditionalInfoShown, toggleAdditionalInfo] = useState(false)
   const [activeMaterial, toggleMaterial] = useState('')
+
+  useEffect(() => {
+    if (!materials.find((material: IMaterial) => material.material === activeMaterial)) {
+      toggleMaterial(materials[0].material)
+    }
+  }, [materials, activeMaterial])
 
   const handleMaterialToggle = (material: string) => () => {
     toggleMaterial(material)
@@ -24,23 +31,23 @@ const Material: FC<IProps> = ({data: [lvl, materials], isSummary}) => {
     const imagePath = `/images/materials/${material}.png`
 
     const image = (
-      <Img
-        src={imagePath}
-        alt={materialName}
-        className='ascension-material-img'
-        loader={<Skeleton/>}
-        unloader={<Skeleton/>}
-        onClick={handleMaterialToggle(material)}
-      />
+      <Suspense fallback={<Skeleton width='76px' height='80px'/>}>
+        <Img
+          imagePath={imagePath}
+          alt={materialName}
+          classes='ascension-material-img'
+          onClick={handleMaterialToggle(material)}
+        />
+      </Suspense>
     )
 
     return material && (
-      <Col key={index} className='d-flex flex-column' xs={isSummary ? 2 : undefined}>
+      <div key={index} className='ascension-material-wrapper m-1'>
         <div className='ascension-material-img-wrapper mb-1'>
           {image}
         </div>
-        <p className='mb-0 fs-6'>{count}</p>
-      </Col>
+        <p className='mb-0 fs-6'>{prettyNum(count, THOUSAND_SEPARATOR)}</p>
+      </div>
     )
   })
 
@@ -49,12 +56,8 @@ const Material: FC<IProps> = ({data: [lvl, materials], isSummary}) => {
   const materialDetails = ExpandedMaterialInfo[activeMaterial] ?? undefined
 
   return (
-    <Row className='align-items-center gx-3 gy-2 table-border mb-3 ascension-material'>
-      <Col xs={isSummary ? undefined : 1} className='fs-5'>{isSummary ? '' : lvl}</Col>
-      <Col xs={isSummary ? 12 : 11}>
-        {isSummary && <h4 className='mb-3'>{lvl}</h4>}
-        <Row className='gx-1'>{rows()}</Row>
-      </Col>
+    <div className='d-flex flex-wrap ascension-material table-border justify-content-center p-2 mt-3'>
+      {rows()}
 
       <MaterialDetails
         isAdditionalInfoShown={isAdditionalInfoShown}
@@ -62,7 +65,7 @@ const Material: FC<IProps> = ({data: [lvl, materials], isSummary}) => {
         activeMaterial={activeMaterial}
         {...materialDetails}
       />
-    </Row>
+    </div>
   )
 }
 

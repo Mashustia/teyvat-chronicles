@@ -1,38 +1,50 @@
+import {ILevel} from './types';
+
+export const HEROS_WIT_EXP = 20000
+export const ADVENTURERS_EXPERIENCE_EXP = 5000
+export const WANDERERS_ADVICE_EXP = 1000
+
+// checked until 50
 export const characterExperience = {
-  '1-20': {
+  '1': {
+    exp_needed: 0,
+    number_of_heros_wit: 0,
+    mora: 0
+  },
+  '20': {
     exp_needed: 120175,
     number_of_heros_wit: 7,
-    mora: 24035
+    mora: 28000
   },
-  '20-40': {
+  '40': {
     exp_needed: 578325,
     number_of_heros_wit: 29,
-    mora: 115665
+    mora: 116000
   },
-  '40-50': {
+  '50': {
     exp_needed: 579100,
     number_of_heros_wit: 29,
-    mora: 115820
+    mora: 116000
   },
-  '50-60': {
+  '60': {
     exp_needed: 854125,
     number_of_heros_wit: 43,
-    mora: 170825
+    mora: 172000
   },
-  '60-70': {
+  '70': {
     exp_needed: 1195925,
     number_of_heros_wit: 60,
-    mora: 239185
+    mora: 240000
   },
-  '70-80': {
+  '80': {
     exp_needed: 1611875,
     number_of_heros_wit: 81,
-    mora: 322375
+    mora: 324000
   },
-  '80-90': {
+  '90': {
     exp_needed: 3423125,
     number_of_heros_wit: 172,
-    mora: 684625
+    mora: 688000
   }
 }
 
@@ -203,3 +215,62 @@ export const fourStarArtifactExp = {
     mora: 122675
   }
 }
+
+export const Levels: ILevel[] = [
+  {
+    lvl: 1,
+    isAscended: false
+  },
+  {
+    lvl: 20,
+    isAscended: false
+  },
+  {
+    lvl: 20,
+    isAscended: true
+  },
+  {
+    lvl: 40,
+    isAscended: false
+  },
+  {
+    lvl: 40,
+    isAscended: true
+  },
+  {
+    lvl: 50,
+    isAscended: false
+  },
+  {
+    lvl: 50,
+    isAscended: true
+  },
+  {
+    lvl: 60,
+    isAscended: false
+  },
+  {
+    lvl: 60,
+    isAscended: true
+  },
+  {
+    lvl: 70,
+    isAscended: false
+  },
+  {
+    lvl: 70,
+    isAscended: true
+  },
+  {
+    lvl: 80,
+    isAscended: false
+  },
+  {
+    lvl: 80,
+    isAscended: true
+  },
+  {
+    lvl: 90,
+    isAscended: false
+  }
+]

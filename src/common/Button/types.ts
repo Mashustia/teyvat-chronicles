@@ -1,10 +1,11 @@
-import {ReactElement} from 'react';
+import {ReactElement, MouseEvent, RefObject} from 'react';
 
 export interface IButtonProps {
-  onClick: () => void
+  onClick?: (e: MouseEvent) => void
   iconLeft?: ReactElement
   type?: ButtonType
   classes?: string
+  innerRef?: RefObject<HTMLButtonElement>
 }
 
 export enum ButtonType {

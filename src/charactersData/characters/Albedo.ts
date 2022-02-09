@@ -46,7 +46,7 @@ const Albedo: ICharacter = {
     [Character.XIAO, Character.ZHONGLI, Character.ALBEDO, Character.JEAN],
     [Character.HU_TAO, Character.ZHONGLI, Character.XINGQIU, Character.ALBEDO],
     [Character.NOELLE, Character.ALBEDO, Character.FISCHL, Character.BEIDOU],
-    [Character.ALBEDO, Character.TRAVELER, Character.ZHONGLI, Character.BEIDOU]
+    [Character.ALBEDO, Character.TRAVELER_GEO, Character.ZHONGLI, Character.BEIDOU]
   ]
 }
 

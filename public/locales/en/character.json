@@ -40,7 +40,9 @@
     "Kujou_Sara": "Kujou Sara",
     "Yanfei": "Yanfei",
     "Ganyu": "Ganyu",
-    "Traveler": "Traveler",
+    "Traveler_geo": "Traveler",
+    "Traveler_anemo": "Traveler",
+    "Traveler_electro": "Traveler",
     "Thoma": "Thoma",
     "Gorou": "Gorou",
     "Arataki_Itto": "Arataki Itto",
@@ -60,5 +62,11 @@
   "search_placeholder": "Search by name or vision",
   "character_not_found": "Character not found",
   "possible_teams": "Possible teams",
-  "teams_warning": "The teams below are just examples, you can play whichever team you want"
+  "teams_warning": "The teams below are just examples, you can play whichever team you want",
+  "from_lvl": "From {{ number }}",
+  "to_lvl": "To {{ number }}",
+  "level": "Level",
+  "attack": "Attack",
+  "elemental_skill": "Elemental skill",
+  "elemental_burst": "Elemental burst"
 }

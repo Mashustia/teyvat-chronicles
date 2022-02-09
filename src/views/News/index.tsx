@@ -1,10 +1,11 @@
 import {FC, ReactElement} from 'react'
-import {Col, Container, Row} from 'react-bootstrap';
+import {Col, Row} from 'react-bootstrap';
 import {useTranslation} from 'react-i18next';
 import {Timeline} from 'react-twitter-widgets'
 
 import {ScrollToTopOnMount} from '../../utils/utils';
 import {GenshinImpactTwitter} from '../../const/consts';
+import Container from '../../common/Container';
 
 const News: FC = (): ReactElement => {
   const {i18n, t} = useTranslation('common')

@@ -17,7 +17,7 @@ const Stars: FC<IProps> = ({count}) => {
     return stars
   }
 
-  return <>{getStars(count)}</>
+  return <div>{getStars(count)}</div>
 }
 
 export default Stars

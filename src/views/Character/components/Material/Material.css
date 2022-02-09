@@ -2,9 +2,14 @@
   background-color: var(--gray-200);
 }
 
+.ascension-material-wrapper {
+  width: 76px;
+}
+
 .ascension-material-img-wrapper > svg {
   max-width: 100px;
   width: 100%;
+  height: 78px;
   border-radius: 5px;
 }
 
