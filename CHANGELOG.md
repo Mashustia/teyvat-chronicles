@@ -16,10 +16,13 @@
     * Sergeants insignia
     * Dendrobium
     * Noctilucous jade
-  * Reworked Character Page^
+  * Reworked Character Page:
     * Added calculator for level up materials (exp books included)
+    * Added calculator for talent materials
     * Added thousand separator for big numbers
-    * Add information about Ley Line Outcrops: Blossom of revelation
+    * Added information about Ley Line Outcrops: Blossom of revelation
+    * Now user can go to character profile from possible teams
+  * Refactored react-image usage in project
 
 * Changes
   * Added possible teams for:

@@ -23,7 +23,7 @@ const PossibleTeams: FC<RouteComponentProps<IRouteParams>> = ({match: {params}})
         <Row className='align-items-center gx-3 gy-2 table-border mb-3 ascension-material' key={uuid()}>
           {team.map((characterName: string) => (
             <Col key={uuid()} className='d-flex flex-column mb-auto' xs={3}>
-              <CharacterImage name={characterName} key={characterName} withBorder={true}/>
+              <CharacterImage name={characterName} key={characterName} withBorder={true} withLink={activeCharacter.name !== characterName}/>
               <p className='mb-1 fs-6'>{t(`character:names.${characterName}`)}</p>
             </Col>
           ))}
