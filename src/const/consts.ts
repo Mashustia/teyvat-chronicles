@@ -123,7 +123,7 @@ export const DefaultStartingLevel = {
 }
 
 export const DefaultFinalLevel = {
-  lvl: 80,
+  lvl: 20,
   isAscended: true
 }
 
