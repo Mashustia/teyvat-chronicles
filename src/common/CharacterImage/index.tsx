@@ -21,7 +21,7 @@ const CharacterImage: FC<IProps> = ({name, withBorder, withLink}) => {
     <Link to={createUrl(name)} className='pointer'>{children}</Link>
   )
 
-  const image = (
+  const characterImage = (
     <Suspense fallback={<CharacterImageSkeleton/>}>
       <Img
         imagePath={imagePath}
@@ -39,14 +39,18 @@ const CharacterImage: FC<IProps> = ({name, withBorder, withLink}) => {
     />
   )
 
-  const characterImage = withLink ? link(image) : image
+  const character = (
+    <div className={cn(withBorder && 'img-border')}>
+      {characterImage}
+      {characterVision?.vision && visionImage}
+    </div>
+  )
+
+  const characterWrapper = withLink ? link(character) : character
 
   return (
     <div className='character-img-wrapper mx-auto mb-2 relative'>
-      <div className={cn(withBorder && 'img-border')}>
-        {characterImage}
-        {characterVision?.vision && visionImage}
-      </div>
+      {characterWrapper}
     </div>
   )
 }
