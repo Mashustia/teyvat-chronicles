@@ -9,7 +9,7 @@ import CHARACTERS from '../../../../charactersData';
 import Material from '../Material';
 import {IRouteParams} from '../../../../types/commonTypes';
 import AscensionSummary from '../AscensionSummary';
-import {Character} from '../../../../const/consts';
+import {Character, SkillSelectName} from '../../../../const/consts';
 import SkillLevelGroup from '../Inputs/components/SkillLevelGroup';
 import {IInitialSkillLevel} from './types';
 import AscensionSummaryReworked from '../AscensionSummary/AscensionSummaryReworked';
@@ -35,7 +35,16 @@ const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}
 
   const handleChange = (name: string | number, id: string, value: string | number) => {
     const newSkillLevel = cloneDeep(skillLevel)
-    newSkillLevel[name][id] = value
+
+    if (id === SkillSelectName.TO && skillLevel[name].from > value) {
+      newSkillLevel[name][id] = value
+      newSkillLevel[name][SkillSelectName.FROM] = value
+    } else if (id === SkillSelectName.FROM && skillLevel[name].to < value) {
+      newSkillLevel[name][id] = value
+      newSkillLevel[name][SkillSelectName.TO] = value
+    } else {
+      newSkillLevel[name][id] = value
+    }
 
     changeSkillLevel(newSkillLevel)
   }

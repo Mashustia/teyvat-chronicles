@@ -148,3 +148,8 @@ export const SKILL_LEVEL_OPTIONS: IOption[] = skillLevelOption.map((key: number)
   text: key,
   id: key
 }))
+
+export enum SkillSelectName {
+  FROM = 'from',
+  TO = 'to'
+}
