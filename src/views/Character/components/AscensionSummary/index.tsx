@@ -1,24 +1,37 @@
 import {FC, ReactElement} from 'react'
-import {useTranslation} from 'react-i18next';
 import { groupBy, sortBy } from 'lodash';
 
-import Material from '../Material';
 import {IAscensionSummary} from './types';
-import {IMaterial} from '../../../../charactersData/types';
+import {IAscensionMaterials, IMaterial} from '../../../../charactersData/types';
+import Material from '../Material/Material';
 
 const MATERIAL = 'material'
 const SORTING_INDEX = 'sorting_index'
 const COUNT = 'count'
 
-const AscensionSummary: FC<IAscensionSummary> = ({ characterData }): ReactElement => {
-  const {t} = useTranslation('common');
+const AscensionSummary: FC<IAscensionSummary> = ({ characterData, skillLevel, isTraveler}): ReactElement => {
+  const skills = Object.keys(skillLevel)
 
-  const getAscensionMaterialsSummary = () => Object.values(characterData)
-    .reduce((accumulator, currentValue) => [...accumulator, ...currentValue], [])
+  const cumulativeMaterials: IMaterial[] = []
 
-  const ascensionMaterialsSummary = getAscensionMaterialsSummary()
+  skills.forEach((skill: string) => {
+    const level = skillLevel[skill]
 
-  const materialGroupedByName = groupBy(ascensionMaterialsSummary, MATERIAL)
+    let talentMaterials: IAscensionMaterials = {}
+
+    if (isTraveler) talentMaterials = characterData[skill]
+
+    if (!isTraveler && characterData?.talent_materials) talentMaterials = characterData.talent_materials
+
+    return Object.keys(talentMaterials).forEach((skillLevel: string) => {
+      if (skillLevel > level.from && skillLevel <= level.to) {
+        return cumulativeMaterials.push(...talentMaterials[skillLevel])
+      }
+      return
+    })
+  })
+
+  const materialGroupedByName = groupBy(cumulativeMaterials, MATERIAL)
   const groupedMaterialKeys = Object.keys(materialGroupedByName)
 
   const materials: IMaterial[] = groupedMaterialKeys.reduce((accumulator: IMaterial[], currentValue: string) => {
@@ -41,7 +54,7 @@ const AscensionSummary: FC<IAscensionSummary> = ({ characterData }): ReactElemen
 
   const sortedMaterials = sortBy(materials, [SORTING_INDEX, COUNT])
 
-  return <Material data={[t('common:total'), sortedMaterials]} isSummary={true}/>
+  return sortedMaterials.length > 0 ? <Material data={[sortedMaterials]}/> : <></>
 }
 
 export default AscensionSummary

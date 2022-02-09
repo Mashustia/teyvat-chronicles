@@ -9,7 +9,7 @@ import {IRouteParams} from '../../../../types/commonTypes';
 import {Character, SkillSelectName} from '../../../../const/consts';
 import SkillLevelGroup from '../Inputs/components/SkillLevelGroup';
 import {IInitialSkillLevel} from './types';
-import AscensionSummaryReworked from '../AscensionSummary/AscensionSummaryReworked';
+import AscensionSummary from '../AscensionSummary';
 
 const initialSkillLevel: IInitialSkillLevel = {
   attack: {
@@ -60,7 +60,7 @@ const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}
     <Col xs={12} className='mb-3'>
       <SkillLevelGroup skillLevel={skillLevel} onChangeLevel={handleChange} onReset={handleLevelReset}/>
 
-      <AscensionSummaryReworked
+      <AscensionSummary
         characterData={activeCharacter}
         skillLevel={skillLevel}
         isTraveler={activeCharacter.name === Character.TRAVELER}

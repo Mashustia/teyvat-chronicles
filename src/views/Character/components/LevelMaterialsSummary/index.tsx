@@ -4,7 +4,7 @@ import {useTranslation} from 'react-i18next';
 
 import {ILevelMaterialsSummaryProps as IProps} from './types';
 import {calculateMaterials} from '../../../../utils/utils';
-import MaterialReworked from '../Material/MaterialReworked';
+import Material from '../Material/Material';
 
 const LevelMaterialsSummary: FC<IProps> = ({match: {params}, startingLevel, finalLevel}): ReactElement => {
   const {t} = useTranslation(['common', 'material']);
@@ -17,7 +17,7 @@ const LevelMaterialsSummary: FC<IProps> = ({match: {params}, startingLevel, fina
     <div>
       {isMaterialsSummaryShown ?
         (
-          <MaterialReworked data={[materialsNeeded]}/>
+          <Material data={[materialsNeeded]}/>
         ) :
         (
           <div className='align-items-center gx-3 gy-2 table-border mb-3 ascension-material'>

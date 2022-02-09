@@ -11,8 +11,7 @@ import {ExpandedMaterialInfo} from '../../../../charactersData/materials/expande
 import MaterialDetails from '../MaterialDetails';
 import {THOUSAND_SEPARATOR} from '../../../../const/consts';
 
-// TODO: rename to Material after refactoring
-const MaterialReworked: FC<IProps> = ({data: [materials]}) => {
+const Material: FC<IProps> = ({data: [materials]}) => {
   const {t} = useTranslation(['materials', 'material'])
   const [isAdditionalInfoShown, toggleAdditionalInfo] = useState(false)
   const [activeMaterial, toggleMaterial] = useState('')
@@ -64,4 +63,4 @@ const MaterialReworked: FC<IProps> = ({data: [materials]}) => {
   )
 }
 
-export default MaterialReworked
+export default Material
