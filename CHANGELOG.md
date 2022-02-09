@@ -24,6 +24,8 @@
     * Now user can go to character profile from possible teams
     * Separate traveler into 3 profiles (anemo, geo, electro)
   * Refactored react-image usage in project
+  * Fixed talent and character level reset
+  * Changed spacing between level and skill section
 
 * Changes
   * Added possible teams for:
