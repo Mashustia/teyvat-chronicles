@@ -49,7 +49,6 @@ import AratakiItto from './characters/AratakiItto';
 import YunJin from './characters/YunJin';
 import Shenhe from './characters/Shenhe';
 
-// TODO: не забыть добавить путешественника
 const CHARACTERS: ICharacter[] = [
   Amber,
   Barbara,
