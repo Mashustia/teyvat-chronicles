@@ -4,7 +4,7 @@ import {IOption, ISkillLevelSelectProps as IProps} from './types';
 import './SkillLevelSelect.css'
 
 const SkillLevelSelect: FC<IProps> = ({ id, name, options, value, onChange}): ReactElement => {
-  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => onChange(name, id, e.target.value)
+  const handleChange = (e: ChangeEvent<HTMLSelectElement>) => onChange(name, id, parseInt(e.target.value))
 
   const selectOptions = options.map((option: IOption) => (
     <option key={option.id} className='skill-select__option' value={option.id}>

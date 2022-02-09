@@ -12,6 +12,7 @@ import AscensionSummary from '../AscensionSummary';
 import {Character} from '../../../../const/consts';
 import SkillLevelGroup from '../Inputs/components/SkillLevelGroup';
 import {IInitialSkillLevel} from './types';
+import AscensionSummaryReworked from '../AscensionSummary/AscensionSummaryReworked';
 
 const initialSkillLevel: IInitialSkillLevel = {
   attack: {
@@ -50,6 +51,12 @@ const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}
 
   if (!activeCharacter) return <></>
 
+  const renderMaterialsSummary = (talentInfo: IAscensionMaterials | undefined) => {
+    if (!talentInfo) return null
+
+    return talentInfo && <AscensionSummaryReworked ascensionMaterials={talentInfo} skillLevel={skillLevel}/>
+  }
+
   const renderMaterials = (talentInfo: IAscensionMaterials | undefined) => {
     if (!talentInfo) return null
 
@@ -62,7 +69,7 @@ const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}
 
           return <Material data={value} key={index}/>
         })}
-        {talentInfo && <AscensionSummary ascensionMaterials={talentInfo}/>}
+        {talentInfo && <AscensionSummary ascensionMaterials={talentInfo} skillLevel={skillLevel}/>}
       </>
     )
   }
@@ -70,8 +77,7 @@ const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}
   const renderOtherCharactersTalentMaterials = (): ReactNode => activeCharacter?.talent_materials && (
     <Col xs={12}>
       <SkillLevelGroup skillLevel={skillLevel} onChangeLevel={handleChange} onReset={handleLevelReset}/>
-      <h4 className='mb-3'>{t('character:talents_enhancement')}</h4>
-      {renderMaterials(activeCharacter?.talent_materials)}
+      {renderMaterialsSummary(activeCharacter?.talent_materials)}
     </Col>
   )
 

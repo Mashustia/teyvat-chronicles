@@ -142,7 +142,7 @@ export enum FontAwesomeIconSize {
   LG = 'lg'
 }
 
-export const skillLevelOption = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+export const skillLevelOption = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 export const SKILL_LEVEL_OPTIONS: IOption[] = skillLevelOption.map((key: number) => ({
   text: key,
