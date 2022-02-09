@@ -43,7 +43,7 @@ const SkillLevelGroup: FC<ISkillLevelGroupProps> = ({skillLevel, onChangeLevel, 
   const groups = Object.entries(Skill).map((groupName: [string, string]) => renderGroup(groupName[0], t(groupName[1])))
 
   return (
-    <div className='mb-3'>
+    <div>
       <h4 className='mb-3 px-2'>{t('character:talents_enhancement')}</h4>
 
       <div className='skill-level-group table-border p-3 grid grid-gap-y-lg'>{groups}</div>

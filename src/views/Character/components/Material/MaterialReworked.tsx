@@ -51,7 +51,7 @@ const MaterialReworked: FC<IProps> = ({data: [materials]}) => {
   const materialDetails = ExpandedMaterialInfo[activeMaterial] ?? undefined
 
   return (
-    <div className='d-flex flex-wrap ascension-material table-border justify-content-center p-2'>
+    <div className='d-flex flex-wrap ascension-material table-border justify-content-center p-2 mt-3'>
       {rows()}
 
       <MaterialDetails
