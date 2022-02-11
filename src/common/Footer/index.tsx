@@ -10,8 +10,9 @@ const Footer: FC = () => {
         <p className='d-block mb-0 me-1 mb-2'>{t('footer:contacts')}</p>
         <a href='mailto: teyvatchroniclesapp@gmail.com' className='link'>teyvatchroniclesapp@gmail.com</a>
       </div>
-      <div className='d-flex justify-content-center'>
-        <p className='d-block mb-0'>{t('footer:trademark')}</p>
+      <div className='d-flex justify-content-center flex-column'>
+        <p className='d-block mb-0'>{t('footer:trademark_1')}</p>
+        <p className='d-block mb-0'>{t('footer:trademark_2')}</p>
       </div>
     </footer>
   )
