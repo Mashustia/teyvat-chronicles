@@ -26,6 +26,7 @@
   * Refactored react-image usage in project
   * Fixed talent and character level reset
   * Changed spacing between level and skill section
+  * Fixed bug for traveler when there was hidden boss material for level up
 
 * Changes
   * Added possible teams for:
