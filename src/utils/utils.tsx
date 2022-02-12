@@ -79,46 +79,53 @@ export const fillTalentMaterials = ({ books, materials, bossMaterial }: ICharact
 
 
 export const fillAscensionMaterials = ({ gems, materials, bossMaterial, specialty }: ICharacterAscensionMaterials): IAscensionMaterials => {
-  const talentMaterials = cloneDeep(defaultAscensionMaterials)
+  const ascensionMaterials = cloneDeep(defaultAscensionMaterials)
 
   // specialties
   const common = [20, 40, 50, 60, 70, 80]
   common.forEach((lvl: number) => {
     if (lvl === 20) {
-      talentMaterials[lvl][1].material = specialty
+      ascensionMaterials[lvl][1].material = specialty
     } else {
-      if (bossMaterial) {
-        talentMaterials[lvl][1].material = bossMaterial
-      }
-      talentMaterials[lvl][2].material = specialty
+      ascensionMaterials[lvl][1].material = bossMaterial
+      ascensionMaterials[lvl][2].material = specialty
     }
   })
 
   // lvl 20
-  talentMaterials[20][0].material = gems[1]
-  talentMaterials[20][2].material = materials[1]
+  ascensionMaterials[20][0].material = gems[1]
+  ascensionMaterials[20][2].material = materials[1]
 
   // lvl 40, 50
   const lvl40And50Materials = [40, 50]
   lvl40And50Materials.forEach((lvl: number) => {
-      talentMaterials[lvl][0].material = gems[2]
-      talentMaterials[lvl][3].material = lvl === 40 ? materials[1] : materials[2]
+      ascensionMaterials[lvl][0].material = gems[2]
+      ascensionMaterials[lvl][3].material = lvl === 40 ? materials[1] : materials[2]
     }
   )
 
   // lvl 60, 70
   const lvl60And70Materials = [60, 70]
   lvl60And70Materials.forEach((lvl: number) => {
-      talentMaterials[lvl][0].material = gems[3]
-      talentMaterials[lvl][3].material = lvl === 60 ? materials[2] : materials[3]
+      ascensionMaterials[lvl][0].material = gems[3]
+      ascensionMaterials[lvl][3].material = lvl === 60 ? materials[2] : materials[3]
     }
   )
 
   // lvl 80
-  talentMaterials[80][0].material = gems[4]
-  talentMaterials[80][3].material = materials[3]
+  ascensionMaterials[80][0].material = gems[4]
+  ascensionMaterials[80][3].material = materials[3]
 
-  return talentMaterials
+  if (!bossMaterial) {
+    common.forEach((level: number) => {
+        if (level !== 20) {
+          ascensionMaterials[level].splice(1, 1)
+        }
+      }
+    )
+  }
+
+  return ascensionMaterials
 }
 
 export const calculateExperience = (startingLevel: ILevel, finalLevel: ILevel): IBooksAndMoraForLevel => {
@@ -140,8 +147,7 @@ export const calculateExperience = (startingLevel: ILevel, finalLevel: ILevel): 
 }
 
 export const getAscensionMaterialsSummary = (ascensionMaterials: IAscensionMaterials): IMaterial[] => {
-  const getAscensionMaterialsSummary = () => Object.values(ascensionMaterials)
-    .reduce((accumulator, currentValue) => [...accumulator, ...currentValue], [])
+  const getAscensionMaterialsSummary = () => Object.values(ascensionMaterials).flat()
 
   const ascensionMaterialsSummary = getAscensionMaterialsSummary()
 

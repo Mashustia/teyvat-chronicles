@@ -2,7 +2,11 @@ import {Character, Vision} from '../../const/consts';
 import {
   Flower,
   TravelerAscensionMaterial,
-  Materials, Books, MORA, BossSkillMaterial, CROWN_OF_INSIGHT,
+  Materials,
+  Books,
+  MORA,
+  BossSkillMaterial,
+  CROWN_OF_INSIGHT,
 } from '../materials/materialNames';
 import {fillAscensionMaterials} from '../../utils/utils';
 
