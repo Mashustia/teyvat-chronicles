@@ -27,6 +27,7 @@
   * Fixed talent and character level reset
   * Changed spacing between level and skill section
   * Fixed bug for traveler when there was hidden boss material for level up
+  * Add Google Analytics
 
 * Changes
   * Added possible teams for:
