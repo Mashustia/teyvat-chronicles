@@ -119,7 +119,7 @@ export const CorLapis = {
 
 export const CallaLily = {
   [Languages.EN]: [
-    'https://genshinpedia.ru/liliya-kalla/'
+    'https://www.reddit.com/r/Genshin_Impact/comments/jrx80w/starconch_calla_lily_rotation_for_childes_and/',
   ]
 }
 
