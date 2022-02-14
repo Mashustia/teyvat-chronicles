@@ -1,3 +1,5 @@
+import {Flower} from './materialNames';
+
 export const materialLink = {
   windwheel_aster: '2?shown_types=43&center=-86.05,-488.44&zoom=-0.50',
   philanemo_mushroom: '2?shown_types=39&center=196.25,31.00&zoom=1.00',
@@ -168,4 +170,5 @@ export const genshinImpactMap = {
   spectral_heart: 'names=specter',
   spectral_nucleus: 'names=specter',
   onikabuto: 'names=onikabuto',
+  [Flower.FLUORESCENT_FUNGUS]: 'names=fluorescent_fungus',
 }

@@ -16,6 +16,15 @@
     * Sergeants insignia
     * Dendrobium
     * Noctilucous jade
+    * Small lamp grass
+    * Whopperflower (add alternative route)
+    * Onikabuto
+    * Philanemo mushroom
+    * Starconch
+    * Silk flower
+    * Fluorescent fungus
+    * Jueyun chili
+  * Added embedded interactive app link for Fluorescent Fungus
   * Reworked Character Page:
     * Added calculator for level up materials (exp books included)
     * Added calculator for talent materials
@@ -26,7 +35,7 @@
   * Refactored react-image usage in project
   * Fixed talent and character level reset
   * Changed spacing between level and skill section
-  * Add Google Analytics
+  * Added Google Analytics
   * Bug Fixes:
     * Fixed bug for traveler when there was hidden boss material for level up
     * Fixed margin for "Materials are not required" container in materials section
