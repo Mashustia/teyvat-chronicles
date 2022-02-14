@@ -24,6 +24,7 @@
     * Silk flower
     * Fluorescent fungus
     * Jueyun chili
+  * Add embedded interactive app link for Fluorescent Fungus
   * Reworked Character Page:
     * Added calculator for level up materials (exp books included)
     * Added calculator for talent materials
