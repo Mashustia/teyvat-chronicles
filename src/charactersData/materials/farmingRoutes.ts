@@ -1,9 +1,10 @@
 import {Languages} from '../../const/consts';
 import {IFarmingRoute, IFarmingRoutes} from '../types';
-import {Flower, Materials, Rocks} from './materialNames';
+import {Flower, Materials, OtherMaterials, Rocks} from './materialNames';
 
 export const Whopperflower: IFarmingRoute = {
   [Languages.EN]: [
+    'https://www.hoyolab.com/article/2023622',
     'https://www.reddit.com/r/Genshin_Impact/comments/qxc67n/5_efficient_whopperflower_farming_routes/',
     'https://www.reddit.com/r/Genshin_Impact/comments/kyv8q0/in_preparations_for_hu_tao_i_made_an_efficient/'
   ]
@@ -160,6 +161,50 @@ export const NoctilucousJade = {
   ]
 }
 
+export const SmallLampGrass = {
+  [Languages.EN]: [
+    'https://www.reddit.com/r/Genshin_Impact/comments/mtazj9/super_fast_small_lamp_grass_route_route_map/'
+  ]
+}
+
+export const Onikabuto = {
+  [Languages.EN]: [
+    'https://www.reddit.com/r/Genshin_Impact/comments/qj0jtu/onikabuto_farming_route_map_easy_efficient_route/',
+    'https://www.hoyolab.com/article/1643890',
+  ]
+}
+
+export const PhilanemoMushroom = {
+  [Languages.EN]: [
+    'https://www.reddit.com/r/Genshin_Impact/comments/mp6xjk/54_philanemo_mushroom_route_in_4_mins_fast_guide/',
+  ]
+}
+
+export const Starconch = {
+  [Languages.EN]: [
+    'https://www.reddit.com/r/Genshin_Impact/comments/mf7fom/starconch_farming_route_for_childes_ascension/',
+  ]
+}
+
+export const SilkFlower = {
+  [Languages.EN]: [
+    'https://www.reddit.com/r/Genshin_Impact/comments/lixlvk/38_silk_flower_farming_route_genshin_impact_hu/',
+  ]
+}
+
+export const FluorescentFungus = {
+  [Languages.EN]: [
+    'https://www.reddit.com/r/Genshin_Impact/comments/q8jmwh/fluorescent_fungus_simple_route_map/',
+  ]
+}
+
+export const JueyunChili = {
+  [Languages.EN]: [
+    'https://www.reddit.com/r/Genshin_Impact/comments/l3jhmo/99_jueyun_chili_best_farming_route_5_major/',
+    'https://www.reddit.com/r/Genshin_Impact/comments/jav93g/update_4_routes_and_one_small_spot_for_jueyun/',
+  ]
+}
+
 export const farmingRoutes: IFarmingRoutes = {
   [Materials.WHOPPERFLOWER_NECTAR]: {...Whopperflower},
   [Materials.SHIMMERING_NECTAR]: {...Whopperflower},
@@ -199,4 +244,11 @@ export const farmingRoutes: IFarmingRoutes = {
   [Materials.LIEUTENANTS_INSIGNIA]: {...SergeantsInsignia},
   [Flower.DENDROBIUM]: {...Dendrobium},
   [Rocks.NOCTILUCOUS_JADE]: {...NoctilucousJade},
+  [Flower.SMALL_LAMP_GRASS]: {...SmallLampGrass},
+  [OtherMaterials.ONIKABUTO]: {...Onikabuto},
+  [Flower.PHILANEMO_MUSHROOM]: {...PhilanemoMushroom},
+  [Rocks.STARCONCH]: {...Starconch},
+  [Flower.SILK_FLOWER]: {...SilkFlower},
+  [Flower.FLUORESCENT_FUNGUS]: {...FluorescentFungus},
+  [Flower.JUEYUN_CHILI]: {...JueyunChili},
 }

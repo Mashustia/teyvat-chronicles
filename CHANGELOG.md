@@ -16,6 +16,14 @@
     * Sergeants insignia
     * Dendrobium
     * Noctilucous jade
+    * Small lamp grass
+    * Whopperflower (add alternative route)
+    * Onikabuto
+    * Philanemo mushroom
+    * Starconch
+    * Silk flower
+    * Fluorescent fungus
+    * Jueyun chili
   * Reworked Character Page:
     * Added calculator for level up materials (exp books included)
     * Added calculator for talent materials
