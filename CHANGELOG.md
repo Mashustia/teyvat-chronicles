@@ -26,8 +26,10 @@
   * Refactored react-image usage in project
   * Fixed talent and character level reset
   * Changed spacing between level and skill section
-  * Fixed bug for traveler when there was hidden boss material for level up
   * Add Google Analytics
+  * Bug Fixes:
+    * Fixed bug for traveler when there was hidden boss material for level up
+    * Fixed margin for "Materials are not required" container in materials section
 
 * Changes
   * Added possible teams for:
