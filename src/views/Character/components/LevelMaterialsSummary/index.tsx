@@ -20,7 +20,7 @@ const LevelMaterialsSummary: FC<IProps> = ({match: {params}, startingLevel, fina
           <Material data={[materialsNeeded]}/>
         ) :
         (
-          <div className='align-items-center gx-3 gy-2 table-border mb-3 ascension-material'>
+          <div className='align-items-center gx-3 gy-2 table-border my-3 ascension-material'>
             <p className='my-5 fs-5'>{t('material:materials_are_not_required')}</p>
           </div>
         )
