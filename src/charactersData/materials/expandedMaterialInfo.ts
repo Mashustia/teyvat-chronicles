@@ -402,42 +402,42 @@ export const defaultAscensionMaterials = {
   20: [
     { material: '', count: 1, sorting_index: 3 },
     { material: '', count: 3 },
-    { material: '', count: 3 },
+    { material: '', count: 3, sorting_index: 7 },
     { material: MORA, count: 20000, sorting_index: 1 },
   ],
   40: [
     { material: '', count: 3, sorting_index: 4 },
     { material: '', count: 2 },
     { material: '', count: 10 },
-    { material: '', count: 15 },
+    { material: '', count: 15, sorting_index: 7 },
     { material: MORA, count: 40000, sorting_index: 1 },
   ],
   50: [
     { material: '', count: 6, sorting_index: 4 },
     { material: '', count: 4 },
     { material: '', count: 20 },
-    { material: '', count: 12 },
+    { material: '', count: 12, sorting_index: 8 },
     { material: MORA, count: 60000, sorting_index: 1 },
   ],
   60: [
     { material: '', count: 3, sorting_index: 5 },
     { material: '', count: 8 },
     { material: '', count: 30 },
-    { material: '', count: 18 },
+    { material: '', count: 18, sorting_index: 8 },
     { material: MORA, count: 80000, sorting_index: 1 },
   ],
   70: [
     { material: '', count: 6, sorting_index: 5 },
     { material: '', count: 12 },
     { material: '', count: 45 },
-    { material: '', count: 12 },
+    { material: '', count: 12, sorting_index: 9 },
     { material: MORA, count: 100000, sorting_index: 1 },
   ],
   80: [
     { material: '', count: 6, sorting_index: 6 },
     { material: '', count: 20 },
     { material: '', count: 60 },
-    { material: '', count: 24 },
+    { material: '', count: 24, sorting_index: 9 },
     { material: MORA, count: 120000, sorting_index: 1 },
   ]
 }
