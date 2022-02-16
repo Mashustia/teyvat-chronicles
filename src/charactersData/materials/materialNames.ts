@@ -178,5 +178,8 @@ export enum BossSkillMaterial {
   DVALINS_CLAWN = 'dvalins_clawn',
   TAIL_OF_BOREAS = 'tail_of_boreas',
   ASHEN_HEART = 'ashen_heart',
+  THE_MEANING_OF_AENOS = 'the_meaning_of_aenos',
+  TEARS_OF_THE_CALAMITOUS_GOD = 'tears_of_the_calamitous_god',
+  MUDRA_OF_THE_MALEFIC_GENERAL = 'mudra_of_the_malefic_general',
 }
 
