@@ -135,6 +135,14 @@ const NarukamiIslandTenshukaku = {
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
+const EndOfTheOneiricEuthymia = {
+  name: 'end_of_the_oneiric_euthymia',
+  region: Region.INAZUMA,
+  original_resin: 60,
+  // map_link: 'pin=-3395|-4560|Narukami Island: Tenshukaku',
+  is_open_days: [WeekDay.ALL_DAYS]
+}
+
 // Hypostasis
 
 const AnemoHypostasis = {
@@ -330,6 +338,9 @@ export const ExpandedMaterialInfo: IDungeon = {
   brilliant_diamond_gemstone: {...brilliantDiamondGemstone},
   riftborn_regalia: {...GoldenWolflord},
   dragonheirs_false_fin: {...BathysmalVishapHerd},
+  the_meaning_of_aenos: {...EndOfTheOneiricEuthymia},
+  tears_of_the_calamitous_god: {...EndOfTheOneiricEuthymia},
+  mudra_of_the_malefic_general: {...EndOfTheOneiricEuthymia},
 }
 
 // order is important
