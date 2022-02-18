@@ -41,11 +41,6 @@ const YaeMiko = {
     },
     bossMaterial: BossSkillMaterial.THE_MEANING_OF_AENOS
   }),
-  possible_teams: [
-    [Character.RAIDEN, Character.XINGQIU, Character.XIANGLING, Character.BENNETT],
-    [Character.RAIDEN, Character.KUJOU_SARA, Character.SUCROSE, Character.BENNETT],
-    [Character.EULA, Character.RAIDEN, Character.ROSARIA, Character.BENNETT],
-  ]
 }
 
 export default YaeMiko
