@@ -43,6 +43,7 @@
   * Added End of the Oneiric euthymia
   * Fixed sorting index for level-up materials like handguards
 
+#### 1.1.5 January-2022
 * Changes
   * Added possible teams for:
     * Yoimiya
