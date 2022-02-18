@@ -42,6 +42,7 @@
   * Added Yae Miko
   * Added End of the Oneiric euthymia
   * Fixed sorting index for level-up materials like handguards
+  * Fixed January changelog text
 
 #### 1.1.5 January-2022
 * Changes
