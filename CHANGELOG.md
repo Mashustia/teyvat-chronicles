@@ -33,16 +33,18 @@
     * Now user can go to character profile from possible teams
     * Separate traveler into 3 profiles (anemo, geo, electro)
   * Refactored react-image usage in project
-  * Fixed talent and character level reset
   * Changed spacing between level and skill section
   * Added Google Analytics
   * Bug Fixes:
+    * Fixed talent and character level reset
     * Fixed bug for traveler when there was hidden boss material for level up
     * Fixed margin for "Materials are not required" container in materials section
+    * Fixed January changelog text
+    * Fixed sorting index for level-up materials like handguards
   * Added Yae Miko
   * Added End of the Oneiric euthymia
-  * Fixed sorting index for level-up materials like handguards
 
+#### 1.1.5 January-2022
 * Changes
   * Added possible teams for:
     * Yoimiya
