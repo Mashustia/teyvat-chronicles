@@ -41,6 +41,7 @@
     * Fixed margin for "Materials are not required" container in materials section
   * Added Yae Miko
   * Added End of the Oneiric euthymia
+  * Fixed sorting index for level-up materials like handguards
 
 * Changes
   * Added possible teams for:
