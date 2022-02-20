@@ -24,26 +24,26 @@ const LeyLineOutcropsBlossomOfRevelation = {
 }
 
 // Dungeons
-
+// TODO: uncomment map link when pins image will work again in embedded map
 const ForsakenRift = {
   name: 'forsaken_rift',
   region: Region.MONDSTADT,
   original_resin: 20,
-  map_link: 'pin=1678|-894|Forsaken Rift'
+  // map_link: 'pin=1678|-894|Forsaken Rift'
 }
 
 const VioletCourt = {
   name: 'violet_court',
   region: Region.INAZUMA,
   original_resin: 20,
-  map_link: 'pin=-3260|-3940|Violet Court'
+  // map_link: 'pin=-3260|-3940|Violet Court'
 }
 
 const TaishanMansion = {
   name: 'taishan_mansion',
   region: Region.LIYUE,
   original_resin: 20,
-  map_link: 'pin=645|1168|Taishan Mansion'
+  // map_link: 'pin=645|1168|Taishan Mansion'
 }
 
 // Books
@@ -99,7 +99,7 @@ const LupusBoreas = {
   name: 'lupus_boreas',
   region: Region.MONDSTADT,
   original_resin: 60,
-  map_link: 'pin=2000|-260|Lupus Boreas',
+  // map_link: 'pin=2000|-260|Lupus Boreas',
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
@@ -107,7 +107,7 @@ const ConfrontStormterror = {
   name: 'confront_stormterror',
   region: Region.MONDSTADT,
   original_resin: 60,
-  map_link: 'pin=2670|130|Confront Stormterror',
+  // map_link: 'pin=2670|130|Confront Stormterror',
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
@@ -115,7 +115,7 @@ const EnterTheGoldenHouse = {
   name: 'enter_the_golden_house',
   region: Region.LIYUE,
   original_resin: 60,
-  map_link: 'pin=-940|230|Enter the Golden House',
+  // map_link: 'pin=-940|230|Enter the Golden House',
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
@@ -123,7 +123,7 @@ const BeneathTheDragonQueller = {
   name: 'beneath_the_dragon_queller',
   region: Region.LIYUE,
   original_resin: 60,
-  map_link: 'pin=620|1765|Beneath the Dragon-Queller',
+  // map_link: 'pin=620|1765|Beneath the Dragon-Queller',
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
@@ -131,7 +131,7 @@ const NarukamiIslandTenshukaku = {
   name: 'narukami_island_tenshukaku',
   region: Region.INAZUMA,
   original_resin: 60,
-  map_link: 'pin=-3395|-4560|Narukami Island: Tenshukaku',
+  // map_link: 'pin=-3395|-4560|Narukami Island: Tenshukaku',
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
@@ -149,49 +149,49 @@ const AnemoHypostasis = {
   name: 'anemo_hypostasis',
   region: Region.MONDSTADT,
   original_resin: 40,
-  map_link: 'pin=2920|-1300|Anemo Hypostasis'
+  // map_link: 'pin=2920|-1300|Anemo Hypostasis'
 }
 
 const ElectroHypostasis = {
   name: 'electro_hypostasis',
   region: Region.MONDSTADT,
   original_resin: 40,
-  map_link: 'pin=1300|-1940|Electro Hypostasis'
+  // map_link: 'pin=1300|-1940|Electro Hypostasis'
 }
 
 const GeoHypostasis = {
   name: 'geo_hypostasis',
   region: Region.LIYUE,
   original_resin: 40,
-  map_link: 'pin=30|-850|Geo hypostasis'
+  // map_link: 'pin=30|-850|Geo hypostasis'
 }
 
 const CryoHypostasis = {
   name: 'cryo_hypostasis',
   region: Region.MONDSTADT,
   original_resin: 40,
-  map_link: 'pin=1040|-820|Cryo Hypostasis',
+  // map_link: 'pin=1040|-820|Cryo Hypostasis',
 }
 
 const PerpetualMechanicalArray = {
   name: 'perpetual_mechanical_array',
   region: Region.INAZUMA,
   original_resin: 40,
-  map_link: 'pin=-2160|-4460|Perpetual mechanical array',
+  // map_link: 'pin=-2160|-4460|Perpetual mechanical array',
 }
 
 const HydroHypostasis = {
   name: 'hydro_hypostasis',
   region: Region.INAZUMA,
   original_resin: 40,
-  map_link: 'pin=-3600|-970|Hydro Hypostasis'
+  // map_link: 'pin=-3600|-970|Hydro Hypostasis'
 }
 
 const PyroHypostasis = {
   name: 'pyro_hypostasis',
   region: Region.INAZUMA,
   original_resin: 40,
-  map_link: 'pin=-3090|-3185|Pyro Hypostasis'
+  // map_link: 'pin=-3090|-3185|Pyro Hypostasis'
 }
 
 // Regisvines
@@ -200,14 +200,14 @@ const PyroRegisvine = {
   name: 'pyro_regisvine',
   region: Region.LIYUE,
   original_resin: 40,
-  map_link: 'pin=140|950|Pyro Regisvine'
+  // map_link: 'pin=140|950|Pyro Regisvine'
 }
 
 const CryoRegisvine = {
   name: 'cryo_regisvine',
   region: Region.MONDSTADT,
   original_resin: 40,
-  map_link: 'pin=2100|-1680|Cryo Regisvine'
+  // map_link: 'pin=2100|-1680|Cryo Regisvine'
 }
 
 // Others
@@ -216,35 +216,35 @@ const Oceanid = {
   name: 'oceanid',
   region: Region.LIYUE,
   original_resin: 40,
-  map_link: 'pin=1800|280|Oceanid'
+  // map_link: 'pin=1800|280|Oceanid'
 }
 
 const ThunderManifestation = {
   name: 'thunder_manifestation',
   region: Region.INAZUMA,
   original_resin: 40,
-  map_link: 'pin=-4760|-4260|Thunder Manifestation'
+  // map_link: 'pin=-4760|-4260|Thunder Manifestation'
 }
 
 const PrimoGeovishap = {
   name: 'primo_geovishap',
   region: Region.LIYUE,
   original_resin: 40,
-  map_link: 'pin=190|1480|Primo geovishap'
+  // map_link: 'pin=190|1480|Primo geovishap'
 }
 
 const MaguuKenki = {
   name: 'maguu_kenki',
   region: Region.LIYUE,
   original_resin: 40,
-  map_link: 'pin=-4000|-2340|Maguu Kenki'
+  // map_link: 'pin=-4000|-2340|Maguu Kenki'
 }
 
 const GoldenWolflord = {
   name: 'golden_wolflord',
   region: Region.INAZUMA,
   original_resin: 40,
-  map_link: 'pin=-6720|-2660|Golden Wolflord'
+  // map_link: 'pin=-6720|-2660|Golden Wolflord'
 }
 
 const BathysmalVishapHerd = {
