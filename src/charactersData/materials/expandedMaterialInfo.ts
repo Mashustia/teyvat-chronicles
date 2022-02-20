@@ -24,7 +24,7 @@ const LeyLineOutcropsBlossomOfRevelation = {
 }
 
 // Dungeons
-
+// TODO: uncomment map link when pins image will work again in embedded map
 const ForsakenRift = {
   name: 'forsaken_rift',
   region: Region.MONDSTADT,
