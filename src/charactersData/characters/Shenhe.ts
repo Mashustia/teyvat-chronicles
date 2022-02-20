@@ -41,6 +41,10 @@ const Shenhe = {
     },
     bossMaterial: BossSkillMaterial.HELLFIRE_BUTTERFLY
   }),
+  possible_teams: [
+    [Character.KAMISATO_AYAKA, Character.SHENHE, Character.KAEDEHARA_KAZUHA, Character.KOKOMI],
+    [Character.GANYU, Character.SHENHE, Character.VENTI, Character.KOKOMI],
+  ]
 }
 
 export default Shenhe
