@@ -40,6 +40,12 @@ const YunJin = {
     },
     bossMaterial: BossSkillMaterial.ASHEN_HEART
   }),
+  possible_teams: [
+    [Character.YOIMIYA, Character.YUN_JIN, Character.XINGQIU, Character.BENNETT],
+    [Character.YOIMIYA, Character.YUN_JIN, Character.XINGQIU, Character.ZHONGLI],
+    [Character.NOELLE, Character.YUN_JIN, Character.ALBEDO, Character.BENNETT],
+    [Character.NOELLE, Character.YUN_JIN, Character.ALBEDO, Character.GOROU],
+  ]
 }
 
 export default YunJin
