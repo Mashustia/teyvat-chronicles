@@ -13,7 +13,7 @@ const SkillLevelSelect: FC<IProps> = ({ id, name, options, value, onChange}): Re
   ))
 
   return (
-    <select id={id} className='skill-select__select ps-1' value={value} onChange={handleChange}>
+    <select id={id} className='skill-select__select' value={value} onChange={handleChange}>
       {selectOptions}
     </select>
   )
