@@ -41,6 +41,8 @@
     * Fixed margin for "Materials are not required" container in materials section
     * Fixed January changelog text
     * Fixed sorting index for level-up materials like handguards
+    * Fixed different skill level select style in Safari
+    * Fixed characters pale grid in Safari
   * Added Yae Miko
   * Added End of the Oneiric euthymia
 

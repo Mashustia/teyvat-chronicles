@@ -5,7 +5,6 @@ import {useTranslation} from 'react-i18next';
 import Character from '../Character';
 import {ICharactersGroup as IProps} from './types';
 import {ICharacterProps as ICharacter} from '../Character/types';
-import './CharactersGroup.css'
 
 export enum groupField {
   VISION = 'vision',
@@ -28,7 +27,7 @@ const CharactersGroup: FC<IProps> = ({characters}) => {
 
   const items = () => groupedCharacterKeys.map((key: string) => (
     <Fragment key={key}>
-      <div className='characters-group mb-5 d-flex justify-content-center flex-wrap'>
+      <div className='mb-4 d-flex justify-content-center flex-wrap'>
         {charactersByVision[key].map((character: ICharacter) =>
           <Character key={character.name} {...character}/>)}
       </div>
