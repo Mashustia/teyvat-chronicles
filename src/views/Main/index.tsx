@@ -1,5 +1,5 @@
 import {FC} from 'react'
-import {Route, Switch} from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 
 import {RouteName} from '../../const/consts';
 import Layout from '../Layout';
@@ -10,13 +10,13 @@ import './Main.css'
 const Main: FC = (children) => {
   return (
     <main role='main' className='main mx-auto'>
-      <Switch>
-        <Route exact path={RouteName.DEFAULT} component={Layout} />
-        <Route exact path={RouteName.NEWS} component={News} />
-        <Route exact path={RouteName.CHARACTER} component={Character} />
+      <Routes>
+        <Route path={RouteName.DEFAULT} element={<Layout/>} />
+        <Route path={RouteName.NEWS} element={<News/>} />
+        <Route path={RouteName.CHARACTER} element={<Character/>} />
 
-        <Route component={Layout} />
-      </Switch>
+        <Route element={<Layout/>} />
+      </Routes>
     </main>
   )
 }
