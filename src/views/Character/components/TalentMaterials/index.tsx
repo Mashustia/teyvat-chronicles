@@ -1,5 +1,5 @@
 import {FC, ReactElement, useEffect, useState} from 'react'
-import {RouteComponentProps, useParams, withRouter} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import {Col} from 'react-bootstrap';
 import {cloneDeep} from 'lodash';
 
@@ -26,9 +26,9 @@ const initialSkillLevel: IInitialSkillLevel = {
   },
 }
 
-const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
+const TalentMaterials: FC = (): ReactElement => {
   const [skillLevel, changeSkillLevel] = useState(initialSkillLevel)
-  const { name }: IRouteParams = useParams();
+  const { name } = useParams<IRouteParams>();
 
   useEffect(() => {
     changeSkillLevel(initialSkillLevel)
@@ -57,7 +57,7 @@ const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}
     changeSkillLevel(newSkillLevel)
   }
 
-  const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === params.name)
+  const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === name)
 
   if (!activeCharacter) return <></>
 
@@ -76,4 +76,4 @@ const TalentMaterials: FC<RouteComponentProps<IRouteParams>> = ({match: {params}
   return renderOtherCharactersTalentMaterials()
 }
 
-export default withRouter(TalentMaterials)
+export default TalentMaterials
