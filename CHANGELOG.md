@@ -1,3 +1,7 @@
+#### 1.1.7 March-2022
+* Changes
+  * Updated react-router to v6
+
 #### 1.1.6 February-2022
 * Changes
   * Added farming routes for:
