@@ -15,10 +15,10 @@ import {COUNT, MATERIAL, SORTING_INDEX} from '../const/consts';
 import {HEROS_WIT, MORA} from '../charactersData/materials/materialNames';
 import {IAscensionSummary} from '../views/Character/components/AscensionSummary/types';
 
-export const ScrollToTopOnMount = () => {
+export const ScrollToTopOnMount = ({ name }: { name?: string | undefined }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [name]);
 
   return null;
 }
