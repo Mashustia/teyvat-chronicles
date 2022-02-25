@@ -1,5 +1,5 @@
 import {FC, ReactElement, ReactNode} from 'react'
-import {RouteComponentProps, withRouter} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Col, Row} from 'react-bootstrap';
 import {v4 as uuid} from 'uuid';
@@ -9,9 +9,10 @@ import CHARACTERS from '../../../../charactersData';
 import {IRouteParams} from '../../../../types/commonTypes';
 import CharacterImage from '../../../../common/CharacterImage';
 
-const PossibleTeams: FC<RouteComponentProps<IRouteParams>> = ({match: {params}}): ReactElement => {
+const PossibleTeams: FC = (): ReactElement => {
   const {t} = useTranslation(['character', 'common']);
-  const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === params.name)
+  const { name } = useParams<IRouteParams>();
+  const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === name)
 
   if (!activeCharacter) return <></>
 
@@ -37,4 +38,4 @@ const PossibleTeams: FC<RouteComponentProps<IRouteParams>> = ({match: {params}})
   )
 }
 
-export default withRouter(PossibleTeams)
+export default PossibleTeams
