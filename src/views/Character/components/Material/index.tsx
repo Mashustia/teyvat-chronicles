@@ -1,6 +1,7 @@
 import {FC, useEffect, useState, Suspense} from 'react'
 import {useTranslation} from 'react-i18next';
 import prettyNum from 'prettify-numbers';
+import {useParams} from 'react-router-dom';
 
 import {ITableItemPropsReworked as IProps} from './types';
 import {IMaterial} from '../../../../charactersData/types';
@@ -10,14 +11,13 @@ import {ExpandedMaterialInfo} from '../../../../charactersData/materials/expande
 import MaterialDetails from '../MaterialDetails';
 import {THOUSAND_SEPARATOR} from '../../../../const/consts';
 import Img from '../../../../common/Img';
-import {useParams, withRouter} from 'react-router-dom';
 import {IRouteParams} from '../../../../types/commonTypes';
 
 const Material: FC<IProps> = ({data: [materials]}) => {
   const {t} = useTranslation(['materials', 'material'])
   const [isAdditionalInfoShown, toggleAdditionalInfo] = useState(false)
   const [activeMaterial, toggleMaterial] = useState('')
-  const { name }: IRouteParams = useParams();
+  const { name } = useParams<IRouteParams>();
 
   useEffect(() => {
     if (!materials.find((material: IMaterial) => material.material === activeMaterial)) {
@@ -76,4 +76,4 @@ const Material: FC<IProps> = ({data: [materials]}) => {
   )
 }
 
-export default withRouter(Material)
+export default Material
