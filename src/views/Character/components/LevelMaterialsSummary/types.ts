@@ -1,9 +1,6 @@
-import {RouteComponentProps} from 'react-router-dom';
-
 import {ILevel} from '../../../../charactersData/types';
-import {IRouteParams} from '../../../../types/commonTypes';
 
-export interface ILevelMaterialsSummaryProps extends RouteComponentProps<IRouteParams> {
+export interface ILevelMaterialsSummaryProps {
   startingLevel: ILevel
   finalLevel: ILevel
 }
