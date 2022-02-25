@@ -1,6 +1,8 @@
 #### 1.1.7 March-2022
 * Changes
   * Updated react-router to v6
+  * Bug fixes:
+    * Fixed scroll when changing characters in party block (now page scrolls up)
 
 #### 1.1.6 February-2022
 * Changes
