@@ -1,5 +1,5 @@
 import {FC, ReactElement, useEffect, useState} from 'react'
-import {RouteComponentProps, useParams, withRouter} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 import {Col} from 'react-bootstrap';
 
@@ -12,9 +12,9 @@ import './LevelMaterials.css'
 import {Position} from '../../../../common/Popover/types';
 import LevelMaterialsSummary from '../LevelMaterialsSummary';
 
-const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = (): ReactElement => {
+const LevelMaterials: FC = (): ReactElement => {
   const {t} = useTranslation(['character']);
-  const { name }: IRouteParams = useParams();
+  const { name } = useParams<IRouteParams>();
 
   const [startingLevel, changeStartingLevel] = useState(DefaultStartingLevel)
   const [finalLevel, changeFinalLevel] = useState(DefaultFinalLevel)
@@ -64,4 +64,4 @@ const LevelMaterials: FC<RouteComponentProps<IRouteParams>> = (): ReactElement =
   )
 }
 
-export default withRouter(LevelMaterials)
+export default LevelMaterials
