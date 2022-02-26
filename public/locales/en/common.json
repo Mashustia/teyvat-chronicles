@@ -17,5 +17,6 @@
   "farming_routes": "Farming routes",
   "link_with_counter": "Link {{ number }}",
   "primogem_meaning": "means ascension",
-  "reset": "Reset"
+  "reset": "Reset",
+  "page_404": "Sorry, we couldn't find that page"
 }
