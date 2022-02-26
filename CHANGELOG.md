@@ -1,6 +1,7 @@
 #### 1.1.7 March-2022
 * Changes
   * Updated react-router to v6
+  * Updated i18next-http-backend to 1.3.2
   * Bug fixes:
     * Fixed scroll when changing characters in party block (now page scrolls up)
     * Go back button in the news block was hidden
