@@ -16,7 +16,7 @@ const CharacterImage: FC<IProps> = ({name, withBorder, withLink}) => {
   const visionPath = `/images/elements/${characterVision?.vision}.png`
 
   const link = (children: ReactNode) => (
-    <Link to={`/${name}`} className='pointer'>{children}</Link>
+    <Link to={`../${name}`} className='pointer'>{children}</Link>
   )
 
   const characterImage = (
