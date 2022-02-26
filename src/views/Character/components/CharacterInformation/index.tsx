@@ -11,13 +11,14 @@ import LevelMaterials from '../LevelMaterials';
 import TalentMaterials from '../TalentMaterials';
 import PossibleTeams from '../PossibleTeams';
 import './CharacterInformation.css'
+import Page404 from '../../../../common/Page404';
 
 const CharacterInformation: FC = (): ReactElement => {
   const {t} = useTranslation(['character', 'common']);
   const { name } = useParams<IRouteParams>();
   const activeCharacter = CHARACTERS.find((character: ICharacter) => character.name === name)
 
-  if (!activeCharacter) return <></>
+  if (!activeCharacter) return <Page404/>
 
   const {rarity, name: characterName} = activeCharacter
 
