@@ -1,3 +1,1 @@
-export interface IRouteParams {
-  name: string
-}
+export type IRouteParams = 'name'

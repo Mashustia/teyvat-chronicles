@@ -32,7 +32,8 @@ export enum Vision {
 export enum RouteName {
   DEFAULT = '/',
   CHARACTER = '/:name',
-  NEWS = '/news'
+  NEWS = '/news',
+  ALL = '/*'
 }
 
 export const lookupLocalStorage = 'i18nextLng'

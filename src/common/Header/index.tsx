@@ -1,9 +1,8 @@
 import {FC, ReactElement, useRef, useState} from 'react'
 import {useTranslation} from 'react-i18next';
-import {Link, Route, Switch, withRouter} from 'react-router-dom';
+import {Link, Route, Routes, useNavigate} from 'react-router-dom';
 
 import {lookupLocalStorage, RouteName} from '../../const/consts';
-import {IHeaderProps as IProps} from './components/types';
 import Button from '../Button';
 import LanguageSelector from '../LanguageSelector';
 import Burger from '../Navigarion/components/Burger';
@@ -12,9 +11,9 @@ import useOnClickOutside from '../../hooks/useOnClickOutside';
 
 const listItemStyle = 'text-left p-2 ps-3 pointer'
 
-const Header: FC<IProps> = (props: IProps): ReactElement => {
+const Header: FC = (): ReactElement => {
   const {t, i18n} = useTranslation(['header', 'language', 'menu'])
-  const {history} = props
+  const navigate = useNavigate();
 
   const [isSidebarShown, toggleIsSidebarShown] = useState(false);
   const sidebarRef = useRef(null);
@@ -23,9 +22,9 @@ const Header: FC<IProps> = (props: IProps): ReactElement => {
 
   const handleClick = () => toggleIsSidebarShown(!isSidebarShown);
 
-  const handleGoBack = () => history.push(RouteName.DEFAULT)
+  const handleGoBack = () => navigate(RouteName.DEFAULT)
 
-  const goBackButton = () => (
+  const goBackButton = (
     <Button onClick={handleGoBack} classes='ml-auto'>
       {t('header:go_back')}
     </Button>
@@ -66,12 +65,13 @@ const Header: FC<IProps> = (props: IProps): ReactElement => {
 
         {renderLanguageSelector}
 
-        <Switch>
-          <Route exact path={RouteName.CHARACTER} render={goBackButton}/>
-        </Switch>
+        <Routes>
+          <Route path={RouteName.NEWS} element={null}/>
+          <Route path={RouteName.CHARACTER} element={goBackButton}/>
+        </Routes>
       </div>
     </header>
   )
 }
 
-export default withRouter(Header)
+export default Header

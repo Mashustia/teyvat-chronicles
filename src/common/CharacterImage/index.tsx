@@ -1,12 +1,10 @@
 import {FC, ReactNode, Suspense} from 'react'
-import {withRouter} from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import cn from 'classnames';
 
 import './CharacterImage.css'
 import {ICharacterImageProps as IProps} from './types';
 import {ReactComponent as CharacterImageSkeleton} from '../../views/Characters/components/CharacterImageSkeleton/CharacterImageSkeleton.svg'
-import {createUrl} from '../../utils/utils';
 import CHARACTERS from '../../charactersData';
 import {ICharacter} from '../../charactersData/types';
 import Img from '../Img';
@@ -18,7 +16,7 @@ const CharacterImage: FC<IProps> = ({name, withBorder, withLink}) => {
   const visionPath = `/images/elements/${characterVision?.vision}.png`
 
   const link = (children: ReactNode) => (
-    <Link to={createUrl(name)} className='pointer'>{children}</Link>
+    <Link to={`../${name}`} className='pointer'>{children}</Link>
   )
 
   const characterImage = (
@@ -55,4 +53,4 @@ const CharacterImage: FC<IProps> = ({name, withBorder, withLink}) => {
   )
 }
 
-export default withRouter(CharacterImage)
+export default CharacterImage
