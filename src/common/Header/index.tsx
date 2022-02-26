@@ -66,6 +66,7 @@ const Header: FC = (): ReactElement => {
         {renderLanguageSelector}
 
         <Routes>
+          <Route path={RouteName.NEWS} element={null}/>
           <Route path={RouteName.CHARACTER} element={goBackButton}/>
         </Routes>
       </div>
