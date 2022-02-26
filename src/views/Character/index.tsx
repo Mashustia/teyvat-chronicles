@@ -1,9 +1,9 @@
 import {FC, ReactElement} from 'react'
+import {useParams} from 'react-router-dom';
 
 import CharacterInformation from './components/CharacterInformation';
 import {ScrollToTopOnMount} from '../../utils/utils';
 import Container from '../../common/Container';
-import {useParams} from 'react-router-dom';
 import {IRouteParams} from '../../types/commonTypes';
 
 const Character: FC = (): ReactElement => {
