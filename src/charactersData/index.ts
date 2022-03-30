@@ -49,6 +49,7 @@ import AratakiItto from './characters/AratakiItto';
 import YunJin from './characters/YunJin';
 import Shenhe from './characters/Shenhe';
 import YaeMiko from './characters/YaeMiko';
+import KamisatoAyato from './characters/KamisatoAyato';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -99,7 +100,8 @@ const CHARACTERS: ICharacter[] = [
   AratakiItto,
   YunJin,
   Shenhe,
-  YaeMiko
+  YaeMiko,
+  KamisatoAyato
 ]
 
 export default CHARACTERS
