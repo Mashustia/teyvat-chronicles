@@ -1,3 +1,8 @@
+#### 1.1.8 April-2022
+* Changes
+  * Added Kamisato Ayato
+  * Added materials for Ayato skills
+
 #### 1.1.7 March-2022
 * Changes
   * Updated react-router to v6

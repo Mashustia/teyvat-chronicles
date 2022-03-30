@@ -98,6 +98,7 @@ export enum Character {
   KAEDEHARA_KAZUHA = 'Kaedehara_Kazuha',
   KAEYA = 'Kaeya',
   KAMISATO_AYAKA = 'Kamisato_Ayaka',
+  KAMISATO_AYATO = 'Kamisato_Ayato',
   KUJOU_SARA = 'Kujou_Sara',
   QIQI = 'Qiqi',
   KOKOMI = 'Kokomi',
