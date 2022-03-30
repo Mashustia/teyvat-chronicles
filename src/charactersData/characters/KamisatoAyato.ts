@@ -11,7 +11,7 @@ import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const KamisatoAyato = {
   name: Character.KAMISATO_AYATO,
-  vision: Vision.CRYO,
+  vision: Vision.HYDRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
       1: Gem.HYDRO.VARUNADA_LAZURITE_SLIVER,
