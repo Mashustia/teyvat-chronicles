@@ -3,11 +3,6 @@
   * Added:
     * Yelan
     * Ruin serpent
-
-#### 1.1.8 April-2022
-* Changes
-  * Added Kamisato Ayato
-  * Added materials for Ayato skills
   * Added teams with Yelan for:
     * Diluc
     * Hu Tao
@@ -19,6 +14,13 @@
     * Keqing
     * Raiden
     * Itto
+  * Added possible teams for:
+    * Yae Miko
+
+#### 1.1.8 April-2022
+* Changes
+  * Added Kamisato Ayato
+  * Added materials for Ayato skills
 
 #### 1.1.7 March-2022
 * Changes
