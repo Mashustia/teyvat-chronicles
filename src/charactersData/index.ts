@@ -50,6 +50,7 @@ import YunJin from './characters/YunJin';
 import Shenhe from './characters/Shenhe';
 import YaeMiko from './characters/YaeMiko';
 import KamisatoAyato from './characters/KamisatoAyato';
+import Yelan from './characters/Yelan';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -101,7 +102,8 @@ const CHARACTERS: ICharacter[] = [
   YunJin,
   Shenhe,
   YaeMiko,
-  KamisatoAyato
+  KamisatoAyato,
+  Yelan
 ]
 
 export default CHARACTERS
