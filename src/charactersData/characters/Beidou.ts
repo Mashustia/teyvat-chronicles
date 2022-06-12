@@ -36,6 +36,7 @@ const Beidou = {
   }),
   possible_teams: [
     [Character.BEIDOU, Character.FISCHL, Character.XINGQIU, Character.SUCROSE],
+    [Character.BEIDOU, Character.FISCHL, Character.YELAN, Character.JEAN],
     [Character.TARTAGLIA, Character.BEIDOU, Character.FISCHL, Character.JEAN],
     [Character.KEQING, Character.BEIDOU, Character.SUCROSE, Character.XINGQIU],
     [Character.EULA, Character.BEIDOU, Character.FISCHL, Character.DIONA],

@@ -1,12 +1,5 @@
 import {Character, Vision} from '../../const/consts';
-import {
-  Books,
-  BossMaterials,
-  BossSkillMaterial,
-  Flower,
-  Gem,
-  Materials
-} from '../materials/materialNames';
+import {Books, BossMaterials, BossSkillMaterial, Flower, Gem, Materials} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Xiangling = {
@@ -47,6 +40,7 @@ const Xiangling = {
     [Character.KLEE, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.RAIDEN, Character.XIANGLING, Character.XINGQIU, Character.BENNETT],
     [Character.XIANGLING, Character.KAMISATO_AYAKA, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.XIANGLING, Character.YELAN, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.SUCROSE, Character.XIANGLING, Character.KOKOMI, Character.FISCHL],
   ]
 }

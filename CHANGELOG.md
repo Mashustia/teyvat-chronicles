@@ -8,6 +8,17 @@
 * Changes
   * Added Kamisato Ayato
   * Added materials for Ayato skills
+  * Added teams with Yelan for:
+    * Diluc
+    * Hu Tao
+    * Klee
+    * Xiangling
+    * Yanfei
+    * Yoimia
+    * Beidou
+    * Keqing
+    * Raiden
+    * Itto
 
 #### 1.1.7 March-2022
 * Changes

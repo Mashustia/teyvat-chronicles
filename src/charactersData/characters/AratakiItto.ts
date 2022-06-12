@@ -45,6 +45,7 @@ const AratakiItto = {
     [Character.ARATAKI_ITTO, Character.GOROU, Character.ALBEDO, Character.BENNETT],
     [Character.ARATAKI_ITTO, Character.GOROU, Character.ALBEDO, Character.ZHONGLI],
     [Character.ARATAKI_ITTO, Character.GOROU, Character.ZHONGLI, Character.BENNETT],
+    [Character.ARATAKI_ITTO, Character.GOROU, Character.ZHONGLI, Character.YELAN],
   ]
 }
 

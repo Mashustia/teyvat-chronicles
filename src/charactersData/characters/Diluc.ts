@@ -1,12 +1,5 @@
 import {Character, Vision} from '../../const/consts';
-import {
-  Books,
-  BossMaterials,
-  BossSkillMaterial,
-  Flower,
-  Gem,
-  Materials
-} from '../materials/materialNames';
+import {Books, BossMaterials, BossSkillMaterial, Flower, Gem, Materials} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Diluc = {
@@ -43,6 +36,7 @@ const Diluc = {
   }),
   possible_teams: [
     [Character.DILUC, Character.XINGQIU, Character.SUCROSE, Character.BENNETT],
+    [Character.DILUC, Character.YELAN, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.DILUC, Character.XINGQIU, Character.SUCROSE, Character.ZHONGLI],
     [Character.DILUC, Character.XINGQIU, Character.GANYU, Character.BENNETT],
     [Character.DILUC, Character.XINGQIU, Character.DIONA, Character.BENNETT],
