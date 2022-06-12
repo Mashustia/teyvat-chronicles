@@ -18,6 +18,8 @@
     * Yae Miko
     * Kamisato Ayato
   * Added Apache License 2.0
+  * Updated dependencies:
+    * react-scripts to 5.0.1
 
 #### 1.1.8 April-2022
 * Changes
