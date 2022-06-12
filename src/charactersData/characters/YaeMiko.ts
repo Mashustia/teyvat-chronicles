@@ -1,12 +1,5 @@
 import {Character, Vision} from '../../const/consts';
-import {
-  Books,
-  BossMaterials,
-  BossSkillMaterial,
-  Flower,
-  Gem,
-  Materials
-} from '../materials/materialNames';
+import {Books, BossMaterials, BossSkillMaterial, Flower, Gem, Materials} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const YaeMiko = {
@@ -41,6 +34,14 @@ const YaeMiko = {
     },
     bossMaterial: BossSkillMaterial.THE_MEANING_OF_AENOS
   }),
+  possible_teams: [
+    [Character.RAIDEN, Character.YAE_MIKO, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.YAE_MIKO, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.YAE_MIKO, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.KOKOMI],
+    [Character.YAE_MIKO, Character.XINGQIU, Character.FISCHL, Character.SUCROSE],
+    [Character.YAE_MIKO, Character.FISCHL, Character.YELAN, Character.ZHONGLI],
+    [Character.RAIDEN, Character.KUJOU_SARA, Character.YAE_MIKO, Character.JEAN]
+  ]
 }
 
 export default YaeMiko
