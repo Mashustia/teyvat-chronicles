@@ -38,7 +38,7 @@ const Keqing = {
     [Character.KEQING, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.KEQING, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.XINGQIU],
     [Character.KEQING, Character.BEIDOU, Character.SUCROSE, Character.XINGQIU],
-    [Character.KEQING, Character.FISCHL, Character.XINGQIU, Character.ZHONGLI],
+    [Character.KEQING, Character.FISCHL, Character.YELAN, Character.ZHONGLI],
     [Character.KEQING, Character.XINGQIU, Character.GANYU, Character.ROSARIA],
   ]
 }
