@@ -1,12 +1,5 @@
 import {Character, Vision} from '../../const/consts';
-import {
-  BossMaterials,
-  Gem,
-  Materials,
-  Flower,
-  Books,
-  BossSkillMaterial,
-} from '../materials/materialNames';
+import {Books, BossMaterials, BossSkillMaterial, Flower, Gem, Materials,} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const KamisatoAyato = {
@@ -40,7 +33,17 @@ const KamisatoAyato = {
       3: Materials.FAMED_HANDGUARD,
     },
     bossMaterial: BossSkillMaterial.MUDRA_OF_THE_MALEFIC_GENERAL
-  })
+  }),
+  possible_teams: [
+    [Character.KAMISATO_AYATO, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.KAMISATO_AYATO, Character.XIANGLING, Character.XINGQIU, Character.BENNETT],
+    [Character.KAMISATO_AYATO, Character.XIANGLING, Character.JEAN, Character.BENNETT],
+    [Character.KAMISATO_AYATO, Character.VENTI, Character.ZHONGLI, Character.BENNETT],
+    [Character.KAMISATO_AYATO, Character.KAEDEHARA_KAZUHA, Character.YUN_JIN, Character.KOKOMI],
+    [Character.KAMISATO_AYATO, Character.BEIDOU, Character.FISCHL, Character.JEAN],
+    [Character.KAMISATO_AYATO, Character.FISCHL, Character.YUN_JIN, Character.ZHONGLI],
+    [Character.KAMISATO_AYATO, Character.KAMISATO_AYAKA, Character.GANYU, Character.JEAN],
+  ]
 }
 
 export default KamisatoAyato

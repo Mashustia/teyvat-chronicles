@@ -16,6 +16,7 @@
     * Itto
   * Added possible teams for:
     * Yae Miko
+    * Kamisato Ayato
 
 #### 1.1.8 April-2022
 * Changes
