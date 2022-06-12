@@ -17,6 +17,7 @@
   * Added possible teams for:
     * Yae Miko
     * Kamisato Ayato
+  * Added Apache License 2.0
 
 #### 1.1.8 April-2022
 * Changes
