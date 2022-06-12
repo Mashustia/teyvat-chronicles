@@ -1,12 +1,5 @@
 import {Character, Vision} from '../../const/consts';
-import {
-  Books,
-  BossMaterials,
-  BossSkillMaterial,
-  Flower,
-  Gem,
-  Materials
-} from '../materials/materialNames';
+import {Books, BossMaterials, BossSkillMaterial, Flower, Gem, Materials} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Klee = {
@@ -42,6 +35,7 @@ const Klee = {
     bossMaterial: BossSkillMaterial.RING_OF_BOREAS
   }),
   possible_teams: [
+    [Character.KLEE, Character.YELAN, Character.XINGQIU, Character.BENNETT],
     [Character.KLEE, Character.GANYU, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.KLEE, Character.GANYU, Character.SUCROSE, Character.BENNETT],
     [Character.KLEE, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.BENNETT],

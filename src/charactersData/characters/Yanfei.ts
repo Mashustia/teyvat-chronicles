@@ -1,5 +1,5 @@
 import {Character, Vision} from '../../const/consts';
-import {BossMaterials, Rocks, Gem, Materials, Books, BossSkillMaterial} from '../materials/materialNames';
+import {Books, BossMaterials, BossSkillMaterial, Gem, Materials, Rocks} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Yanfei = {
@@ -36,10 +36,10 @@ const Yanfei = {
   }),
   possible_teams: [
     [Character.YANFEI, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
-    [Character.YANFEI, Character.XINGQIU, Character.SUCROSE, Character.BENNETT],
+    [Character.YANFEI, Character.YELAN, Character.SUCROSE, Character.BENNETT],
     [Character.YANFEI, Character.XINGQIU, Character.SUCROSE, Character.KOKOMI],
     [Character.YANFEI, Character.XINGQIU, Character.GANYU, Character.BENNETT],
-    [Character.YANFEI, Character.XINGQIU, Character.ZHONGLI, Character.BENNETT],
+    [Character.YANFEI, Character.YELAN, Character.ZHONGLI, Character.BENNETT],
   ]
 }
 

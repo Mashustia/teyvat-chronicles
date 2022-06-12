@@ -1,12 +1,5 @@
 import {Character, Vision} from '../../const/consts';
-import {
-  Books,
-  BossMaterials,
-  BossSkillMaterial,
-  Flower,
-  Gem,
-  Materials
-} from '../materials/materialNames';
+import {Books, BossMaterials, BossSkillMaterial, Flower, Gem, Materials} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const HuTao = {
@@ -44,6 +37,7 @@ const HuTao = {
   possible_teams: [
     [Character.HU_TAO, Character.XINGQIU, Character.ZHONGLI, Character.ALBEDO],
     [Character.HU_TAO, Character.XINGQIU, Character.ZHONGLI, Character.SUCROSE],
+    [Character.HU_TAO, Character.ZHONGLI, Character.YELAN, Character.MONA],
     [Character.HU_TAO, Character.XINGQIU, Character.ZHONGLI, Character.GANYU],
     [Character.HU_TAO, Character.XINGQIU, Character.ROSARIA, Character.MONA],
     [Character.HU_TAO, Character.XINGQIU, Character.ROSARIA, Character.DIONA],

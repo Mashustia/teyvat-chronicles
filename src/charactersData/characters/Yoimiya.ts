@@ -43,6 +43,7 @@ const Yoimiya = {
   }),
   possible_teams: [
     [Character.YOIMIYA, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.YOIMIYA, Character.YELAN, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.YOIMIYA, Character.XINGQIU, Character.BEIDOU, Character.BENNETT],
     [Character.YOIMIYA, Character.VENTI, Character.MONA, Character.BENNETT],
     [Character.YOIMIYA, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],

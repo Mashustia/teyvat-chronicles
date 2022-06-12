@@ -9,7 +9,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Yelan = {
-  name: Character.Yelan,
+  name: Character.YELAN,
   vision: Vision.HYDRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
@@ -41,10 +41,11 @@ const Yelan = {
     bossMaterial: BossSkillMaterial.GILDED_SCALE
   }),
   possible_teams: [
-    [Character.RAIDEN, Character.Yelan, Character.XIANGLING, Character.BENNETT],
-    [Character.KLEE, Character.XINGQIU, Character.Yelan, Character.BENNETT],
-    [Character.HU_TAO, Character.Yelan, Character.ZHONGLI, Character.MONA],
-    [Character.KAMISATO_AYAKA, Character.Yelan, Character.KAEDEHARA_KAZUHA, Character.DIONA],
+    [Character.RAIDEN, Character.YELAN, Character.XIANGLING, Character.BENNETT],
+    [Character.KLEE, Character.XINGQIU, Character.YELAN, Character.BENNETT],
+    [Character.HU_TAO, Character.YELAN, Character.ZHONGLI, Character.MONA],
+    [Character.YOIMIYA, Character.YELAN, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.KAMISATO_AYAKA, Character.YELAN, Character.KAEDEHARA_KAZUHA, Character.DIONA],
   ]
 }
 
