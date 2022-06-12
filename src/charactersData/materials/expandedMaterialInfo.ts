@@ -6,7 +6,8 @@ export enum Region {
   MONDSTADT = 'monstadt',
   LIYUE = 'liyue',
   INAZUMA = 'inazuma',
-  ENKANOMIA = 'enkanomia'
+  ENKANOMIA = 'enkanomia',
+  THE_CHASM = 'the_chasm'
 }
 
 const LeyLineOutcropsBlossomOfWealth = {
@@ -253,6 +254,12 @@ const BathysmalVishapHerd = {
   original_resin: 40,
 }
 
+const RuinSerpent = {
+  name: 'ruin_serpent',
+  region: Region.THE_CHASM,
+  original_resin: 40,
+}
+
 const crownOfInsight = {
   additional_info: 'crown_of_insight_how_to_get'
 }
@@ -341,6 +348,7 @@ export const ExpandedMaterialInfo: IDungeon = {
   the_meaning_of_aenos: {...EndOfTheOneiricEuthymia},
   tears_of_the_calamitous_god: {...EndOfTheOneiricEuthymia},
   mudra_of_the_malefic_general: {...EndOfTheOneiricEuthymia},
+  runic_fang: {...RuinSerpent},
 }
 
 // order is important

@@ -92,6 +92,7 @@ export const materialLink = {
   riftborn_regalia: '2?shown_types=318&center=8663.00,1892.00&zoom=-1.00',
   onikabuto: '2?shown_types=196&center=5861.00,2708.00&zoom=-1.00',
   dragonheirs_false_fin: '7?shown_types=2,333&center=-1.00,199.00&zoom=-2.00',
+  runic_fang: '9?shown_types=352&center=2.00,30.00&zoom=-2.00'
 }
 
 // TODO: uncomment map link when pins image will work again in embedded map
