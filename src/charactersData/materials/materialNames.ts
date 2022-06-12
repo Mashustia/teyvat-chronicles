@@ -160,6 +160,7 @@ export enum BossMaterials {
   SMOLDERING_PEARL = 'smoldering_pearl',
   RIFTBORN_REGALIA = 'riftborn_regalia',
   DRAGONHEIRS_FALSE_FIN = 'dragonheirs_false_fin',
+  RUNIC_FANG = 'runic_fang',
 }
 
 export enum BossSkillMaterial {
