@@ -1,3 +1,9 @@
+#### 1.1.9 June-2022
+* Changes
+  * Added:
+    * Yelan
+    * Ruin serpent
+
 #### 1.1.8 April-2022
 * Changes
   * Added Kamisato Ayato
