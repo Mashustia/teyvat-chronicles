@@ -14,6 +14,10 @@
     * Keqing
     * Raiden
     * Itto
+  * Added teams with Yae for:
+    * Sara
+    * Raiden
+    * Fischl
   * Added possible teams for:
     * Yae Miko
     * Kamisato Ayato

@@ -47,6 +47,8 @@ const Fischl = {
     [Character.RAZOR, Character.FISCHL, Character.ROSARIA, Character.DIONA],
     [Character.ARATAKI_ITTO, Character.GOROU, Character.ZHONGLI, Character.FISCHL],
     [Character.FISCHL, Character.XIANGLING, Character.SUCROSE, Character.KOKOMI],
+    [Character.YAE_MIKO, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.YAE_MIKO, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.KOKOMI],
   ]
 }
 

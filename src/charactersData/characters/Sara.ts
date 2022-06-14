@@ -46,6 +46,7 @@ const Sara = {
     [Character.KEQING, Character.KUJOU_SARA, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.RAIDEN, Character.KUJOU_SARA, Character.FISCHL, Character.JEAN],
     [Character.BEIDOU, Character.KUJOU_SARA, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.RAIDEN, Character.KUJOU_SARA, Character.YAE_MIKO, Character.JEAN]
   ]
 }
 
