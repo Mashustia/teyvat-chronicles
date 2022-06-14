@@ -42,6 +42,7 @@ const Xiangling = {
     [Character.XIANGLING, Character.KAMISATO_AYAKA, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.XIANGLING, Character.YELAN, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.SUCROSE, Character.XIANGLING, Character.KOKOMI, Character.FISCHL],
+    [Character.KAMISATO_AYATO, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
   ]
 }
 

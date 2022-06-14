@@ -40,6 +40,7 @@ const Beidou = {
     [Character.TARTAGLIA, Character.BEIDOU, Character.FISCHL, Character.JEAN],
     [Character.KEQING, Character.BEIDOU, Character.SUCROSE, Character.XINGQIU],
     [Character.EULA, Character.BEIDOU, Character.FISCHL, Character.DIONA],
+    [Character.KAMISATO_AYATO, Character.BEIDOU, Character.FISCHL, Character.JEAN],
   ]
 }
 

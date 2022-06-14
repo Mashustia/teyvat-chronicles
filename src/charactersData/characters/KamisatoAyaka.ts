@@ -48,6 +48,7 @@ const KamisatoAyaka = {
     [Character.KAMISATO_AYAKA, Character.ROSARIA, Character.SUCROSE, Character.BARBARA],
     [Character.KAMISATO_AYAKA, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
     [Character.KAMISATO_AYAKA, Character.XIANGLING, Character.DIONA, Character.BENNETT],
+    [Character.KAMISATO_AYATO, Character.KAMISATO_AYAKA, Character.GANYU, Character.JEAN],
   ]
 }
 
