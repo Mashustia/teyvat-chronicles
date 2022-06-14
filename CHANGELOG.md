@@ -3,6 +3,9 @@
   * Added:
     * Yelan
     * Ruin serpent
+  * Added possible teams for:
+    * Yae Miko
+    * Kamisato Ayato
   * Added teams with Yelan for:
     * Diluc
     * Hu Tao
@@ -18,9 +21,13 @@
     * Sara
     * Raiden
     * Fischl
-  * Added possible teams for:
-    * Yae Miko
-    * Kamisato Ayato
+  * Added teams with Ayato for:
+    * Xiangling
+    * Jean
+    * Ayaka
+    * Ganyu
+    * Fischl
+    * Beidou
   * Added Apache License 2.0
   * Updated dependencies:
     * react-scripts to 5.0.1
