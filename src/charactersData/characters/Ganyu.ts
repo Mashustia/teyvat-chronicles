@@ -47,7 +47,8 @@ const Ganyu = {
     [Character.KAMISATO_AYAKA, Character.MONA, Character.VENTI, Character.GANYU],
     [Character.GANYU, Character.XIANGLING, Character.SUCROSE, Character.BENNETT],
     [Character.GANYU, Character.XIANGLING, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
-    [Character.HU_TAO, Character.ZHONGLI, Character.XINGQIU, Character.GANYU]
+    [Character.HU_TAO, Character.ZHONGLI, Character.XINGQIU, Character.GANYU],
+    [Character.KAMISATO_AYATO, Character.KAMISATO_AYAKA, Character.GANYU, Character.JEAN],
   ]
 }
 

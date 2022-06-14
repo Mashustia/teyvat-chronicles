@@ -45,6 +45,7 @@ const Jean = {
     [Character.XIAO, Character.ZHONGLI, Character.ALBEDO, Character.JEAN],
     [Character.DILUC, Character.XINGQIU, Character.YANFEI, Character.JEAN],
     [Character.KEQING, Character.FISCHL, Character.XINGQIU, Character.JEAN],
+    [Character.KAMISATO_AYATO, Character.XIANGLING, Character.JEAN, Character.BENNETT],
   ]
 }
 
