@@ -7,6 +7,7 @@
     * Yae Miko
     * Kamisato Ayato
     * Noelle
+    * Geo Traveler
   * Added teams with Yelan for:
     * Diluc
     * Hu Tao
