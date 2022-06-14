@@ -1,12 +1,12 @@
 import {Character, Vision} from '../../const/consts';
 import {
-  Flower,
-  TravelerAscensionMaterial,
-  Materials,
   Books,
-  MORA,
   BossSkillMaterial,
   CROWN_OF_INSIGHT,
+  Flower,
+  Materials,
+  MORA,
+  TravelerAscensionMaterial,
 } from '../materials/materialNames';
 import {fillAscensionMaterials} from '../../utils/utils';
 
@@ -137,6 +137,13 @@ const TravelerGeo = {
   attack: { ...talent1 },
   elemental_skill: { ...talent2_3 },
   elemental_burst: { ...talent2_3 },
+  possible_teams: [
+    [Character.TRAVELER_GEO, Character.ZHONGLI, Character.ALBEDO, Character.BENNETT],
+    [Character.TRAVELER_GEO, Character.ZHONGLI, Character.GOROU, Character.BENNETT],
+    [Character.TRAVELER_GEO, Character.ZHONGLI, Character.ALBEDO, Character.GOROU],
+    [Character.TRAVELER_GEO, Character.ZHONGLI, Character.ALBEDO, Character.YELAN],
+    [Character.TRAVELER_GEO, Character.ZHONGLI, Character.ALBEDO, Character.NINGGUANG],
+  ]
 }
 
 export default TravelerGeo
