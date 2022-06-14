@@ -6,6 +6,7 @@
   * Added possible teams for:
     * Yae Miko
     * Kamisato Ayato
+    * Noelle
   * Added teams with Yelan for:
     * Diluc
     * Hu Tao

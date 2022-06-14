@@ -1,4 +1,4 @@
-import {Vision} from '../../const/consts';
+import {Character, Vision} from '../../const/consts';
 import {
   Books,
   BossMaterials,
@@ -39,8 +39,16 @@ const Noelle = {
       2: Materials.STAINED_MASK,
       3: Materials.OMINOUS_MASK,
     },
-    bossMaterial: BossSkillMaterial.DVALINS_CLAWN
-  })
+    bossMaterial: BossSkillMaterial.DVALINS_CLAWN,
+  }),
+  possible_teams: [
+    [Character.NOELLE, Character.GOROU, Character.ALBEDO, Character.BENNETT],
+    [Character.NOELLE, Character.GOROU, Character.ALBEDO, Character.ZHONGLI],
+    [Character.NOELLE, Character.GOROU, Character.ZHONGLI, Character.BENNETT],
+    [Character.NOELLE, Character.GOROU, Character.ZHONGLI, Character.YELAN],
+    [Character.NOELLE, Character.YUN_JIN, Character.ALBEDO, Character.BENNETT],
+    [Character.NOELLE, Character.YUN_JIN, Character.ALBEDO, Character.GOROU],
+  ]
 }
 
 export default Noelle
