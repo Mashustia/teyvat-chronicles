@@ -46,6 +46,8 @@ const Raiden = {
     [Character.RAIDEN, Character.YELAN, Character.XIANGLING, Character.BENNETT],
     [Character.RAIDEN, Character.KUJOU_SARA, Character.SUCROSE, Character.BENNETT],
     [Character.EULA, Character.RAIDEN, Character.ROSARIA, Character.BENNETT],
+    [Character.RAIDEN, Character.YAE_MIKO, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
+    [Character.RAIDEN, Character.KUJOU_SARA, Character.YAE_MIKO, Character.JEAN]
   ]
 }
 
