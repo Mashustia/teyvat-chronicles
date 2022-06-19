@@ -118,7 +118,8 @@ export enum Character {
   YUN_JIN = 'Yun_Jin',
   SHENHE = 'Shenhe',
   YAE_MIKO = 'Yae_Miko',
-  YELAN = 'Yelan'
+  YELAN = 'Yelan',
+  KUKI_SHINOBU = 'Kuki_Shinobu',
 }
 
 export const DefaultStartingLevel = {
