@@ -34,6 +34,32 @@
   * Updated dependencies:
     * react-scripts to 5.0.1
   * Changed MiHoYo to HoYoverse in copyrights
+  * Added embedded map for:
+    * Runic fang
+    * Hurricane Seed
+    * Marionette core
+    * Juvenile Jade
+    * Crystalline bloom
+    * Hoarfrost core
+    * Perpetual heart
+    * Dragonheirs false fin
+    * Lightning prism
+    * Storm beads
+    * Basalt pillar
+    * Riftborn regalia
+  * Reworked embedded map for:
+    * Vayuda turquoiseg gemstone
+    * Vayuda turquoise chunk
+    * Vayuda turquoise fragment
+    * Vayuda turquoise sliver
+    * Shivada jade gemstone
+    * Shivada jade chunk
+    * Shivada jade fragment
+    * Shivada jade sliver
+    * Vajrada amethyst gemstone
+    * Vajrada amethyst chunk
+    * Vajrada amethyst fragment
+    * Vajrada amethyst sliver
 
 #### 1.1.8 April-2022
 * Changes
