@@ -9,8 +9,9 @@ export interface IImg {
 }
 
 const Img: FC<IImg> = ({ imagePath, alt, classes, onClick }) => {
+  const fallbackImage = '/images/icons/primogem.png'
   const {src} = useImage({
-    srcList: imagePath,
+    srcList: [imagePath, fallbackImage],
   })
 
   return <img src={src} alt={alt} className={classes} onClick={onClick} />
