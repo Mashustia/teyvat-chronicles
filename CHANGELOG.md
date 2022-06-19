@@ -3,6 +3,7 @@
   * Added:
     * Yelan
     * Ruin serpent
+    * Kuki Shinobu
   * Added possible teams for:
     * Yae Miko
     * Kamisato Ayato
