@@ -32,6 +32,17 @@
     * Weathered arrowhead
     * Calla lily
     * Sakura bloom
+    * Old handguard
+    * Kageuchi handguard
+    * Famed handguard
+    * Violetgrass
+    * Divining scroll
+    * Sealed scroll
+    * Forbidden curse scroll
+    * Recruits insignia
+    * sergeants insignia
+    * Lieutenants insignia
+    * Valberry
   * Added:
     * Embedded map for Lupus Boreas
     * Golden Wolf Lord on map for geo gems
