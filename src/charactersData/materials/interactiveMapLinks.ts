@@ -1,4 +1,4 @@
-import {BossMaterials, Flower, Gem} from './materialNames';
+import {BossMaterials, BossSkillMaterial, Flower, Gem} from './materialNames';
 
 export const materialLink = {
   windwheel_aster: '2?shown_types=43&center=-86.05,-488.44&zoom=-0.50',
@@ -189,4 +189,7 @@ export const genshinImpactMap = {
   [BossMaterials.DEW_OF_REPUDIATION]: 'names=hydro_hypostasis',
   [BossMaterials.EVERFLAME_SEED]: 'names=pyro_regisvine',
   [BossMaterials.SMOLDERING_PEARL]: 'names=pyro_hypostasis',
+  [BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS]: 'names=lupus_boreas_dominator_of_wolves',
+  [BossSkillMaterial.RING_OF_BOREAS]: 'names=lupus_boreas_dominator_of_wolves',
+  [BossSkillMaterial.TAIL_OF_BOREAS]: 'names=lupus_boreas_dominator_of_wolves',
 }
