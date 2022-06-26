@@ -5,6 +5,33 @@
     * All stones
     * All materials from mobs
     * Specific materials like onikabuto and starconch
+  * Changed map link for:
+    * Damaged mask
+    * Stained mask
+    * Ominous mask
+    * Treasure hoarder insignia
+    * Silver raven insignia
+    * Golden raven insignia
+    * Dandelion seed
+    * Sea ganoderma
+    * Whopperflower nectar
+    * Shimmering nectar
+    * Energy nectar
+    * Crystal marrow
+    * Windwheel aster
+    * Slime condensate
+    * Slime secretions
+    * Slime concentrate
+    * Qingxin
+    * Spectral husk
+    * Spectral heart
+    * Spectral nucleus
+    * Cecilia
+    * Firm arrowhead
+    * Sharp arrowhead
+    * Weathered arrowhead
+    * Calla lily
+    * Sakura bloom
   * Added:
     * Embedded map for Lupus Boreas
     * Golden Wolf Lord on map for geo gems
