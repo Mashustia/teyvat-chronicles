@@ -1,3 +1,23 @@
+#### 1.1.10 July-2022
+* Changes
+  * Changed link names with enum for:
+    * All flowers
+    * All stones
+    * All materials from mobs
+    * Specific materials like onikabuto and starconch
+  * Added:
+    * Embedded map for Lupus Boreas
+    * Golden Wolf Lord on map for geo gems
+  * Reworked embedded map for:
+    * Varunada lazurite gemstone
+    * Varunada lazurite chunk
+    * Varunada lazurite fragment
+    * Varunada lazurite sliver
+    * Agnidus agate gemstone
+    * Agnidus agate chunk
+    * Agnidus agate fragment
+    * Agnidus agate sliver
+
 #### 1.1.9 June-2022
 * Changes
   * Added:
