@@ -43,6 +43,20 @@
     * sergeants insignia
     * Lieutenants insignia
     * Valberry
+    * Philanemo mushroom
+    * Small lamp grass
+    * Glaze lily
+    * Silk flower
+    * Jueyun chili
+    * Amakumo fruit
+    * Wolfhook
+    * Naku weed
+    * Dendrobium
+    * Noctilucous jade
+    * Sango pearl
+    * Starconch
+    * Fluorescent fungus
+    * Onikabuto
   * Added:
     * Embedded map for Lupus Boreas
     * Golden Wolf Lord on map for geo gems
