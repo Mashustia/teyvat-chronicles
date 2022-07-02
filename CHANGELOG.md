@@ -5,6 +5,58 @@
     * All stones
     * All materials from mobs
     * Specific materials like onikabuto and starconch
+  * Changed map link for:
+    * Damaged mask
+    * Stained mask
+    * Ominous mask
+    * Treasure hoarder insignia
+    * Silver raven insignia
+    * Golden raven insignia
+    * Dandelion seed
+    * Sea ganoderma
+    * Whopperflower nectar
+    * Shimmering nectar
+    * Energy nectar
+    * Crystal marrow
+    * Windwheel aster
+    * Slime condensate
+    * Slime secretions
+    * Slime concentrate
+    * Qingxin
+    * Spectral husk
+    * Spectral heart
+    * Spectral nucleus
+    * Cecilia
+    * Firm arrowhead
+    * Sharp arrowhead
+    * Weathered arrowhead
+    * Calla lily
+    * Sakura bloom
+    * Old handguard
+    * Kageuchi handguard
+    * Famed handguard
+    * Violetgrass
+    * Divining scroll
+    * Sealed scroll
+    * Forbidden curse scroll
+    * Recruits insignia
+    * sergeants insignia
+    * Lieutenants insignia
+    * Valberry
+    * Philanemo mushroom
+    * Small lamp grass
+    * Glaze lily
+    * Silk flower
+    * Jueyun chili
+    * Amakumo fruit
+    * Wolfhook
+    * Naku weed
+    * Dendrobium
+    * Noctilucous jade
+    * Sango pearl
+    * Starconch
+    * Fluorescent fungus
+    * Onikabuto
   * Added:
     * Embedded map for Lupus Boreas
     * Golden Wolf Lord on map for geo gems
