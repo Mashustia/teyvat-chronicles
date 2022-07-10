@@ -69,6 +69,7 @@
     * Agnidus agate chunk
     * Agnidus agate fragment
     * Agnidus agate sliver
+  * Fixed Itto rarity
 
 #### 1.1.9 June-2022
 * Changes

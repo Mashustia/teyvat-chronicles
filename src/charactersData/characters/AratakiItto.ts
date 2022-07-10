@@ -27,7 +27,7 @@ const AratakiItto = {
     bossMaterial: BossMaterials.RIFTBORN_REGALIA,
     specialty: OtherMaterials.ONIKABUTO
   }),
-  rarity: 4,
+  rarity: 5,
   talent_materials: fillTalentMaterials({
     books: {
       1: Books.TEACHINGS_OF_ELEGANCE,
