@@ -70,6 +70,7 @@
     * Agnidus agate fragment
     * Agnidus agate sliver
   * Fixed Itto rarity
+  * Changed links for embedded map again because of it's update
 
 #### 1.1.9 June-2022
 * Changes
