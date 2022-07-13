@@ -52,6 +52,7 @@ import YaeMiko from './characters/YaeMiko';
 import KamisatoAyato from './characters/KamisatoAyato';
 import Yelan from './characters/Yelan';
 import KukiShinobu from './characters/KukiShinobu';
+import ShikanoinHeizou from "./characters/ShikanoinHeizou";
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -105,7 +106,8 @@ const CHARACTERS: ICharacter[] = [
   YaeMiko,
   KamisatoAyato,
   Yelan,
-  KukiShinobu
+  KukiShinobu,
+  ShikanoinHeizou,
 ]
 
 export default CHARACTERS

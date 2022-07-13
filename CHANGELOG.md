@@ -1,5 +1,6 @@
 #### 1.1.10 July-2022
 * Changes
+  * Added Shikanoin Heizou
   * Changed link names with enum for:
     * All flowers
     * All stones
