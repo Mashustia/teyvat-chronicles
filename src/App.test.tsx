@@ -5,7 +5,7 @@ import App from './App';
 
 
 describe('App', () => {
-  test('renders App component', async () => {
+  test('renders App component', () => {
     render(
       <I18nextProvider i18n={i18n}>
         <App/>
