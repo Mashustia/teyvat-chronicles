@@ -10,6 +10,8 @@ describe('Header', () => {
       </SuspenseAndTranslationWrapper>
     )
 
+    expect(screen.getByText(/loading.../i)).toBeInTheDocument()
+
     await waitFor(() => expect(screen.getByText(/welcome/i)).toBeInTheDocument())
   })
 });
