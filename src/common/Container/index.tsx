@@ -1,8 +1,8 @@
-import {FC, ReactElement} from 'react'
+import {FC, PropsWithChildren, ReactElement} from 'react'
 
 import './Container.css'
 
-const Container: FC = ({ children}): ReactElement => (
+const Container: FC<PropsWithChildren> = ({children}): ReactElement => (
   <div className='layout-container'>{children}</div>
 )
 
