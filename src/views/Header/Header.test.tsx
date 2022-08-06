@@ -1,13 +1,13 @@
 import {render, waitFor, screen} from '@testing-library/react';
-import SuspenseAndTranslationWrapper from '../Layout/SuspenseAndTranslationWrapperForTests';
 import Header from './index';
+import {I18SuspenseWrapper} from '../../utils/testUtils';
 
 describe('Header', () => {
   test('renders Header component', async () => {
     render(
-      <SuspenseAndTranslationWrapper>
+      <I18SuspenseWrapper>
         <Header/>
-      </SuspenseAndTranslationWrapper>
+      </I18SuspenseWrapper>
     )
 
     expect(screen.getByText(/loading.../i)).toBeInTheDocument()

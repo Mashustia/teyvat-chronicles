@@ -49,3 +49,11 @@ export const I18SuspenseRouterWrapper = (
     </I18wrapper>
   )
 }
+
+export const I18SuspenseWrapper: FC<PropsWithChildren> = ({children}) => (
+  <I18wrapper>
+    <SuspenseWrapper>
+      {children}
+    </SuspenseWrapper>
+  </I18wrapper>
+)

@@ -8,6 +8,7 @@
     * jest
     * i18next
     * typescript
+  * Added tests
 
 #### 1.1.10 July-2022
 

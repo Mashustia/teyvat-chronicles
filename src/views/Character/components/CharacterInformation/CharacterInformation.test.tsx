@@ -1,20 +1,17 @@
-import {MemoryRouter, Route, Routes} from 'react-router-dom';
 import {render, screen, waitFor} from '@testing-library/react';
 import CharacterInformation from './index';
-import SuspenseAndTranslationWrapper from '../../../Layout/SuspenseAndTranslationWrapperForTests';
+import {I18SuspenseRouterWrapper} from '../../../../utils/testUtils';
 
 describe('CharacterInformation', () => {
   test('renders 404 page when wrong person is in route', async () => {
     const badRoute = '/wrongCharacterName'
 
     render(
-      <SuspenseAndTranslationWrapper>
-        <MemoryRouter initialEntries={[badRoute]}>
-          <Routes>
-            <Route path=':name' element={<CharacterInformation/>}/>
-          </Routes>
-        </MemoryRouter>
-      </SuspenseAndTranslationWrapper>
+      <I18SuspenseRouterWrapper
+        initialEntries={[badRoute]}
+        path=':name'
+        children={<CharacterInformation/>}
+      />
     )
 
     await waitFor(() => expect(screen.getByText(/page_404/i)).toBeInTheDocument())
@@ -23,13 +20,11 @@ describe('CharacterInformation', () => {
     const goodRoute = '/Jean'
 
     render(
-      <SuspenseAndTranslationWrapper>
-        <MemoryRouter initialEntries={[goodRoute]}>
-          <Routes>
-            <Route path=':name' element={<CharacterInformation/>}/>
-          </Routes>
-        </MemoryRouter>
-      </SuspenseAndTranslationWrapper>
+      <I18SuspenseRouterWrapper
+        initialEntries={[goodRoute]}
+        path=':name'
+        children={<CharacterInformation/>}
+      />
     )
 
     await waitFor(() => {

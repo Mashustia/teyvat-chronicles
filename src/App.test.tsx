@@ -1,15 +1,14 @@
 import {render, screen} from '@testing-library/react';
-import {I18nextProvider} from 'react-i18next';
-import i18n from './i18nTestingConfig';
 import App from './App';
+import {I18wrapper} from './utils/testUtils';
 
 
 describe('App', () => {
   test('renders App component', () => {
     render(
-      <I18nextProvider i18n={i18n}>
+      <I18wrapper>
         <App/>
-      </I18nextProvider>
+      </I18wrapper>
     )
 
     expect(screen.getByTestId('app')).toBeInTheDocument()
