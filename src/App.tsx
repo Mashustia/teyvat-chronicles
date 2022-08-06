@@ -9,7 +9,7 @@ import {RouteName} from './const/consts';
 
 const App: FC = () => {
   return (
-    <div className='app pt-2'>
+    <div className='app pt-2' data-testid='app'>
       <Suspense fallback='Loading...'>
         <BrowserRouter>
           <Routes>

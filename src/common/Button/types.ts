@@ -1,6 +1,6 @@
-import {ReactElement, MouseEvent, RefObject} from 'react';
+import {ReactElement, MouseEvent, RefObject, PropsWithChildren} from 'react';
 
-export interface IButtonProps {
+export interface IButtonProps extends PropsWithChildren {
   onClick?: (e: MouseEvent) => void
   iconLeft?: ReactElement
   type?: ButtonType

@@ -1,6 +1,6 @@
-import {MouseEvent} from 'react';
+import {MouseEvent, PropsWithChildren} from 'react';
 
-export interface IPopoverProps {
+export interface IPopoverProps extends PropsWithChildren {
   isShown: boolean
   onClickOutside: (e: MouseEvent | KeyboardEvent) => void
   classes?: string

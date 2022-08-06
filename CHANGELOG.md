@@ -1,4 +1,17 @@
+#### 1.1.11 August-2022
+
+* Changes
+  * Updated packages to last version:
+    * fortawesome
+    * react
+    * testing-library
+    * jest
+    * i18next
+    * typescript
+  * Added tests
+
 #### 1.1.10 July-2022
+
 * Changes
   * Added Shikanoin Heizou
   * Changed link names with enum for:
@@ -74,6 +87,7 @@
   * Changed links for embedded map again because of it's update
 
 #### 1.1.9 June-2022
+
 * Changes
   * Added:
     * Yelan
@@ -138,11 +152,13 @@
     * Vajrada amethyst sliver
 
 #### 1.1.8 April-2022
+
 * Changes
   * Added Kamisato Ayato
   * Added materials for Ayato skills
 
 #### 1.1.7 March-2022
+
 * Changes
   * Updated react-router to v6
   * Updated i18next-http-backend to 1.3.2
@@ -151,6 +167,7 @@
     * Go back button in the news block was hidden
 
 #### 1.1.6 February-2022
+
 * Changes
   * Added farming routes for:
     * Treasure hoarder
@@ -199,6 +216,7 @@
   * Added End of the Oneiric euthymia
 
 #### 1.1.5 January-2022
+
 * Changes
   * Added possible teams for:
     * Yoimiya
@@ -246,6 +264,7 @@
     * Handguard
 
 #### 1.1.4 December-2021
+
 * Changes
   * Added possible teams section
   * Added possible teams for:
@@ -285,33 +304,33 @@
 #### 1.1.2 October-2021
 
 * Changed
-  *  Added embedded map for bosses materials and books
-  *  Added embedded map for dungeons
-  *  Fixed active material toggle
-  *  Added ley lines information
-  *  Added trademark info
-  *  Changed background style
-  *  Fixed errors in characters information
-  *  Changed grid for main page
-  *  Added live search
-  *  Added character stars information
-  *  Added interactive map links
-  *  Added english localisation
-  *  Added talent materials
+  * Added embedded map for bosses materials and books
+  * Added embedded map for dungeons
+  * Fixed active material toggle
+  * Added ley lines information
+  * Added trademark info
+  * Changed background style
+  * Fixed errors in characters information
+  * Changed grid for main page
+  * Added live search
+  * Added character stars information
+  * Added interactive map links
+  * Added english localisation
+  * Added talent materials
 
 #### 1.1.1 September-2021
 
 * Changes
-  *  Group characters by vision
-  *  Skeleton for images
-  *  Added logo and minify images
-  *  Added characters information
-  *  Added material images
-  *  Added character ascension materials
-  *  Fixed vercel error
-  *  Added character page
-  *  Added character profile card
-  *  Added material design system
+  * Group characters by vision
+  * Skeleton for images
+  * Added logo and minify images
+  * Added characters information
+  * Added material images
+  * Added character ascension materials
+  * Fixed vercel error
+  * Added character page
+  * Added character profile card
+  * Added material design system
 
 #### 0.1.0 (2021-10-26)
 

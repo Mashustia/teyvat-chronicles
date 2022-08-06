@@ -1,5 +1,5 @@
-import {RefObject} from 'react';
+import {PropsWithChildren, RefObject} from 'react';
 
-export interface ISidebarProps {
+export interface ISidebarProps extends PropsWithChildren {
   innerRef: RefObject<any>
 }
