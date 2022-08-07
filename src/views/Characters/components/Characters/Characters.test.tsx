@@ -71,5 +71,22 @@ describe('Characters', () => {
     expect(charactersAfterSearch).toHaveLength(1)
     expect(charactersAfterSearch[0]).toHaveAttribute('href', '/Albedo')
   })
+
+  test('onChange function works in search', async () => {
+    render(
+      <I18SuspenseRouterWrapper
+        initialEntries={[RouteName.DEFAULT]}
+        path={RouteName.DEFAULT}
+      >
+        <Characters characters={MOCK_CHARACTERS}/>
+      </I18SuspenseRouterWrapper>
+    )
+
+    const searchField = await waitFor(() => screen.getByPlaceholderText(/search_placeholder/i))
+
+    await waitFor(() => userEvent.type(searchField, 'Anemo'))
+
+    expect(searchField).toHaveValue('anemo')
+  })
 });
 
