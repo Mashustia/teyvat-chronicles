@@ -1,6 +1,5 @@
 import {
   render,
-  screen,
   waitFor,
 } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -36,7 +35,7 @@ const MOCK_CHARACTERS = [{
 
 describe('Characters', () => {
   test('renders Characters component', async () => {
-    render(
+    const {getByText, getByPlaceholderText} = render(
       <I18SuspenseRouterWrapper
         initialEntries={[RouteName.DEFAULT]}
         path={RouteName.DEFAULT}
@@ -45,13 +44,13 @@ describe('Characters', () => {
       </I18SuspenseRouterWrapper>
     )
 
-    expect(screen.getByText(/loading.../i)).toBeInTheDocument()
+    expect(getByText(/loading.../i)).toBeInTheDocument()
 
-    await waitFor(() => expect(screen.getByPlaceholderText(/search_placeholder/i)).toBeInTheDocument())
+    await waitFor(() => expect(getByPlaceholderText(/search_placeholder/i)).toBeInTheDocument())
   })
 
   test('character search works', async () => {
-    const {findAllByRole} = render(
+    const {findAllByRole, getByPlaceholderText} = render(
       <I18SuspenseRouterWrapper
         initialEntries={[RouteName.DEFAULT]}
         path={RouteName.DEFAULT}
@@ -65,7 +64,7 @@ describe('Characters', () => {
     expect(charactersBeforeSearch[0]).toHaveAttribute('href', '/Jean')
     expect(charactersBeforeSearch[1]).toHaveAttribute('href', '/Albedo')
 
-    await waitFor(() => userEvent.type(screen.getByPlaceholderText(/search_placeholder/i), 'Albedo'))
+    await waitFor(() => userEvent.type(getByPlaceholderText(/search_placeholder/i), 'Albedo'))
 
     const charactersAfterSearch = await findAllByRole('link')
     expect(charactersAfterSearch).toHaveLength(1)
@@ -73,7 +72,7 @@ describe('Characters', () => {
   })
 
   test('onChange function works in search', async () => {
-    render(
+    const {getByPlaceholderText} = render(
       <I18SuspenseRouterWrapper
         initialEntries={[RouteName.DEFAULT]}
         path={RouteName.DEFAULT}
@@ -82,7 +81,7 @@ describe('Characters', () => {
       </I18SuspenseRouterWrapper>
     )
 
-    const searchField = await waitFor(() => screen.getByPlaceholderText(/search_placeholder/i))
+    const searchField = await waitFor(() => getByPlaceholderText(/search_placeholder/i))
 
     await waitFor(() => userEvent.type(searchField, 'Anemo'))
 
