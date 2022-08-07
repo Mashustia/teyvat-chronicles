@@ -1,9 +1,10 @@
 import {
   render,
   waitFor,
+  screen
 } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import {I18SuspenseRouterWrapper} from '../../../../utils/testUtils';
+import {renderWithI18AndSuspenseAndRouter} from '../../../../utils/testUtils';
 import {RouteName, Vision} from '../../../../const/consts';
 import Characters from './index';
 
@@ -34,55 +35,44 @@ const MOCK_CHARACTERS = [{
 }]
 
 describe('Characters', () => {
+  const path = RouteName.DEFAULT
+  const initialEntries = [RouteName.DEFAULT]
+
   test('renders Characters component', async () => {
-    const {getByText, getByPlaceholderText} = render(
-      <I18SuspenseRouterWrapper
-        initialEntries={[RouteName.DEFAULT]}
-        path={RouteName.DEFAULT}
-      >
-        <Characters characters={MOCK_CHARACTERS}/>
-      </I18SuspenseRouterWrapper>
+    render(
+      renderWithI18AndSuspenseAndRouter(<Characters characters={MOCK_CHARACTERS}/>, path, initialEntries)
     )
 
-    expect(getByText(/loading.../i)).toBeInTheDocument()
+    expect(screen.getByText(/loading.../i)).toBeInTheDocument()
 
-    await waitFor(() => expect(getByPlaceholderText(/search_placeholder/i)).toBeInTheDocument())
+    const searchField = await screen.findByRole('textbox')
+    expect(searchField).toBeInTheDocument()
   })
 
   test('character search works', async () => {
-    const {findAllByRole, getByPlaceholderText} = render(
-      <I18SuspenseRouterWrapper
-        initialEntries={[RouteName.DEFAULT]}
-        path={RouteName.DEFAULT}
-      >
-        <Characters characters={MOCK_CHARACTERS}/>
-      </I18SuspenseRouterWrapper>
+    render(
+      renderWithI18AndSuspenseAndRouter(<Characters characters={MOCK_CHARACTERS}/>, path, initialEntries)
     )
 
-    const charactersBeforeSearch = await findAllByRole('link')
+    const charactersBeforeSearch = await screen.findAllByRole('link')
     expect(charactersBeforeSearch).toHaveLength(2)
     expect(charactersBeforeSearch[0]).toHaveAttribute('href', '/Jean')
     expect(charactersBeforeSearch[1]).toHaveAttribute('href', '/Albedo')
 
-    await waitFor(() => userEvent.type(getByPlaceholderText(/search_placeholder/i), 'Albedo'))
+    const searchField = await screen.findByRole('textbox')
+    await waitFor(() => userEvent.type(searchField, 'Albedo'))
 
-    const charactersAfterSearch = await findAllByRole('link')
+    const charactersAfterSearch = await screen.findAllByRole('link')
     expect(charactersAfterSearch).toHaveLength(1)
     expect(charactersAfterSearch[0]).toHaveAttribute('href', '/Albedo')
   })
 
   test('onChange function works in search', async () => {
-    const {getByPlaceholderText} = render(
-      <I18SuspenseRouterWrapper
-        initialEntries={[RouteName.DEFAULT]}
-        path={RouteName.DEFAULT}
-      >
-        <Characters characters={MOCK_CHARACTERS}/>
-      </I18SuspenseRouterWrapper>
+    render(
+      renderWithI18AndSuspenseAndRouter(<Characters characters={MOCK_CHARACTERS}/>, path, initialEntries)
     )
 
-    const searchField = await waitFor(() => getByPlaceholderText(/search_placeholder/i))
-
+    const searchField = await screen.findByRole('textbox')
     await waitFor(() => userEvent.type(searchField, 'Anemo'))
 
     expect(searchField).toHaveValue('anemo')
