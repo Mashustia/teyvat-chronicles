@@ -11,11 +11,13 @@ import {
 import {IAscensionMaterials, ICharacter, ILevel, IMaterial} from '../charactersData/types';
 import {characterExperience, HEROS_WIT_EXP as HEROS_WIT_EXP_QUANTITY} from '../charactersData/common';
 import CHARACTERS from '../charactersData';
-import {COUNT, MATERIAL, SORTING_INDEX} from '../const/consts';
+import {COUNT, Languages, MATERIAL, SORTING_INDEX} from '../const/consts';
 import {HEROS_WIT, MORA} from '../charactersData/materials/materialNames';
 import {IAscensionSummary} from '../views/Character/components/AscensionSummary/types';
+import {TFunction} from 'react-i18next';
+import {ICharacterProps as ICharacterWithSearchKeys} from '../views/Characters/components/Character/types';
 
-export const ScrollToTopOnMount = ({ name }: { name?: string | undefined }) => {
+export const ScrollToTopOnMount = ({name}: { name?: string | undefined }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [name]);
@@ -23,7 +25,11 @@ export const ScrollToTopOnMount = ({ name }: { name?: string | undefined }) => {
   return null;
 }
 
-export const fillTalentMaterials = ({ books, materials, bossMaterial }: ICharacterTalentMaterials): IAscensionMaterials => {
+export const fillTalentMaterials = ({
+                                      books,
+                                      materials,
+                                      bossMaterial
+                                    }: ICharacterTalentMaterials): IAscensionMaterials => {
   const talentMaterials = cloneDeep(defaultTalentMaterials)
 
   // lvl 2
@@ -33,7 +39,7 @@ export const fillTalentMaterials = ({ books, materials, bossMaterial }: ICharact
   // lvl 3, 4, 5, 6
   const lvl2Materials = [3, 4, 5, 6]
   lvl2Materials.forEach((lvl: number) => {
-      talentMaterials[lvl][0].material = books[2]
+    talentMaterials[lvl][0].material = books[2]
       talentMaterials[lvl][1].material = materials[2]
     }
   )
@@ -232,3 +238,21 @@ export const getGroupedMaterials = (materials: IMaterial[]): IMaterial[] => {
     return [...accumulator, material]
   }, [])
 }
+
+export const getCharactersWithTranslatedNames = (charactersList: ICharacter[], t: TFunction): ICharacterWithSearchKeys[] =>
+  charactersList.map((character: ICharacter) => {
+    const {name, vision} = character
+    return ({
+      ...character,
+      search_keys: (`${
+        t(`character:names.${name}`, {lng: Languages.EN})
+      } ${
+        t(`character:names.${name}`, {lng: Languages.RU})
+      } ${
+        t(`character:vision.${vision}`, {lng: Languages.EN})
+      } ${
+        t(`character:vision.${vision}`, {lng: Languages.RU}
+        )}`).toLowerCase(),
+      translated_name: t(`character:names.${name}`)
+    })
+  })
