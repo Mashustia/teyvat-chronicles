@@ -1,5 +1,6 @@
 import {useEffect} from 'react';
 import {cloneDeep, groupBy, sortBy} from 'lodash'
+import {TFunction} from 'react-i18next';
 
 import {defaultAscensionMaterials, defaultTalentMaterials} from '../charactersData/materials/expandedMaterialInfo';
 import {
@@ -14,7 +15,6 @@ import CHARACTERS from '../charactersData';
 import {COUNT, Languages, MATERIAL, SORTING_INDEX} from '../const/consts';
 import {HEROS_WIT, MORA} from '../charactersData/materials/materialNames';
 import {IAscensionSummary} from '../views/Character/components/AscensionSummary/types';
-import {TFunction} from 'react-i18next';
 import {ICharacterProps as ICharacterWithSearchKeys} from '../views/Characters/components/Character/types';
 
 export const ScrollToTopOnMount = ({name}: { name?: string | undefined }) => {
