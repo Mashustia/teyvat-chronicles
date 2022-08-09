@@ -4,8 +4,8 @@ import {useTranslation} from 'react-i18next';
 
 import {ICharacterProps as ICharacterWithSearchKeys} from '../Character/types'
 import CharactersGroup from '../CharactersGroup';
-import './Characters.css'
 import {ICharactersProps} from './types';
+import './Characters.css'
 
 const Characters: FC<ICharactersProps> = ({characters}) => {
   const {t} = useTranslation('character')

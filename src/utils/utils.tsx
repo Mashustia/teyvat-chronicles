@@ -1,5 +1,6 @@
 import {useEffect} from 'react';
 import {cloneDeep, groupBy, sortBy} from 'lodash'
+import {TFunction} from 'react-i18next';
 
 import {defaultAscensionMaterials, defaultTalentMaterials} from '../charactersData/materials/expandedMaterialInfo';
 import {
@@ -11,11 +12,12 @@ import {
 import {IAscensionMaterials, ICharacter, ILevel, IMaterial} from '../charactersData/types';
 import {characterExperience, HEROS_WIT_EXP as HEROS_WIT_EXP_QUANTITY} from '../charactersData/common';
 import CHARACTERS from '../charactersData';
-import {COUNT, MATERIAL, SORTING_INDEX} from '../const/consts';
+import {COUNT, Languages, MATERIAL, SORTING_INDEX} from '../const/consts';
 import {HEROS_WIT, MORA} from '../charactersData/materials/materialNames';
 import {IAscensionSummary} from '../views/Character/components/AscensionSummary/types';
+import {ICharacterProps as ICharacterWithSearchKeys} from '../views/Characters/components/Character/types';
 
-export const ScrollToTopOnMount = ({ name }: { name?: string | undefined }) => {
+export const ScrollToTopOnMount = ({name}: { name?: string | undefined }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [name]);
@@ -23,7 +25,13 @@ export const ScrollToTopOnMount = ({ name }: { name?: string | undefined }) => {
   return null;
 }
 
-export const fillTalentMaterials = ({ books, materials, bossMaterial }: ICharacterTalentMaterials): IAscensionMaterials => {
+export const fillTalentMaterials = (
+  {
+    books,
+    materials,
+    bossMaterial
+  }: ICharacterTalentMaterials
+): IAscensionMaterials => {
   const talentMaterials = cloneDeep(defaultTalentMaterials)
 
   // lvl 2
@@ -51,7 +59,14 @@ export const fillTalentMaterials = ({ books, materials, bossMaterial }: ICharact
 }
 
 
-export const fillAscensionMaterials = ({ gems, materials, bossMaterial, specialty }: ICharacterAscensionMaterials): IAscensionMaterials => {
+export const fillAscensionMaterials = (
+  {
+    gems,
+    materials,
+    bossMaterial,
+    specialty
+  }: ICharacterAscensionMaterials
+): IAscensionMaterials => {
   const ascensionMaterials = cloneDeep(defaultAscensionMaterials)
 
   // specialties
@@ -104,7 +119,7 @@ export const fillAscensionMaterials = ({ gems, materials, bossMaterial, specialt
 export const calculateExperience = (startingLevel: ILevel, finalLevel: ILevel): IBooksAndMoraForLevel => {
   const expLevels = Object.keys(characterExperience)
 
-  const expNeeded = expLevels.reduce((accumulator: ICalculatedExperience, currentValue: string): ICalculatedExperience  => {
+  const expNeeded = expLevels.reduce((accumulator: ICalculatedExperience, currentValue: string): ICalculatedExperience => {
     if (parseInt(currentValue) <= startingLevel.lvl) return accumulator
     if (parseInt(currentValue) > finalLevel.lvl) return accumulator
 
@@ -112,11 +127,11 @@ export const calculateExperience = (startingLevel: ILevel, finalLevel: ILevel): 
     accumulator.mora = accumulator.mora + characterExperience[currentValue].mora
 
     return accumulator
-  }, { exp: 0, mora: 0 })
+  }, {exp: 0, mora: 0})
 
   const booksCount = Math.ceil(expNeeded.exp / HEROS_WIT_EXP_QUANTITY)
 
-  return { books: booksCount, mora: expNeeded.mora}
+  return {books: booksCount, mora: expNeeded.mora}
 }
 
 export const getAscensionMaterialsSummary = (ascensionMaterials: IAscensionMaterials): IMaterial[] => {
@@ -169,14 +184,18 @@ export const calculateMaterials = (characterName: string, startingLevel: ILevel,
     const ascensionMaterialsSummary: IMaterial[] = getAscensionMaterialsSummary(materialsNeeded)
     const booksSummary = calculateExperience(startingLevel, finalLevel)
 
-    const overallSummary: IMaterial[] = [...ascensionMaterialsSummary, { material: HEROS_WIT, count: booksSummary.books, sorting_index: 2}]
+    const overallSummary: IMaterial[] = [...ascensionMaterialsSummary, {
+      material: HEROS_WIT,
+      count: booksSummary.books,
+      sorting_index: 2
+    }]
 
     const moraIndex = overallSummary.findIndex((material: IMaterial) => material.material === MORA)
 
     if (moraIndex !== -1) {
       overallSummary[moraIndex].count = overallSummary[moraIndex].count + booksSummary.mora
     } else {
-      overallSummary.push({ material: MORA, count: booksSummary.mora, sorting_index: 1})
+      overallSummary.push({material: MORA, count: booksSummary.mora, sorting_index: 1})
     }
 
     return sortBy(overallSummary, [SORTING_INDEX, COUNT])
@@ -185,7 +204,7 @@ export const calculateMaterials = (characterName: string, startingLevel: ILevel,
   return []
 }
 
-export const getCumulativeMaterials = ({ characterData, skillLevel, isTraveler}: IAscensionSummary): IMaterial[] => {
+export const getCumulativeMaterials = ({characterData, skillLevel, isTraveler}: IAscensionSummary): IMaterial[] => {
   const skills = Object.keys(skillLevel)
 
   const cumulativeMaterials: IMaterial[] = []
@@ -232,3 +251,21 @@ export const getGroupedMaterials = (materials: IMaterial[]): IMaterial[] => {
     return [...accumulator, material]
   }, [])
 }
+
+export const getCharactersWithTranslatedNames = (charactersList: ICharacter[], t: TFunction): ICharacterWithSearchKeys[] =>
+  charactersList.map((character: ICharacter) => {
+    const {name, vision} = character
+    return ({
+      ...character,
+      search_keys: (`${
+        t(`character:names.${name}`, {lng: Languages.EN})
+      } ${
+        t(`character:names.${name}`, {lng: Languages.RU})
+      } ${
+        t(`character:vision.${vision}`, {lng: Languages.EN})
+      } ${
+        t(`character:vision.${vision}`, {lng: Languages.RU}
+        )}`).toLowerCase(),
+      translated_name: t(`character:names.${name}`)
+    })
+  })

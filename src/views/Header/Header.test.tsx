@@ -1,17 +1,14 @@
-import {render, waitFor, screen} from '@testing-library/react';
+import {render, screen} from '@testing-library/react';
 import Header from './index';
-import {I18SuspenseWrapper} from '../../utils/testUtils';
+import {renderWithI18AndSuspense} from '../../utils/testUtils';
 
 describe('Header', () => {
+  render(renderWithI18AndSuspense(<Header/>))
   test('renders Header component', async () => {
-    render(
-      <I18SuspenseWrapper>
-        <Header/>
-      </I18SuspenseWrapper>
-    )
 
     expect(screen.getByText(/loading.../i)).toBeInTheDocument()
 
-    await waitFor(() => expect(screen.getByText(/welcome/i)).toBeInTheDocument())
+    const greetingsText = await screen.findByRole('heading', {level: 1})
+    expect(greetingsText).toHaveTextContent(/welcome/i)
   })
 });
