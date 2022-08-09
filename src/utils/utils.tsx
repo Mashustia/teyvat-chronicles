@@ -41,8 +41,8 @@ export const fillTalentMaterials = (
   // lvl 3, 4, 5, 6
   const lvl2Materials = [3, 4, 5, 6]
   lvl2Materials.forEach((lvl: number) => {
-    talentMaterials[lvl][0].material = books[2]
-    talentMaterials[lvl][1].material = materials[2]
+      talentMaterials[lvl][0].material = books[2]
+      talentMaterials[lvl][1].material = materials[2]
     }
   )
 
