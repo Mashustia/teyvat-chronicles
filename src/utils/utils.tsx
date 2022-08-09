@@ -25,11 +25,13 @@ export const ScrollToTopOnMount = ({name}: { name?: string | undefined }) => {
   return null;
 }
 
-export const fillTalentMaterials = ({
-                                      books,
-                                      materials,
-                                      bossMaterial
-                                    }: ICharacterTalentMaterials): IAscensionMaterials => {
+export const fillTalentMaterials = (
+  {
+    books,
+    materials,
+    bossMaterial
+  }: ICharacterTalentMaterials
+): IAscensionMaterials => {
   const talentMaterials = cloneDeep(defaultTalentMaterials)
 
   // lvl 2
@@ -40,7 +42,7 @@ export const fillTalentMaterials = ({
   const lvl2Materials = [3, 4, 5, 6]
   lvl2Materials.forEach((lvl: number) => {
     talentMaterials[lvl][0].material = books[2]
-      talentMaterials[lvl][1].material = materials[2]
+    talentMaterials[lvl][1].material = materials[2]
     }
   )
 
@@ -57,7 +59,14 @@ export const fillTalentMaterials = ({
 }
 
 
-export const fillAscensionMaterials = ({ gems, materials, bossMaterial, specialty }: ICharacterAscensionMaterials): IAscensionMaterials => {
+export const fillAscensionMaterials = (
+  {
+    gems,
+    materials,
+    bossMaterial,
+    specialty
+  }: ICharacterAscensionMaterials
+): IAscensionMaterials => {
   const ascensionMaterials = cloneDeep(defaultAscensionMaterials)
 
   // specialties
@@ -110,7 +119,7 @@ export const fillAscensionMaterials = ({ gems, materials, bossMaterial, specialt
 export const calculateExperience = (startingLevel: ILevel, finalLevel: ILevel): IBooksAndMoraForLevel => {
   const expLevels = Object.keys(characterExperience)
 
-  const expNeeded = expLevels.reduce((accumulator: ICalculatedExperience, currentValue: string): ICalculatedExperience  => {
+  const expNeeded = expLevels.reduce((accumulator: ICalculatedExperience, currentValue: string): ICalculatedExperience => {
     if (parseInt(currentValue) <= startingLevel.lvl) return accumulator
     if (parseInt(currentValue) > finalLevel.lvl) return accumulator
 
@@ -118,11 +127,11 @@ export const calculateExperience = (startingLevel: ILevel, finalLevel: ILevel): 
     accumulator.mora = accumulator.mora + characterExperience[currentValue].mora
 
     return accumulator
-  }, { exp: 0, mora: 0 })
+  }, {exp: 0, mora: 0})
 
   const booksCount = Math.ceil(expNeeded.exp / HEROS_WIT_EXP_QUANTITY)
 
-  return { books: booksCount, mora: expNeeded.mora}
+  return {books: booksCount, mora: expNeeded.mora}
 }
 
 export const getAscensionMaterialsSummary = (ascensionMaterials: IAscensionMaterials): IMaterial[] => {
@@ -175,14 +184,18 @@ export const calculateMaterials = (characterName: string, startingLevel: ILevel,
     const ascensionMaterialsSummary: IMaterial[] = getAscensionMaterialsSummary(materialsNeeded)
     const booksSummary = calculateExperience(startingLevel, finalLevel)
 
-    const overallSummary: IMaterial[] = [...ascensionMaterialsSummary, { material: HEROS_WIT, count: booksSummary.books, sorting_index: 2}]
+    const overallSummary: IMaterial[] = [...ascensionMaterialsSummary, {
+      material: HEROS_WIT,
+      count: booksSummary.books,
+      sorting_index: 2
+    }]
 
     const moraIndex = overallSummary.findIndex((material: IMaterial) => material.material === MORA)
 
     if (moraIndex !== -1) {
       overallSummary[moraIndex].count = overallSummary[moraIndex].count + booksSummary.mora
     } else {
-      overallSummary.push({ material: MORA, count: booksSummary.mora, sorting_index: 1})
+      overallSummary.push({material: MORA, count: booksSummary.mora, sorting_index: 1})
     }
 
     return sortBy(overallSummary, [SORTING_INDEX, COUNT])
@@ -191,7 +204,7 @@ export const calculateMaterials = (characterName: string, startingLevel: ILevel,
   return []
 }
 
-export const getCumulativeMaterials = ({ characterData, skillLevel, isTraveler}: IAscensionSummary): IMaterial[] => {
+export const getCumulativeMaterials = ({characterData, skillLevel, isTraveler}: IAscensionSummary): IMaterial[] => {
   const skills = Object.keys(skillLevel)
 
   const cumulativeMaterials: IMaterial[] = []
