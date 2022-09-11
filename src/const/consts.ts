@@ -26,7 +26,8 @@ export enum Vision {
   ELECTRO = 'electro',
   CRYO = 'cryo',
   HYDRO = 'hydro',
-  GEO = 'geo'
+  GEO = 'geo',
+  DENDRO = 'dendro',
 }
 
 export enum RouteName {
@@ -121,6 +122,7 @@ export enum Character {
   YELAN = 'Yelan',
   KUKI_SHINOBU = 'Kuki_Shinobu',
   SHIKANOIN_HEIZOU = 'Shikanoin_Heizou',
+  TIGHNARI = 'Tighnari',
 }
 
 export const DefaultStartingLevel = {

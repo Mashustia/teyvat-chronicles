@@ -52,17 +52,19 @@
     "Kamisato_Ayato": "Kamisato Ayato",
     "Yelan": "Yelan",
     "Kuki_Shinobu": "Kuki Shinobu",
-    "Shikanoin_Heizou": "Shikanoin Heizou"
+    "Shikanoin_Heizou": "Shikanoin Heizou",
+    "Tighnari": "Tighnari"
   },
   "ascension_materials": "Ascension materials",
   "talents_enhancement": "Talent level-up materials",
   "vision": {
     "anemo": "Anemo",
     "pyro": "Pyro",
-    "electro":  "Electro",
+    "electro": "Electro",
     "cryo": "Cryo",
-    "hydro":  "Hydro",
-    "geo": "Geo"
+    "hydro": "Hydro",
+    "geo": "Geo",
+    "dendro": "Dendro"
   },
   "search_placeholder": "Search by name or vision",
   "character_not_found": "Character not found",

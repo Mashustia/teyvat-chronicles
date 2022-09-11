@@ -52,7 +52,8 @@
     "Kamisato_Ayato": "Камисато Аято",
     "Yelan": "Е Лань",
     "Kuki_Shinobu": "Куки Синобу",
-    "Shikanoin_Heizou": "Хэйдзо"
+    "Shikanoin_Heizou": "Хэйдзо",
+    "Tighnari": "Тигнари"
   },
   "ascension_materials": "Материалы возвышения",
   "talents_enhancement": "Улучшение талантов",
@@ -62,7 +63,8 @@
     "electro": "Электро",
     "cryo": "Крио",
     "hydro": "Гидро",
-    "geo": "Гео"
+    "geo": "Гео",
+    "dendro": "Дендро"
   },
   "search_placeholder": "Поиск по имени или глазу бога",
   "character_not_found": "Персонаж не найден",

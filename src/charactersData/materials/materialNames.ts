@@ -34,6 +34,12 @@ export const Gem = {
     AGNIDUS_AGATE_CHUNK: 'agnidus_agate_chunk',
     AGNIDUS_AGATE_FRAGMENT: 'agnidus_agate_fragment',
     AGNIDUS_AGATE_SLIVER: 'agnidus_agate_sliver'
+  },
+  DENDRO: {
+    NAGADUS_EMERALD_GEMSTONE: 'nagadus_emerald_gemstone',
+    NAGADUS_EMERALD_CHUNK: 'nagadus_emerald_chunk',
+    NAGADUS_EMERALD_FRAGMENT: 'nagadus_emerald_fragment',
+    NAGADUS_EMERALD_SLIVER: 'nagadus_emerald_sliver'
   }
 }
 
@@ -60,7 +66,8 @@ export enum Flower {
   SAKURA_BLOOM = 'sakura_bloom',
   NAKU_WEED = 'naku_weed',
   DENDROBIUM = 'dendrobium',
-  FLUORESCENT_FUNGUS = 'fluorescent_fungus'
+  FLUORESCENT_FUNGUS = 'fluorescent_fungus',
+  NILOTPALA_LOTUS = 'nilotpala_lotus',
 }
 
 export enum Rocks {
@@ -110,6 +117,9 @@ export enum Materials {
   SPECTRAL_HUSK = 'spectral_husk',
   SPECTRAL_HEART = 'spectral_heart',
   SPECTRAL_NUCLEUS = 'spectral_nucleus',
+  FUNGAL_SPORES = 'fungal_spores',
+  LUMINESCENT_POLLEN = 'luminescent_pollen',
+  CRYSTALLINE_CYST_DUST = 'crystalline_cyst_dust',
 }
 
 export enum Books {
@@ -140,6 +150,9 @@ export enum Books {
   TEACHINGS_OF_LIGHT = 'teachings_of_light',
   GUIDE_TO_LIGHT = 'guide_to_light',
   PHILOSOPHIES_OF_LIGHT = 'philosophies_of_light',
+  TEACHINGS_OF_ADMONITION = 'teachings_of_admonition',
+  GUIDE_OF_ADMONITION = 'guide_of_admonition',
+  PHILOSOPHIES_OF_ADMONITION = 'philosophies_of_admonition',
 }
 
 export const CROWN_OF_INSIGHT = 'crown_of_insight'
@@ -161,6 +174,7 @@ export enum BossMaterials {
   RIFTBORN_REGALIA = 'riftborn_regalia',
   DRAGONHEIRS_FALSE_FIN = 'dragonheirs_false_fin',
   RUNIC_FANG = 'runic_fang',
+  MAJESTIC_HOOKED_BEAK = 'majestic_hooked_beak',
 }
 
 export enum BossSkillMaterial {
