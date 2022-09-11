@@ -25,14 +25,14 @@ const Dori = {
       3: Materials.RICH_RED_BROCADE,
     },
     bossMaterial: BossMaterials.THUNDERCLAP_FRUITCORE,
-    specialty: Flower.RUKKHASHAVA_MUSHROOMS
+    specialty: Flower.KALPALATA_LOTUS
   }),
   rarity: 4,
   talent_materials: fillTalentMaterials({
     books: {
-      1: Books.TEACHINGS_OF_PRAXIS,
-      2: Books.GUIDE_TO_PRAXIS,
-      3: Books.PHILOSOPHIES_OF_PRAXIS,
+      1: Books.TEACHINGS_OF_INGENUITY,
+      2: Books.GUIDE_TO_INGENUITY,
+      3: Books.PHILOSOPHIES_OF_INGENUITY,
     },
     materials: {
       1: Materials.FADED_RED_SATIN,
