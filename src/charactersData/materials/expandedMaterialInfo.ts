@@ -7,7 +7,8 @@ export enum Region {
   LIYUE = 'liyue',
   INAZUMA = 'inazuma',
   ENKANOMIA = 'enkanomia',
-  THE_CHASM = 'the_chasm'
+  THE_CHASM = 'the_chasm',
+  SUMERU = 'sumeru',
 }
 
 const LeyLineOutcropsBlossomOfWealth = {
@@ -43,6 +44,13 @@ const VioletCourt = {
 const TaishanMansion = {
   name: 'taishan_mansion',
   region: Region.LIYUE,
+  original_resin: 20,
+  // map_link: 'pin=645|1168|Taishan Mansion'
+}
+
+const SteepleOfIgnorance = {
+  name: 'steeple_of_ignorance',
+  region: Region.SUMERU,
   original_resin: 20,
   // map_link: 'pin=645|1168|Taishan Mansion'
 }
@@ -92,6 +100,21 @@ const Elegance = {
 const Transience = {
   ...VioletCourt,
   is_open_days: [WeekDay.MONDAY, WeekDay.THURSDAY, WeekDay.SUNDAY]
+}
+
+const Admonition = {
+  ...SteepleOfIgnorance,
+  is_open_days: [WeekDay.MONDAY, WeekDay.THURSDAY, WeekDay.SUNDAY]
+}
+
+const Ingenuity = {
+  ...SteepleOfIgnorance,
+  is_open_days: [WeekDay.TUESDAY, WeekDay.FRIDAY, WeekDay.SUNDAY]
+}
+
+const Praxis = {
+  ...SteepleOfIgnorance,
+  is_open_days: [WeekDay.WEDNESDAY, WeekDay.SATURDAY, WeekDay.SUNDAY]
 }
 
 // Weekly Bosses
@@ -211,6 +234,13 @@ const CryoRegisvine = {
   // map_link: 'pin=2100|-1680|Cryo Regisvine'
 }
 
+const ElectroRegisvine = {
+  name: 'electro_regisvine',
+  region: Region.SUMERU,
+  original_resin: 40,
+  // map_link: 'pin=2100|-1680|Cryo Regisvine'
+}
+
 // Others
 
 const Oceanid = {
@@ -257,6 +287,12 @@ const BathysmalVishapHerd = {
 const RuinSerpent = {
   name: 'ruin_serpent',
   region: Region.THE_CHASM,
+  original_resin: 40,
+}
+
+const JadeplumeTerrorshroom = {
+  name: 'jadeplume_terrorshroom',
+  region: Region.SUMERU,
   original_resin: 40,
 }
 
@@ -349,6 +385,17 @@ export const ExpandedMaterialInfo: IDungeon = {
   tears_of_the_calamitous_god: {...EndOfTheOneiricEuthymia},
   mudra_of_the_malefic_general: {...EndOfTheOneiricEuthymia},
   runic_fang: {...RuinSerpent},
+  thunderclap_fruitcore: {...ElectroRegisvine},
+  majestic_hooked_beak: {...JadeplumeTerrorshroom},
+  teachings_of_admonition: {...Admonition},
+  guide_to_admonition: {...Admonition},
+  philosophies_of_admonition: {...Admonition},
+  teachings_of_praxis: {...Praxis},
+  guide_to_praxis: {...Praxis},
+  philosophies_of_praxis: {...Praxis},
+  teachings_of_ingenuity: {...Ingenuity},
+  guide_to_ingenuity: {...Ingenuity},
+  philosophies_of_ingenuity: {...Ingenuity},
 }
 
 // order is important

@@ -175,6 +175,8 @@
   "liyue": "Liyue",
   "inazuma": "Inazuma",
   "enkanomia": "Enkanomia",
+  "the_chasm": "The Chasm",
+  "sumeru": "Sumeru",
   "fluorescent_fungus": "Fluorescent fungus",
   "anemo_hypostasis": "Anemo hypostasis",
   "electro_hypostasis": "Electro hypostasis",
@@ -183,6 +185,7 @@
   "primo_geovishap": "Primo geovishap",
   "geo_hypostasis": "Geo hypostasis",
   "cryo_regisvine": "Cryo regisvine",
+  "electro_regisvine": "Electro regisvine",
   "thunder_manifestation": "Thunder manifestation",
   "maguu_kenki": "Maguu kenki",
   "cryo_hypostasis": "Cryo hypostasis",
@@ -203,6 +206,7 @@
   "mudra_of_the_malefic_general": "Mudra of the malefic general",
   "end_of_the_oneiric_euthymia": "End of the Oneiric euthymia",
   "runic_fang": "Runic fang",
-  "the_chasm": "The Chasm",
-  "ruin_serpent": "Ruin serpent"
+  "ruin_serpent": "Ruin serpent",
+  "jadeplume_terrorshroom": "Jadeplume terrorshroom",
+  "steeple_of_ignorance": "Steeple of ignorance"
 }

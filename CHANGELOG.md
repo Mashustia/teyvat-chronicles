@@ -31,6 +31,7 @@
     * Philosophies of Ingenuity,
     * Majestic Hooked Beak,
     * Thunderclap Fruitcore
+  * Added Steeple Of Ignorance dungeon
 
 #### 1.1.11 August-2022
 
