@@ -33,6 +33,14 @@
     * Thunderclap Fruitcore
   * Added Steeple Of Ignorance dungeon
   * Added links for new materials for interactive map and embedded map
+  * Added farming routes for:
+    * Nilotpala Lotus
+    * Rukkhashava Mushrooms
+    * Kalpalata Lotus
+    * Faded/Trimmed/Rich red satin
+    * Fungal spores
+    * Luminescent pollen
+    * Crystalline cyst dust
 
 #### 1.1.11 August-2022
 
@@ -121,14 +129,6 @@
     * Agnidus agate sliver
   * Fixed Itto rarity
   * Changed links for embedded map again because of it's update
-  * Added farming routes for:
-    * Nilotpala Lotus
-    * Rukkhashava Mushrooms
-    * Kalpalata Lotus
-    * Faded/Trimmed/Rich red satin
-    * Fungal spores
-    * Luminescent pollen
-    * Crystalline cyst dust
 
 #### 1.1.9 June-2022
 
