@@ -1,3 +1,37 @@
+#### 1.1.12 September-2022
+
+* Changes
+  * Added characters:
+    * Tighnari
+    * Collei
+    * Dori
+    * Dendro Traveler
+  * Added materials:
+    * Nagadus emerald sliver,
+    * Nagadus emerald fragment,
+    * Nagadus emerald chunk,
+    * Nagadus emerald gemstone,
+    * Nilotpala lotus,
+    * Rukkhashava mushrooms,
+    * Kalpalata lotus,
+    * Fungal spore,
+    * Luminescent pollen,
+    * Crystalline cyst dust,
+    * Faded Red Satin,
+    * Trimmed Red Silk,
+    * Rich Red Brocade,
+    * Teachings of Admonition,
+    * Guide to Admonition,
+    * Philosophies of Admonition,
+    * Teachings of Praxis,
+    * Guide to Praxis,
+    * Philosophies of Praxis,
+    * Teachings of Ingenuity,
+    * Guide to Ingenuity,
+    * Philosophies of Ingenuity,
+    * Majestic Hooked Beak,
+    * Thunderclap Fruitcore
+
 #### 1.1.11 August-2022
 
 * Changes
