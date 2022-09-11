@@ -31,7 +31,7 @@ const Tighnari = {
   talent_materials: fillTalentMaterials({
     books: {
       1: Books.TEACHINGS_OF_ADMONITION,
-      2: Books.GUIDE_OF_ADMONITION,
+      2: Books.GUIDE_TO_ADMONITION,
       3: Books.PHILOSOPHIES_OF_ADMONITION,
     },
     materials: {

@@ -113,6 +113,7 @@ export enum Character {
   TRAVELER_GEO = 'Traveler_geo',
   TRAVELER_ANEMO = 'Traveler_anemo',
   TRAVELER_ELECTRO = 'Traveler_electro',
+  TRAVELER_DENDRO = 'Traveler_dendro',
   THOMA = 'Thoma',
   GOROU = 'Gorou',
   ARATAKI_ITTO = 'Arataki_Itto',

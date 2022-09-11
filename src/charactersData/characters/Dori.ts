@@ -31,7 +31,7 @@ const Dori = {
   talent_materials: fillTalentMaterials({
     books: {
       1: Books.TEACHINGS_OF_PRAXIS,
-      2: Books.GUIDE_OF_PRAXIS,
+      2: Books.GUIDE_TO_PRAXIS,
       3: Books.PHILOSOPHIES_OF_PRAXIS,
     },
     materials: {

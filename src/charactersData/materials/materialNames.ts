@@ -156,11 +156,14 @@ export enum Books {
   GUIDE_TO_LIGHT = 'guide_to_light',
   PHILOSOPHIES_OF_LIGHT = 'philosophies_of_light',
   TEACHINGS_OF_ADMONITION = 'teachings_of_admonition',
-  GUIDE_OF_ADMONITION = 'guide_of_admonition',
+  GUIDE_TO_ADMONITION = 'guide_to_admonition',
   PHILOSOPHIES_OF_ADMONITION = 'philosophies_of_admonition',
   TEACHINGS_OF_PRAXIS = 'teachings_of_praxis',
-  GUIDE_OF_PRAXIS = 'guide_of_praxis',
+  GUIDE_TO_PRAXIS = 'guide_to_praxis',
   PHILOSOPHIES_OF_PRAXIS = 'philosophies_of_praxis',
+  TEACHINGS_OF_INGENUITY = 'teachings_of_ingenuity',
+  GUIDE_TO_INGENUITY = 'guide_to_ingenuity',
+  PHILOSOPHIES_OF_INGENUITY = 'philosophies_of_ingenuity',
 }
 
 export const CROWN_OF_INSIGHT = 'crown_of_insight'

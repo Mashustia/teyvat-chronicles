@@ -43,6 +43,7 @@ import Yoimiya from './characters/Yoimiya';
 import TravelerGeo from './characters/TravelerGeo';
 import TravelerAnemo from './characters/TravelerAnemo';
 import TravelerElectro from './characters/TravelerElectro';
+import TravelerDendro from './characters/TravelerDendro';
 import Thoma from './characters/Thoma';
 import Gorou from './characters/Gorou';
 import AratakiItto from './characters/AratakiItto';
@@ -101,6 +102,7 @@ const CHARACTERS: ICharacter[] = [
   TravelerGeo,
   TravelerAnemo,
   TravelerElectro,
+  TravelerDendro,
   Thoma,
   Gorou,
   AratakiItto,
