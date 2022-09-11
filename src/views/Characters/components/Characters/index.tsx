@@ -1,13 +1,17 @@
 import {ChangeEvent, FC, useState} from 'react'
 import {CloseButton, Form, InputGroup} from 'react-bootstrap';
 import {useTranslation} from 'react-i18next';
+import {observer} from 'mobx-react-lite';
 
 import {ICharacterProps as ICharacterWithSearchKeys} from '../Character/types'
 import CharactersGroup from '../CharactersGroup';
 import {ICharactersProps} from './types';
 import './Characters.css'
+import {Character} from '../../../../const/consts';
 
-const Characters: FC<ICharactersProps> = ({characters}) => {
+// @ts-ignore
+const Characters: FC<ICharactersProps> = ({characters, charactersStore}) => {
+  console.log(charactersStore, charactersStore.characters, charactersStore.getCharacterByName(Character.ALBEDO))
   const {t} = useTranslation('character')
 
   const [search, setSearch] = useState('')
@@ -43,4 +47,4 @@ const Characters: FC<ICharactersProps> = ({characters}) => {
   </>
 }
 
-export default Characters
+export default observer(Characters)
