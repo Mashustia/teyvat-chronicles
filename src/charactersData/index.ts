@@ -55,6 +55,7 @@ import KukiShinobu from './characters/KukiShinobu';
 import ShikanoinHeizou from './characters/ShikanoinHeizou';
 import Tighnari from './characters/Tighnari';
 import Collei from './characters/Collei';
+import Dori from './characters/Dori';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -111,7 +112,8 @@ const CHARACTERS: ICharacter[] = [
   KukiShinobu,
   ShikanoinHeizou,
   Tighnari,
-  Collei
+  Collei,
+  Dori
 ]
 
 export default CHARACTERS

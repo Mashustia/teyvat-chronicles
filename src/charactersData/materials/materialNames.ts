@@ -69,6 +69,7 @@ export enum Flower {
   FLUORESCENT_FUNGUS = 'fluorescent_fungus',
   NILOTPALA_LOTUS = 'nilotpala_lotus',
   RUKKHASHAVA_MUSHROOMS = 'rukkhashava_mushrooms',
+  KALPALATA_LOTUS = 'kalpalata_lotus',
 }
 
 export enum Rocks {
@@ -121,6 +122,9 @@ export enum Materials {
   FUNGAL_SPORES = 'fungal_spores',
   LUMINESCENT_POLLEN = 'luminescent_pollen',
   CRYSTALLINE_CYST_DUST = 'crystalline_cyst_dust',
+  FADED_RED_SATIN = 'faded_red_satin',
+  TRIMMED_RED_SILK = 'trimmed_red_silk',
+  RICH_RED_BROCADE = 'rich_red_brocade',
 }
 
 export enum Books {
@@ -179,6 +183,7 @@ export enum BossMaterials {
   DRAGONHEIRS_FALSE_FIN = 'dragonheirs_false_fin',
   RUNIC_FANG = 'runic_fang',
   MAJESTIC_HOOKED_BEAK = 'majestic_hooked_beak',
+  THUNDERCLAP_FRUITCORE = 'thunderclap_fruitcore',
 }
 
 export enum BossSkillMaterial {
