@@ -51,8 +51,7 @@ const TaishanMansion = {
 const SteepleOfIgnorance = {
   name: 'steeple_of_ignorance',
   region: Region.SUMERU,
-  original_resin: 20,
-  // map_link: 'pin=645|1168|Taishan Mansion'
+  original_resin: 20
 }
 
 // Books
@@ -237,8 +236,7 @@ const CryoRegisvine = {
 const ElectroRegisvine = {
   name: 'electro_regisvine',
   region: Region.SUMERU,
-  original_resin: 40,
-  // map_link: 'pin=2100|-1680|Cryo Regisvine'
+  original_resin: 40
 }
 
 // Others
