@@ -32,6 +32,7 @@
     * Majestic Hooked Beak,
     * Thunderclap Fruitcore
   * Added Steeple Of Ignorance dungeon
+  * Added links for new materials for interactive map and embedded map
 
 #### 1.1.11 August-2022
 
