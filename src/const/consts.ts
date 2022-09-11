@@ -123,6 +123,7 @@ export enum Character {
   KUKI_SHINOBU = 'Kuki_Shinobu',
   SHIKANOIN_HEIZOU = 'Shikanoin_Heizou',
   TIGHNARI = 'Tighnari',
+  COLLEI = 'Collei',
 }
 
 export const DefaultStartingLevel = {

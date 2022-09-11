@@ -54,6 +54,7 @@ import Yelan from './characters/Yelan';
 import KukiShinobu from './characters/KukiShinobu';
 import ShikanoinHeizou from './characters/ShikanoinHeizou';
 import Tighnari from './characters/Tighnari';
+import Collei from './characters/Collei';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -109,7 +110,8 @@ const CHARACTERS: ICharacter[] = [
   Yelan,
   KukiShinobu,
   ShikanoinHeizou,
-  Tighnari
+  Tighnari,
+  Collei
 ]
 
 export default CHARACTERS

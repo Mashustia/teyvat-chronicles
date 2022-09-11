@@ -68,6 +68,7 @@ export enum Flower {
   DENDROBIUM = 'dendrobium',
   FLUORESCENT_FUNGUS = 'fluorescent_fungus',
   NILOTPALA_LOTUS = 'nilotpala_lotus',
+  RUKKHASHAVA_MUSHROOMS = 'rukkhashava_mushrooms',
 }
 
 export enum Rocks {
@@ -153,6 +154,9 @@ export enum Books {
   TEACHINGS_OF_ADMONITION = 'teachings_of_admonition',
   GUIDE_OF_ADMONITION = 'guide_of_admonition',
   PHILOSOPHIES_OF_ADMONITION = 'philosophies_of_admonition',
+  TEACHINGS_OF_PRAXIS = 'teachings_of_praxis',
+  GUIDE_OF_PRAXIS = 'guide_of_praxis',
+  PHILOSOPHIES_OF_PRAXIS = 'philosophies_of_praxis',
 }
 
 export const CROWN_OF_INSIGHT = 'crown_of_insight'
