@@ -43,6 +43,7 @@ import Yoimiya from './characters/Yoimiya';
 import TravelerGeo from './characters/TravelerGeo';
 import TravelerAnemo from './characters/TravelerAnemo';
 import TravelerElectro from './characters/TravelerElectro';
+import TravelerDendro from './characters/TravelerDendro';
 import Thoma from './characters/Thoma';
 import Gorou from './characters/Gorou';
 import AratakiItto from './characters/AratakiItto';
@@ -52,7 +53,10 @@ import YaeMiko from './characters/YaeMiko';
 import KamisatoAyato from './characters/KamisatoAyato';
 import Yelan from './characters/Yelan';
 import KukiShinobu from './characters/KukiShinobu';
-import ShikanoinHeizou from "./characters/ShikanoinHeizou";
+import ShikanoinHeizou from './characters/ShikanoinHeizou';
+import Tighnari from './characters/Tighnari';
+import Collei from './characters/Collei';
+import Dori from './characters/Dori';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -98,6 +102,7 @@ const CHARACTERS: ICharacter[] = [
   TravelerGeo,
   TravelerAnemo,
   TravelerElectro,
+  TravelerDendro,
   Thoma,
   Gorou,
   AratakiItto,
@@ -108,6 +113,9 @@ const CHARACTERS: ICharacter[] = [
   Yelan,
   KukiShinobu,
   ShikanoinHeizou,
+  Tighnari,
+  Collei,
+  Dori
 ]
 
 export default CHARACTERS

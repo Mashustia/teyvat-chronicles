@@ -205,6 +205,40 @@ export const JueyunChili = {
   ]
 }
 
+export const NilotpalaLotus = {
+  [Languages.EN]: [
+    'https://www.hoyolab.com/article/8304744',
+    'https://www.hoyolab.com/article/7240768',
+  ]
+}
+
+export const RukkhashavaMushrooms = {
+  [Languages.EN]: [
+    'https://www.hoyolab.com/article/7451844',
+    'https://www.hoyolab.com/article/7240909',
+    'https://www.hoyolab.com/article/8206738',
+  ]
+}
+
+export const KalpalataLotus = {
+  [Languages.EN]: [
+    'https://www.hoyolab.com/article/7451844',
+    'https://www.hoyolab.com/article/8456010'
+  ]
+}
+
+export const FloatingHydroFungus = {
+  [Languages.EN]: [
+    'https://www.reddit.com/r/Genshin_Impact/comments/wy2hsd/floating_fungi_farming_route_sumeru_updated_all/',
+  ]
+}
+
+export const Eremites = {
+  [Languages.EN]: [
+    'https://www.reddit.com/r/Genshin_Impact/comments/wx8jhk/eremites_farming_route_over_300_red_satin/',
+  ]
+}
+
 export const farmingRoutes: IFarmingRoutes = {
   [Materials.WHOPPERFLOWER_NECTAR]: {...Whopperflower},
   [Materials.SHIMMERING_NECTAR]: {...Whopperflower},
@@ -251,4 +285,13 @@ export const farmingRoutes: IFarmingRoutes = {
   [Flower.SILK_FLOWER]: {...SilkFlower},
   [Flower.FLUORESCENT_FUNGUS]: {...FluorescentFungus},
   [Flower.JUEYUN_CHILI]: {...JueyunChili},
+  [Flower.NILOTPALA_LOTUS]: {...NilotpalaLotus},
+  [Flower.RUKKHASHAVA_MUSHROOMS]: {...RukkhashavaMushrooms},
+  [Flower.KALPALATA_LOTUS]: {...KalpalataLotus},
+  [Materials.FUNGAL_SPORES]: {...FloatingHydroFungus},
+  [Materials.LUMINESCENT_POLLEN]: {...FloatingHydroFungus},
+  [Materials.CRYSTALLINE_CYST_DUST]: {...FloatingHydroFungus},
+  [Materials.FADED_RED_SATIN]: {...Eremites},
+  [Materials.TRIMMED_RED_SILK]: {...Eremites},
+  [Materials.RICH_RED_BROCADE]: {...Eremites},
 }

@@ -26,7 +26,8 @@ export enum Vision {
   ELECTRO = 'electro',
   CRYO = 'cryo',
   HYDRO = 'hydro',
-  GEO = 'geo'
+  GEO = 'geo',
+  DENDRO = 'dendro',
 }
 
 export enum RouteName {
@@ -112,6 +113,7 @@ export enum Character {
   TRAVELER_GEO = 'Traveler_geo',
   TRAVELER_ANEMO = 'Traveler_anemo',
   TRAVELER_ELECTRO = 'Traveler_electro',
+  TRAVELER_DENDRO = 'Traveler_dendro',
   THOMA = 'Thoma',
   GOROU = 'Gorou',
   ARATAKI_ITTO = 'Arataki_Itto',
@@ -121,6 +123,9 @@ export enum Character {
   YELAN = 'Yelan',
   KUKI_SHINOBU = 'Kuki_Shinobu',
   SHIKANOIN_HEIZOU = 'Shikanoin_Heizou',
+  TIGHNARI = 'Tighnari',
+  COLLEI = 'Collei',
+  DORI = 'Dori',
 }
 
 export const DefaultStartingLevel = {
