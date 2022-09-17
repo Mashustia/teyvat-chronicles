@@ -7,11 +7,8 @@ import {ICharacterProps as ICharacterWithSearchKeys} from '../Character/types'
 import CharactersGroup from '../CharactersGroup';
 import {ICharactersProps} from './types';
 import './Characters.css'
-import {Character} from '../../../../const/consts';
 
-// @ts-ignore
-const Characters: FC<ICharactersProps> = ({characters, charactersStore}) => {
-  console.log(charactersStore, charactersStore.characters, charactersStore.getCharacterByName(Character.ALBEDO))
+const Characters: FC<ICharactersProps> = ({characters}) => {
   const {t} = useTranslation('character')
 
   const [search, setSearch] = useState('')

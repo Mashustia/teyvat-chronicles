@@ -1,20 +1,18 @@
-import {FC} from 'react'
+import {FC, useEffect} from 'react'
 import {useTranslation} from 'react-i18next';
 import {observer} from 'mobx-react-lite';
 
-import CHARACTERS from '../../../../charactersData';
-import {ICharacterProps as ICharacterWithSearchKeys} from '../Character/types';
 import Characters from '../Characters';
-import {getCharactersWithTranslatedNames} from '../../../../utils/utils';
 import charactersStore from '../../../../store/modules/characters/characters';
 
 const CharactersWrapper: FC = observer(() => {
   const {t} = useTranslation('character')
 
-  const characterWithTranslatedNames: ICharacterWithSearchKeys[] = getCharactersWithTranslatedNames(CHARACTERS, t)
+  useEffect(() => {
+    charactersStore.setCharactersForSearch(t)
+  }, [t])
 
-  // @ts-ignore
-  return <Characters characters={characterWithTranslatedNames} charactersStore={charactersStore}/>
+  return <Characters characters={charactersStore.charactersForSearch}/>
 })
 
 export default CharactersWrapper

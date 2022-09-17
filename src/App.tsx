@@ -5,13 +5,10 @@ import Main from './views/Main';
 import Footer from './common/Footer';
 import Header from './common/Header';
 import {RouteName} from './const/consts';
-import charactersStore from './store/modules/characters/characters';
-import CHARACTERS from './charactersData';
 
 import './App.css';
 
 const App: FC = () => {
-  charactersStore.setCharacters(CHARACTERS)
 
   return (
     <div className='app pt-2' data-testid='app'>
