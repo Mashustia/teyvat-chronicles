@@ -40,7 +40,7 @@ const LevelSelectOptions: FC<ILevelSelectOption> = ({onSelectOption, selectedLev
   const buttons = Levels.map(levelButton)
 
   return (
-    <div className='level-select-options py-2 px-2 grid-4 grid-gutters-lg'>
+    <div className='py-2 px-2 grid-4 grid-gutters-lg level-select-options'>
       {buttons}
       <PrimogemTooltip/>
     </div>
