@@ -41,6 +41,8 @@
     * Fungal spores
     * Luminescent pollen
     * Crystalline cyst dust
+  * Added MobX:
+    * Moved characters list into the special store
 
 #### 1.1.11 August-2022
 
