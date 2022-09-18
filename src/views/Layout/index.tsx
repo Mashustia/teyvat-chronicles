@@ -1,14 +1,14 @@
 import {FC} from 'react'
 
 import Header from '../Header';
-import CharactersWrapper from '../Characters/components/CharactersWrapper';
 import Container from '../../common/Container';
+import Characters from '../Characters/components/Characters';
 
 const Layout: FC = () => {
   return (
     <Container>
       <Header/>
-      <CharactersWrapper/>
+      <Characters/>
     </Container>
   )
 }
