@@ -81,7 +81,8 @@ export enum Rocks {
 }
 
 export enum OtherMaterials {
-  ONIKABUTO = 'onikabuto'
+  ONIKABUTO = 'onikabuto',
+  SCARAB = 'scarab',
 }
 
 export enum TravelerAscensionMaterial {

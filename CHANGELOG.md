@@ -1,4 +1,10 @@
-#### 1.1.12 September-2022
+#### 1.1.13 September-2022
+
+* Changes
+  * Added characters:
+    * Syno
+
+* #### 1.1.12 September-2022
 
 * Changes
   * Added characters:
