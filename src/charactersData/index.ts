@@ -58,6 +58,7 @@ import Tighnari from './characters/Tighnari';
 import Collei from './characters/Collei';
 import Dori from './characters/Dori';
 import Syno from './characters/Syno';
+import Candace from './characters/Candace';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -117,7 +118,8 @@ const CHARACTERS: ICharacter[] = [
   Tighnari,
   Collei,
   Dori,
-  Syno
+  Syno,
+  Candace
 ]
 
 export default CHARACTERS

@@ -5,13 +5,13 @@ import {
   Materials,
   Books,
   BossSkillMaterial,
-  OtherMaterials
+  Flower
 } from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
-const Syno = {
-  name: Character.SYNO,
-  vision: Vision.ELECTRO,
+const Candace = {
+  name: Character.CANDACE,
+  vision: Vision.HYDRO,
   ascension_materials: fillAscensionMaterials({
     gems: {
       1: Gem.ELECTRO.VAJRADA_AMETHYST_SLIVER,
@@ -20,14 +20,14 @@ const Syno = {
       4: Gem.ELECTRO.VAJRADA_AMETHYST_GEMSTONE
     },
     materials: {
-      1: Materials.DIVINING_SCROLL,
-      2: Materials.SEALED_SCROLL,
-      3: Materials.FORBIDDEN_CURSE_SCROLL,
+      1: Materials.FADED_RED_SATIN,
+      2: Materials.TRIMMED_RED_SILK,
+      3: Materials.RICH_RED_BROCADE,
     },
-    bossMaterial: BossMaterials.THUNDERCLAP_FRUITCORE,
-    specialty: OtherMaterials.SCARAB
+    bossMaterial: BossMaterials.LIGHT_GUIDING_TETRAHEDRON,
+    specialty: Flower.REDCREST
   }),
-  rarity: 5,
+  rarity: 4,
   talent_materials: fillTalentMaterials({
     books: {
       1: Books.TEACHINGS_OF_ADMONITION,
@@ -35,12 +35,12 @@ const Syno = {
       3: Books.PHILOSOPHIES_OF_RESISTANCE,
     },
     materials: {
-      1: Materials.DIVINING_SCROLL,
-      2: Materials.SEALED_SCROLL,
-      3: Materials.FORBIDDEN_CURSE_SCROLL,
+      1: Materials.FADED_RED_SATIN,
+      2: Materials.TRIMMED_RED_SILK,
+      3: Materials.RICH_RED_BROCADE,
     },
-    bossMaterial: BossSkillMaterial.MUDRA_OF_THE_MALEFIC_GENERAL
+    bossMaterial: BossSkillMaterial.TEARS_OF_THE_CALAMITOUS_GOD
   })
 }
 
-export default Syno
+export default Candace
