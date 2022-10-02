@@ -3,6 +3,13 @@
 * Changes
   * Added characters:
     * Syno
+    * Candace
+  * Added boss:
+    * Algorithm of Semi-Intransient Matrix of Overseer Network
+  * Added materials:
+    * Scarab
+    * Redcrest
+    * Light guiding tetrahedron
 
 * #### 1.1.12 September-2022
 
