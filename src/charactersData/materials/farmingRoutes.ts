@@ -239,6 +239,19 @@ export const Eremites = {
   ]
 }
 
+export const Scarab = {
+  [Languages.EN]: [
+    'https://twitter.com/gt_eon/status/1575149612175802368',
+    'https://twitter.com/lNNERCHlLDE/status/1574960843904946176'
+  ]
+}
+
+export const Redcrest = {
+  [Languages.EN]: [
+    'https://twitter.com/gt_eon/status/1575546930490667008'
+  ]
+}
+
 export const farmingRoutes: IFarmingRoutes = {
   [Materials.WHOPPERFLOWER_NECTAR]: {...Whopperflower},
   [Materials.SHIMMERING_NECTAR]: {...Whopperflower},
@@ -294,4 +307,6 @@ export const farmingRoutes: IFarmingRoutes = {
   [Materials.FADED_RED_SATIN]: {...Eremites},
   [Materials.TRIMMED_RED_SILK]: {...Eremites},
   [Materials.RICH_RED_BROCADE]: {...Eremites},
+  [Flower.REDCREST]: {...Redcrest},
+  [OtherMaterials.SCARAB]: {...Scarab},
 }

@@ -10,6 +10,9 @@
     * Scarab
     * Redcrest
     * Light guiding tetrahedron
+  * Added farming routes for:
+    * Scarab
+    * Redcrest
 
 * #### 1.1.12 September-2022
 
