@@ -126,6 +126,8 @@ export enum Character {
   TIGHNARI = 'Tighnari',
   COLLEI = 'Collei',
   DORI = 'Dori',
+  SYNO = 'Syno',
+  CANDACE = 'Candace',
 }
 
 export const DefaultStartingLevel = {

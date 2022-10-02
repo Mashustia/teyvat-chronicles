@@ -294,6 +294,12 @@ const JadeplumeTerrorshroom = {
   original_resin: 40,
 }
 
+const AlgorithmOfSemiIntransientMatrixOfOverseerNetwork = {
+  name: 'algorithm_of_semi_intransient_matrix_of_overseer_network',
+  region: Region.SUMERU,
+  original_resin: 40,
+}
+
 const crownOfInsight = {
   additional_info: 'crown_of_insight_how_to_get'
 }
@@ -394,6 +400,7 @@ export const ExpandedMaterialInfo: IDungeon = {
   teachings_of_ingenuity: {...Ingenuity},
   guide_to_ingenuity: {...Ingenuity},
   philosophies_of_ingenuity: {...Ingenuity},
+  light_guiding_tetrahedron: {...AlgorithmOfSemiIntransientMatrixOfOverseerNetwork},
 }
 
 // order is important
