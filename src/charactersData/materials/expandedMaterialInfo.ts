@@ -300,6 +300,12 @@ const AlgorithmOfSemiIntransientMatrixOfOverseerNetwork = {
   original_resin: 40,
 }
 
+const aeonblightDrake = {
+  name: 'aeonblight_drake',
+  region: Region.SUMERU,
+  original_resin: 40,
+}
+
 const crownOfInsight = {
   additional_info: 'crown_of_insight_how_to_get'
 }
@@ -401,6 +407,7 @@ export const ExpandedMaterialInfo: IDungeon = {
   guide_to_ingenuity: {...Ingenuity},
   philosophies_of_ingenuity: {...Ingenuity},
   light_guiding_tetrahedron: {...AlgorithmOfSemiIntransientMatrixOfOverseerNetwork},
+  perpetual_caliber: {...aeonblightDrake},
 }
 
 // order is important

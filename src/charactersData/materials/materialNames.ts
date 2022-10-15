@@ -71,6 +71,7 @@ export enum Flower {
   RUKKHASHAVA_MUSHROOMS = 'rukkhashava_mushrooms',
   KALPALATA_LOTUS = 'kalpalata_lotus',
   REDCREST = 'redcrest',
+  PADISARAH = 'padisarah',
 }
 
 export enum Rocks {
@@ -190,6 +191,7 @@ export enum BossMaterials {
   MAJESTIC_HOOKED_BEAK = 'majestic_hooked_beak',
   THUNDERCLAP_FRUITCORE = 'thunderclap_fruitcore',
   LIGHT_GUIDING_TETRAHEDRON = 'light_guiding_tetrahedron',
+  PERPETUAL_CALIBER = 'perpetual_caliber',
 }
 
 export enum BossSkillMaterial {
