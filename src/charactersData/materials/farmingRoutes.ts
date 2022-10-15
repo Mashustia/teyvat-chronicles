@@ -252,6 +252,12 @@ export const Redcrest = {
   ]
 }
 
+export const Padisarah = {
+  [Languages.EN]: [
+    'https://www.hoyolab.com/article/11627624',
+  ]
+}
+
 export const farmingRoutes: IFarmingRoutes = {
   [Materials.WHOPPERFLOWER_NECTAR]: {...Whopperflower},
   [Materials.SHIMMERING_NECTAR]: {...Whopperflower},
@@ -309,4 +315,5 @@ export const farmingRoutes: IFarmingRoutes = {
   [Materials.RICH_RED_BROCADE]: {...Eremites},
   [Flower.REDCREST]: {...Redcrest},
   [OtherMaterials.SCARAB]: {...Scarab},
+  [Flower.PADISARAH]: {...Padisarah},
 }

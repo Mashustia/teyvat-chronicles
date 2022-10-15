@@ -24,6 +24,7 @@ export const materialLink = {
   [Flower.RUKKHASHAVA_MUSHROOMS]: '2?shown_types=402&center=2918.00,-3271.00&zoom=-3.00',
   [Flower.KALPALATA_LOTUS]: '2?shown_types=401&center=2918.00,-3271.00&zoom=-3.00',
   [Flower.REDCREST]: '2?shown_types=390,431&center=5118.00,-4651.00&zoom=-3.00',
+  [Flower.PADISARAH]: '2?center=3174.00,-3851.00&zoom=-3.00&shown_types=413',
   [Rocks.NOCTILUCOUS_JADE]: '2?shown_types=42&center=1617.00,-1396.00&zoom=-3.00',
   [Rocks.COR_LAPIS]: '2?shown_types=40&center=1490.94,-484.47&zoom=-3.00',
   [Rocks.CRYSTAL_MARROW]: '2?shown_types=211&center=6521.03,1622.13&zoom=-3.00',
@@ -111,6 +112,7 @@ export const materialLink = {
   [BossMaterials.MAJESTIC_HOOKED_BEAK]: '2?shown_types=391&center=2278.00,-3959.00&zoom=-3.00',
   [BossMaterials.THUNDERCLAP_FRUITCORE]: '2?shown_types=390&center=2230.00,-2727.00&zoom=-3.00',
   [BossMaterials.LIGHT_GUIDING_TETRAHEDRON]: '2?shown_types=390,433&center=5118.00,-4651.00&zoom=-3.00',
+  [BossMaterials.PERPETUAL_CALIBER]: '2?center=3766.00,-2715.00&zoom=-3.00&shown_types=432',
 }
 
 // TODO: uncomment arrowhead and lupus boreas materials when embedded map will support it
@@ -138,6 +140,7 @@ export const genshinImpactMap = {
   [Flower.RUKKHASHAVA_MUSHROOMS]: 'names=Rukkhashava Mushroom',
   [Flower.KALPALATA_LOTUS]: 'names=Kalpalata Lotus',
   [Flower.REDCREST]: 'names=Redcrest',
+  [Flower.PADISARAH]: 'names=Padisarah',
   [Rocks.NOCTILUCOUS_JADE]: 'names=Noctilucous Jade',
   [Rocks.COR_LAPIS]: 'names=Cor Lapis',
   [Rocks.CRYSTAL_MARROW]: 'names=Crystal Marrow',
@@ -224,7 +227,8 @@ export const genshinImpactMap = {
   [BossMaterials.SMOLDERING_PEARL]: 'names=Pyro Hypostasis',
   [BossMaterials.MAJESTIC_HOOKED_BEAK]: 'names=Jadeplume Terrorshroom',
   [BossMaterials.THUNDERCLAP_FRUITCORE]: 'names=Electro Regisvine',
-  [BossMaterials.LIGHT_GUIDING_TETRAHEDRON]: 'names=Algorithm of Semi-Intransient Matrix of Overseer Network'
+  [BossMaterials.LIGHT_GUIDING_TETRAHEDRON]: 'names=Algorithm of Semi-Intransient Matrix of Overseer Network',
+  [BossMaterials.PERPETUAL_CALIBER]: 'names=Aeonblight Drake'
   // [BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',
   // [BossSkillMaterial.RING_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',
   // [BossSkillMaterial.TAIL_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',

@@ -59,6 +59,7 @@ import Collei from './characters/Collei';
 import Dori from './characters/Dori';
 import Syno from './characters/Syno';
 import Candace from './characters/Candace';
+import Nilou from './characters/Nilou';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -119,7 +120,8 @@ const CHARACTERS: ICharacter[] = [
   Collei,
   Dori,
   Syno,
-  Candace
+  Candace,
+  Nilou
 ]
 
 export default CHARACTERS
