@@ -113,6 +113,7 @@ export const materialLink = {
   [BossMaterials.THUNDERCLAP_FRUITCORE]: '2?shown_types=390&center=2230.00,-2727.00&zoom=-3.00',
   [BossMaterials.LIGHT_GUIDING_TETRAHEDRON]: '2?shown_types=390,433&center=5118.00,-4651.00&zoom=-3.00',
   [BossMaterials.PERPETUAL_CALIBER]: '2?center=3766.00,-2715.00&zoom=-3.00&shown_types=432',
+  [BossMaterials.QUELLED_CREEPER]: '2?shown_types=452&center=4758.00,-4403.00&zoom=-3.00',
 }
 
 // TODO: uncomment arrowhead and lupus boreas materials when embedded map will support it
@@ -172,10 +173,10 @@ export const genshinImpactMap = {
   [Gem.PYRO.AGNIDUS_AGATE_CHUNK]: 'names=Pyro Hypostasis,Pyro Regisvine',
   [Gem.PYRO.AGNIDUS_AGATE_FRAGMENT]: 'names=Pyro Hypostasis,Pyro Regisvine',
   [Gem.PYRO.AGNIDUS_AGATE_SLIVER]: 'names=Pyro Hypostasis,Pyro Regisvine',
-  [Gem.DENDRO.NAGADUS_EMERALD_GEMSTONE]: 'names=Jadeplume Terrorshroom',
-  [Gem.DENDRO.NAGADUS_EMERALD_CHUNK]: 'names=Jadeplume Terrorshroom',
-  [Gem.DENDRO.NAGADUS_EMERALD_FRAGMENT]: 'names=Jadeplume Terrorshroom',
-  [Gem.DENDRO.NAGADUS_EMERALD_SLIVER]: 'names=Jadeplume Terrorshroom',
+  [Gem.DENDRO.NAGADUS_EMERALD_GEMSTONE]: 'names=Jadeplume Terrorshroom,Dendro Hypostasis',
+  [Gem.DENDRO.NAGADUS_EMERALD_CHUNK]: 'names=Jadeplume Terrorshroom,Dendro Hypostasis',
+  [Gem.DENDRO.NAGADUS_EMERALD_FRAGMENT]: 'names=Jadeplume Terrorshroom,Dendro Hypostasis',
+  [Gem.DENDRO.NAGADUS_EMERALD_SLIVER]: 'names=Jadeplume Terrorshroom,Dendro Hypostasis',
   [Materials.TREASURE_HOARDER_INSIGNIA]: 'names=Treasure Hoarder',
   [Materials.SILVER_RAVEN_INSIGNIA]: 'names=Treasure Hoarder',
   [Materials.GOLDEN_RAVEN_INSIGNIA]: 'names=Treasure Hoarder',
@@ -228,7 +229,8 @@ export const genshinImpactMap = {
   [BossMaterials.MAJESTIC_HOOKED_BEAK]: 'names=Jadeplume Terrorshroom',
   [BossMaterials.THUNDERCLAP_FRUITCORE]: 'names=Electro Regisvine',
   [BossMaterials.LIGHT_GUIDING_TETRAHEDRON]: 'names=Algorithm of Semi-Intransient Matrix of Overseer Network',
-  [BossMaterials.PERPETUAL_CALIBER]: 'names=Aeonblight Drake'
+  [BossMaterials.PERPETUAL_CALIBER]: 'names=Aeonblight Drake',
+  // [BossMaterials.QUELLED_CREEPER]: 'names=Dendro Hypostasis',
   // [BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',
   // [BossSkillMaterial.RING_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',
   // [BossSkillMaterial.TAIL_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',

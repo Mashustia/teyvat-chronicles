@@ -1,12 +1,5 @@
 import {Character, Vision} from '../../const/consts';
-import {
-  Books,
-  BossMaterials,
-  BossSkillMaterial,
-  Flower,
-  Gem,
-  Materials
-} from '../materials/materialNames';
+import {Books, BossMaterials, BossSkillMaterial, Flower, Gem, Materials} from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Nilou = {
@@ -40,7 +33,13 @@ const Nilou = {
       3: Materials.CRYSTALLINE_CYST_DUST,
     },
     bossMaterial: BossSkillMaterial.TEARS_OF_THE_CALAMITOUS_GOD
-  })
+  }),
+  possible_teams: [
+    [Character.NILOU, Character.NAHIDA, Character.KOKOMI, Character.TRAVELER_DENDRO],
+    [Character.NILOU, Character.NAHIDA, Character.KOKOMI, Character.KAMISATO_AYATO],
+    [Character.NILOU, Character.NAHIDA, Character.BARBARA, Character.TRAVELER_DENDRO],
+    [Character.NILOU, Character.TRAVELER_DENDRO, Character.KOKOMI, Character.COLLEI],
+  ]
 }
 
 export default Nilou

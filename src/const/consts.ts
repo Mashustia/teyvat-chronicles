@@ -129,6 +129,7 @@ export enum Character {
   SYNO = 'Syno',
   CANDACE = 'Candace',
   NILOU = 'Nilou',
+  NAHIDA = 'Nahida',
 }
 
 export const DefaultStartingLevel = {
