@@ -170,7 +170,6 @@ const JoururiWorkshop = {
   name: 'joururi_workshop',
   region: Region.SUMERU,
   original_resin: 60,
-  // map_link: 'pin=-3395|-4560|Narukami Island: Tenshukaku',
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
@@ -229,7 +228,6 @@ const DendroHypostasis = {
   name: 'dendro_hypostasis',
   region: Region.SUMERU,
   original_resin: 40,
-  // map_link: 'pin=-3090|-3185|Pyro Hypostasis'
 }
 
 // Regisvines
