@@ -35,11 +35,11 @@ const Keqing = {
     bossMaterial: BossSkillMaterial.RING_OF_BOREAS
   }),
   possible_teams: [
+    [Character.KEQING, Character.FISCHL, Character.NAHIDA, Character.JEAN],
+    [Character.KEQING, Character.FISCHL, Character.TRAVELER_DENDRO, Character.KAEDEHARA_KAZUHA],
     [Character.KEQING, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
-    [Character.KEQING, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.XINGQIU],
     [Character.KEQING, Character.BEIDOU, Character.SUCROSE, Character.XINGQIU],
     [Character.KEQING, Character.FISCHL, Character.YELAN, Character.ZHONGLI],
-    [Character.KEQING, Character.XINGQIU, Character.GANYU, Character.ROSARIA],
   ]
 }
 

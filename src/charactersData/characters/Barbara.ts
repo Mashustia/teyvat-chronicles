@@ -42,6 +42,7 @@ const Barbara = {
     bossMaterial: BossSkillMaterial.RING_OF_BOREAS
   }),
   possible_teams: [
+    [Character.BARBARA, Character.NILOU, Character.NAHIDA, Character.TRAVELER_DENDRO],
     [Character.DILUC, Character.BARBARA, Character.SUCROSE, Character.THOMA],
     [Character.KAMISATO_AYAKA, Character.BARBARA, Character.KAEDEHARA_KAZUHA, Character.ROSARIA],
     [Character.KAEYA, Character.CHONGYUN, Character.BARBARA, Character.SUCROSE],

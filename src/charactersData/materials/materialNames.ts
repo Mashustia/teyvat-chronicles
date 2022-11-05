@@ -192,6 +192,7 @@ export enum BossMaterials {
   THUNDERCLAP_FRUITCORE = 'thunderclap_fruitcore',
   LIGHT_GUIDING_TETRAHEDRON = 'light_guiding_tetrahedron',
   PERPETUAL_CALIBER = 'perpetual_caliber',
+  QUELLED_CREEPER = 'quelled_creeper',
 }
 
 export enum BossSkillMaterial {
@@ -213,5 +214,8 @@ export enum BossSkillMaterial {
   THE_MEANING_OF_AENOS = 'the_meaning_of_aenos',
   TEARS_OF_THE_CALAMITOUS_GOD = 'tears_of_the_calamitous_god',
   MUDRA_OF_THE_MALEFIC_GENERAL = 'mudra_of_the_malefic_general',
+  PUPPET_STRINGS = 'puppet_strings',
+  MIRROR_OF_MUSHIN = 'mirror_of_mushin',
+  DAKAS_BELL = 'dakas_bell',
 }
 

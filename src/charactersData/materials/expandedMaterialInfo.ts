@@ -166,6 +166,14 @@ const EndOfTheOneiricEuthymia = {
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
+const JoururiWorkshop = {
+  name: 'joururi_workshop',
+  region: Region.SUMERU,
+  original_resin: 60,
+  // map_link: 'pin=-3395|-4560|Narukami Island: Tenshukaku',
+  is_open_days: [WeekDay.ALL_DAYS]
+}
+
 // Hypostasis
 
 const AnemoHypostasis = {
@@ -213,6 +221,13 @@ const HydroHypostasis = {
 const PyroHypostasis = {
   name: 'pyro_hypostasis',
   region: Region.INAZUMA,
+  original_resin: 40,
+  // map_link: 'pin=-3090|-3185|Pyro Hypostasis'
+}
+
+const DendroHypostasis = {
+  name: 'dendro_hypostasis',
+  region: Region.SUMERU,
   original_resin: 40,
   // map_link: 'pin=-3090|-3185|Pyro Hypostasis'
 }
@@ -300,7 +315,7 @@ const AlgorithmOfSemiIntransientMatrixOfOverseerNetwork = {
   original_resin: 40,
 }
 
-const aeonblightDrake = {
+const AeonblightDrake = {
   name: 'aeonblight_drake',
   region: Region.SUMERU,
   original_resin: 40,
@@ -407,7 +422,11 @@ export const ExpandedMaterialInfo: IDungeon = {
   guide_to_ingenuity: {...Ingenuity},
   philosophies_of_ingenuity: {...Ingenuity},
   light_guiding_tetrahedron: {...AlgorithmOfSemiIntransientMatrixOfOverseerNetwork},
-  perpetual_caliber: {...aeonblightDrake},
+  perpetual_caliber: {...AeonblightDrake},
+  quelled_creeper: {...DendroHypostasis},
+  puppet_strings: {...JoururiWorkshop},
+  mirror_of_mushin: {...JoururiWorkshop},
+  dakas_bell: {...JoururiWorkshop},
 }
 
 // order is important

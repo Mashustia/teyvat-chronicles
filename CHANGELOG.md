@@ -1,3 +1,25 @@
+#### 1.1.14 November-2022
+
+* Changes
+  * Added characters:
+    * Nahida
+  * Added materials:
+    * Puppet Strings
+    * Mirror of Mushin
+    * Daka’s Bell
+    * Quelled Creeper
+  * Added boss:
+    * Dendro hypostasis
+  * Added dungeon:
+    * Joururi Workshop
+  * Added teams for:
+    * Nilou
+    * Kokomi
+    * Barbara
+    * Nahida
+    * Keqing
+    * Kuki Shinobu
+
 #### 1.1.13 October-2022
 
 * Changes
@@ -14,7 +36,7 @@
     * Scarab
     * Redcrest
 
-* #### 1.1.12 September-2022
+#### 1.1.12 September-2022
 
 * Changes
   * Added characters:
