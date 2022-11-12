@@ -19,6 +19,7 @@
     * Nahida
     * Keqing
     * Kuki Shinobu
+  * Fixed kalpalata lotus farming route
 
 #### 1.1.13 October-2022
 
