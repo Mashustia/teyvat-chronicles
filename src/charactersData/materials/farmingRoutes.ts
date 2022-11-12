@@ -222,7 +222,7 @@ export const RukkhashavaMushrooms = {
 
 export const KalpalataLotus = {
   [Languages.EN]: [
-    'https://www.hoyolab.com/article/7451844',
+    'https://www.hoyolab.com/article/13182445',
     'https://www.hoyolab.com/article/8456010'
   ]
 }
