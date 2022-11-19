@@ -130,6 +130,7 @@ export enum Character {
   CANDACE = 'Candace',
   NILOU = 'Nilou',
   NAHIDA = 'Nahida',
+  LAYLA = 'Layla',
 }
 
 export const DefaultStartingLevel = {

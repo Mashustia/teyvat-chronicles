@@ -3,6 +3,7 @@
 * Changes
   * Added characters:
     * Nahida
+    * Layla
   * Added materials:
     * Puppet Strings
     * Mirror of Mushin

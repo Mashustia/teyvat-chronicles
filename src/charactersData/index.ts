@@ -61,6 +61,7 @@ import Syno from './characters/Syno';
 import Candace from './characters/Candace';
 import Nilou from './characters/Nilou';
 import Nahida from './characters/Nahida';
+import Layla from './characters/Layla';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -123,7 +124,8 @@ const CHARACTERS: ICharacter[] = [
   Syno,
   Candace,
   Nilou,
-  Nahida
+  Nahida,
+  Layla,
 ]
 
 export default CHARACTERS
