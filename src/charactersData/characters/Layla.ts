@@ -9,25 +9,25 @@ import {
 } from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
-const Nahida = {
-  name: Character.NAHIDA,
-  vision: Vision.DENDRO,
+const Layla = {
+  name: Character.LAYLA,
+  vision: Vision.CRYO,
   ascension_materials: fillAscensionMaterials({
     gems: {
-      1: Gem.DENDRO.NAGADUS_EMERALD_SLIVER,
-      2: Gem.DENDRO.NAGADUS_EMERALD_FRAGMENT,
-      3: Gem.DENDRO.NAGADUS_EMERALD_CHUNK,
-      4: Gem.DENDRO.NAGADUS_EMERALD_GEMSTONE
+      1: Gem.CRYO.SHIVADA_JADE_SLIVER,
+      2: Gem.CRYO.SHIVADA_JADE_FRAGMENT,
+      3: Gem.CRYO.SHIVADA_JADE_CHUNK,
+      4: Gem.CRYO.SHIVADA_JADE_GEMSTONE
     },
     materials: {
-      1: Materials.FUNGAL_SPORES,
-      2: Materials.LUMINESCENT_POLLEN,
-      3: Materials.CRYSTALLINE_CYST_DUST,
+      1: Materials.DIVINING_SCROLL,
+      2: Materials.SEALED_SCROLL,
+      3: Materials.FORBIDDEN_CURSE_SCROLL,
     },
-    bossMaterial: BossMaterials.QUELLED_CREEPER,
-    specialty: Flower.KALPALATA_LOTUS
+    bossMaterial: BossMaterials.PERPETUAL_CALIBER,
+    specialty: Flower.NILOTPALA_LOTUS
   }),
-  rarity: 5,
+  rarity: 4,
   talent_materials: fillTalentMaterials({
     books: {
       1: Books.TEACHINGS_OF_INGENUITY,
@@ -35,20 +35,12 @@ const Nahida = {
       3: Books.PHILOSOPHIES_OF_INGENUITY,
     },
     materials: {
-      1: Materials.FUNGAL_SPORES,
-      2: Materials.LUMINESCENT_POLLEN,
-      3: Materials.CRYSTALLINE_CYST_DUST,
+      1: Materials.DIVINING_SCROLL,
+      2: Materials.SEALED_SCROLL,
+      3: Materials.FORBIDDEN_CURSE_SCROLL,
     },
-    bossMaterial: BossSkillMaterial.PUPPET_STRINGS
-  }),
-  possible_teams: [
-    [Character.NAHIDA, Character.NILOU, Character.KOKOMI, Character.TRAVELER_DENDRO],
-    [Character.NAHIDA, Character.NILOU, Character.KOKOMI, Character.KAMISATO_AYATO],
-    [Character.NAHIDA, Character.XINGQIU, Character.KUKI_SHINOBU, Character.KAEDEHARA_KAZUHA],
-    [Character.NAHIDA, Character.XINGQIU, Character.THOMA, Character.KAEDEHARA_KAZUHA],
-    [Character.NAHIDA, Character.RAIDEN, Character.KUKI_SHINOBU, Character.KAEDEHARA_KAZUHA],
-    [Character.NAHIDA, Character.FISCHL, Character.KEQING, Character.JEAN],
-  ]
+    bossMaterial: BossSkillMaterial.MIRROR_OF_MUSHIN
+  })
 }
 
-export default Nahida
+export default Layla
