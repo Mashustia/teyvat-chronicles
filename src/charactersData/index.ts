@@ -60,8 +60,8 @@ import Dori from './characters/Dori';
 import Syno from './characters/Syno';
 import Candace from './characters/Candace';
 import Nilou from './characters/Nilou';
-import Nahida from './characters/Layla';
-import Layla from './characters/Nahida';
+import Nahida from './characters/Nahida';
+import Layla from './characters/Layla';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
