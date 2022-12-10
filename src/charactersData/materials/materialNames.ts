@@ -70,8 +70,8 @@ export enum Flower {
   NILOTPALA_LOTUS = 'nilotpala_lotus',
   RUKKHASHAVA_MUSHROOMS = 'rukkhashava_mushrooms',
   KALPALATA_LOTUS = 'kalpalata_lotus',
-  REDCREST = 'redcrest',
-  PADISARAH = 'padisarah',
+  HENNA_BERRY = 'henna_berry',
+  PADISARAH = 'padisarah'
 }
 
 export enum Rocks {

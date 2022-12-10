@@ -1,23 +1,23 @@
 import {Character, Vision} from '../../const/consts';
 import {
-  BossMaterials,
-  Gem,
-  Materials,
   Books,
+  BossMaterials,
   BossSkillMaterial,
-  Flower
+  Flower,
+  Gem,
+  Materials
 } from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
-const Candace = {
-  name: Character.CANDACE,
-  vision: Vision.HYDRO,
+const Faruzan = {
+  name: Character.FARUZAN,
+  vision: Vision.ANEMO,
   ascension_materials: fillAscensionMaterials({
     gems: {
-      1: Gem.ELECTRO.VAJRADA_AMETHYST_SLIVER,
-      2: Gem.ELECTRO.VAJRADA_AMETHYST_FRAGMENT,
-      3: Gem.ELECTRO.VAJRADA_AMETHYST_CHUNK,
-      4: Gem.ELECTRO.VAJRADA_AMETHYST_GEMSTONE
+      1: Gem.ANEMO.VAYUDA_TURQUOISE_SLIVER,
+      2: Gem.ANEMO.VAYUDA_TURQUOISE_FRAGMENT,
+      3: Gem.ANEMO.VAYUDA_TURQUOISE_CHUNK,
+      4: Gem.ANEMO.VAYUDA_TURQUOISE_GEMSTONE
     },
     materials: {
       1: Materials.FADED_RED_SATIN,
@@ -39,8 +39,12 @@ const Candace = {
       2: Materials.TRIMMED_RED_SILK,
       3: Materials.RICH_RED_BROCADE,
     },
-    bossMaterial: BossSkillMaterial.TEARS_OF_THE_CALAMITOUS_GOD
-  })
+    bossMaterial: BossSkillMaterial.PUPPET_STRINGS
+  }),
+  possible_teams: [
+    [Character.XIAO, Character.FARUZAN, Character.ZHONGLI, Character.BENNETT],
+    [Character.WANDERER, Character.FARUZAN, Character.ZHONGLI, Character.BENNETT],
+  ]
 }
 
-export default Candace
+export default Faruzan

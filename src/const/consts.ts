@@ -131,6 +131,8 @@ export enum Character {
   NILOU = 'Nilou',
   NAHIDA = 'Nahida',
   LAYLA = 'Layla',
+  FARUZAN = 'Faruzan',
+  WANDERER = 'Wanderer',
 }
 
 export const DefaultStartingLevel = {
