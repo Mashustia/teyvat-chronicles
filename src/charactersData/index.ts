@@ -62,6 +62,8 @@ import Candace from './characters/Candace';
 import Nilou from './characters/Nilou';
 import Nahida from './characters/Nahida';
 import Layla from './characters/Layla';
+import Faruzan from './characters/Faruzan';
+import Wanderer from './characters/Wanderer';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -126,6 +128,8 @@ const CHARACTERS: ICharacter[] = [
   Nilou,
   Nahida,
   Layla,
+  Faruzan,
+  Wanderer,
 ]
 
 export default CHARACTERS

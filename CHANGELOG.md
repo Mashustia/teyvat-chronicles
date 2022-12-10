@@ -1,3 +1,16 @@
+#### 1.1.15 December-2022
+
+* Changes
+  * Added characters:
+    * Wanderer
+    * Faruzan
+  * Added materials:
+    * Henna Berry
+  * Added teams for:
+    * Wanderer
+    * Faruzan
+    * Xiao
+
 #### 1.1.14 November-2022
 
 * Changes

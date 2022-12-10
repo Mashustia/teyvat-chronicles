@@ -246,7 +246,7 @@ export const Scarab = {
   ]
 }
 
-export const Redcrest = {
+export const HennaBerry = {
   [Languages.EN]: [
     'https://twitter.com/gt_eon/status/1575546930490667008'
   ]
@@ -313,7 +313,7 @@ export const farmingRoutes: IFarmingRoutes = {
   [Materials.FADED_RED_SATIN]: {...Eremites},
   [Materials.TRIMMED_RED_SILK]: {...Eremites},
   [Materials.RICH_RED_BROCADE]: {...Eremites},
-  [Flower.REDCREST]: {...Redcrest},
+  [Flower.HENNA_BERRY]: {...HennaBerry},
   [OtherMaterials.SCARAB]: {...Scarab},
   [Flower.PADISARAH]: {...Padisarah},
 }
