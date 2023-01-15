@@ -42,9 +42,9 @@ const Thoma = {
     bossMaterial: BossSkillMaterial.HELLFIRE_BUTTERFLY
   }),
   possible_teams: [
-    [Character.TARTAGLIA, Character.THOMA, Character.SUCROSE, Character.BENNETT],
+    [Character.NAHIDA, Character.THOMA, Character.XINGQIU, Character.KOKOMI],
+    [Character.TRAVELER_DENDRO, Character.THOMA, Character.XINGQIU, Character.KOKOMI],
     [Character.HU_TAO, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.THOMA],
-    [Character.KLEE, Character.XINGQIU, Character.THOMA, Character.SAYU],
   ]
 }
 

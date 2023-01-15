@@ -1,3 +1,13 @@
+#### 1.1.15 January-2023
+
+* Changes
+  * Updated teams for:
+    * Kokomi
+    * Thoma
+    * Kuki
+    * Xingqiu
+    * Nahida
+
 #### 1.1.15 December-2022
 
 * Changes
