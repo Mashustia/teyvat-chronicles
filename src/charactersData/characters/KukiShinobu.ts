@@ -35,7 +35,8 @@ const KukiShinobu = {
     bossMaterial: BossSkillMaterial.TEARS_OF_THE_CALAMITOUS_GOD
   }),
   possible_teams: [
-    [Character.NAHIDA, Character.XINGQIU, Character.KUKI_SHINOBU, Character.KAEDEHARA_KAZUHA],
+    [Character.NAHIDA, Character.XINGQIU, Character.KUKI_SHINOBU, Character.ZHONGLI],
+    [Character.NAHIDA, Character.KUKI_SHINOBU, Character.XINGQIU, Character.KOKOMI],
     [Character.NAHIDA, Character.KAMISATO_AYATO, Character.KUKI_SHINOBU, Character.KAEDEHARA_KAZUHA],
   ]
 }

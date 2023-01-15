@@ -43,9 +43,8 @@ const Nahida = {
   }),
   possible_teams: [
     [Character.NAHIDA, Character.NILOU, Character.KOKOMI, Character.TRAVELER_DENDRO],
-    [Character.NAHIDA, Character.NILOU, Character.KOKOMI, Character.KAMISATO_AYATO],
-    [Character.NAHIDA, Character.XINGQIU, Character.KUKI_SHINOBU, Character.KAEDEHARA_KAZUHA],
-    [Character.NAHIDA, Character.XINGQIU, Character.THOMA, Character.KAEDEHARA_KAZUHA],
+    [Character.NAHIDA, Character.KUKI_SHINOBU, Character.XINGQIU, Character.ZHONGLI],
+    [Character.NAHIDA, Character.THOMA, Character.XINGQIU, Character.KOKOMI],
     [Character.NAHIDA, Character.RAIDEN, Character.KUKI_SHINOBU, Character.KAEDEHARA_KAZUHA],
     [Character.NAHIDA, Character.FISCHL, Character.KEQING, Character.JEAN],
   ]
