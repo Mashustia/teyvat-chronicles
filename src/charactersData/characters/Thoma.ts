@@ -43,7 +43,7 @@ const Thoma = {
   }),
   possible_teams: [
     [Character.NAHIDA, Character.THOMA, Character.XINGQIU, Character.KOKOMI],
-    [Character.TRAVELER_DENDRO, Character.THOMA, Character.XINGQIU, Character.KOKOMI],
+    [Character.TRAVELER_DENDRO, Character.THOMA, Character.XINGQIU, Character.ZHONGLI],
     [Character.HU_TAO, Character.XINGQIU, Character.KAEDEHARA_KAZUHA, Character.THOMA],
   ]
 }
