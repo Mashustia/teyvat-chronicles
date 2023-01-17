@@ -64,6 +64,8 @@ import Nahida from './characters/Nahida';
 import Layla from './characters/Layla';
 import Faruzan from './characters/Faruzan';
 import Wanderer from './characters/Wanderer';
+import Yaoyao from './characters/Yaoyao';
+import Alhaitham from './characters/Alhaitham';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -130,6 +132,8 @@ const CHARACTERS: ICharacter[] = [
   Layla,
   Faruzan,
   Wanderer,
+  Yaoyao,
+  Alhaitham,
 ]
 
 export default CHARACTERS

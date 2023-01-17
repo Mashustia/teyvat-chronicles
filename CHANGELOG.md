@@ -7,6 +7,9 @@
     * Kuki
     * Xingqiu
     * Nahida
+  * Added characters:
+    * Yaoyao
+    * Alhaitham
 
 #### 1.1.15 December-2022
 
