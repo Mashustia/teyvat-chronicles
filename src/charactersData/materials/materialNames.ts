@@ -85,6 +85,7 @@ export enum Rocks {
 export enum OtherMaterials {
   ONIKABUTO = 'onikabuto',
   SCARAB = 'scarab',
+  SAND_GREASE_PUPA = 'sand_grease_pupa',
 }
 
 export enum TravelerAscensionMaterial {
@@ -193,6 +194,7 @@ export enum BossMaterials {
   LIGHT_GUIDING_TETRAHEDRON = 'light_guiding_tetrahedron',
   PERPETUAL_CALIBER = 'perpetual_caliber',
   QUELLED_CREEPER = 'quelled_creeper',
+  PSEUDO_STAMENS = 'pseudo_stamens',
 }
 
 export enum BossSkillMaterial {

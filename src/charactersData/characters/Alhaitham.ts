@@ -3,9 +3,9 @@ import {
   Books,
   BossMaterials,
   BossSkillMaterial,
-  Flower,
   Gem,
-  Materials
+  Materials,
+  OtherMaterials
 } from '../materials/materialNames';
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
@@ -24,8 +24,8 @@ const Alhaitham = {
       2: Materials.TRIMMED_RED_SILK,
       3: Materials.RICH_RED_BROCADE,
     },
-    bossMaterial: BossMaterials.QUELLED_CREEPER,
-    specialty: Flower.KALPALATA_LOTUS
+    bossMaterial: BossMaterials.PSEUDO_STAMENS,
+    specialty: OtherMaterials.SAND_GREASE_PUPA
   }),
   rarity: 5,
   talent_materials: fillTalentMaterials({

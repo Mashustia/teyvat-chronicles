@@ -32,6 +32,7 @@ export const materialLink = {
   [Rocks.STARCONCH]: '2?shown_types=78&center=1961.00,-428.00&zoom=-3.00',
   [OtherMaterials.ONIKABUTO]: '2?shown_types=196&center=5889.00,2492.00&zoom=-3.00',
   [OtherMaterials.SCARAB]: '2?shown_types=390,430&center=5118.00,-4651.00&zoom=-3.00',
+  [OtherMaterials.SAND_GREASE_PUPA]: '2?shown_types=462&center=3494.00,-4735.00&zoom=-3.00',
   [Gem.GEO.PRITHIVA_TOPAZ_GEMSTONE]: '2?shown_types=138,318&center=5354.69,1168.91&zoom=-3.00',
   [Gem.GEO.PRITHIVA_TOPAZ_CHUNK]: '2?shown_types=138,318&center=5354.69,1168.91&zoom=-3.00',
   [Gem.GEO.PRITHIVA_TOPAZ_FRAGMENT]: '2?shown_types=138,318&center=5354.69,1168.91&zoom=-3.00',
@@ -114,6 +115,7 @@ export const materialLink = {
   [BossMaterials.LIGHT_GUIDING_TETRAHEDRON]: '2?shown_types=390,433&center=5118.00,-4651.00&zoom=-3.00',
   [BossMaterials.PERPETUAL_CALIBER]: '2?center=3766.00,-2715.00&zoom=-3.00&shown_types=432',
   [BossMaterials.QUELLED_CREEPER]: '2?shown_types=452&center=4758.00,-4403.00&zoom=-3.00',
+  [BossMaterials.PSEUDO_STAMENS]: '2?shown_types=457&center=3238.00,-4735.00&zoom=-3.00',
 }
 
 // TODO: uncomment arrowhead and lupus boreas materials when embedded map will support it
@@ -149,6 +151,7 @@ export const genshinImpactMap = {
   [Rocks.STARCONCH]: 'names=Starconch',
   [OtherMaterials.ONIKABUTO]: 'names=Onikabuto',
   [OtherMaterials.SCARAB]: 'names=Scarab',
+  [OtherMaterials.SAND_GREASE_PUPA]: 'names=Sand Grease Pupa',
   [Gem.ANEMO.VAYUDA_TURQUOISE_GEMSTONE]: 'names=Anemo Hypostasis',
   [Gem.ANEMO.VAYUDA_TURQUOISE_CHUNK]: 'names=Anemo Hypostasis',
   [Gem.ANEMO.VAYUDA_TURQUOISE_FRAGMENT]: 'names=Anemo Hypostasis',
@@ -230,7 +233,8 @@ export const genshinImpactMap = {
   [BossMaterials.THUNDERCLAP_FRUITCORE]: 'names=Electro Regisvine',
   [BossMaterials.LIGHT_GUIDING_TETRAHEDRON]: 'names=Algorithm of Semi-Intransient Matrix of Overseer Network',
   [BossMaterials.PERPETUAL_CALIBER]: 'names=Aeonblight Drake',
-  // [BossMaterials.QUELLED_CREEPER]: 'names=Dendro Hypostasis',
+  [BossMaterials.PSEUDO_STAMENS]: 'names=Setekh Wenut',
+  [BossMaterials.QUELLED_CREEPER]: 'names=Dendro Hypostasis',
   // [BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',
   // [BossSkillMaterial.RING_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',
   // [BossSkillMaterial.TAIL_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',

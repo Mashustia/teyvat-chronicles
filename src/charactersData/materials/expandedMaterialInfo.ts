@@ -319,6 +319,12 @@ const AeonblightDrake = {
   original_resin: 40,
 }
 
+const SetekhWenut = {
+  name: 'setekh_wenut',
+  region: Region.SUMERU,
+  original_resin: 40,
+}
+
 const crownOfInsight = {
   additional_info: 'crown_of_insight_how_to_get'
 }
@@ -425,6 +431,7 @@ export const ExpandedMaterialInfo: IDungeon = {
   puppet_strings: {...JoururiWorkshop},
   mirror_of_mushin: {...JoururiWorkshop},
   dakas_bell: {...JoururiWorkshop},
+  pseudo_stamens: {...SetekhWenut},
 }
 
 // order is important
