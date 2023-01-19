@@ -258,6 +258,13 @@ export const Padisarah = {
   ]
 }
 
+export const SandGreasePupa = {
+  [Languages.EN]: [
+    'https://twitter.com/gt_eon/status/1615593595788218369',
+    'https://www.youtube.com/watch?v=y_af9JLFF8Y',
+  ]
+}
+
 export const farmingRoutes: IFarmingRoutes = {
   [Materials.WHOPPERFLOWER_NECTAR]: {...Whopperflower},
   [Materials.SHIMMERING_NECTAR]: {...Whopperflower},
@@ -316,4 +323,5 @@ export const farmingRoutes: IFarmingRoutes = {
   [Flower.HENNA_BERRY]: {...HennaBerry},
   [OtherMaterials.SCARAB]: {...Scarab},
   [Flower.PADISARAH]: {...Padisarah},
+  [OtherMaterials.SAND_GREASE_PUPA]: {...SandGreasePupa},
 }

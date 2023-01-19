@@ -7,6 +7,16 @@
     * Kuki
     * Xingqiu
     * Nahida
+  * Added characters:
+    * Yaoyao
+    * Alhaitham
+  * Added materials:
+    * Sand Grease Pupa
+    * Pseudo-Stamens
+  * Added boss:
+    * Setekh Wenut
+  * Added links for new materials for interactive map and embedded map
+  * Farming route for Sand Grease Pupa
 
 #### 1.1.15 December-2022
 
