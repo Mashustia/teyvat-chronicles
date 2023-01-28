@@ -10,6 +10,8 @@
   * Added characters:
     * Yaoyao
     * Alhaitham
+  * Added teams for:
+    * Alhaitham
   * Added materials:
     * Sand Grease Pupa
     * Pseudo-Stamens
