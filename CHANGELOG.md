@@ -9,6 +9,8 @@
     * Hu Tao
     * Dendro Traveler
     * Yun Jin
+  * Fixed:
+    * register for links on character page
 
 #### 1.1.16 January-2023
 
