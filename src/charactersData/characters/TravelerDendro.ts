@@ -81,7 +81,10 @@ const TravelerDendro = {
     specialty: Flower.WINDWHEEL_ASTER
   }),
   rarity: 5,
-  talent_materials: {...talent}
+  talent_materials: {...talent},
+  possible_teams: [
+    [Character.NAHIDA, Character.TRAVELER_DENDRO, Character.NILOU, Character.KOKOMI],
+  ]
 }
 
 export default TravelerDendro

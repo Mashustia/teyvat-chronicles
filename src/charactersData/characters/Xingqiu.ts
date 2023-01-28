@@ -42,14 +42,12 @@ const Xingqiu = {
     bossMaterial: BossSkillMaterial.TAIL_OF_BOREAS
   }),
   possible_teams: [
-    [Character.CHONGYUN, Character.XINGQIU, Character.XIANGLING, Character.BENNETT],
     [Character.RAIDEN, Character.XIANGLING, Character.XINGQIU, Character.BENNETT],
     [Character.NAHIDA, Character.KUKI_SHINOBU, Character.XINGQIU, Character.ZHONGLI],
     [Character.NAHIDA, Character.THOMA, Character.XINGQIU, Character.KOKOMI],
     [Character.KLEE, Character.XINGQIU, Character.YELAN, Character.BENNETT],
     [Character.HU_TAO, Character.XINGQIU, Character.ZHONGLI, Character.YELAN],
-    [Character.SUCROSE, Character.XINGQIU, Character.FISCHL, Character.BEIDOU],
-    [Character.KAMISATO_AYAKA, Character.XINGQIU, Character.VENTI, Character.DIONA],
+    [Character.CHONGYUN, Character.XINGQIU, Character.XIANGLING, Character.BENNETT],
   ]
 }
 

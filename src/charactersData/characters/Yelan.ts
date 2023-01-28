@@ -43,9 +43,9 @@ const Yelan = {
   possible_teams: [
     [Character.RAIDEN, Character.YELAN, Character.XIANGLING, Character.BENNETT],
     [Character.KLEE, Character.XINGQIU, Character.YELAN, Character.BENNETT],
-    [Character.HU_TAO, Character.YELAN, Character.ZHONGLI, Character.MONA],
+    [Character.HU_TAO, Character.YELAN, Character.XINGQIU, Character.ZHONGLI],
     [Character.YOIMIYA, Character.YELAN, Character.KAEDEHARA_KAZUHA, Character.BENNETT],
-    [Character.KAMISATO_AYAKA, Character.YELAN, Character.KAEDEHARA_KAZUHA, Character.DIONA],
+    [Character.NAHIDA, Character.YELAN, Character.XINGQIU, Character.KUKI_SHINOBU],
   ]
 }
 

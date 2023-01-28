@@ -43,6 +43,7 @@ const Alhaitham = {
   }),
   possible_teams: [
     [Character.ALHAITHAM, Character.NAHIDA, Character.XINGQIU, Character.KUKI_SHINOBU],
+    [Character.ALHAITHAM, Character.YAE_MIKO, Character.FISCHL, Character.YAOYAO],
   ]
 }
 

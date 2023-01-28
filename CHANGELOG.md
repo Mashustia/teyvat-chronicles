@@ -1,3 +1,15 @@
+#### 1.1.17 February-2023
+
+* Changes
+  * Updated teams for:
+    * Xingqiu
+    * Yaoyao
+    * Alhaitham
+    * Yelan
+    * Hu Tao
+    * Dendro Traveler
+    * Yun Jin
+
 #### 1.1.16 January-2023
 
 * Changes

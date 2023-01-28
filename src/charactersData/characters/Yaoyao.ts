@@ -40,7 +40,12 @@ const Yaoyao = {
       3: Materials.SLIME_CONCENTRATE,
     },
     bossMaterial: BossSkillMaterial.DAKAS_BELL
-  })
+  }),
+  possible_teams: [
+    [Character.KEQING, Character.FISCHL, Character.KAEDEHARA_KAZUHA, Character.YAOYAO],
+    [Character.NAHIDA, Character.THOMA, Character.XINGQIU, Character.YAOYAO],
+    [Character.NAHIDA, Character.YAOYAO, Character.NILOU, Character.KOKOMI],
+  ]
 }
 
 export default Yaoyao
