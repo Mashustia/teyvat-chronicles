@@ -11,7 +11,8 @@
     * Yun Jin
   * Fixed:
     * register for links on character page
-    * Added Setekh Wenut in vayuda turquoise map links
+  * Added Setekh Wenut in vayuda turquoise map links
+  * Added gitlab link in footer
 
 #### 1.1.16 January-2023
 
