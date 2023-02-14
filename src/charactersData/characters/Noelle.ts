@@ -10,7 +10,7 @@ import {
 import {fillAscensionMaterials, fillTalentMaterials} from '../../utils/utils';
 
 const Noelle = {
-  name: 'Noelle',
+  name: Character.NOELLE,
   vision: Vision.GEO,
   ascension_materials: fillAscensionMaterials({
     gems: {
