@@ -45,6 +45,7 @@ const YunJin = {
     [Character.YOIMIYA, Character.YUN_JIN, Character.XINGQIU, Character.ZHONGLI],
     [Character.NOELLE, Character.YUN_JIN, Character.ALBEDO, Character.BENNETT],
     [Character.NOELLE, Character.YUN_JIN, Character.ALBEDO, Character.GOROU],
+    [Character.KAMISATO_AYATO, Character.ZHONGLI, Character.YUN_JIN, Character.BENNETT],
   ]
 }
 
