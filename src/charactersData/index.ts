@@ -66,6 +66,7 @@ import Faruzan from './characters/Faruzan';
 import Wanderer from './characters/Wanderer';
 import Yaoyao from './characters/Yaoyao';
 import Alhaitham from './characters/Alhaitham';
+import Dehya from './characters/Dehya';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -134,6 +135,7 @@ const CHARACTERS: ICharacter[] = [
   Wanderer,
   Yaoyao,
   Alhaitham,
+  Dehya
 ]
 
 export default CHARACTERS
