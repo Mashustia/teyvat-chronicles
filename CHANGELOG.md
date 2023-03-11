@@ -1,18 +1,10 @@
-#### 1.1.17 February-2023
+#### 1.1.17 March-2023
 
 * Changes
+  * Added characters:
+    * Dehya
   * Updated teams for:
-    * Xingqiu
-    * Yaoyao
-    * Alhaitham
-    * Yelan
-    * Hu Tao
-    * Dendro Traveler
-    * Yun Jin
-  * Fixed:
-    * register for links on character page
-  * Added Setekh Wenut in vayuda turquoise map links
-  * Added gitlab link in footer
+    * Dehya
 
 #### 1.1.16 January-2023
 
