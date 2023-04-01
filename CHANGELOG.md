@@ -1,3 +1,9 @@
+#### 1.1.19 April-2023
+
+* Changes
+  * Added characters:
+    * Mika
+
 #### 1.1.18 March-2023
 
 * Changes
