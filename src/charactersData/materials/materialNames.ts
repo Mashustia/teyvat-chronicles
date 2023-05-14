@@ -71,7 +71,8 @@ export enum Flower {
   RUKKHASHAVA_MUSHROOMS = 'rukkhashava_mushrooms',
   KALPALATA_LOTUS = 'kalpalata_lotus',
   HENNA_BERRY = 'henna_berry',
-  PADISARAH = 'padisarah'
+  PADISARAH = 'padisarah',
+  MOURNING_FLOWER = 'mourning_flower'
 }
 
 export enum Rocks {
@@ -195,6 +196,7 @@ export enum BossMaterials {
   PERPETUAL_CALIBER = 'perpetual_caliber',
   QUELLED_CREEPER = 'quelled_creeper',
   PSEUDO_STAMENS = 'pseudo_stamens',
+  EVERGLOOM_RING = 'evergloom_ring',
 }
 
 export enum BossSkillMaterial {
@@ -219,5 +221,8 @@ export enum BossSkillMaterial {
   PUPPET_STRINGS = 'puppet_strings',
   MIRROR_OF_MUSHIN = 'mirror_of_mushin',
   DAKAS_BELL = 'dakas_bell',
+  PRIMORDIAL_GREENBLOOM = 'primordial_greenbloom',
+  WORLDSPAN_FERN = 'worldspan_fern',
+  EVERAMBER = 'everamber',
 }
 
