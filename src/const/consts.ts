@@ -137,6 +137,8 @@ export enum Character {
   YAOYAO = 'yaoyao',
   DEHYA = 'dehya',
   MIKA = 'mika',
+  BAIZHU = 'baizhu',
+  KAVEH = 'kaveh',
 }
 
 export const DefaultStartingLevel = {

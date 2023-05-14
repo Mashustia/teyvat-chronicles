@@ -68,6 +68,8 @@ import Yaoyao from './characters/Yaoyao';
 import Alhaitham from './characters/Alhaitham';
 import Dehya from './characters/Dehya';
 import Mika from './characters/Mika';
+import Baizhu from './characters/Baizhu';
+import Kaveh from './characters/Kaveh';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -137,7 +139,9 @@ const CHARACTERS: ICharacter[] = [
   Yaoyao,
   Alhaitham,
   Dehya,
-  Mika
+  Mika,
+  Baizhu,
+  Kaveh
 ]
 
 export default CHARACTERS
