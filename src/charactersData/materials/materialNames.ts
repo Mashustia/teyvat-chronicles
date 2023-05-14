@@ -221,5 +221,8 @@ export enum BossSkillMaterial {
   PUPPET_STRINGS = 'puppet_strings',
   MIRROR_OF_MUSHIN = 'mirror_of_mushin',
   DAKAS_BELL = 'dakas_bell',
+  PRIMORDIAL_GREENBLOOM = 'primordial_greenbloom',
+  WORLDSPAN_FERN = 'worldspan_fern',
+  EVERAMBER = 'everamber',
 }
 

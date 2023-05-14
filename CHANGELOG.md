@@ -1,3 +1,20 @@
+#### 1.1.20 May-2023
+
+* Changes
+  * Added characters:
+    * Kaveh
+    * Baizhu
+  * Added materials:
+    * Mourning Flower
+    * Evergloom Ring
+    * Everamber
+    * Primordial Greenbloom
+    * Worldspan Fern
+  * Added boss: Iniquitous Baptist
+  * Added teams for:
+    * Kaveh
+    * Baizhu
+
 #### 1.1.19 April-2023
 
 * Changes

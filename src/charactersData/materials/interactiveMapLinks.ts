@@ -25,6 +25,7 @@ export const materialLink = {
   [Flower.KALPALATA_LOTUS]: '2?shown_types=401&center=2918.00,-3271.00&zoom=-3.00',
   [Flower.HENNA_BERRY]: '2?shown_types=390,431&center=5118.00,-4651.00&zoom=-3.00',
   [Flower.PADISARAH]: '2?center=3174.00,-3851.00&zoom=-3.00&shown_types=413',
+  [Flower.MOURNING_FLOWER]: '2?shown_types=469&center=1563.00,-5698.00&zoom=-3.00',
   [Rocks.NOCTILUCOUS_JADE]: '2?shown_types=42&center=1617.00,-1396.00&zoom=-3.00',
   [Rocks.COR_LAPIS]: '2?shown_types=40&center=1490.94,-484.47&zoom=-3.00',
   [Rocks.CRYSTAL_MARROW]: '2?shown_types=211&center=6521.03,1622.13&zoom=-3.00',
@@ -116,6 +117,7 @@ export const materialLink = {
   [BossMaterials.PERPETUAL_CALIBER]: '2?center=3766.00,-2715.00&zoom=-3.00&shown_types=432',
   [BossMaterials.QUELLED_CREEPER]: '2?shown_types=452&center=4758.00,-4403.00&zoom=-3.00',
   [BossMaterials.PSEUDO_STAMENS]: '2?shown_types=457&center=3238.00,-4735.00&zoom=-3.00',
+  [BossMaterials.EVERGLOOM_RING]: '2?shown_types=455&center=1559.00,-5698.00&zoom=-3.00',
 }
 
 // TODO: uncomment arrowhead and lupus boreas materials when embedded map will support it
@@ -144,6 +146,7 @@ export const genshinImpactMap = {
   [Flower.KALPALATA_LOTUS]: 'names=Kalpalata Lotus',
   [Flower.HENNA_BERRY]: 'names=Redcrest',
   [Flower.PADISARAH]: 'names=Padisarah',
+  [Flower.MOURNING_FLOWER]: 'names=Mourning Flower',
   [Rocks.NOCTILUCOUS_JADE]: 'names=Noctilucous Jade',
   [Rocks.COR_LAPIS]: 'names=Cor Lapis',
   [Rocks.CRYSTAL_MARROW]: 'names=Crystal Marrow',
@@ -235,6 +238,7 @@ export const genshinImpactMap = {
   [BossMaterials.PERPETUAL_CALIBER]: 'names=Aeonblight Drake',
   [BossMaterials.PSEUDO_STAMENS]: 'names=Setekh Wenut',
   [BossMaterials.QUELLED_CREEPER]: 'names=Dendro Hypostasis',
+  [BossMaterials.EVERGLOOM_RING]: 'names=Iniquitous Baptist',
   // [BossSkillMaterial.SPIRIT_LOCKET_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',
   // [BossSkillMaterial.RING_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',
   // [BossSkillMaterial.TAIL_OF_BOREAS]: 'names=Lupus Boreas, Dominator of Wolves',

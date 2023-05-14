@@ -39,8 +39,11 @@ const Kaveh = {
       2: Materials.LUMINESCENT_POLLEN,
       3: Materials.CRYSTALLINE_CYST_DUST,
     },
-    bossMaterial: BossSkillMaterial.TEARS_OF_THE_CALAMITOUS_GOD
-  })
+    bossMaterial: BossSkillMaterial.PRIMORDIAL_GREENBLOOM
+  }),
+  possible_teams: [
+    [Character.KAVEH, Character.NILOU, Character.XINGQIU, Character.BAIZHU],
+  ]
 }
 
 export default Kaveh

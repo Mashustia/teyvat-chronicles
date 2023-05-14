@@ -265,6 +265,14 @@ export const SandGreasePupa = {
   ]
 }
 
+
+export const MourningFlower = {
+  [Languages.EN]: [
+    'https://twitter.com/gt_eon/status/1655643552553000988',
+    'https://www.hoyolab.com/article/18070069',
+  ]
+}
+
 export const farmingRoutes: IFarmingRoutes = {
   [Materials.WHOPPERFLOWER_NECTAR]: {...Whopperflower},
   [Materials.SHIMMERING_NECTAR]: {...Whopperflower},
@@ -314,6 +322,7 @@ export const farmingRoutes: IFarmingRoutes = {
   [Flower.NILOTPALA_LOTUS]: {...NilotpalaLotus},
   [Flower.RUKKHASHAVA_MUSHROOMS]: {...RukkhashavaMushrooms},
   [Flower.KALPALATA_LOTUS]: {...KalpalataLotus},
+  [Flower.MOURNING_FLOWER]: {...MourningFlower},
   [Materials.FUNGAL_SPORES]: {...FloatingHydroFungus},
   [Materials.LUMINESCENT_POLLEN]: {...FloatingHydroFungus},
   [Materials.CRYSTALLINE_CYST_DUST]: {...FloatingHydroFungus},

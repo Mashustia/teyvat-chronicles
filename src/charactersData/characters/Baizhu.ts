@@ -39,8 +39,14 @@ const Baizhu = {
       2: Materials.LUMINESCENT_POLLEN,
       3: Materials.CRYSTALLINE_CYST_DUST,
     },
-    bossMaterial: BossSkillMaterial.TEARS_OF_THE_CALAMITOUS_GOD
-  })
+    bossMaterial: BossSkillMaterial.WORLDSPAN_FERN
+  }),
+  possible_teams: [
+    [Character.ALHAITHAM, Character.YELAN, Character.RAIDEN, Character.BAIZHU],
+    [Character.YAE_MIKO, Character.NAHIDA, Character.FISCHL, Character.BAIZHU],
+    [Character.NAHIDA, Character.NILOU, Character.XINGQIU, Character.BAIZHU],
+    [Character.NAHIDA, Character.XINGQIU, Character.THOMA, Character.BAIZHU],
+  ]
 }
 
 export default Baizhu

@@ -173,6 +173,13 @@ const JoururiWorkshop = {
   is_open_days: [WeekDay.ALL_DAYS]
 }
 
+const TheRealmOfBeginnings = {
+  name: 'the_realm_of_beginnings',
+  region: Region.SUMERU,
+  original_resin: 60,
+  is_open_days: [WeekDay.ALL_DAYS]
+}
+
 // Hypostasis
 
 const AnemoHypostasis = {
@@ -325,6 +332,12 @@ const SetekhWenut = {
   original_resin: 40,
 }
 
+const IniquitousBaptist = {
+  name: 'iniquitous_baptist',
+  region: Region.SUMERU,
+  original_resin: 40,
+}
+
 const crownOfInsight = {
   additional_info: 'crown_of_insight_how_to_get'
 }
@@ -432,6 +445,10 @@ export const ExpandedMaterialInfo: IDungeon = {
   mirror_of_mushin: {...JoururiWorkshop},
   dakas_bell: {...JoururiWorkshop},
   pseudo_stamens: {...SetekhWenut},
+  evergloom_ring: {...IniquitousBaptist},
+  everamber: {...TheRealmOfBeginnings},
+  primordial_greenbloom: {...TheRealmOfBeginnings},
+  worldspan_fern: {...TheRealmOfBeginnings},
 }
 
 // order is important

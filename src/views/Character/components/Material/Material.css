@@ -22,7 +22,7 @@
   background-origin: border-box;
   background-size: cover;
   box-sizing: border-box;
-  background-image: linear-gradient(to bottom left, #fff, #8a8a8a)
+  background-image: url('../../../../../public/images/icons/material_background.png');
 }
 
 .table-border {
