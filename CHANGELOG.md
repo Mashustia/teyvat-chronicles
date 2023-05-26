@@ -4,6 +4,7 @@
   * Added characters:
     * Kaveh
     * Baizhu
+    * Kirara
   * Added materials:
     * Mourning Flower
     * Evergloom Ring
