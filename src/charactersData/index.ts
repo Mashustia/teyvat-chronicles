@@ -70,6 +70,7 @@ import Dehya from './characters/Dehya';
 import Mika from './characters/Mika';
 import Baizhu from './characters/Baizhu';
 import Kaveh from './characters/Kaveh';
+import Kirara from './characters/Kirara';
 
 const CHARACTERS: ICharacter[] = [
   Amber,
@@ -141,7 +142,8 @@ const CHARACTERS: ICharacter[] = [
   Dehya,
   Mika,
   Baizhu,
-  Kaveh
+  Kaveh,
+  Kirara
 ]
 
 export default CHARACTERS
